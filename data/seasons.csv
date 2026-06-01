@@ -1,0 +1,9 @@
+season_id,start_date,end_date,last_gw_synced,show_in_dashboard
+2025-26,2025-08-15,2026-05-24,38,true
+2018-19,,,38,false
+2019-20,,,47,false
+2022-23,,,38,true
+2023-24,,,38,true
+2024-25,,,38,true
+2020-21,,,38,true
+2021-22,,,38,true

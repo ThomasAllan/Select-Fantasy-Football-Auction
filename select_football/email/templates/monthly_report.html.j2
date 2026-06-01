@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    table {
+      border-collapse: collapse;
+      min-width: 400px;
+    }
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 6px 20px;
+    }
+    th {
+      background-color: #dddddd;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .footer {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <p>Hi, please see the updated table below.</p>
+  <p>&nbsp;</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Position</th>
+        <th>Manager</th>
+        <th>Points</th>
+        <th>Prize</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in standings %}
+      <tr>
+        <td>{{ item.position }}</td>
+        <td>{{ item.manager_name }}</td>
+        <td>{{ item.total_points | int }}</td>
+        <td>{% if item.prize %}£{{ item.prize | int }}{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  <p class="footer">Data is correct as of {{ timestamp }}</p>
+</body>
+</html>
