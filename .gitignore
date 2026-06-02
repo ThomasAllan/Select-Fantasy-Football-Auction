@@ -47,6 +47,9 @@ data/manager_emails.csv
 # Raw selection TSV imports — already processed into CSVs
 scripts/*.tsv
 
+# Historic selection Excel files — source data, not committed
+historic_selections/
+
 # Local databases
 *.db
 *.sqlite
