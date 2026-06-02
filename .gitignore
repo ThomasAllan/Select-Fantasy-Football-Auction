@@ -50,6 +50,9 @@ scripts/*.tsv
 # Historic selection Excel files — source data, not committed
 historic_selections/
 
+# Claude Code memory and session data
+.claude/
+
 # Local databases
 *.db
 *.sqlite
