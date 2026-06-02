@@ -60,10 +60,6 @@ def main() -> None:
             print(f"{season_id}: no selections — skipping")
             continue
 
-        # Build a managers_df for this season from whoever has selections
-        season_manager_names = season_sels["manager_name"].unique().tolist()
-        season_managers_df = pd.DataFrame({"name": season_manager_names})
-
         prizes = [
             Prize(season_id=r["season_id"], position=int(r["position"]), prize_amount=float(r["prize_amount"]))
             for _, r in prizes_df[prizes_df["season_id"] == season_id].iterrows()
@@ -72,7 +68,6 @@ def main() -> None:
         standings = compute_standings(
             season_id=season_id,
             up_to_gw=up_to_gw,
-            managers_df=season_managers_df,
             selections_df=selections_df,
             goals_df=goals_df,
             overrides_df=overrides_df,

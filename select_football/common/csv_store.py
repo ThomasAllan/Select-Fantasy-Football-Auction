@@ -72,6 +72,24 @@ class CsvStore:
         result = pd.concat([kept, new_df], ignore_index=True)
         self.write(name, result)
 
+    def read_all_players(self) -> pd.DataFrame:
+        """Return all player and team records from players.csv."""
+        return self.read("players")
+
+    def read_player_links(self) -> pd.DataFrame:
+        """Return player_links.csv: maps season_code → fpl_permanent_code."""
+        return self.read("player_links")
+
+    def is_season_closed(self, season_id: str) -> bool:
+        """Return True if this season is marked closed=true in seasons.csv."""
+        seasons = self.read("seasons")
+        if seasons.empty or "closed" not in seasons.columns:
+            return False
+        row = seasons[seasons["season_id"] == season_id]
+        if row.empty:
+            return False
+        return str(row["closed"].iloc[0]).strip().lower() == "true"
+
     def current_season(self) -> str:
         """Return the season_id whose date window contains today.
 

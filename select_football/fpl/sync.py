@@ -24,11 +24,16 @@ def sync_players(
     store: CsvStore,
     dry_run: bool = False,
 ) -> None:
-    """Sync teams and players from bootstrap data into players.csv."""
-    rows = []
+    """Sync teams into teams.csv and players into players.csv for the given season."""
+    if store.is_season_closed(season):
+        log.info("season_closed_skip_players", season=season)
+        return
+
+    team_rows = []
+    player_rows = []
 
     for team in bootstrap.teams:
-        rows.append({
+        team_rows.append({
             "code": _player_code(season, "team", team.id),
             "season": season,
             "type": "team",
@@ -52,11 +57,12 @@ def sync_players(
             except Exception:
                 pass
 
-        rows.append({
+        player_rows.append({
             "code": _player_code(season, "player", player.id),
             "season": season,
             "type": "player",
             "element_id": player.id,
+            "fpl_permanent_code": str(player.code),
             "full_name": f"{player.first_name} {player.second_name}",
             "friendly_name": player.web_name,
             "fpl_position": _ELEMENT_TYPE_MAP.get(player.element_type, ""),
@@ -68,10 +74,10 @@ def sync_players(
             "photo_url": f"https://resources.premierleague.com/premierleague25/photos/players/110x140/{player.photo.replace('.jpg', '.png')}",
         })
 
-    df = pd.DataFrame(rows)
-    log.info("sync_players", count=len(df), season=season, dry_run=dry_run)
+    all_rows = team_rows + player_rows
+    log.info("sync_players", teams=len(team_rows), players=len(player_rows), season=season, dry_run=dry_run)
     if not dry_run:
-        store.upsert("players", df, key_cols=["code"])
+        store.upsert("players", pd.DataFrame(all_rows), key_cols=["code"])
 
 
 def sync_outfield_goals(

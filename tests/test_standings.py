@@ -5,12 +5,6 @@ from select_football.common.models import Prize
 from select_football.core.standings import compute_standings
 
 
-def _managers():
-    return pd.DataFrame([
-        {"name": "Alice", "email": "alice@example.com"},
-        {"name": "Bob", "email": "bob@example.com"},
-    ])
-
 
 def _selections(season="2025-26"):
     return pd.DataFrame([
@@ -44,7 +38,7 @@ class TestStandings:
         standings = compute_standings(
             season_id="2025-26",
             up_to_gw=1,
-            managers_df=_managers(),
+
             selections_df=_selections(),
             goals_df=_goals(),
             overrides_df=pd.DataFrame(),
@@ -72,7 +66,7 @@ class TestStandings:
         standings = compute_standings(
             season_id="2025-26",
             up_to_gw=1,
-            managers_df=_managers(),
+
             selections_df=_selections(),
             goals_df=_goals(),
             overrides_df=overrides,
@@ -88,7 +82,7 @@ class TestStandings:
         standings = compute_standings(
             season_id="2025-26",
             up_to_gw=1,
-            managers_df=_managers(),
+
             selections_df=_selections(),
             goals_df=_goals(),
             overrides_df=pd.DataFrame(),

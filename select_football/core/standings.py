@@ -76,7 +76,6 @@ def _gk_player_codes_for_team(
 def compute_standings(
     season_id: str,
     up_to_gw: int,
-    managers_df: pd.DataFrame,
     selections_df: pd.DataFrame,
     goals_df: pd.DataFrame,
     overrides_df: pd.DataFrame,
@@ -85,15 +84,15 @@ def compute_standings(
 ) -> list[ManagerStanding]:
     """Compute the full league table for a season up to (and including) up_to_gw.
 
-    managers_df uses 'name' as the primary key (no manager_id).
-    selections_df references managers by 'manager_name'.
+    Manager list is derived from selections_df for the given season.
     All DataFrames have string dtypes (as returned by CsvStore.read).
     Returns standings sorted descending by total_points.
     """
-    if managers_df.empty or "name" not in managers_df.columns:
+    season_sel = selections_df[selections_df["season_id"] == season_id] if not selections_df.empty else pd.DataFrame()
+    if season_sel.empty:
         return []
 
-    manager_names = managers_df["name"].tolist()
+    manager_names = list(season_sel["manager_name"].unique())
     prize_map = {p.position: p.prize_amount for p in prizes}
 
     totals: dict[str, float] = {name: 0.0 for name in manager_names}

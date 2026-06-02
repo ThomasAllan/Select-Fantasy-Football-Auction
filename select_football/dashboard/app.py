@@ -41,10 +41,9 @@ def load_data() -> dict:
     )
     return {
         "seasons": store.read("seasons"),
-        "managers": store.read("managers"),
         "selections": store.read("manager_selections"),
         "goals": store.read("goals"),
-        "players": store.read("players"),
+        "players": store.read_all_players(),
         "prizes": store.read("prizes"),
         "standings": store.read("standings"),
         "last_updated": last_updated,
@@ -77,7 +76,7 @@ def _pos_colour(pos: int, prize_positions: set) -> str:
     return "transparent"
 
 
-def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, season_id: str) -> None:
+def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, season_id: str, season_finished: bool = False) -> None:
     if standings_df.empty or "season_id" not in standings_df.columns:
         st.info("No standings data available. Run sync-scores first.")
         return
@@ -108,6 +107,17 @@ def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, 
             if share:
                 prize_positions.add(p)
 
+    # Build display label for every position — tied positions show "=N" (lowest in group)
+    pos_display_map: dict[int, str] = {}
+    for _grp_pts, _grp_positions in pts_to_positions.items():
+        _label = f"={min(_grp_positions)}" if len(_grp_positions) > 1 else str(min(_grp_positions))
+        for _p in _grp_positions:
+            pos_display_map[_p] = _label
+
+    # Positions tied at the top (share the highest points total)
+    _top_pts = int(float(rows.iloc[0]["total_points"])) if not rows.empty else 0
+    _top_positions: set[int] = set(pts_to_positions.get(_top_pts, []))
+
     tr_parts = []
     for i, (_, r) in enumerate(rows.iterrows()):
         pos = int(r["position"])
@@ -116,6 +126,10 @@ def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, 
         prize_val = shared_prize_map.get(pos)
         is_shared = prize_val is not None and len(pts_to_positions[pts]) > 1 and prize_val > 0
         prize_str = (f"£{prize_val:.0f} ea" if is_shared else f"£{prize_val:.0f}") if prize_val else "—"
+        is_champion = season_finished and pos in _top_positions
+        if is_champion:
+            prize_str += " 🏆"
+        pos_display = pos_display_map.get(pos, str(pos))
         colour = _pos_colour(pos, prize_positions)
         border = f"border-left:4px solid {colour};" if colour != "transparent" else "border-left:4px solid transparent;"
         stripe = "background:rgba(128,128,128,0.06);" if i % 2 == 1 else ""
@@ -123,7 +137,7 @@ def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, 
         encoded_szn = urllib.parse.quote(season_id)
         tr_parts.append(
             f'<tr style="{stripe}">'
-            f'<td style="{border}padding:8px 14px;text-align:center;font-weight:600">{pos}</td>'
+            f'<td style="{border}padding:8px 14px;text-align:center;font-weight:600">{pos_display}</td>'
             f'<td style="padding:8px 14px"><a href="?manager={encoded}&season={encoded_szn}&table_season={encoded_szn}" target="_self" style="color:#60a5fa;text-decoration:none;font-weight:500">{name}</a></td>'
             f'<td style="padding:8px 14px;text-align:center">{pts}</td>'
             f'<td style="padding:8px 14px;text-align:center">{prize_str}</td>'
@@ -148,7 +162,6 @@ def render_standings_table(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, 
 def get_all_managers(data: dict) -> list[str]:
     names: set[str] = set()
     for df, col in [
-        (data["managers"], "name"),
         (data["standings"], "manager_name"),
         (data["selections"], "manager_name"),
     ]:
@@ -184,6 +197,59 @@ def get_manager_history(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, man
             "Prize": prize,
         })
     return pd.DataFrame(out).sort_values("Season")
+
+
+@st.cache_data(ttl=300)
+def get_best_player_ever(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    goals_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+    seasons_df: pd.DataFrame,
+) -> tuple[str, int]:
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty:
+        return ("—", 0)
+
+    player_names = players_df.set_index("code")["friendly_name"].to_dict()
+    last_gw_map = {
+        r["season_id"]: int(r["last_gw_synced"]) if str(r.get("last_gw_synced", "")) not in ("", "nan") else 38
+        for _, r in seasons_df.iterrows()
+    }
+    player_pts: dict[str, int] = {}
+
+    for _, s in mgr_sels.iterrows():
+        code = s["player_code"]
+        pos = s["position"].upper()
+        season_id = s["season_id"]
+        gw_from = _int(s["gw_from"])
+        gw_to_raw = s.get("gw_to", "")
+        last_gw = last_gw_map.get(season_id, 38)
+        gw_to = last_gw if str(gw_to_raw) in ("", "nan") or pd.isna(gw_to_raw) else min(_int(gw_to_raw), last_gw)
+
+        name = player_names.get(code)
+        if not name:
+            parts = code.split("-player-")
+            name = parts[1] if len(parts) > 1 else code
+
+        g_rows = goals_df[
+            (goals_df["player_code"] == code) &
+            (goals_df["season_id"] == season_id) &
+            (goals_df["game_week"].astype(int) >= gw_from) &
+            (goals_df["game_week"].astype(int) <= gw_to)
+        ]
+        total_goals = int(g_rows["goals_scored"].astype(int).sum()) if not g_rows.empty else 0
+        pts = int(score_outfield_player(pos, total_goals))
+        player_pts[name] = player_pts.get(name, 0) + pts
+
+    if not player_pts:
+        return ("—", 0)
+
+    best_name = max(player_pts, key=player_pts.__getitem__)
+    return (best_name, player_pts[best_name])
 
 
 @st.cache_data(ttl=300)
@@ -254,10 +320,11 @@ def manager_squad_points(
                 team_id = _int(code.split("-")[-1])
                 gk_goals = sum(_goals_for(goals_df, c, season_id, gw, "goals_scored") for c in gkp_by_team.get(team_id, []))
                 pts = score_gk_team(conceded, gk_goals)
+                rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals Conceded": conceded, "Pts": pts})
             else:
                 goals = _goals_for(goals_df, code, season_id, gw, "goals_scored")
                 pts = score_outfield_player(pos, goals)
-            rows.append({"Player": name, "Pos": pos, "GW": gw, "Pts": pts})
+                rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals": goals, "Pts": pts})
 
     return pd.DataFrame(rows)
 
@@ -269,20 +336,34 @@ seasons_df = data["seasons"]
 standings_df = data["standings"]
 prizes_df = data["prizes"]
 players_df = data["players"].copy()
-# Stable FPL photo code extracted from photo_url — unique per player across seasons
+# Stable cross-season player identity: prefer fpl_permanent_code column (set by both
+# FPL sync and vaastav sync), fall back to parsing photo_url for any legacy rows.
 import re as _re_global
 _photo_re = _re_global.compile(r"/(\d+)\.png$")
-players_df["_fpl_code"] = players_df["photo_url"].apply(
-    lambda u: (m := _photo_re.search(str(u))) and m.group(1) or ""
-)
+def _derive_fpl_code(row: "pd.Series") -> str:  # type: ignore[name-defined]
+    perm = str(row.get("fpl_permanent_code", "") or "").strip()
+    if perm and perm not in ("0", "nan"):
+        return perm
+    url = str(row.get("photo_url", "") or "")
+    m = _photo_re.search(url)
+    return m.group(1) if m else ""
+players_df["_fpl_code"] = players_df.apply(_derive_fpl_code, axis=1)
 all_season_ids = sorted(seasons_df["season_id"].tolist(), reverse=True)
 # show_in_dashboard="false" hides a season from filter dropdowns (player history still shows all)
 _show = seasons_df.get("show_in_dashboard", pd.Series(dtype=str))
 if "show_in_dashboard" in seasons_df.columns:
-    _visible = seasons_df[seasons_df["show_in_dashboard"].fillna("").str.lower() != "false"]["season_id"].tolist()
+    _visible = seasons_df[seasons_df["show_in_dashboard"].fillna("").str.strip().str.lower() != "false"]["season_id"].tolist()
 else:
     _visible = seasons_df["season_id"].tolist()
 season_options = sorted(_visible, reverse=True)
+
+_teams_df = players_df[players_df["type"] == "team"]
+team_badge_lookup: dict[str, str] = {}
+for _, _tr in _teams_df.iterrows():
+    _tc = str(_tr.get("team_code", ""))
+    _tn = str(_tr.get("friendly_name", ""))
+    if _tn and _tc and _tc not in ("", "nan") and _tn not in team_badge_lookup:
+        team_badge_lookup[_tn] = f"https://resources.premierleague.com/premierleague/badges/t{_tc}.png"
 
 col_title, col_updated = st.columns([3, 1])
 col_title.title("⚽ Select Fantasy Football Auction")
@@ -355,7 +436,15 @@ if _is_autonav_pl:
 
 with tab_table:
     season_id = st.selectbox("Season", season_options, key=f"lt_season_sel_{_lt_szn_gen}") or season_options[0]
-    render_standings_table(standings_df, prizes_df, season_id)
+    _szn_row = seasons_df[seasons_df["season_id"] == season_id]
+    _end_date_raw = _szn_row.iloc[0].get("end_date", "") if not _szn_row.empty else ""
+    _last_gw_raw = _szn_row.iloc[0].get("last_gw_synced", "") if not _szn_row.empty else ""
+    if _end_date_raw and str(_end_date_raw) not in ("", "nan"):
+        from datetime import date as _date
+        _season_finished = _date.fromisoformat(str(_end_date_raw)) < _date.today()
+    else:
+        _season_finished = str(_last_gw_raw) == "38"
+    render_standings_table(standings_df, prizes_df, season_id, season_finished=_season_finished)
 
 
 # ══ Tab 2: Managers ═══════════════════════════════════════════════════════════
@@ -372,23 +461,6 @@ with tab_managers:
         current_season_row = seasons_df[seasons_df["season_id"] == current_season_id].iloc[0]
         current_last_gw_raw = current_season_row.get("last_gw_synced", "")
         current_last_gw = int(current_last_gw_raw) if str(current_last_gw_raw) not in ("", "nan") else 0
-
-        is_latest = current_season_id == season_options[0]
-        season_label = f"Current Season — {current_season_id}" if is_latest else f"Season {current_season_id}"
-
-        # ── All-time summary ─────────────────────────────────────────────────
-        all_time_mgr = standings_df[standings_df["manager_name"] == selected_manager] if not standings_df.empty else pd.DataFrame()
-        if not all_time_mgr.empty:
-            seasons_count = len(all_time_mgr)
-            best_pos = int(all_time_mgr["position"].astype(int).min())
-            avg_pos = round(all_time_mgr["position"].astype(float).mean(), 1)
-            at1, at2, at3 = st.columns(3)
-            at1.metric("Seasons Managed", seasons_count)
-            at2.metric("All Time Best Position", _ordinal(best_pos))
-            at3.metric("Average Finishing Position", _ordinal(round(avg_pos)))
-
-        # ── Selected season ───────────────────────────────────────────────────
-        st.subheader(season_label)
 
         current_standing = None
         if not standings_df.empty and "manager_name" in standings_df.columns:
@@ -416,9 +488,22 @@ with tab_managers:
                 _is_shared = prize is not None and len(_tied_positions) > 1
                 current_standing = {"pos": pos, "pts": pts, "prize": prize, "shared": _is_shared}
 
+        _mgr_szn_row = seasons_df[seasons_df["season_id"] == current_season_id]
+        _mgr_end_raw = _mgr_szn_row.iloc[0].get("end_date", "") if not _mgr_szn_row.empty else ""
+        _mgr_lgw_raw = _mgr_szn_row.iloc[0].get("last_gw_synced", "") if not _mgr_szn_row.empty else ""
+        if _mgr_end_raw and str(_mgr_end_raw) not in ("", "nan"):
+            from datetime import date as _date
+            _mgr_szn_finished = _date.fromisoformat(str(_mgr_end_raw)) < _date.today()
+        else:
+            _mgr_szn_finished = str(_mgr_lgw_raw) == "38"
+
         if current_standing:
+            _szn_all = standings_df[standings_df["season_id"] == current_season_id] if not standings_df.empty else pd.DataFrame()
+            _top_pts_mgr = int(_szn_all["total_points"].astype(float).max()) if not _szn_all.empty else 0
+            _is_champion = _mgr_szn_finished and current_standing["pts"] == _top_pts_mgr
+            _pos_label = _ordinal(current_standing['pos']) + (" 🏆" if _is_champion else "")
             c1, c2, c3 = st.columns(3)
-            c1.metric("Position", _ordinal(current_standing['pos']))
+            c1.metric("Position", _pos_label)
             c2.metric("Points", current_standing["pts"])
             _prize_display = (
                 (f"£{current_standing['prize']:.0f} ea" if current_standing["shared"] else f"£{current_standing['prize']:.0f}")
@@ -455,8 +540,13 @@ with tab_managers:
 
             _pos_order = {"GK": 0, "DEF": 1, "MID": 2, "FWD": 3}
             squad_rows = []
+            _seen_sq_codes: set[str] = set()
             for _, s in current_sels.iterrows():
                 code = s["player_code"]
+                _fpl_dedup = code_to_fpl_code.get(code, "") or code
+                if _fpl_dedup in _seen_sq_codes:
+                    continue
+                _seen_sq_codes.add(_fpl_dedup)
                 pos = s["position"].upper()
                 cost = s.get("cost", "")
                 details = player_details.get(code, {})
@@ -487,21 +577,37 @@ with tab_managers:
 
             if not breakdown.empty:
                 totals = breakdown.groupby("Player")["Pts"].sum().reset_index().rename(columns={"Pts": "Points"})
-                squad_df = squad_df.merge(totals, on="Player", how="left").fillna({"Points": 0})
+                _bd_g = breakdown.copy()
+                if "Goals" in _bd_g.columns and "Goals Conceded" in _bd_g.columns:
+                    _bd_g["_g"] = _bd_g["Goals"].fillna(_bd_g["Goals Conceded"]).fillna(0)
+                elif "Goals" in _bd_g.columns:
+                    _bd_g["_g"] = _bd_g["Goals"].fillna(0)
+                elif "Goals Conceded" in _bd_g.columns:
+                    _bd_g["_g"] = _bd_g["Goals Conceded"].fillna(0)
+                else:
+                    _bd_g["_g"] = 0
+                goal_totals = _bd_g.groupby("Player")["_g"].sum().reset_index().rename(columns={"_g": "Goals"})
+                totals = totals.merge(goal_totals, on="Player", how="left")
+                squad_df = squad_df.merge(totals, on="Player", how="left").fillna({"Points": 0, "Goals": 0})
                 squad_df["Points"] = squad_df["Points"].astype(int)
+                squad_df["Goals"] = squad_df["Goals"].astype(int)
 
             if "Points" in squad_df.columns:
                 total_row = {col: "" for col in squad_df.columns}
                 total_row["Player"] = "Total"
+                _cost_sum = squad_df["Cost"].str.replace("£", "", regex=False).apply(pd.to_numeric, errors="coerce").sum()
+                total_row["Cost"] = f"£{int(_cost_sum)}" if pd.notna(_cost_sum) else ""
+                total_row["Goals"] = str(int(squad_df["Goals"].sum())) if "Goals" in squad_df.columns else ""
                 total_row["Points"] = str(int(squad_df["Points"].sum()))
                 squad_df = pd.concat([squad_df, pd.DataFrame([total_row])], ignore_index=True)
-                squad_df = squad_df[["Player", "Pos", "Team", "Cost", "GWs", "Points", "Status", "_fpl_code"]]
+                squad_df = squad_df[["Player", "Pos", "Team", "Cost", "GWs", "Goals", "Points", "Status", "_fpl_code"]]
             else:
                 squad_df = squad_df[["Player", "Pos", "Team", "Cost", "GWs", "Status", "_fpl_code"]]
 
             st.markdown(f"**{current_season_id} Squad**")
             _pos_colours = {"GK": "#6366f1", "DEF": "#2563eb", "MID": "#22c55e", "FWD": "#f59e0b"}
             has_pts = "Points" in squad_df.columns
+            has_goals = "Goals" in squad_df.columns
             sq_rows_html = []
             for i, (_, row) in enumerate(squad_df.iterrows()):
                 is_total = row["Player"] == "Total"
@@ -526,13 +632,21 @@ with tab_managers:
                     )
                 else:
                     player_cell = row["Player"]
+                _team_name = str(row["Team"])
+                _badge = team_badge_lookup.get(_team_name, "")
+                _badge_img = (
+                    f'<img src="{_badge}" height="14" style="vertical-align:middle;margin-right:5px;border-radius:2px;filter:brightness(0.75)">'
+                    if _badge and not is_total else ""
+                )
                 cells = [
                     f'<td style="{td}">{player_cell}</td>',
                     f'<td style="{td}">{pos_html}</td>',
-                    f'<td style="{td}">{row["Team"]}</td>',
+                    f'<td style="{td}">{_badge_img}{_team_name}</td>',
                     f'<td style="{td}">{row["Cost"]}</td>',
                     f'<td style="{td}">{row["GWs"]}</td>',
                 ]
+                if has_goals:
+                    cells.append(f'<td style="{td}text-align:right">{row["Goals"]}</td>')
                 if has_pts:
                     cells.append(f'<td style="{td}text-align:right">{row["Points"]}</td>')
                 status_display = str(row.get("Status", ""))
@@ -540,6 +654,7 @@ with tab_managers:
                 status_cell_style = f"{td}color:#fca5a5;background:#7f1d1d;" if status_text else td
                 cells.append(f'<td style="{status_cell_style}">{status_text}</td>')
                 sq_rows_html.append(f'<tr style="{row_style}">{"".join(cells)}</tr>')
+            goals_th = '<th style="text-align:right">Goals</th>' if has_goals else ''
             pts_th = '<th style="text-align:right">Points</th>' if has_pts else ''
             sq_html = (
                 '<style>'
@@ -549,7 +664,7 @@ with tab_managers:
                 'table.sq tr:hover td{background:rgba(128,128,128,0.1)!important}'
                 '</style>'
                 '<table class="sq"><thead><tr>'
-                f'<th>Player</th><th>Pos</th><th>Team</th><th>Cost</th><th>GWs</th>{pts_th}<th>Status</th>'
+                f'<th>Player</th><th>Pos</th><th>Team</th><th>Cost</th><th>GWs</th>{goals_th}{pts_th}<th>Status</th>'
                 f'</tr></thead><tbody>{"".join(sq_rows_html)}</tbody></table>'
             )
             st.markdown(sq_html, unsafe_allow_html=True)
@@ -571,6 +686,13 @@ with tab_managers:
             h2.metric("Best Finish", f"#{int(history_df['Position'].min())}")
             h3.metric("Avg Position", f"{history_df['Position'].mean():.1f}")
             h4.metric("Total Prizes", f"£{history_df['Prize'].sum():.0f}")
+
+            _best_player, _best_pts = get_best_player_ever(
+                selected_manager, data["selections"], data["goals"], players_df, seasons_df
+            )
+            bp1, bp2 = st.columns(2)
+            bp1.metric("Best Player Ever", _best_player)
+            bp2.metric("Their Total Points", _best_pts)
 
             # ── Year-by-year position table ───────────────────────────────
             pos_colours = {1: "#2563eb", 2: "#15803d", 3: "#86efac"}
@@ -649,13 +771,8 @@ with tab_managers:
             )
             st.markdown(hy_html, unsafe_allow_html=True)
 
-            col_l, col_r = st.columns(2)
-            with col_l:
-                st.markdown("**Position by season** (lower = better)")
-                st.bar_chart(history_df.set_index("Season")[["Position"]], color="#60a5fa")
-            with col_r:
-                st.markdown("**Points by season**")
-                st.bar_chart(history_df.set_index("Season")[["Points"]], color="#22c55e")
+            st.markdown("**Points by season**")
+            st.line_chart(history_df.set_index("Season")[["Points"]], color="#22c55e")
 
 
 # ══ Tab 3: Players ══════════════════════════════════════════════════════════════
@@ -683,13 +800,6 @@ with tab_players:
             (r["season"], str(r["element_id"])): r["friendly_name"]
             for _, r in teams_df_all.iterrows()
         }
-        # team_name -> badge URL; team_code is stable per club across seasons
-        team_badge_lookup: dict[str, str] = {}
-        for _, r in teams_df_all.iterrows():
-            tc = str(r.get("team_code", ""))
-            name = str(r.get("friendly_name", ""))
-            if name and tc and tc not in ("", "nan") and name not in team_badge_lookup:
-                team_badge_lookup[name] = f"https://resources.premierleague.com/premierleague/badges/t{tc}.png"
 
         # Use the stable FPL photo code (embedded in photo_url) as player identity.
         # friendly_name (web_name) changes between seasons; full_name can collide across
@@ -715,27 +825,42 @@ with tab_players:
             _pcode = st.session_state["_pending_player_fpl_code"]
             _pmatch = next((p for p in labelled if p["fpl_code"] == _pcode), None)
             if _pmatch:
-                st.session_state["pl_player"] = _pmatch["label"]
+                st.session_state["_pl_selected_fpl_code"] = _pcode
+                st.session_state["_pl_search_gen"] = st.session_state.get("_pl_search_gen", 0) + 1
             if not _is_autonav_pl:
                 del st.session_state["_pending_player_fpl_code"]
 
-        _col_search, _col_clear = st.columns([6, 1])
-        with _col_search:
-            search = st.text_input("Search player", key="pl_search", placeholder="Type name or team...")
-        with _col_clear:
-            st.markdown("<br>", unsafe_allow_html=True)
-            st.button("Clear", key="pl_clear", on_click=lambda: st.session_state.update({"pl_search": ""}))
-        filtered = [p["label"] for p in labelled if not search or search.lower() in p["label"].lower()]
+        _pl_sel_code = st.session_state.get("_pl_selected_fpl_code")
+        _selected = next((p for p in labelled if p["fpl_code"] == _pl_sel_code), None) if _pl_sel_code else None
+        _pl_search_gen = st.session_state.get("_pl_search_gen", 0)
 
-        _col_pl, _col_pl_clear = st.columns([6, 1])
-        with _col_pl:
-            selected_label = st.selectbox("Player", ["— select a player —"] + filtered, key="pl_player")
-        with _col_pl_clear:
-            st.markdown("<br>", unsafe_allow_html=True)
-            st.button("Clear", key="pl_player_clear", on_click=lambda: st.session_state.update({"pl_player": "— select a player —"}))
-        _selected = next(
-            (p for p in labelled if p["label"] == selected_label), None
-        ) if selected_label != "— select a player —" else None
+        if _selected:
+            _pc1, _pc2 = st.columns([5, 1])
+            _pc1.markdown(f"**{_selected['label']}**")
+            if _pc2.button("✕ Clear", key="pl_clear_sel"):
+                del st.session_state["_pl_selected_fpl_code"]
+                st.session_state["_pl_search_gen"] = _pl_search_gen + 1
+                st.rerun()
+        else:
+            _pl_search = st.text_input(
+                "", placeholder="Search by name or team...",
+                key=f"pl_search_{_pl_search_gen}", label_visibility="collapsed",
+            )
+            if _pl_search:
+                _pl_matches = [p for p in labelled if _pl_search.lower() in p["label"].lower()][:8]
+                if len(_pl_matches) == 1:
+                    st.session_state["_pl_selected_fpl_code"] = _pl_matches[0]["fpl_code"]
+                    st.session_state["_pl_search_gen"] = _pl_search_gen + 1
+                    st.rerun()
+                elif _pl_matches:
+                    for _pm in _pl_matches:
+                        if st.button(_pm["label"], key=f"plr_{_pm['fpl_code']}", use_container_width=True):
+                            st.session_state["_pl_selected_fpl_code"] = _pm["fpl_code"]
+                            st.session_state["_pl_search_gen"] = _pl_search_gen + 1
+                            st.rerun()
+                else:
+                    st.caption("No players found.")
+
         selected_friendly = _selected["friendly_name"] if _selected else None
         selected_fpl_code = _selected["fpl_code"] if _selected else None
 
@@ -884,7 +1009,7 @@ with tab_players:
                         oc2.metric("Cost", f"£{float(cost):.0f}" if cost and str(cost) not in ("", "nan") else "—")
                         oc3.metric("Gameweeks", gw_range_p if gw_range_p else "—")
                         oc4.metric(stat_label, stat_val)
-                        oc5.metric("Points", season_pts if season_pts is not None else "—")
+                        oc5.metric("Points", season_pts if season_pts is not None else 0)
                     else:
                         # Not owned — show goals, em-dash ownership-specific fields
                         stat_val = int(_sgr_stat["goals_scored"].astype(int).sum()) if not _sgr_stat.empty else 0
@@ -1134,7 +1259,7 @@ with tab_players:
                             badge_url = row.get("Badge", "")
                             badge_html = (
                                 f'<img src="{badge_url}" height="16" '
-                                f'style="vertical-align:middle;margin-right:5px;border-radius:2px">'
+                                f'style="vertical-align:middle;margin-right:5px;border-radius:2px;filter:brightness(0.75)">'
                                 if badge_url else ""
                             )
                             sh_rows.append(
@@ -1167,7 +1292,7 @@ with tab_players:
                             chart_df = pd.DataFrame(chart_rows).set_index("Season").sort_index()
                             goal_cols = [c for c in ["Goals"] if c in chart_df.columns]
                             if goal_cols:
-                                import altair as alt
+                                import altair as alt  # type: ignore[import-untyped]
                                 st.divider()
                                 st.markdown("**Goals per season**")
                                 _gdf = chart_df[goal_cols].reset_index()

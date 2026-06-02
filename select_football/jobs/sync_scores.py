@@ -93,11 +93,10 @@ def main(dry_run: bool, force: bool) -> None:
             standings = compute_standings(
                 season_id=season_id,
                 up_to_gw=gw,
-                managers_df=store.read("managers"),
                 selections_df=store.read("manager_selections"),
                 goals_df=store.read("goals"),
                 overrides_df=store.read("overrides"),
-                players_df=store.read("players"),
+                players_df=store.read_all_players(),
                 prizes=season_prizes,
             )
             standings_rows = [

@@ -1,0 +1,16 @@
+# player_links_overrides.yaml
+#
+# Manual cross-season player identity links.
+# Use this when auto-matching fails — mainly for pre-2021-22 seasons where
+# manager_selections.csv uses name-based player codes like "2020-21-player-Harry Kane"
+# rather than FPL element IDs.
+#
+# Find a player's fpl_permanent_code from vaastav_players.csv or player_links.csv.
+#
+# Format:
+#   links:
+#     "{season_code}":
+#       fpl_permanent_code: 80854
+#       full_name: "Harry Kane"
+
+links: {}

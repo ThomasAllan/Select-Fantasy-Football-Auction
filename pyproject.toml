@@ -17,11 +17,15 @@ dependencies = [
     "structlog>=24.1",
     "click>=8.1",
     "python-dotenv>=1.0",
+    "xlrd>=2.0.2",
+    "openpyxl>=3.1.5",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
 dashboard = [
     "streamlit>=1.35",
+    "altair>=5.0",
 ]
 dev = [
     "pytest>=8.2",

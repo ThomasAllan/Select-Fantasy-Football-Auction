@@ -1,0 +1,13 @@
+# Scoring rules for Select Fantasy Football
+#
+# position_multipliers: goals × multiplier = points
+# gk_conceded_multiplier: goals conceded × multiplier = points (negative)
+# gk_goal_bonus: points awarded when a GK player scores a goal
+
+position_multipliers:
+  DEF: 3
+  MID: 2
+  FWD: 1
+
+gk_conceded_multiplier: -1
+gk_goal_bonus: 4

@@ -105,11 +105,10 @@ def main(preview: bool, force: bool) -> None:
                 raise SystemExit(0)
 
     # Load all required DataFrames
-    managers_df = store.read("managers")
     selections_df = store.read("manager_selections")
     goals_df = store.read("goals")
     overrides_df = store.read("overrides")
-    players_df = store.read("players")
+    players_df = store.read_all_players()
     seasons_df = store.read("seasons")
 
     # Determine current GW from seasons.csv
@@ -128,7 +127,6 @@ def main(preview: bool, force: bool) -> None:
     standings = compute_standings(
         season_id=season_id,
         up_to_gw=current_gw,
-        managers_df=managers_df,
         selections_df=selections_df,
         goals_df=goals_df,
         overrides_df=overrides_df,
