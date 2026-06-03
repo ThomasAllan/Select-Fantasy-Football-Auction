@@ -1327,7 +1327,9 @@ with tab_managers:
         st.info("No manager data available yet.")
     else:
         col_mgr, col_szn = st.columns(2)
-        selected_manager = col_mgr.selectbox("Manager", all_managers, key="mgr_select")
+        selected_manager = col_mgr.selectbox("Manager", [None] + list(all_managers), key="mgr_select", format_func=lambda x: "Select a manager..." if x is None else x)
+        if selected_manager is None:
+            st.stop()
         current_season_id = col_szn.selectbox("Season", season_options, key=_mgr_szn_key) or season_options[0]
 
         current_season_row = seasons_df[seasons_df["season_id"] == current_season_id].iloc[0]
