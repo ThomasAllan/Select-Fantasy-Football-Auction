@@ -542,16 +542,16 @@ def get_biggest_buy(
     manager_name: str,
     selections_df: pd.DataFrame,
     players_df: pd.DataFrame,
-) -> tuple[str, int]:
-    """Returns (player_name, cost) for the most expensive outfield player ever bought."""
+) -> tuple[str, int, str]:
+    """Returns (player_name, cost, season_id) for the most expensive outfield player ever bought."""
     mgr_sels = selections_df[
         (selections_df["manager_name"] == manager_name) &
         (selections_df["position"].str.upper() != "GK")
     ]
     if mgr_sels.empty:
-        return ("—", 0)
+        return ("—", 0, "")
     player_names = players_df.set_index("code")["friendly_name"].to_dict()
-    best_cost, best_name = 0, "—"
+    best_cost, best_name, best_season = 0, "—", ""
     for _, s in mgr_sels.iterrows():
         cost_raw = s.get("cost", "")
         if not cost_raw or str(cost_raw) in ("", "nan"):
@@ -565,7 +565,8 @@ def get_biggest_buy(
             code = s["player_code"]
             name = _code_display_name(code, player_names)
             best_name = name
-    return (best_name, int(best_cost)) if best_cost else ("—", 0)
+            best_season = str(s.get("season_id", ""))
+    return (best_name, int(best_cost), best_season) if best_cost else ("—", 0, "")
 
 
 @st.cache_data(ttl=300)
@@ -607,6 +608,8 @@ def compute_stats_corner(
     players_df: pd.DataFrame,
     seasons_df: pd.DataFrame,
     standings_df: pd.DataFrame,
+    prizes_df: pd.DataFrame,
+    best_gameweeks_df: pd.DataFrame,
 ) -> dict:
     player_names = players_df.set_index("code")["friendly_name"].to_dict()
     code_to_fpl = players_df.set_index("code")["_fpl_code"].to_dict()
@@ -677,6 +680,9 @@ def compute_stats_corner(
         costly.sort_values(["pts", "cost_n"], ascending=[True, False]).iloc[0]
     ) if not costly.empty else None
 
+    pound_one_agg = agg[(agg["cost_n"] == 1.0) & (agg["pts"] > 0)]
+    bargain_of_century = _rec(pound_one_agg.nlargest(1, "pts").iloc[0]) if not pound_one_agg.empty else None
+
     value = agg[(agg["cost_n"] >= 5) & (agg["pts"] >= 5)].copy()
     if not value.empty:
         value["ratio"] = value["pts"] / value["cost_n"]
@@ -686,33 +692,46 @@ def compute_stats_corner(
     else:
         best_val = None
 
-    # ── Hat-trick hero ────────────────────────────────────────────────────────
-    ht = goals_df[goals_df["goals_scored"].astype(int) >= 3].copy()
-    hat_trick_hero: dict | None = None
-    if not ht.empty:
-        ht["pkey"] = ht["player_code"].map(_pkey)
-        ht_counts = ht.groupby("pkey").size()
-        best_ht_pkey = ht_counts.idxmax()
-        best_ht_code = ht[ht["pkey"] == best_ht_pkey].iloc[0]["player_code"]
-        hat_trick_hero = {
-            "player": _code_display_name(best_ht_code, player_names),
-            "count": int(ht_counts[best_ht_pkey]),
-        }
 
-    # ── Most selected player (unique manager-season pairs) ────────────────────
-    outfield["pkey"] = outfield["player_code"].map(_pkey)
-    sel_counts = (
-        outfield.drop_duplicates(subset=["pkey", "manager_name", "season_id"])
-        .groupby("pkey").size()
-    )
-    most_selected: dict | None = None
-    if not sel_counts.empty:
-        best_sel_pkey = sel_counts.idxmax()
-        best_sel_code = outfield[outfield["pkey"] == best_sel_pkey].iloc[0]["player_code"]
-        most_selected = {
-            "player": _code_display_name(best_sel_code, player_names),
-            "count": int(sel_counts[best_sel_pkey]),
-        }
+    # ── Biggest Commitment (longest consecutive seasons with same player) ──────
+    biggest_commitment: dict | None = None
+    if not outfield.empty:
+        bc = outfield[["player_code", "season_id", "manager_name"]].drop_duplicates().copy()
+        bc["pkey"] = bc["player_code"].map(_pkey)
+        bc["year"] = pd.to_numeric(bc["season_id"].str[:4], errors="coerce")
+        year_to_season = bc.dropna(subset=["year"]).set_index("year")["season_id"].to_dict()
+        best_streak, best_bc_mgr, best_bc_code, best_bc_from, best_bc_to = 0, "", "", "", ""
+        for (mgr, pkey_val), grp in bc.groupby(["manager_name", "pkey"]):
+            years = sorted(grp["year"].dropna().astype(int).unique())
+            streak, streak_start = 1, years[0]
+            for i in range(1, len(years)):
+                if years[i] == years[i - 1] + 1:
+                    streak += 1
+                else:
+                    streak, streak_start = 1, years[i]
+                if streak > best_streak:
+                    best_streak = streak
+                    best_bc_mgr = str(mgr)
+                    best_bc_code = str(grp["player_code"].iloc[0])
+                    best_bc_from = str(year_to_season.get(int(streak_start), streak_start))
+                    best_bc_to = str(year_to_season.get(int(years[i]), years[i]))
+        if best_streak >= 2:
+            biggest_commitment = {
+                "manager": best_bc_mgr,
+                "player": _code_display_name(best_bc_code, player_names),
+                "seasons": best_streak,
+                "from_season": best_bc_from,
+                "to_season": best_bc_to,
+            }
+
+    # ── 1 and Done (most players bought for £1) ───────────────────────────────
+    one_and_done: dict | None = None
+    if not outfield.empty:
+        pound_one = outfield[outfield["cost_n"] == 1.0].copy()
+        if not pound_one.empty:
+            counts = pound_one.groupby("manager_name").size()
+            oad_name = str(counts.idxmax())
+            one_and_done = {"manager": oad_name, "count": int(counts[oad_name])}
 
     # ── Transfer regret (player dropped, then scored big the next season) ─────
     agg["pkey"] = agg["player_code"].map(_pkey)
@@ -738,6 +757,8 @@ def compute_stats_corner(
                     "season": curr["season_id"],
                     "manager": curr["manager_name"],
                     "prev_manager": prev["manager_name"],
+                    "prev_season": prev["season_id"],
+                    "prev_pts": int(prev["pts"]),
                     "cost": float(curr["cost_n"]),
                 }
 
@@ -804,6 +825,134 @@ def compute_stats_corner(
                 "season": br["season_id"],
             }
 
+    # ── Golden Boot (manager whose players scored most goals across all seasons) ─
+    golden_boot: dict | None = None
+    if not merged_goals.empty:
+        gb = merged_goals[merged_goals["game_week"].notna()].copy()
+        gb_totals = gb.groupby("manager_name")["goals_scored"].sum().fillna(0).astype(int)
+        if not gb_totals.empty:
+            gb_name = str(gb_totals.idxmax())
+            golden_boot = {"manager": gb_name, "goals": int(gb_totals[gb_name])}
+
+    # ── Back-to-Back (consecutive season wins) ───────────────────────────────
+    back_to_back: dict | None = None
+    if not standings_df.empty and "position" in standings_df.columns:
+        bb = standings_df[standings_df["position"].astype(str) == "1"].copy()
+        bb["year"] = pd.to_numeric(bb["season_id"].str[:4], errors="coerce")
+        bb_sorted = bb.sort_values("year")
+        best_bb_streak, best_bb_mgr, best_bb_from, best_bb_to = 1, "", "", ""
+        for mgr, grp in bb_sorted.groupby("manager_name"):
+            years = sorted(grp["year"].dropna().astype(int).tolist())
+            streak, streak_start_idx = 1, 0
+            for i in range(1, len(years)):
+                if years[i] == years[i - 1] + 1:
+                    streak += 1
+                    if streak > best_bb_streak:
+                        best_bb_streak = streak
+                        best_bb_mgr = str(mgr)
+                        from_year = years[streak_start_idx]
+                        best_bb_from = str(grp[grp["year"] == from_year]["season_id"].iloc[0])
+                        best_bb_to = str(grp[grp["year"] == years[i]]["season_id"].iloc[0])
+                else:
+                    streak, streak_start_idx = 1, i
+        if best_bb_streak >= 2:
+            back_to_back = {
+                "manager": best_bb_mgr,
+                "seasons": best_bb_streak,
+                "from_season": best_bb_from,
+                "to_season": best_bb_to,
+            }
+
+
+    # ── Highest Single GW Score (all-time best gameweek across all managers) ──
+    highest_gw_score: dict | None = None
+    if not best_gameweeks_df.empty and "pts" in best_gameweeks_df.columns:
+        bgw = best_gameweeks_df.copy()
+        bgw["pts_n"] = pd.to_numeric(bgw["pts"], errors="coerce")
+        best_bgw = bgw.nlargest(1, "pts_n").iloc[0]
+        highest_gw_score = {
+            "manager": str(best_bgw["manager_name"]),
+            "label": str(best_bgw["label"]),
+            "pts": int(best_bgw["pts_n"]),
+        }
+
+    # ── Gotta Catch 'Em All (most unique players owned) ──────────────────────
+    gotta_catch_em_all: dict | None = None
+    if not outfield.empty:
+        gc_all = outfield.copy()
+        gc_all["pkey"] = gc_all["player_code"].map(_pkey)
+        unique_counts = gc_all.groupby("manager_name")["pkey"].nunique()
+        gca_name = str(unique_counts.idxmax())
+        gotta_catch_em_all = {"manager": gca_name, "count": int(unique_counts[gca_name])}
+
+    # ── The Gambler (highest average player cost) ────────────────────────────
+    the_gambler: dict | None = None
+    if not outfield.empty:
+        paid = outfield[outfield["cost_n"] > 0]
+        if not paid.empty:
+            avg_cost = paid.groupby("manager_name")["cost_n"].mean()
+            gam_name = str(avg_cost.idxmax())
+            the_gambler = {"manager": gam_name, "avg_cost": round(float(avg_cost[gam_name]), 1)}
+
+    # ── Sold Too Soon (biggest pts jump after manager change) ────────────────
+    sold_too_soon: dict | None = None
+    if not agg.empty:
+        agg2 = agg.copy()
+        agg2["pkey"] = agg2["player_code"].map(_pkey)
+        agg2["season_year"] = pd.to_numeric(
+            agg2["season_id"].str.extract(r"^(\d{4})", expand=False), errors="coerce"
+        ).fillna(0).astype(int)
+        best_jump: int = 0
+        sts: dict | None = None
+        for pkey_val, grp in agg2.groupby("pkey"):
+            grp_s = grp.sort_values("season_year").to_dict("records")
+            for i in range(1, len(grp_s)):
+                prev, curr = grp_s[i - 1], grp_s[i]
+                jump = int(curr["pts"]) - int(prev["pts"])
+                if (
+                    curr["season_year"] == prev["season_year"] + 1
+                    and curr["manager_name"] != prev["manager_name"]
+                    and jump > best_jump
+                ):
+                    best_jump = jump
+                    sts = {
+                        "player": _code_display_name(curr["player_code"], player_names),
+                        "prev_manager": prev["manager_name"],
+                        "prev_pts": int(prev["pts"]),
+                        "prev_season": prev["season_id"],
+                        "curr_manager": curr["manager_name"],
+                        "curr_pts": int(curr["pts"]),
+                        "curr_season": curr["season_id"],
+                    }
+        sold_too_soon = sts
+
+    # ── Super Fan (manager who bought most players from a single club) ────────
+    super_fan: dict | None = None
+    if not outfield.empty:
+        code_to_team: dict[str, str] = {}
+        if "team_id" in players_df.columns and "team_name" in players_df.columns:
+            code_to_team = {str(k): str(v) for k, v in players_df.dropna(subset=["team_name"]).set_index("code")["team_name"].to_dict().items()}
+        def _sel_club(code: str) -> str:
+            club = code_to_team.get(code, "")
+            if club:
+                return club
+            if "-player-" in code:
+                suffix = code.split("-player-", 1)[-1]
+                if " - " in suffix:
+                    return _norm_team_suffix(suffix.rsplit(" - ", 1)[-1].strip())
+            return ""
+        sf = outfield.copy()
+        sf["club"] = sf["player_code"].map(_sel_club)
+        sf = sf[sf["club"] != ""]
+        if not sf.empty:
+            sf_counts = sf.groupby(["manager_name", "club"]).size().reset_index(name="count")
+            best_sf = sf_counts.nlargest(1, "count").iloc[0]
+            super_fan = {
+                "manager": str(best_sf["manager_name"]),
+                "club": str(best_sf["club"]),
+                "count": int(best_sf["count"]),
+            }
+
     # ── Manager leaderboards ──────────────────────────────────────────────────
     most_wins: list[tuple[str, int]] = []
     most_prizes: list[tuple[str, int]] = []
@@ -817,8 +966,22 @@ def compute_stats_corner(
         if "position" in std3.columns:
             wins = std3[std3["position"].astype(str) == "1"]["manager_name"].value_counts()
             most_wins = [(str(k), int(v)) for k, v in wins.head(5).items()]
-            fourth = std3[std3["position"].astype(str) == "4"]["manager_name"].value_counts()
-            unluckiest = [(str(k), int(v)) for k, v in fourth.head(5).items()]
+            # unluckiest: finished just outside prize positions, computed per season
+            if not prizes_df.empty and "position" in prizes_df.columns:
+                max_prize_pos = (
+                    prizes_df.groupby("season_id")["position"]
+                    .apply(lambda s: pd.to_numeric(s, errors="coerce").max())
+                    .to_dict()
+                )
+                just_outside = std3[std3.apply(
+                    lambda r: (
+                        pd.notna(r["pos_num"]) and
+                        int(r["pos_num"]) == max_prize_pos.get(r["season_id"], 3) + 1
+                    ), axis=1
+                )]
+            else:
+                just_outside = std3[std3["position"].astype(str) == "4"]
+            unluckiest = [(str(k), int(v)) for k, v in just_outside["manager_name"].value_counts().head(5).items()]
             mgr_avg = std3.dropna(subset=["pos_num"]).groupby("manager_name").agg(
                 avg_pos=("pos_num", "mean"), n=("pos_num", "count")
             ).reset_index()
@@ -834,13 +997,73 @@ def compute_stats_corner(
     most_seasons_s = selections_df.groupby("manager_name")["season_id"].nunique().sort_values(ascending=False).head(5)
     most_seasons_list = [(str(k), int(v)) for k, v in most_seasons_s.items()]
 
+    # ── The Phoenix (won the title after finishing last the previous season) ───
+    the_phoenix: dict | None = None
+    if not standings_df.empty and "position" in standings_df.columns:
+        ph = standings_df.copy()
+        ph["pos_num"] = pd.to_numeric(ph["position"], errors="coerce")
+        ph["season_year"] = pd.to_numeric(ph["season_id"].str[:4], errors="coerce")
+        # last place = highest position number in each season
+        last_place = ph.groupby("season_id")["pos_num"].max().to_dict()
+        ph_sorted = ph.dropna(subset=["pos_num", "season_year"]).sort_values(["manager_name", "season_year"])
+        ph_sorted["prev_pos"] = ph_sorted.groupby("manager_name")["pos_num"].shift(1)
+        ph_sorted["prev_year"] = ph_sorted.groupby("manager_name")["season_year"].shift(1)
+        ph_sorted["prev_season"] = ph_sorted.groupby("manager_name")["season_id"].shift(1)
+        phoenixes = ph_sorted[
+            (ph_sorted["season_year"] == ph_sorted["prev_year"] + 1) &
+            (ph_sorted["pos_num"] == 1) &
+            ph_sorted.apply(lambda r: r["prev_pos"] == last_place.get(r["prev_season"], -1), axis=1)
+        ]
+        if not phoenixes.empty:
+            row = phoenixes.iloc[0]
+            the_phoenix = {
+                "manager": str(row["manager_name"]),
+                "season": str(row["season_id"]),
+                "prev_season": str(row["prev_season"]),
+            }
+
+    # ── Participation Trophy (most seasons, never won any prize money) ────────
+    participation_trophy: dict | None = None
+    if not standings_df.empty:
+        # managers who have ever won prize money
+        if "prize" in standings_df.columns:
+            won_prize = set(
+                standings_df[
+                    standings_df["prize"].fillna("").astype(str).str.strip().str.replace(".0", "", regex=False) != ""
+                ]["manager_name"].tolist()
+            )
+        elif not prizes_df.empty:
+            won_prize = set(prizes_df["manager_name"].tolist()) if "manager_name" in prizes_df.columns else set()
+        else:
+            won_prize = set()
+        mgr_seasons = selections_df.groupby("manager_name")["season_id"].nunique()
+        never_won_prize = mgr_seasons[~mgr_seasons.index.isin(won_prize)]
+        if not never_won_prize.empty:
+            pt_name = str(never_won_prize.idxmax())
+            participation_trophy = {"manager": pt_name, "seasons": int(never_won_prize[pt_name])}
+
+    # ── One-Hit Wonder ────────────────────────────────────────────────────────
+    one_hit_wonder: dict | None = None
+    if not standings_df.empty and "position" in standings_df.columns:
+        std4 = standings_df.copy()
+        std4["pos_str"] = std4["position"].astype(str)
+        win_counts = std4[std4["pos_str"] == "1"]["manager_name"].value_counts()
+        one_hit_mgrs = win_counts[win_counts == 1].index.tolist()
+        if one_hit_mgrs:
+            mgr_season_counts = std4[std4["manager_name"].isin(one_hit_mgrs)].groupby("manager_name")["season_id"].nunique()
+            ohw_name = str(mgr_season_counts.idxmax())
+            ohw_season = str(std4[(std4["manager_name"] == ohw_name) & (std4["pos_str"] == "1")]["season_id"].iloc[0])
+            ohw_seasons = int(mgr_season_counts[ohw_name])
+            one_hit_wonder = {"manager": ohw_name, "season": ohw_season, "total_seasons": ohw_seasons}
+
     return {
         "most_expensive": most_expensive,
         "most_pts_season": most_pts,
         "biggest_flop": biggest_flop,
+        "bargain_of_century": bargain_of_century,
         "best_value": best_val,
-        "hat_trick_hero": hat_trick_hero,
-        "most_selected_player": most_selected,
+        "biggest_commitment": biggest_commitment,
+        "one_and_done": one_and_done,
         "transfer_regret": transfer_regret,
         "highest_season_score": highest_season_score,
         "highest_scoring_gw": highest_scoring_gw,
@@ -850,6 +1073,16 @@ def compute_stats_corner(
         "avg_position": avg_position,
         "unluckiest": unluckiest,
         "most_seasons": most_seasons_list,
+        "the_phoenix": the_phoenix,
+        "participation_trophy": participation_trophy,
+        "one_hit_wonder": one_hit_wonder,
+        "golden_boot": golden_boot,
+        "back_to_back": back_to_back,
+        "highest_gw_score": highest_gw_score,
+        "gotta_catch_em_all": gotta_catch_em_all,
+        "the_gambler": the_gambler,
+        "sold_too_soon": sold_too_soon,
+        "super_fan": super_fan,
     }
 
 
@@ -1346,8 +1579,8 @@ with tab_managers:
             _loyal_label = f"{_loyal_name} — {_loyal_seasons} {'season' if _loyal_seasons == 1 else 'seasons'}" if _loyal_name != "—" else "—"
             _best_gw_label, _best_gw_pts = get_best_gameweek(selected_manager, data["best_gameweeks"])
             _best_gw_display = f"{_best_gw_label} — {_best_gw_pts}pts" if _best_gw_label != "—" else "—"
-            _big_buy_name, _big_buy_cost = get_biggest_buy(selected_manager, data["selections"], players_df)
-            _big_buy_display = f"{_big_buy_name} — £{_big_buy_cost}" if _big_buy_name != "—" else "—"
+            _big_buy_name, _big_buy_cost, _big_buy_season = get_biggest_buy(selected_manager, data["selections"], players_df)
+            _big_buy_display = f"{_big_buy_name} — £{_big_buy_cost} ({_big_buy_season})" if _big_buy_name != "—" else "—"
             _all_time_goals = get_total_goals(selected_manager, data["selections"], data["goals"])
             f1, f2, f3, f4 = st.columns(4)
             f1.metric("Most Selected Player", _loyal_label)
@@ -2024,7 +2257,7 @@ with tab_players:
 with tab_stats:
     _sc = compute_stats_corner(
         data["selections"], data["goals"], data.get("overrides", pd.DataFrame()),
-        players_df, seasons_df, standings_df,
+        players_df, seasons_df, standings_df, prizes_df, data.get("best_gameweeks", pd.DataFrame()),
     )
 
     _tc_td = 'padding:9px 14px;border-bottom:1px solid #e5e7eb;vertical-align:middle'
@@ -2067,71 +2300,138 @@ with tab_stats:
     def _r(rec: dict | None) -> dict:
         return rec or {}
 
-    _records: list[tuple[str, str]] = []
-
-    _r1 = _r(_sc.get("most_expensive"))
-    _records.append(("Most Expensive Player", _player_val(
-        _r1, f'{_cost_s(_r1.get("cost", 0))}{_sep()}{_r1.get("manager","")}{_sep()}{_r1.get("season","")}'
-        ) if _r1 else "—"))
-
-    _r2 = _r(_sc.get("most_pts_season"))
-    _records.append(("Best Season (Player)", _player_val(
-        _r2, f'{_r2.get("pts",0)}pts{_sep()}{_r2.get("manager","")}{_sep()}{_r2.get("season","")}{_sep()}{_cost_s(_r2.get("cost",0))}'
-        ) if _r2 else "—"))
-
-    _r3 = _r(_sc.get("best_value"))
-    _records.append(("Best Value Player", _player_val(
-        _r3, f'{_r3.get("ratio",0)}pts/£{_sep()}{_r3.get("pts",0)}pts from {_cost_s(_r3.get("cost",0))}{_sep()}{_r3.get("manager","")}{_sep()}{_r3.get("season","")}'
-        ) if _r3 else "—"))
-
-    _r4 = _r(_sc.get("biggest_flop"))
-    _records.append(("Biggest Flop", _player_val(
-        _r4, f'{_r4.get("pts",0)}pts from {_cost_s(_r4.get("cost",0))}{_sep()}{_r4.get("manager","")}{_sep()}{_r4.get("season","")}'
-        ) if _r4 else "—"))
-
-    _r5 = _r(_sc.get("hat_trick_hero"))
-    _records.append(("Hat-trick Hero", (
-        _bold(_r5["player"]) + _sep() + _dim(f'{_r5["count"]} hat-trick{"s" if _r5["count"] != 1 else ""}')
-        ) if _r5 else "—"))
-
-    _r6 = _r(_sc.get("most_selected_player"))
-    _records.append(("Most Selected Player", (
-        _bold(_r6["player"]) + _sep() + _dim(f'picked {_r6["count"]} times across all seasons')
-        ) if _r6 else "—"))
-
-    _r7 = _r(_sc.get("transfer_regret"))
-    _records.append(("Biggest Transfer Regret", (
-        _bold(_r7["player"]) + _sep() + _dim(
-            f'{_r7["pts"]}pts for {_r7["manager"]} in {_r7["season"]}'
-            f' — dropped by {_r7["prev_manager"]}'
-        )) if _r7 else "—"))
-
-    _r8 = _r(_sc.get("highest_season_score"))
-    _records.append(("Highest Season Score", (
-        _bold(_r8["manager"]) + _sep() + _dim(f'{_r8["pts"]}pts in {_r8["season"]}')
-        ) if _r8 else "—"))
-
-    _r9 = _r(_sc.get("highest_scoring_gw"))
-    _records.append(("Highest Scoring Gameweek", (
-        _bold(f'GW{_r9["gw"]} {_r9["season"]}') + _sep() + _dim(f'{_r9["total_pts"]}pts across all squads')
-        ) if _r9 else "—"))
-
-    _r10 = _r(_sc.get("biggest_improvement"))
-    _records.append(("Biggest Season Improvement", (
-        _bold(_r10["manager"]) + _sep() + _dim(
-            f'{_r10["from_pos"]}th → {_r10["to_pos"]}{"st" if _r10["to_pos"]==1 else "nd" if _r10["to_pos"]==2 else "rd" if _r10["to_pos"]==3 else "th"}'
-            f' in {_r10["season"]} (↑{_r10["improvement"]})'
-        )) if _r10 else "—"))
-
-    _records_html = (
-        _tc_style +
-        '<table class="tc"><thead><tr>'
-        '<th>Record</th><th>Holder &amp; Detail</th>'
-        '</tr></thead><tbody>'
-        + "".join(_tc_row(label, value) for label, value in _records)
-        + '</tbody></table>'
+    _tc_section = (
+        'padding:8px 14px 4px;font-size:0.7em;font-weight:700;text-transform:uppercase;'
+        'letter-spacing:0.08em;color:#9ca3af;border-bottom:1px solid #e5e7eb;'
+        'border-top:2px solid #e5e7eb;background:#f9fafb'
     )
-    st.markdown(_records_html, unsafe_allow_html=True)
+
+    def _section_row(title: str) -> str:
+        return f'<tr><td colspan="2" style="{_tc_section}">{title}</td></tr>'
+
+    def _ordinal_s(n: int) -> str:
+        return f'{n}{"st" if n==1 else "nd" if n==2 else "rd" if n==3 else "th"}'
+
+    _wins_list = _sc.get("most_wins", [])
+    _prizes_list = _sc.get("most_prizes", [])
+    _rbb = _r(_sc.get("back_to_back"))
+    _r11 = _r(_sc.get("one_hit_wonder"))
+    _rph = _r(_sc.get("the_phoenix"))
+    _r1 = _r(_sc.get("most_expensive"))
+    _r2 = _r(_sc.get("most_pts_season"))
+    _r3 = _r(_sc.get("best_value"))
+    _r4 = _r(_sc.get("biggest_flop"))
+    _r4b = _r(_sc.get("bargain_of_century"))
+    _r7 = _r(_sc.get("transfer_regret"))
+    _rsts = _r(_sc.get("sold_too_soon"))
+    _r8 = _r(_sc.get("highest_season_score"))
+    _rgw = _r(_sc.get("highest_gw_score"))
+    _rgb = _r(_sc.get("golden_boot"))
+    _r10 = _r(_sc.get("biggest_improvement"))
+    _rgam = _r(_sc.get("the_gambler"))
+    _r6b = _r(_sc.get("one_and_done"))
+    _rpt = _r(_sc.get("participation_trophy"))
+    _r5b = _r(_sc.get("biggest_commitment"))
+    _rsf = _r(_sc.get("super_fan"))
+    _rgca = _r(_sc.get("gotta_catch_em_all"))
+
+    def _table(title: str, rows: str) -> str:
+        return (
+            _tc_style +
+            f'<table class="tc"><thead><tr><th colspan="2">{title}</th></tr></thead><tbody>'
+            + rows +
+            '</tbody></table>'
+        )
+
+    _t1 = ""
+    if _wins_list:
+        _w_name, _w_count = _wins_list[0]
+        _t1 += _tc_row("Most Title Wins", _bold(_w_name) + _sep() + _dim(f'{_w_count} wins'))
+    if _prizes_list:
+        _p_name, _p_count = _prizes_list[0]
+        _t1 += _tc_row("Most Prize Finishes", _bold(_p_name) + _sep() + _dim(f'{_p_count} prizes'))
+    _t1 += _tc_row("Back-to-Back Champion", (
+        _bold(_rbb["manager"]) + _sep() + _dim(f'{_rbb["seasons"]} consecutive wins ({_rbb["from_season"]} – {_rbb["to_season"]})')
+    ) if _rbb else _dim("Unclaimed"))
+    _t1 += _tc_row("One-Hit Wonder", (
+        _bold(_r11["manager"]) + _sep() + _dim(f'won in {_r11["season"]}')
+    ) if _r11 else "—")
+    _t1 += _tc_row("Worst to First", (
+        _bold(_rph["manager"]) + _sep() + _dim(f'last place in {_rph["prev_season"]} — won the title in {_rph["season"]}')
+    ) if _rph else _dim("Unclaimed") + _sep() + _dim("Won after finishing last the season before"))
+
+    _t2 = ""
+    _t2 += _tc_row("Most Expensive Buy", (
+        _bold(_r1["manager"]) + _sep() + _dim(f'{_r1["player"]}{_sep()}{_cost_s(_r1.get("cost",0))}{_sep()}{_r1.get("season","")}')
+    ) if _r1 else "—")
+    _t2 += _tc_row("Best Player Season", (
+        _bold(_r2["manager"]) + _sep() + _dim(f'{_r2["player"]}{_sep()}{_r2.get("pts",0)}pts{_sep()}{_cost_s(_r2.get("cost",0))}{_sep()}{_r2.get("season","")}')
+    ) if _r2 else "—")
+    _t2 += _tc_row("Value for Money", (
+        _bold(_r3["manager"]) + _sep() + _dim(f'{_r3["player"]}{_sep()}{_r3.get("pts",0)}pts from {_cost_s(_r3.get("cost",0))}{_sep()}{_r3.get("season","")}')
+    ) if _r3 else "—")
+    _t2 += _tc_row("Bargain of the Century", (
+        _bold(_r4b["manager"]) + _sep() + _dim(f'{_r4b["player"]}{_sep()}{_r4b.get("pts",0)}pts for £1{_sep()}{_r4b.get("season","")}')
+    ) if _r4b else "—")
+    _t2 += _tc_row("Biggest Flop", (
+        _bold(_r4["manager"]) + _sep() + _dim(f'{_r4["player"]}{_sep()}{_r4.get("pts",0)}pts from {_cost_s(_r4.get("cost",0))}{_sep()}{_r4.get("season","")}')
+    ) if _r4 else "—")
+    _t2 += _tc_row("The Poacher", (
+        _bold(_r7["manager"]) + _sep() + _dim(
+            f'Signed {_r7["player"]} in {_r7["season"]} · scored {_r7["pts"]}pts'
+            f' · ({_r7["prev_pts"]}pts for {_r7["prev_manager"]} the season before)'
+        )
+    ) if _r7 else "—")
+    _t2 += _tc_row("Heartbreaker", (
+        _bold(_rsts["prev_manager"]) + _sep() + _dim(
+            f'let go of {_rsts["player"]} ({_rsts["prev_pts"]}pts in {_rsts["prev_season"]}) — scored {_rsts["curr_pts"]}pts for {_rsts["curr_manager"]} in {_rsts["curr_season"]}'
+        )
+    ) if _rsts else "—")
+
+    _t3 = ""
+    _t3 += _tc_row("Highest Season Score", (
+        _bold(_r8["manager"]) + _sep() + _dim(f'{_r8["pts"]}pts in {_r8["season"]}')
+    ) if _r8 else "—")
+    _t3 += _tc_row("Highest Single GW Score", (
+        _bold(_rgw["manager"]) + _sep() + _dim(f'{_rgw["pts"]}pts — {_rgw["label"]}')
+    ) if _rgw else "—")
+    _t3 += _tc_row("Golden Boot", (
+        _bold(_rgb["manager"]) + _sep() + _dim(f'{_rgb["goals"]} goals scored across all seasons')
+    ) if _rgb else "—")
+    _t3 += _tc_row("Biggest Season Improvement", (
+        _bold(_r10["manager"]) + _sep() + _dim(
+            f'{_ordinal_s(_r10["from_pos"])} → {_ordinal_s(_r10["to_pos"])} in {_r10["season"]} (↑{_r10["improvement"]})'
+        )
+    ) if _r10 else "—")
+    _t3 += _tc_row("Go Big or Go Home", (
+        _bold(_rgam["manager"]) + _sep() + _dim(f'avg £{_rgam["avg_cost"]} spent per player')
+    ) if _rgam else "—")
+    _t3 += _tc_row("1 and Done", (
+        _bold(_r6b["manager"]) + _sep() + _dim(f'{_r6b["count"]} players bought for £1')
+    ) if _r6b else "—")
+    _t3 += _tc_row("Participation Trophy", (
+        _bold(_rpt["manager"]) + _sep() + _dim(
+            f'{_rpt["seasons"]} {"season" if _rpt["seasons"] == 1 else "seasons"} without a prize finish'
+        )
+    ) if _rpt else "—")
+
+    _t4 = ""
+    _t4 += _tc_row("Till Death Do Us Part", (
+        _bold(_r5b["manager"]) + _sep() + _dim(
+            f'{_r5b["player"]} for {_r5b["seasons"]} seasons in a row ({_r5b["from_season"]} – {_r5b["to_season"]})'
+        )
+    ) if _r5b else "—")
+    _t4 += _tc_row("Super Fan", (
+        _bold(_rsf["manager"]) + _sep() + _dim(f'picked {_rsf["count"]} {_rsf["club"]} players across all seasons')
+    ) if _rsf else "—")
+    _t4 += _tc_row("Gotta Catch 'Em All", (
+        _bold(_rgca["manager"]) + _sep() + _dim(f'{_rgca["count"]} unique players owned across all seasons')
+    ) if _rgca else "—")
+
+    st.markdown(_table("🏆 Title Records", _t1), unsafe_allow_html=True)
+    st.markdown(_table("⚽ Player Records", _t2), unsafe_allow_html=True)
+    st.markdown(_table("📊 Manager Records", _t3), unsafe_allow_html=True)
+    st.markdown(_table("❤️ Loyalty &amp; Character", _t4), unsafe_allow_html=True)
 
     st.divider()
 
@@ -2161,19 +2461,11 @@ with tab_stats:
 
     _lbc1, _lbc2, _lbc3 = st.columns(3)
     with _lbc1:
-        _wins = _sc.get("most_wins", [])
-        st.markdown(_lb_html("Most Season Wins", _wins, "wins"), unsafe_allow_html=True)
-    with _lbc2:
-        _prizes = _sc.get("most_prizes", [])
-        st.markdown(_lb_html("Most Prize Finishes", _prizes, "prizes"), unsafe_allow_html=True)
-    with _lbc3:
         _avg = _sc.get("avg_position", [])
         st.markdown(_lb_html("Best Average Finish", _avg, avg=True), unsafe_allow_html=True)
-
-    _lbc4, _lbc5 = st.columns(2)
-    with _lbc4:
+    with _lbc2:
         _unlucky = _sc.get("unluckiest", [])
-        st.markdown(_lb_html("Unluckiest (Most 4th Places)", _unlucky, "times"), unsafe_allow_html=True)
-    with _lbc5:
+        st.markdown(_lb_html("Unluckiest (Just Outside Prizes)", _unlucky, "times"), unsafe_allow_html=True)
+    with _lbc3:
         _seasons = _sc.get("most_seasons", [])
         st.markdown(_lb_html("Most Seasons Played", _seasons, "seasons"), unsafe_allow_html=True)
