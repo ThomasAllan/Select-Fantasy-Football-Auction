@@ -1366,3 +1366,1774 @@ player_code,season_id,manager_name,position,cost,gw_from,gw_to
 2018-19-player-419,2018-19,Neil Wright,FWD,7,1,38
 2018-19-player-488,2018-19,Neil Wright,FWD,4,1,38
 2018-19-player-210,2018-19,Neil Wright,FWD,1,1,38
+2009-10-team-Hull City,2009-10,Danny Arbon,GK,1,1,38
+2009-10-player-R.Carvalho - Chelsea,2009-10,Danny Arbon,DEF,5,1,38
+2009-10-player-R.Ferdinand - Man Utd,2009-10,Danny Arbon,DEF,8,1,38
+2009-10-player-J.O'Shea - Man Utd,2009-10,Danny Arbon,DEF,6,1,38
+2009-10-player-PB.Dioup - Portsmouth,2009-10,Danny Arbon,MID,3,1,38
+2009-10-player-L.Bowyer - Birmingham,2009-10,Danny Arbon,MID,6,1,38
+2009-10-player-J.Wilshire - Bolton,2009-10,Danny Arbon,MID,5,1,38
+2009-10-player-G.McCann - Bolton,2009-10,Danny Arbon,MID,1,1,38
+2009-10-player-M.Owen - Man Utd,2009-10,Danny Arbon,FWD,21,1,38
+2009-10-player-D.Drogba - Chelsea,2009-10,Danny Arbon,FWD,22,1,38
+2009-10-player-E.Adebayor - Man City,2009-10,Danny Arbon,FWD,13,1,38
+2009-10-team-Bolton,2009-10,Andrea Chapman,GK,10,1,38
+2009-10-player-J.Terry - Chelsea,2009-10,Andrea Chapman,DEF,10,1,38
+2009-10-player-V.Corluka - Spurs,2009-10,Andrea Chapman,DEF,3,1,38
+2009-10-player-Z.Knight - Bolton,2009-10,Andrea Chapman,DEF,2,1,38
+2009-10-player-A.Arshavin - Arsenal,2009-10,Andrea Chapman,MID,40,1,38
+2009-10-player-L.Cattermole - Sunderland,2009-10,Andrea Chapman,MID,1,1,38
+2009-10-player-J.Bullard - Hull City,2009-10,Andrea Chapman,MID,1,1,38
+2009-10-player-S.Davies - Fulham,2009-10,Andrea Chapman,MID,1,1,38
+2009-10-player-R.Blake - Burnley,2009-10,Andrea Chapman,FWD,3,1,38
+2009-10-player-J.Defoe - Spurs,2009-10,Andrea Chapman,FWD,20,1,38
+2009-10-player-N.Kanu - Portsmouth,2009-10,Andrea Chapman,FWD,1,1,38
+2009-10-team-Stoke City,2009-10,Gary Evans,GK,9,1,38
+2009-10-player-M.Taylor - Bolton,2009-10,Gary Evans,DEF,21,1,38
+2009-10-player-W.Brown - Man Utd,2009-10,Gary Evans,DEF,3,1,38
+2009-10-player-Rafael Da Silva - Man Utd,2009-10,Gary Evans,DEF,1,1,38
+2009-10-player-L.Osman - Everton,2009-10,Gary Evans,MID,10,1,38
+2009-10-player-Nani - Man Utd,2009-10,Gary Evans,MID,10,1,38
+2009-10-player-J.Jenas - Spurs,2009-10,Gary Evans,MID,8,1,38
+2009-10-player-S.Wright-Phillips - Man City,2009-10,Gary Evans,MID,15,1,38
+2009-10-player-Robinho - Man City,2009-10,Gary Evans,FWD,10,1,38
+2009-10-player-N.Bendtner - Arsenal,2009-10,Gary Evans,FWD,10,1,38
+2009-10-player-S.Kalou - Chelsea,2009-10,Gary Evans,FWD,3,1,38
+2009-10-team-Arsenal,2009-10,Andy Fowkes,GK,50,1,38
+2009-10-player-D.Agger - Liverpool,2009-10,Andy Fowkes,DEF,6,1,38
+2009-10-player-C.Carlisle - Burnley,2009-10,Andy Fowkes,DEF,1,1,38
+2009-10-player-W.Bridge - Man City,2009-10,Andy Fowkes,DEF,1,1,38
+2009-10-player-T.Walcott - Arsenal,2009-10,Andy Fowkes,MID,17,1,38
+2009-10-player-F.Malouda - Chelsea,2009-10,Andy Fowkes,MID,12,1,38
+2009-10-player-M.Kightly - Wolves,2009-10,Andy Fowkes,MID,4,1,38
+2009-10-player-N.Reo-Coker - A.Villa,2009-10,Andy Fowkes,MID,1,1,38
+2009-10-player-A.Keogh - Wolves,2009-10,Andy Fowkes,FWD,3,1,38
+2009-10-player-J.McFadden - Birmingham,2009-10,Andy Fowkes,FWD,1,1,38
+2009-10-player-L.Saha - Everton,2009-10,Andy Fowkes,FWD,3,1,38
+2009-10-team-Burnley,2009-10,Tom Fowkes,GK,1,1,38
+2009-10-player-N.Vidic - Man Utd,2009-10,Tom Fowkes,DEF,10,1,38
+2009-10-player-P.Jagielka - Everton,2009-10,Tom Fowkes,DEF,4,1,38
+2009-10-player-R.Nelsen - Blackburn,2009-10,Tom Fowkes,DEF,3,1,38
+2009-10-player-G.Barry - Man City,2009-10,Tom Fowkes,MID,21,1,38
+2009-10-player-S.Downing - A.Villa,2009-10,Tom Fowkes,MID,7,1,38
+2009-10-player-Y.Zhirkov - Chelsea,2009-10,Tom Fowkes,MID,10,1,38
+2009-10-player-A.Aquilani - Liverpool,2009-10,Tom Fowkes,MID,3,1,38
+2009-10-player-W.Rooney - Man Utd,2009-10,Tom Fowkes,FWD,31,1,38
+2009-10-player-C.Benitez - Birmingham,2009-10,Tom Fowkes,FWD,4,1,38
+2009-10-player-F.Piquionne - Portsmouth,2009-10,Tom Fowkes,FWD,1,1,38
+2009-10-team-Sunderland,2009-10,Steve Gale,GK,32,1,38
+2009-10-player-A.Faye - Stoke City,2009-10,Steve Gale,DEF,1,1,38
+2009-10-player-N.Collins - Wolves,2009-10,Steve Gale,DEF,1,1,38
+2009-10-player-D.Higgenbotham - Stoke City,2009-10,Steve Gale,DEF,1,1,38
+2009-10-player-E.Diouff - Blackburn,2009-10,Steve Gale,MID,15,1,38
+2009-10-player-A.Valencia - Man Utd,2009-10,Steve Gale,MID,7,1,38
+2009-10-player-N.Krancjar - Spurs,2009-10,Steve Gale,MID,3,1,38
+2009-10-player-M.Etherington - Stoke City,2009-10,Steve Gale,MID,1,1,38
+2009-10-player-Eduardo Silva - Arsenal,2009-10,Steve Gale,FWD,13,1,38
+2009-10-player-D.Bent - Sunderland,2009-10,Steve Gale,FWD,18,1,38
+2009-10-player-R.Fuller - Stoke City,2009-10,Steve Gale,FWD,8,1,38
+2009-10-team-Liverpool,2009-10,Pam Hart,GK,52,1,38
+2009-10-player-A.Ferdinand - Sunderland,2009-10,Pam Hart,DEF,1,1,38
+2009-10-player-A.Cole - Chelsea,2009-10,Pam Hart,DEF,5,1,38
+2009-10-player-P.Da Silva - Sunderland,2009-10,Pam Hart,DEF,1,1,38
+2009-10-player-D.Geovanni - Hull City,2009-10,Pam Hart,MID,12,1,38
+2009-10-player-Y.Benayouan - Liverpool,2009-10,Pam Hart,MID,13,1,38
+2009-10-player-M.Arteta - Everton,2009-10,Pam Hart,MID,10,1,38
+2009-10-player-Z.Gera - Fulham,2009-10,Pam Hart,MID,1,1,38
+2009-10-player-Benjani - Sunderland,2009-10,Pam Hart,FWD,2,1,38
+2009-10-player-J.Roberts - Blackburn,2009-10,Pam Hart,FWD,2,1,38
+2009-10-player-S.Fletcher - Burnley,2009-10,Pam Hart,FWD,1,1,38
+2009-10-team-Wigan,2009-10,Tim Hart,GK,18,1,38
+2009-10-player-P.Scharner - Wigan,2009-10,Tim Hart,DEF,4,1,38
+2009-10-player-B.Hangeland - Fulham,2009-10,Tim Hart,DEF,4,1,38
+2009-10-player-S.Warnock - A.Villa,2009-10,Tim Hart,DEF,3,1,38
+2009-10-player-S.Ireland - Man City,2009-10,Tim Hart,MID,19,1,38
+2009-10-player-M.Carrick - Man Utd,2009-10,Tim Hart,MID,8,1,38
+2009-10-player-K.Richardson - Sunderland,2009-10,Tim Hart,MID,11,1,38
+2009-10-player-P.Scholes - Man Utd,2009-10,Tim Hart,MID,3,1,38
+2009-10-player-Yakubu - Everton,2009-10,Tim Hart,FWD,9,1,38
+2009-10-player-C.Cole - West Ham,2009-10,Tim Hart,FWD,10,1,38
+2009-10-player-Jo - Everton,2009-10,Tim Hart,FWD,11,1,38
+2009-10-team-Wolves,2009-10,Mick Jones,GK,1,1,38
+2009-10-player-G.Halford - Wolves,2009-10,Mick Jones,DEF,3,1,38
+2009-10-player-G.Steinsson - Bolton,2009-10,Mick Jones,DEF,3,1,38
+2009-10-player-B.Ivanovic - Chelsea,2009-10,Mick Jones,DEF,1,1,38
+2009-10-player-F.Lampard - Chelsea,2009-10,Mick Jones,MID,48,1,38
+2009-10-player-F.Delph - A.Villa,2009-10,Mick Jones,MID,3,1,38
+2009-10-player-N.Milijas - Wolves,2009-10,Mick Jones,MID,8,1,38
+2009-10-player-S.Pienarr - Everton,2009-10,Mick Jones,MID,4,1,38
+2009-10-player-R.Santa Cruz - Man City,2009-10,Mick Jones,FWD,7,1,38
+2009-10-player-K.Jones - Sunderland,2009-10,Mick Jones,FWD,6,1,38
+2009-10-player-S.Ebanks-Blake - Wolves,2009-10,Mick Jones,FWD,8,1,38
+2009-10-team-West Ham,2009-10,Andy Lockhart,GK,26,1,38
+2009-10-player-J.Yobo - Everton,2009-10,Andy Lockhart,DEF,2,1,38
+2009-10-player-J.Bosingwa - Chelsea,2009-10,Andy Lockhart,DEF,3,1,38
+2009-10-player-M.Richards - Man City,2009-10,Andy Lockhart,DEF,3,1,38
+2009-10-player-S.Gerrard - Liverpool,2009-10,Andy Lockhart,MID,45,1,38
+2009-10-player-M.Essien - Chelsea,2009-10,Andy Lockhart,MID,6,1,38
+2009-10-player-M.Noble - West Ham,2009-10,Andy Lockhart,MID,7,1,38
+2009-10-player-J.Mascherano - Liverpool,2009-10,Andy Lockhart,MID,2,1,38
+2009-10-player-B.Zamora - Fulham,2009-10,Andy Lockhart,FWD,3,1,38
+2009-10-player-D.Kitson - Stoke City,2009-10,Andy Lockhart,FWD,2,1,38
+2009-10-player-F.Macheda - Man Utd,2009-10,Andy Lockhart,FWD,1,1,38
+2009-10-team-Spurs,2009-10,Emma Lockhart,GK,37,1,38
+2009-10-player-G.Cahill - Bolton,2009-10,Emma Lockhart,DEF,2,1,38
+2009-10-player-G.Johnson - Liverpool,2009-10,Emma Lockhart,DEF,6,1,38
+2009-10-player-R.Dunne - A.Villa,2009-10,Emma Lockhart,DEF,2,1,38
+2009-10-player-D.Murphy - Fulham,2009-10,Emma Lockhart,MID,15,1,38
+2009-10-player-M.Fellani - Everton,2009-10,Emma Lockhart,MID,9,1,38
+2009-10-player-S.Nasri - Arsenal,2009-10,Emma Lockhart,MID,4,1,38
+2009-10-player-C.Eagles - Burnley,2009-10,Emma Lockhart,MID,1,1,38
+2009-10-player-G.Agbonlahor - A.Villa,2009-10,Emma Lockhart,FWD,6,1,38
+2009-10-player-B.McCarthy - West Ham,2009-10,Emma Lockhart,FWD,6,1,38
+2009-10-player-K.Doyle - Wolves,2009-10,Emma Lockhart,FWD,4,1,38
+2009-10-team-Everton,2009-10,Ken Maggs,GK,41,1,38
+2009-10-player-R.Shawcross - Stoke City,2009-10,Ken Maggs,DEF,5,1,38
+2009-10-player-K.Toure - Man City,2009-10,Ken Maggs,DEF,3,1,38
+2009-10-player-M.Turner - Sunderland,2009-10,Ken Maggs,DEF,5,1,38
+2009-10-player-B.Riise - Fulham,2009-10,Ken Maggs,MID,14,1,38
+2009-10-player-L.Chung Yong - Bolton,2009-10,Ken Maggs,MID,5,1,38
+2009-10-player-M.Pedersen - Blackburn,2009-10,Ken Maggs,MID,11,1,38
+2009-10-player-A.Surman - Wolves,2009-10,Ken Maggs,MID,1,1,38
+2009-10-player-R.Pavlyuchenko - Spurs,2009-10,Ken Maggs,FWD,6,1,38
+2009-10-player-F.Campbell - Sunderland,2009-10,Ken Maggs,FWD,3,1,38
+2009-10-player-J.Elmander - Bolton,2009-10,Ken Maggs,FWD,7,1,38
+2009-10-team-Chelsea,2009-10,John Palmer,GK,53,1,38
+2009-10-player-C.Samba - Blackburn,2009-10,John Palmer,DEF,8,1,38
+2009-10-player-T.Bramble - Wigan,2009-10,John Palmer,DEF,2,1,38
+2009-10-player-M.Skrtel - Liverpool,2009-10,John Palmer,DEF,1,1,38
+2009-10-player-W.Palacios - Spurs,2009-10,John Palmer,MID,1,1,38
+2009-10-player-O.Kapo - Wigan,2009-10,John Palmer,MID,1,1,38
+2009-10-player-M.Petrov - Man City,2009-10,John Palmer,MID,2,1,38
+2009-10-player-A.Riera - Liverpool,2009-10,John Palmer,MID,3,1,38
+2009-10-player-C.Tevez - Man City,2009-10,John Palmer,FWD,19,1,38
+2009-10-player-J.Carew - A.Villa,2009-10,John Palmer,FWD,9,1,38
+2009-10-player-D.Kamara - Fulham,2009-10,John Palmer,FWD,1,1,38
+2009-10-team-Man City,2009-10,Gary Speechley,GK,31,1,38
+2009-10-player-G.Alexander - Burnley,2009-10,Gary Speechley,DEF,11,1,38
+2009-10-player-J.Lescott - Man City,2009-10,Gary Speechley,DEF,8,1,38
+2009-10-player-F.Quedrue - Birmingham,2009-10,Gary Speechley,DEF,1,1,38
+2009-10-player-C.Fabregas - Arsenal,2009-10,Gary Speechley,MID,14,1,38
+2009-10-player-T.Cahill - Everton,2009-10,Gary Speechley,MID,20,1,38
+2009-10-player-S.Deco - Chelsea,2009-10,Gary Speechley,MID,1,1,38
+2009-10-player-J.Collison - West Ham,2009-10,Gary Speechley,MID,1,1,38
+2009-10-player-D.Kuyt - Liverpool,2009-10,Gary Speechley,FWD,9,1,38
+2009-10-player-C.Iwelumo - Wolves,2009-10,Gary Speechley,FWD,3,1,38
+2009-10-player-M.Paterson - Burnley,2009-10,Gary Speechley,FWD,1,1,38
+2009-10-team-Fulham,2009-10,Kelly Thulbourne,GK,35,1,38
+2009-10-player-L.Baines - Everton,2009-10,Kelly Thulbourne,DEF,3,1,38
+2009-10-player-J.Evans - Man Utd,2009-10,Kelly Thulbourne,DEF,1,1,38
+2009-10-player-M.Upson - West Ham,2009-10,Kelly Thulbourne,DEF,4,1,38
+2009-10-player-T.Rosicky - Arsenal,2009-10,Kelly Thulbourne,MID,12,1,38
+2009-10-player-P.Neville - Everton,2009-10,Kelly Thulbourne,MID,1,1,38
+2009-10-player-L.Modric - Spurs,2009-10,Kelly Thulbourne,MID,6,1,38
+2009-10-player-J.Cole - Chelsea,2009-10,Kelly Thulbourne,MID,6,1,38
+2009-10-player-D.Nugent - Burnley,2009-10,Kelly Thulbourne,FWD,5,1,38
+2009-10-player-P.Crouch - Spurs,2009-10,Kelly Thulbourne,FWD,16,1,38
+2009-10-player-J.Beattie - Stoke City,2009-10,Kelly Thulbourne,FWD,10,1,38
+2009-10-team-Aston Villa,2009-10,Kev Thulbourne,GK,41,1,38
+2009-10-player-L.Ridgewell - Birmingham,2009-10,Kev Thulbourne,DEF,1,1,38
+2009-10-player-J.Woodgate - Spurs,2009-10,Kev Thulbourne,DEF,1,1,38
+2009-10-player-B.Sagna - Arsenal,2009-10,Kev Thulbourne,DEF,1,1,38
+2009-10-player-J.Milner - A.Villa,2009-10,Kev Thulbourne,MID,8,1,38
+2009-10-player-M.Ballack - Chelsea,2009-10,Kev Thulbourne,MID,7,1,38
+2009-10-player-S.Malbranque - Sunderland,2009-10,Kev Thulbourne,MID,1,1,38
+2009-10-player-L.Lawrence - Stoke City,2009-10,Kev Thulbourne,MID,2,1,38
+2009-10-player-R.Van Persie - Arsenal,2009-10,Kev Thulbourne,FWD,23,1,38
+2009-10-player-D.Berbatov - Man Utd,2009-10,Kev Thulbourne,FWD,14,1,38
+2009-10-player-K.Phillips - Birmingham,2009-10,Kev Thulbourne,FWD,1,1,38
+2009-10-team-Blackburn,2009-10,Wendy Thulbourne,GK,28,1,38
+2009-10-player-T.Vermalean - Arsenal,2009-10,Wendy Thulbourne,DEF,3,1,38
+2009-10-player-P.Konchesky - Fulham,2009-10,Wendy Thulbourne,DEF,2,1,38
+2009-10-player-B.Mendy - Hull City,2009-10,Wendy Thulbourne,DEF,1,1,38
+2009-10-player-R.Giggs - Man Utd,2009-10,Wendy Thulbourne,MID,10,1,38
+2009-10-player-D.Bentley - Spurs,2009-10,Wendy Thulbourne,MID,2,1,38
+2009-10-player-S.Larsson - Birmingham,2009-10,Wendy Thulbourne,MID,3,1,38
+2009-10-player-B.N'Zogbia - Wigan,2009-10,Wendy Thulbourne,MID,5,1,38
+2009-10-player-N.Anelka - Chelsea,2009-10,Wendy Thulbourne,FWD,29,1,38
+2009-10-player-J.Scotland - Wigan,2009-10,Wendy Thulbourne,FWD,10,1,38
+2009-10-player-E.Heskey - A.Villa,2009-10,Wendy Thulbourne,FWD,6,1,38
+2009-10-team-Portsmouth,2009-10,Jamie Wright,GK,10,1,38
+2009-10-player-Alex - Chelsea,2009-10,Jamie Wright,DEF,3,1,38
+2009-10-player-G.Bale - Spurs,2009-10,Jamie Wright,DEF,4,1,38
+2009-10-player-H.Hreidarsson - Portsmouth,2009-10,Jamie Wright,DEF,1,1,38
+2009-10-player-A.Young - A.Villa,2009-10,Jamie Wright,MID,15,1,38
+2009-10-player-R.Babel - Liverpool,2009-10,Jamie Wright,MID,7,1,38
+2009-10-player-C.Dempsey - Fulham,2009-10,Jamie Wright,MID,7,1,38
+2009-10-player-K.Dyer - West Ham,2009-10,Jamie Wright,MID,1,1,38
+2009-10-player-F.Torres - Liverpool,2009-10,Jamie Wright,FWD,33,1,38
+2009-10-player-R.Keane - Spurs,2009-10,Jamie Wright,FWD,11,1,38
+2009-10-player-K.Davies - Bolton,2009-10,Jamie Wright,FWD,8,1,38
+2009-10-team-Man Utd,2009-10,Neil Wright,GK,50,1,38
+2009-10-player-W.Gallas - Arsenal,2009-10,Neil Wright,DEF,9,1,38
+2009-10-player-M.Melchiot - Wigan,2009-10,Neil Wright,DEF,1,1,38
+2009-10-player-M.Dawson - Spurs,2009-10,Neil Wright,DEF,2,1,38
+2009-10-player-S.Sidwell - A.Villa,2009-10,Neil Wright,MID,10,1,38
+2009-10-player-A.Lennon - Spurs,2009-10,Neil Wright,MID,8,1,38
+2009-10-player-S.Hunt - Hull City,2009-10,Neil Wright,MID,6,1,38
+2009-10-player-D.Fletcher - Man Utd,2009-10,Neil Wright,MID,3,1,38
+2009-10-player-A.Johnson - Fulham,2009-10,Neil Wright,FWD,8,1,38
+2009-10-player-G.Franco - West Ham,2009-10,Neil Wright,FWD,2,1,38
+2009-10-player-C.Bellamy - Man City,2009-10,Neil Wright,FWD,1,1,38
+2010-11-team-Spurs,2010-11,Danny Arbon,GK,40,1,38
+2010-11-player-T.Bramble - Sunderland,2010-11,Danny Arbon,DEF,5,1,38
+2010-11-player-F.Coloccini - Newcastle,2010-11,Danny Arbon,DEF,6,1,38
+2010-11-player-J.O'Shea - Man Utd,2010-11,Danny Arbon,DEF,4,1,38
+2010-11-player-S.Wright-Phillips - Man City,2010-11,Danny Arbon,MID,1,1,38
+2010-11-player-N.Reo-Coker - A.Villa,2010-11,Danny Arbon,MID,20,1,38
+2010-11-player-A.Johnson - Man City,2010-11,Danny Arbon,MID,4,1,38
+2010-11-player-K.Dyer - West Ham,2010-11,Danny Arbon,MID,1,1,38
+2010-11-player-A.Carroll - Liverpool,2010-11,Danny Arbon,FWD,10,1,38
+2010-11-player-N.Anelka - Chelsea,2010-11,Danny Arbon,FWD,8,1,38
+2010-11-player-R.Santa-Cruz - Blackburn,2010-11,Danny Arbon,FWD,1,1,38
+2010-11-team-Newcastle,2010-11,Andrea Chapman,GK,3,1,38
+2010-11-player-G.Johnson - Liverpool,2010-11,Andrea Chapman,DEF,19,1,38
+2010-11-player-B.Sagna - Arsenal,2010-11,Andrea Chapman,DEF,1,1,38
+2010-11-player-G.Zuiverloon - West Brom,2010-11,Andrea Chapman,DEF,1,1,38
+2010-11-player-Z.Gera - Fulham,2010-11,Andrea Chapman,MID,15,1,38
+2010-11-player-G.Barry - Man City,2010-11,Andrea Chapman,MID,13,1,38
+2010-11-player-S.Hunt - Wolves,2010-11,Andrea Chapman,MID,6,1,38
+2010-11-player-J.Gutierrez - Newcastle,2010-11,Andrea Chapman,MID,5,1,38
+2010-11-player-B.Zamora - Fulham,2010-11,Andrea Chapman,FWD,14,1,38
+2010-11-player-J.Beckford - Everton,2010-11,Andrea Chapman,FWD,15,1,38
+2010-11-player-Jo - Man City,2010-11,Andrea Chapman,FWD,1,1,38
+2010-11-team-Stoke City,2010-11,Gary Evans,GK,30,1,38
+2010-11-player-R.Shawcross - Stoke,2010-11,Gary Evans,DEF,7,1,38
+2010-11-player-J.Lescott - Man City,2010-11,Gary Evans,DEF,5,1,38
+2010-11-player-R.Ferdinand - Man Utd,2010-11,Gary Evans,DEF,1,1,38
+2010-11-player-S.Gerrard - Liverpool,2010-11,Gary Evans,MID,31,1,38
+2010-11-player-M.Petrov - Bolton,2010-11,Gary Evans,MID,18,1,38
+2010-11-player-A.Lennon - Spurs,2010-11,Gary Evans,MID,4,1,38
+2010-11-player-Park Ji Sung - Man Utd,2010-11,Gary Evans,MID,1,1,38
+2010-11-player-Yakubu - Everton,2010-11,Gary Evans,FWD,1,1,38
+2010-11-player-K.Phillips - Birmingham,2010-11,Gary Evans,FWD,1,1,38
+2010-11-player-L.Boamorte - West Ham,2010-11,Gary Evans,FWD,1,1,38
+2010-11-team-Wolves,2010-11,Andy Fowkes,GK,1,1,38
+2010-11-player-P.Jagielka - Everton,2010-11,Andy Fowkes,DEF,7,1,38
+2010-11-player-R.Alex - Chelsea,2010-11,Andy Fowkes,DEF,3,1,38
+2010-11-player-M.Figueroa - Wigan,2010-11,Andy Fowkes,DEF,1,1,38
+2010-11-player-T.Cahill - Everton,2010-11,Andy Fowkes,MID,23,1,38
+2010-11-player-F.Malouda - Chelsea,2010-11,Andy Fowkes,MID,21,1,38
+2010-11-player-M.Pedersen - Blackburn,2010-11,Andy Fowkes,MID,3,1,38
+2010-11-player-D.Gosling - Newcastle,2010-11,Andy Fowkes,MID,1,1,38
+2010-11-player-W.Rooney - Man Utd,2010-11,Andy Fowkes,FWD,29,1,38
+2010-11-player-E.Adebayor - Man City,2010-11,Andy Fowkes,FWD,6,1,38
+2010-11-player-K.Jones - Stoke,2010-11,Andy Fowkes,FWD,5,1,38
+2010-11-team-West Brom,2010-11,Tom Fowkes,GK,1,1,38
+2010-11-player-J.Terry - Chelsea,2010-11,Tom Fowkes,DEF,13,1,38
+2010-11-player-M.Dawson - Spurs,2010-11,Tom Fowkes,DEF,7,1,38
+2010-11-player-J.Craddock - Wolves,2010-11,Tom Fowkes,DEF,4,1,38
+2010-11-player-D.Duff - Fulham,2010-11,Tom Fowkes,MID,8,1,38
+2010-11-player-M.Rodriguez - Liverpool,2010-11,Tom Fowkes,MID,7,1,38
+2010-11-player-D.Bilyaletdinov - Everton,2010-11,Tom Fowkes,MID,9,1,38
+2010-11-player-A.Hleb - Birmingham,2010-11,Tom Fowkes,MID,11,1,38
+2010-11-player-D.Bent - A.Villa,2010-11,Tom Fowkes,FWD,20,1,38
+2010-11-player-M.Balotelli - Man City,2010-11,Tom Fowkes,FWD,9,1,38
+2010-11-player-J.Hernandez - Man Utd,2010-11,Tom Fowkes,FWD,11,1,38
+2010-11-team-Birmingham City,2010-11,Steve Gale,GK,29,1,38
+2010-11-player-L.King - Spurs,2010-11,Steve Gale,DEF,1,1,38
+2010-11-player-J.Mensah - Sunderland,2010-11,Steve Gale,DEF,1,1,38
+2010-11-player-A.Hughes - Fulham,2010-11,Steve Gale,DEF,1,1,38
+2010-11-player-Y.Zhirkov - Chelsea,2010-11,Steve Gale,MID,4,1,38
+2010-11-player-A.Young - A.Villa,2010-11,Steve Gale,MID,9,1,38
+2010-11-player-L.Modric - Spurs,2010-11,Steve Gale,MID,10,1,38
+2010-11-player-G.Dorrans - West Brom,2010-11,Steve Gale,MID,12,1,38
+2010-11-player-P.Crouch - Spurs,2010-11,Steve Gale,FWD,14,1,38
+2010-11-player-J.Defoe - Spurs,2010-11,Steve Gale,FWD,16,1,38
+2010-11-player-C.Jerome - Birmingham,2010-11,Steve Gale,FWD,3,1,38
+2010-11-team-Blackburn,2010-11,Pam Hart,GK,21,1,38
+2010-11-player-T.Vermalean - Arsenal,2010-11,Pam Hart,DEF,16,1,38
+2010-11-player-P.Konchesky - Liverpool,2010-11,Pam Hart,DEF,1,1,38
+2010-11-player-N.Shorey - West Brom,2010-11,Pam Hart,DEF,1,1,38
+2010-11-player-R.Giggs - Man Utd,2010-11,Pam Hart,MID,3,1,38
+2010-11-player-C.Adam - Blackpool,2010-11,Pam Hart,MID,18,1,38
+2010-11-player-P.Scholes - Man Utd,2010-11,Pam Hart,MID,3,1,38
+2010-11-player-S.Malbranque - Sunderland,2010-11,Pam Hart,MID,1,1,38
+2010-11-player-F.Torres - Chelsea,2010-11,Pam Hart,FWD,28,1,38
+2010-11-player-E.Heskey - A.Villa,2010-11,Pam Hart,FWD,1,1,38
+2010-11-player-M.Owen - Man Utd,2010-11,Pam Hart,FWD,5,1,38
+2010-11-team-Man Utd,2010-11,Tim Hart,GK,56,1,38
+2010-11-player-G.Bale - Spurs,2010-11,Tim Hart,DEF,17,1,38
+2010-11-player-S.Campbell - Newcastle,2010-11,Tim Hart,DEF,2,1,38
+2010-11-player-G.Halford - Wolves,2010-11,Tim Hart,DEF,1,1,38
+2010-11-player-Y.Toure - Man City,2010-11,Tim Hart,MID,1,1,38
+2010-11-player-C.Riveros - Sunderland,2010-11,Tim Hart,MID,1,1,38
+2010-11-player-S.Downing - A.Villa,2010-11,Tim Hart,MID,2,1,38
+2010-11-player-J.Jenas - Spurs,2010-11,Tim Hart,MID,5,1,38
+2010-11-player-S.Fletcher - Wolves,2010-11,Tim Hart,FWD,5,1,38
+2010-11-player-A.Gyan - Sunderland,2010-11,Tim Hart,FWD,5,1,38
+2010-11-player-C.Cole - West Ham,2010-11,Tim Hart,FWD,5,1,38
+2010-11-team-Wigan,2010-11,Bruce Hurst,GK,1,1,38
+2010-11-player-N.Vidic - Man Utd,2010-11,Bruce Hurst,DEF,7,1,38
+2010-11-player-P.Evra - Man Utd,2010-11,Bruce Hurst,DEF,2,1,38
+2010-11-player-J.Carragher - Liverpool,2010-11,Bruce Hurst,DEF,1,1,38
+2010-11-player-J.Cole - Liverpool,2010-11,Bruce Hurst,MID,26,1,38
+2010-11-player-V.Diaby - Arsenal,2010-11,Bruce Hurst,MID,3,1,38
+2010-11-player-T.Rosicky - Arsenal,2010-11,Bruce Hurst,MID,4,1,38
+2010-11-player-T.Huddlestone - Spurs,2010-11,Bruce Hurst,MID,1,1,38
+2010-11-player-D.Drogba - Chelsea,2010-11,Bruce Hurst,FWD,28,1,38
+2010-11-player-C.Bellamy - Man City,2010-11,Bruce Hurst,FWD,5,1,38
+2010-11-player-S.Kalou - Chelsea,2010-11,Bruce Hurst,FWD,6,1,38
+2010-11-team-Sunderland,2010-11,Mick Jones,GK,1,1,38
+2010-11-player-A.Cole - Chelsea,2010-11,Mick Jones,DEF,7,1,38
+2010-11-player-G.Cahill - Bolton,2010-11,Mick Jones,DEF,8,1,38
+2010-11-player-M.Richards - Man City,2010-11,Mick Jones,DEF,1,1,38
+2010-11-player-F.Lampard - Chelsea,2010-11,Mick Jones,MID,40,1,38
+2010-11-player-Nani - Man Utd,2010-11,Mick Jones,MID,15,1,38
+2010-11-player-P.Barrera - West Ham,2010-11,Mick Jones,MID,3,1,38
+2010-11-player-N.Krancjar - Spurs,2010-11,Mick Jones,MID,6,1,38
+2010-11-player-D.Berbatov - Man Utd,2010-11,Mick Jones,FWD,14,1,38
+2010-11-player-F.Campbell - Sunderland,2010-11,Mick Jones,FWD,1,1,38
+2010-11-player-K.Davies - Bolton,2010-11,Mick Jones,FWD,4,1,38
+2010-11-team-Chelsea,2010-11,Andy Lockhart,GK,55,1,38
+2010-11-player-J.Boateng - Man City,2010-11,Andy Lockhart,DEF,2,1,38
+2010-11-player-L.Koscielny - Arsenal,2010-11,Andy Lockhart,DEF,6,1,38
+2010-11-player-S.Taylor - Newcastle,2010-11,Andy Lockhart,DEF,3,1,38
+2010-11-player-C.Poulsen - Liverpool,2010-11,Andy Lockhart,MID,1,1,38
+2010-11-player-J.Wiltshire - Arsenal,2010-11,Andy Lockhart,MID,5,1,38
+2010-11-player-D.Murphy - Fulham,2010-11,Andy Lockhart,MID,5,1,38
+2010-11-player-S.Larsson - Birmingham,2010-11,Andy Lockhart,MID,3,1,38
+2010-11-player-M.Jovanovic - Liverpool,2010-11,Andy Lockhart,FWD,3,1,38
+2010-11-player-Bebe - Man Utd,2010-11,Andy Lockhart,FWD,1,1,38
+2010-11-player-D.Welbeck - Sunderland,2010-11,Andy Lockhart,FWD,16,1,38
+2010-11-team-Man City,2010-11,Emma Lockhart,GK,57,1,38
+2010-11-player-R.Dunne - A.Villa,2010-11,Emma Lockhart,DEF,6,1,38
+2010-11-player-L.Baines - Everton,2010-11,Emma Lockhart,DEF,3,1,38
+2010-11-player-J.Collins - A.Villa,2010-11,Emma Lockhart,DEF,1,1,38
+2010-11-player-D.Dunn - Blackburn,2010-11,Emma Lockhart,MID,13,1,38
+2010-11-player-R.Van Der Vaart - Spurs,2010-11,Emma Lockhart,MID,1,1,38
+2010-11-player-M.Noble - West Ham,2010-11,Emma Lockhart,MID,3,1,38
+2010-11-player-D.Fletcher - Man Utd,2010-11,Emma Lockhart,MID,2,1,38
+2010-11-player-S.Ebanks-Blake - Wolves,2010-11,Emma Lockhart,FWD,2,1,38
+2010-11-player-A.Johnson - Fulham,2010-11,Emma Lockhart,FWD,1,1,38
+2010-11-player-P.Lovenkrands - Newcastle,2010-11,Emma Lockhart,FWD,1,1,38
+2010-11-team-Aston Villa,2010-11,Ken Maggs,GK,35,1,38
+2010-11-player-M.Olsson - Blackburn,2010-11,Ken Maggs,DEF,3,1,38
+2010-11-player-A.Kolarov - Man City,2010-11,Ken Maggs,DEF,7,1,38
+2010-11-player-A.Alcaraz - Wigan,2010-11,Ken Maggs,DEF,6,1,38
+2010-11-player-N.Milijas - Wolves,2010-11,Ken Maggs,MID,9,1,38
+2010-11-player-T.Hitzlsperger - West Ham,2010-11,Ken Maggs,MID,5,1,38
+2010-11-player-S.Nasri - Arsenal,2010-11,Ken Maggs,MID,12,1,38
+2010-11-player-M.Etherington - Stoke,2010-11,Ken Maggs,MID,2,1,38
+2010-11-player-N.Zigic - Birmingham,2010-11,Ken Maggs,FWD,7,1,38
+2010-11-player-M.Boselli - Wigan,2010-11,Ken Maggs,FWD,9,1,38
+2010-11-player-J.Elmander - Bolton,2010-11,Ken Maggs,FWD,5,1,38
+2010-11-team-Liverpool,2010-11,John Palmer,GK,55,1,38
+2010-11-player-D.Agger - Liverpool,2010-11,John Palmer,DEF,4,1,38
+2010-11-player-B.Hangeland - Fulham,2010-11,John Palmer,DEF,4,1,38
+2010-11-player-C.Samba - Blackburn,2010-11,John Palmer,DEF,6,1,38
+2010-11-player-M.Carrick - Man Utd,2010-11,John Palmer,MID,3,1,38
+2010-11-player-C.Brunt - West Brom,2010-11,John Palmer,MID,10,1,38
+2010-11-player-S.Petrov - A.Villa,2010-11,John Palmer,MID,3,1,38
+2010-11-player-Y.Benayouan - Chelsea,2010-11,John Palmer,MID,6,1,38
+2010-11-player-J.McFadden - Birmingham,2010-11,John Palmer,FWD,3,1,38
+2010-11-player-R.Fuller - Stoke,2010-11,John Palmer,FWD,3,1,38
+2010-11-player-R.Keane - West Ham,2010-11,John Palmer,FWD,3,1,38
+2010-11-team-Fulham,2010-11,Gary Speechley,GK,14,1,38
+2010-11-player-M.Turner - Sunderland,2010-11,Gary Speechley,DEF,1,1,38
+2010-11-player-I.Evatt - Blackpool,2010-11,Gary Speechley,DEF,1,1,38
+2010-11-player-C.Cueller - A.Villa,2010-11,Gary Speechley,DEF,1,1,38
+2010-11-player-C.Fabregas - Arsenal,2010-11,Gary Speechley,MID,24,1,38
+2010-11-player-M.Arteta - Everton,2010-11,Gary Speechley,MID,24,1,38
+2010-11-player-K.Nolan - Newcastle,2010-11,Gary Speechley,MID,15,1,38
+2010-11-player-M.Fellaini - Everton,2010-11,Gary Speechley,MID,1,1,38
+2010-11-player-C.Tevez - Man City,2010-11,Gary Speechley,FWD,17,1,38
+2010-11-player-H.Rodallega - Wigan,2010-11,Gary Speechley,FWD,1,1,38
+2010-11-player-I.Klasnic - Bolton,2010-11,Gary Speechley,FWD,1,1,38
+2010-11-team-West Ham,2010-11,Kev Thulbourne,GK,24,1,38
+2010-11-player-M.Upson - West Ham,2010-11,Kev Thulbourne,DEF,4,1,38
+2010-11-player-L.Ridgewell - Birmingham,2010-11,Kev Thulbourne,DEF,1,1,38
+2010-11-player-R.Huth - Stoke,2010-11,Kev Thulbourne,DEF,1,1,38
+2010-11-player-A.Arshavin - Arsenal,2010-11,Kev Thulbourne,MID,22,1,38
+2010-11-player-L.Bowyer - Birmingham,2010-11,Kev Thulbourne,MID,3,1,38
+2010-11-player-D.Bentley - Birmingham,2010-11,Kev Thulbourne,MID,2,1,38
+2010-11-player-M.Essien - Chelsea,2010-11,Kev Thulbourne,MID,13,1,38
+2010-11-player-R.Van Persie - Arsenal,2010-11,Kev Thulbourne,FWD,16,1,38
+2010-11-player-K.Doyle - Wolves,2010-11,Kev Thulbourne,FWD,8,1,38
+2010-11-player-L.Saha - Everton,2010-11,Kev Thulbourne,FWD,6,1,38
+2010-11-team-Arsenal,2010-11,Wendy Thulbourne,GK,45,1,38
+2010-11-player-E.Boyce - Wigan,2010-11,Wendy Thulbourne,DEF,1,1,38
+2010-11-player-J.Paintsil - Fulham,2010-11,Wendy Thulbourne,DEF,1,1,38
+2010-11-player-Z.Knight - Fulham,2010-11,Wendy Thulbourne,DEF,1,1,38
+2010-11-player-S.Ireland - Newcastle,2010-11,Wendy Thulbourne,MID,7,1,38
+2010-11-player-K.Richardson - Sunderland,2010-11,Wendy Thulbourne,MID,8,1,38
+2010-11-player-L.Chung-Yung - Bolton,2010-11,Wendy Thulbourne,MID,3,1,38
+2010-11-player-A.Ramsey - Arsenal,2010-11,Wendy Thulbourne,MID,1,1,38
+2010-11-player-M.Chamakh - Arsenal,2010-11,Wendy Thulbourne,FWD,15,1,38
+2010-11-player-J.Carew - Stoke,2010-11,Wendy Thulbourne,FWD,12,1,38
+2010-11-player-N.Bendtner - Arsenal,2010-11,Wendy Thulbourne,FWD,6,1,38
+2010-11-team-Everton,2010-11,Jamie Wright,GK,41,1,38
+2010-11-player-B.Ivanovic - Chelsea,2010-11,Jamie Wright,DEF,9,1,38
+2010-11-player-Y.Kaboul - Spurs,2010-11,Jamie Wright,DEF,1,1,38
+2010-11-player-R.Nelson - Blackburn,2010-11,Jamie Wright,DEF,2,1,38
+2010-11-player-D.Silva - Man City,2010-11,Jamie Wright,MID,16,1,38
+2010-11-player-S.Pienaar - Spurs,2010-11,Jamie Wright,MID,10,1,38
+2010-11-player-C.Dempsey - Fulham,2010-11,Jamie Wright,MID,13,1,38
+2010-11-player-L.Cattermole - Sunderland,2010-11,Jamie Wright,MID,1,1,38
+2010-11-player-J.Roberts - Blackburn,2010-11,Jamie Wright,FWD,4,1,38
+2010-11-player-R.Pavlyuchenko - Spurs,2010-11,Jamie Wright,FWD,1,1,38
+2010-11-player-F.Piquionne - West Ham,2010-11,Jamie Wright,FWD,1,1,38
+2010-11-team-Bolton,2010-11,Neil Wright,GK,14,1,38
+2010-11-player-M.Taylor - Bolton,2010-11,Neil Wright,DEF,23,1,38
+2010-11-player-J.Evans - Man Utd,2010-11,Neil Wright,DEF,1,1,38
+2010-11-player-R.Da Silva - Man Utd,2010-11,Neil Wright,DEF,1,1,38
+2010-11-player-T.Walcott - Arsenal,2010-11,Neil Wright,MID,10,1,38
+2010-11-player-C.N'Zogbia - Wigan,2010-11,Neil Wright,MID,11,1,38
+2010-11-player-J.Milner - Man City,2010-11,Neil Wright,MID,7,1,38
+2010-11-player-A.Valencia - Man Utd,2010-11,Neil Wright,MID,13,1,38
+2010-11-player-D.Kuyt - Liverpool,2010-11,Neil Wright,FWD,9,1,38
+2010-11-player-G.Agbonlahor - A.Villa,2010-11,Neil Wright,FWD,10,1,38
+2010-11-player-D.Sturridge - Bolton,2010-11,Neil Wright,FWD,1,1,38
+2011-12-team-Norwich,2011-12,Danny Arbon,GK,2,1,38
+2011-12-player-G.Bale - Spurs,2011-12,Danny Arbon,DEF,30,1,38
+2011-12-player-R.Ferdinand - Man Utd.,2011-12,Danny Arbon,DEF,6,1,38
+2011-12-player-A.Hughes - Fulham,2011-12,Danny Arbon,DEF,4,1,38
+2011-12-player-F.Lampard - Chelsea,2011-12,Danny Arbon,MID,33,1,38
+2011-12-player-J.Wilshire - Arsenal,2011-12,Danny Arbon,MID,1,1,38
+2011-12-player-D.Fletcher - Man Utd.,2011-12,Danny Arbon,MID,1,1,38
+2011-12-player-B.Emerton - Blackburn,2011-12,Danny Arbon,MID,1,1,38
+2011-12-player-D.Ba - Newcastle,2011-12,Danny Arbon,FWD,6,1,38
+2011-12-player-D.Goodwillie - Blackburn,2011-12,Danny Arbon,FWD,4,1,38
+2011-12-player-M.Balotelli - Man City,2011-12,Danny Arbon,FWD,7,1,38
+2011-12-team-Blackburn,2011-12,Rory Canham,GK,26,1,38
+2011-12-player-J.Terry - Chelsea,2011-12,Rory Canham,DEF,10,1,38
+2011-12-player-V.Kompany - Man City,2011-12,Rory Canham,DEF,5,1,38
+2011-12-player-W.Gallas - Spurs,2011-12,Rory Canham,DEF,5,1,38
+2011-12-player-S.Ireland - A.Villa,2011-12,Rory Canham,MID,4,1,38
+2011-12-player-HB.Arfa - Newcastle,2011-12,Rory Canham,MID,7,1,38
+2011-12-player-J.Mata - Chelsea,2011-12,Rory Canham,MID,2,1,38
+2011-12-player-E.Diouff - Blackburn,2011-12,Rory Canham,MID,1,1,38
+2011-12-player-D.Bent - A.Villa,2011-12,Rory Canham,FWD,25,1,38
+2011-12-player-J.Beckford - Everton,2011-12,Rory Canham,FWD,4,1,38
+2011-12-player-J.Bothoyd - QPR,2011-12,Rory Canham,FWD,4,1,38
+2011-12-team-Sunderland,2011-12,Andrea Chapman,GK,31,1,38
+2011-12-player-B.Assou-Ekotto - Spurs,2011-12,Andrea Chapman,DEF,5,1,38
+2011-12-player-B.Ivanovic - Chelsea,2011-12,Andrea Chapman,DEF,4,1,38
+2011-12-player-S.Savic - Man City,2011-12,Andrea Chapman,DEF,1,1,38
+2011-12-player-C.N'Zogbia - A.Villa,2011-12,Andrea Chapman,MID,25,1,38
+2011-12-player-M.Carrick - Man Utd,2011-12,Andrea Chapman,MID,7,1,38
+2011-12-player-S.Hunt - Wolves,2011-12,Andrea Chapman,MID,3,1,38
+2011-12-player-M.Etherington - Stoke,2011-12,Andrea Chapman,MID,5,1,38
+2011-12-player-B.Zamora - QPR,2011-12,Andrea Chapman,FWD,11,1,38
+2011-12-player-H.Helguson - QPR,2011-12,Andrea Chapman,FWD,3,1,38
+2011-12-player-J.Vaughan - Norwich,2011-12,Andrea Chapman,FWD,1,1,38
+2011-12-team-QPR,2011-12,Kev Elliott,GK,2,1,38
+2011-12-player-R.Shawcross - Stoke,2011-12,Kev Elliott,DEF,5,1,38
+2011-12-player-B.Sagna - Arsenal,2011-12,Kev Elliott,DEF,2,1,38
+2011-12-player-A.Song - Arsenal,2011-12,Kev Elliott,DEF,4,1,38
+2011-12-player-S.Pienarr - Everton,2011-12,Kev Elliott,MID,3,1,38
+2011-12-player-J.O'Hara - Wolves,2011-12,Kev Elliott,MID,6,1,38
+2011-12-player-D.Etuhu - Fulham,2011-12,Kev Elliott,MID,1,1,38
+2011-12-player-S.Parker - Spurs,2011-12,Kev Elliott,MID,10,1,38
+2011-12-player-A.Carroll - Liverpool,2011-12,Kev Elliott,FWD,20,1,38
+2011-12-player-D.Kuyt - Liverpool,2011-12,Kev Elliott,FWD,15,1,38
+2011-12-player-P.Lovenkrands - Newcastle,2011-12,Kev Elliott,FWD,5,1,38
+2011-12-team-Aston Villa,2011-12,Gary Evans,GK,32,1,38
+2011-12-player-N.Vidic - Man Utd.,2011-12,Gary Evans,DEF,15,1,38
+2011-12-player-K.Foley - Wolves,2011-12,Gary Evans,DEF,2,1,38
+2011-12-player-B.Hangeland - Fulham,2011-12,Gary Evans,DEF,15,1,38
+2011-12-player-T.Walcott - Arsenal,2011-12,Gary Evans,MID,14,1,38
+2011-12-player-JS.Park - Man Utd.,2011-12,Gary Evans,MID,5,1,38
+2011-12-player-L.Osman - Everton,2011-12,Gary Evans,MID,3,1,38
+2011-12-player-J.Gutierrez - Newcastle,2011-12,Gary Evans,MID,2,1,38
+2011-12-player-G.Agbonlahor - A.Villa,2011-12,Gary Evans,FWD,8,1,38
+2011-12-player-S.Ebanks-Blake - Wolves,2011-12,Gary Evans,FWD,2,1,38
+2011-12-player-S.Ameobi - Newcastle,2011-12,Gary Evans,FWD,1,1,38
+2011-12-team-Stoke City,2011-12,Steve Gale,GK,35,1,38
+2011-12-player-S.Coleman - Everton,2011-12,Steve Gale,DEF,3,1,38
+2011-12-player-D.Wheater - Bolton,2011-12,Steve Gale,DEF,1,1,38
+2011-12-player-M.Mouyokolo - Wolves,2011-12,Steve Gale,DEF,1,1,38
+2011-12-player-D.Duff - Fulham,2011-12,Steve Gale,MID,8,1,38
+2011-12-player-A.Lennon - Spurs,2011-12,Steve Gale,MID,9,1,38
+2011-12-player-J.Mulumbu - West Brom,2011-12,Steve Gale,MID,8,1,38
+2011-12-player-J.Walters - Stoke,2011-12,Steve Gale,MID,6,1,38
+2011-12-player-J.Defoe - Spurs,2011-12,Steve Gale,FWD,10,1,38
+2011-12-player-K.Davies - Bolton,2011-12,Steve Gale,FWD,8,1,38
+2011-12-player-A.Johnson - Fulham,2011-12,Steve Gale,FWD,11,1,38
+2011-12-team-Fulham,2011-12,Pam Hart,GK,44,1,38
+2011-12-player-F.Coloccini - Newcastle,2011-12,Pam Hart,DEF,6,1,38
+2011-12-player-R.De Silva - Man Utd.,2011-12,Pam Hart,DEF,1,1,38
+2011-12-player-R.Martin - Norwich,2011-12,Pam Hart,DEF,1,1,38
+2011-12-player-S.Nasri - Man City,2011-12,Pam Hart,MID,16,1,38
+2011-12-player-C.Gardner - Sunderland,2011-12,Pam Hart,MID,2,1,38
+2011-12-player-W.Hoolahan - Norwich,2011-12,Pam Hart,MID,1,1,38
+2011-12-player-M.Formica - Blackburn,2011-12,Pam Hart,MID,1,1,38
+2011-12-player-F.Torres - Chelsea,2011-12,Pam Hart,FWD,16,1,38
+2011-12-player-S.Fletcher - Wolves,2011-12,Pam Hart,FWD,11,1,38
+2011-12-player-S.Jackson - Norwich,2011-12,Pam Hart,FWD,1,1,38
+2011-12-team-Swansea City,2011-12,Tim Hart,GK,1,1,38
+2011-12-player-R.Huth - Stoke,2011-12,Tim Hart,DEF,16,1,38
+2011-12-player-T.Vermaelen - Arsenal,2011-12,Tim Hart,DEF,12,1,38
+2011-12-player-JA.Risse - Fulham,2011-12,Tim Hart,DEF,10,1,38
+2011-12-player-A.Young - Man Utd.,2011-12,Tim Hart,MID,15,1,38
+2011-12-player-C.Dempsey - Fulham,2011-12,Tim Hart,MID,23,1,38
+2011-12-player-S.Wright-Phillips - QPR,2011-12,Tim Hart,MID,8,1,38
+2011-12-player-D.Pratley - Bolton,2011-12,Tim Hart,MID,1,1,38
+2011-12-player-S.Morrison - Norwich,2011-12,Tim Hart,FWD,5,1,38
+2011-12-player-I.Klasnic - Bolton,2011-12,Tim Hart,FWD,7,1,38
+2011-12-player-L.Lita - Swansea,2011-12,Tim Hart,FWD,1,1,38
+2011-12-team-Liverpool,2011-12,Mike Howling,GK,45,1,38
+2011-12-player-K.Walker - Spurs,2011-12,Mike Howling,DEF,7,1,38
+2011-12-player-A.Tate - Swansea,2011-12,Mike Howling,DEF,3,1,38
+2011-12-player-P.Jones - Man Utd.,2011-12,Mike Howling,DEF,3,1,38
+2011-12-player-W.Palacios - Stoke,2011-12,Mike Howling,MID,2,1,38
+2011-12-player-J.Henderson - Liverpool,2011-12,Mike Howling,MID,2,1,38
+2011-12-player-M.Petrov - Bolton,2011-12,Mike Howling,MID,1,1,38
+2011-12-player-L.Lucas - Liverpool,2011-12,Mike Howling,MID,1,1,38
+2011-12-player-W.Rooney - Man Utd.,2011-12,Mike Howling,FWD,23,1,38
+2011-12-player-A.Taarabt - QPR,2011-12,Mike Howling,FWD,10,1,38
+2011-12-player-F.Campbell - Sunderland,2011-12,Mike Howling,FWD,3,1,38
+2011-12-team-West Brom,2011-12,Bruce Hurst,GK,10,1,38
+2011-12-player-D.Agger - Liverpool,2011-12,Bruce Hurst,DEF,4,1,38
+2011-12-player-R.Dunne - A.Villa,2011-12,Bruce Hurst,DEF,3,1,38
+2011-12-player-D.Luiz - Chelsea,2011-12,Bruce Hurst,DEF,3,1,38
+2011-12-player-S.Downing - Liverpool,2011-12,Bruce Hurst,MID,22,1,38
+2011-12-player-P.Neville - Everton,2011-12,Bruce Hurst,MID,1,1,38
+2011-12-player-L.Cattermole - Sunderland,2011-12,Bruce Hurst,MID,4,1,38
+2011-12-player-O.Anderson - Man Utd.,2011-12,Bruce Hurst,MID,2,1,38
+2011-12-player-C.Hernandez - Man Utd.,2011-12,Bruce Hurst,FWD,32,1,38
+2011-12-player-F.Chamakh - Arsenal,2011-12,Bruce Hurst,FWD,6,1,38
+2011-12-player-DJ.Campbell - QPR,2011-12,Bruce Hurst,FWD,8,1,38
+2011-12-team-Arsenal,2011-12,Mick Jones,GK,48,1,38
+2011-12-player-J.Lescott - Man City,2011-12,Mick Jones,DEF,1,1,38
+2011-12-player-A.Kolarov - Man City,2011-12,Mick Jones,DEF,1,1,38
+2011-12-player-P.Bardsley - Sunderland,2011-12,Mick Jones,DEF,1,1,38
+2011-12-player-L.Nani - Man Utd.,2011-12,Mick Jones,MID,17,1,38
+2011-12-player-S.Sinclair - Swansea,2011-12,Mick Jones,MID,10,1,38
+2011-12-player-J.Pennant - Stoke,2011-12,Mick Jones,MID,1,1,38
+2011-12-player-S.Tchoyi - West Brom,2011-12,Mick Jones,MID,4,1,38
+2011-12-player-V.Moses - Wigan,2011-12,Mick Jones,FWD,1,1,38
+2011-12-player-D.Graham - Swansea,2011-12,Mick Jones,FWD,3,1,38
+2011-12-player-D.Hoilett - Blackburn,2011-12,Mick Jones,FWD,1,1,38
+2011-12-team-Newcastle,2011-12,Andy Lockhart,GK,1,1,38
+2011-12-player-P.Zabaleta - Man City,2011-12,Andy Lockhart,DEF,4,1,38
+2011-12-player-G.Cahill - Chelsea,2011-12,Andy Lockhart,DEF,10,1,38
+2011-12-player-J.O'Shea - Sunderland,2011-12,Andy Lockhart,DEF,3,1,38
+2011-12-player-D.Silva - Man City,2011-12,Andy Lockhart,MID,13,1,38
+2011-12-player-L.Modric - Spurs,2011-12,Andy Lockhart,MID,15,1,38
+2011-12-player-M.Arteta - Arsenal,2011-12,Andy Lockhart,MID,8,1,38
+2011-12-player-A.Ramsey - Arsenal,2011-12,Andy Lockhart,MID,9,1,38
+2011-12-player-D.Berbatov - Man Utd.,2011-12,Andy Lockhart,FWD,19,1,38
+2011-12-player-D.Drogba - Chelsea,2011-12,Andy Lockhart,FWD,11,1,38
+2011-12-player-E.Dzeko - Man City,2011-12,Andy Lockhart,FWD,5,1,38
+2011-12-team-Bolton,2011-12,Emma Lockhart,GK,5,1,38
+2011-12-player-P.Scharner - West Brom,2011-12,Emma Lockhart,DEF,8,1,38
+2011-12-player-P.Jagielka - Everton,2011-12,Emma Lockhart,DEF,7,1,38
+2011-12-player-C.Samba - Blackburn,2011-12,Emma Lockhart,DEF,11,1,38
+2011-12-player-T.Cahill - Everton,2011-12,Emma Lockhart,MID,20,1,38
+2011-12-player-R.Merieles - Chelsea,2011-12,Emma Lockhart,MID,13,1,38
+2011-12-player-M.Rodriguez - Liverpool,2011-12,Emma Lockhart,MID,9,1,38
+2011-12-player-A.Johnson - Man City,2011-12,Emma Lockhart,MID,5,1,38
+2011-12-player-S.Kalou - Chelsea,2011-12,Emma Lockhart,FWD,5,1,38
+2011-12-player-H.Rodallega - Wigan,2011-12,Emma Lockhart,FWD,7,1,38
+2011-12-player-R.Fuller - Stoke,2011-12,Emma Lockhart,FWD,4,1,38
+2011-12-team-Spurs,2011-12,Ken Maggs,GK,41,1,38
+2011-12-player-M.Turner - Sunderland,2011-12,Ken Maggs,DEF,6,1,38
+2011-12-player-B.Jones - West Brom,2011-12,Ken Maggs,DEF,1,1,38
+2011-12-player-L.Koscielny - Arsenal,2011-12,Ken Maggs,DEF,7,1,38
+2011-12-player-D.Murphy - Fulham,2011-12,Ken Maggs,MID,18,1,38
+2011-12-player-M.Gueye - Everton,2011-12,Ken Maggs,MID,1,1,38
+2011-12-player-A.Cabaye - Newcastle,2011-12,Ken Maggs,MID,1,1,38
+2011-12-player-S.Sessegnon - Sunderland,2011-12,Ken Maggs,MID,8,1,38
+2011-12-player-P.Odemwingie - West Brom,2011-12,Ken Maggs,FWD,12,1,38
+2011-12-player-Yakubu - Blackburn,2011-12,Ken Maggs,FWD,2,1,38
+2011-12-player-PD.Cisse - Newcastle,2011-12,Ken Maggs,FWD,3,1,38
+2011-12-team-Chelsea,2011-12,John Palmer,GK,52,1,38
+2011-12-player-SJ.Enrique - Liverpool,2011-12,John Palmer,DEF,7,1,38
+2011-12-player-E.Boyce - Wigan,2011-12,John Palmer,DEF,3,1,38
+2011-12-player-V.Corluka - Spurs,2011-12,John Palmer,DEF,1,1,38
+2011-12-player-S.Gerrard - Liverpool,2011-12,John Palmer,MID,20,1,38
+2011-12-player-J.Gomez - Wigan,2011-12,John Palmer,MID,1,1,38
+2011-12-player-D.Gosling - Newcastle,2011-12,John Palmer,MID,2,1,38
+2011-12-player-C.Brunt - West Brom,2011-12,John Palmer,MID,1,1,38
+2011-12-player-A.Gyan - Sunderland,2011-12,John Palmer,FWD,10,1,38
+2011-12-player-S.Dobbie - Swansea,2011-12,John Palmer,FWD,2,1,38
+2011-12-player-N.Bendtner - Sunderland,2011-12,John Palmer,FWD,1,1,38
+2011-12-team-Man City,2011-12,Gary Speechley,GK,52,1,38
+2011-12-player-S.Ward - Wolves,2011-12,Gary Speechley,DEF,2,1,38
+2011-12-player-M.Richards - Man City,2011-12,Gary Speechley,DEF,1,1,38
+2011-12-player-R.Johnson - Wolves,2011-12,Gary Speechley,DEF,1,1,38
+2011-12-player-F.Malouda - Chelsea,2011-12,Gary Speechley,MID,27,1,38
+2011-12-player-A.Faurlin - QPR,2011-12,Gary Speechley,MID,2,1,38
+2011-12-player-S.Larsson - Sunderland,2011-12,Gary Speechley,MID,1,1,38
+2011-12-player-J.Cole - Liverpool,2011-12,Gary Speechley,MID,1,1,38
+2011-12-player-G.Holt - Norwich,2011-12,Gary Speechley,FWD,6,1,38
+2011-12-player-L.Saha - Spurs,2011-12,Gary Speechley,FWD,6,1,38
+2011-12-player-D.Sturridge - Chelsea,2011-12,Gary Speechley,FWD,1,1,38
+2011-12-team-Wolves,2011-12,Kev Thulbourne,GK,3,1,38
+2011-12-player-L.Baines - Everton,2011-12,Kev Thulbourne,DEF,10,1,38
+2011-12-player-J.Collins - A.Villa,2011-12,Kev Thulbourne,DEF,3,1,38
+2011-12-player-A.Cole - Chelsea,2011-12,Kev Thulbourne,DEF,4,1,38
+2011-12-player-R.Van Der Vaart - Spurs,2011-12,Kev Thulbourne,MID,33,1,38
+2011-12-player-J.Barton - QPR,2011-12,Kev Thulbourne,MID,6,1,38
+2011-12-player-A.Arshavin - Arsenal,2011-12,Kev Thulbourne,MID,11,1,38
+2011-12-player-M.Albrighton - A.Villa,2011-12,Kev Thulbourne,MID,4,1,38
+2011-12-player-R.Van Persie - Arsenal,2011-12,Kev Thulbourne,FWD,23,1,38
+2011-12-player-K.Doyle - Wolves,2011-12,Kev Thulbourne,FWD,2,1,38
+2011-12-player-E.Adebayor - Spurs,2011-12,Kev Thulbourne,FWD,1,1,38
+2011-12-team-Everton,2011-12,Wendy Thulbourne,GK,42,1,38
+2011-12-player-S.Taylor - Newcastle,2011-12,Wendy Thulbourne,DEF,2,1,38
+2011-12-player-G.Clichy - Man City,2011-12,Wendy Thulbourne,DEF,1,1,38
+2011-12-player-G.Caldwell - Wigan,2011-12,Wendy Thulbourne,DEF,1,1,38
+2011-12-player-YY.Toure - Man City,2011-12,Wendy Thulbourne,MID,14,1,38
+2011-12-player-N.Reo-Coker - Bolton,2011-12,Wendy Thulbourne,MID,1,1,38
+2011-12-player-C.Eagles - Bolton,2011-12,Wendy Thulbourne,MID,1,1,38
+2011-12-player-Y.Benayouan - Arsenal,2011-12,Wendy Thulbourne,MID,4,1,38
+2011-12-player-Gervinho - Arsenal,2011-12,Wendy Thulbourne,FWD,19,1,38
+2011-12-player-C.Tevez - Man City,2011-12,Wendy Thulbourne,FWD,10,1,38
+2011-12-player-P.Crouch - Stoke,2011-12,Wendy Thulbourne,FWD,5,1,38
+2011-12-team-Wigan,2011-12,Jamie Wright,GK,5,1,38
+2011-12-player-M.Skrtel - Liverpool,2011-12,Jamie Wright,DEF,1,1,38
+2011-12-player-R.Nelson - Spurs,2011-12,Jamie Wright,DEF,3,1,38
+2011-12-player-M.Figueroa - Wigan,2011-12,Jamie Wright,DEF,1,1,38
+2011-12-player-C.Adam - Liverpool,2011-12,Jamie Wright,MID,21,1,38
+2011-12-player-Z.Gera - West Brom,2011-12,Jamie Wright,MID,7,1,38
+2011-12-player-T.Huddlestone - Spurs,2011-12,Jamie Wright,MID,3,1,38
+2011-12-player-S.Marveaux - Newcastle,2011-12,Jamie Wright,MID,4,1,38
+2011-12-player-R.Pavlyuchenko - Spurs,2011-12,Jamie Wright,FWD,11,1,38
+2011-12-player-S.Aguero - Man City,2011-12,Jamie Wright,FWD,20,1,38
+2011-12-player-L.Suarez - Liverpool,2011-12,Jamie Wright,FWD,19,1,38
+2011-12-team-Man Utd,2011-12,Neil Wright,GK,57,1,38
+2011-12-player-M.Dawson - Spurs,2011-12,Neil Wright,DEF,6,1,38
+2011-12-player-G.Johnson - Liverpool,2011-12,Neil Wright,DEF,8,1,38
+2011-12-player-S.Distin - Everton,2011-12,Neil Wright,DEF,1,1,38
+2011-12-player-A.Valencia - Man Utd,2011-12,Neil Wright,MID,10,1,38
+2011-12-player-M.Pederson - Blackburn,2011-12,Neil Wright,MID,3,1,38
+2011-12-player-G.Dorrans - West Brom,2011-12,Neil Wright,MID,3,1,38
+2011-12-player-M.Fellaini - Everton,2011-12,Neil Wright,MID,1,1,38
+2011-12-player-K.Jones - Stoke,2011-12,Neil Wright,FWD,9,1,38
+2011-12-player-E.Heskey - A.Villa,2011-12,Neil Wright,FWD,1,1,38
+2011-12-player-M.Owen - Man Utd.,2011-12,Neil Wright,FWD,1,1,38
+2012-13-team-West Ham,2012-13,Danny Arbon,GK,1,1,38
+2012-13-player-I.Harte - Reading,2012-13,Danny Arbon,DEF,7,1,38
+2012-13-player-JA.Riise - Fulham,2012-13,Danny Arbon,DEF,1,1,38
+2012-13-player-K.Walker - Spurs,2012-13,Danny Arbon,DEF,8,1,38
+2012-13-player-M.Dembele - Spurs,2012-13,Danny Arbon,MID,3,1,38
+2012-13-player-HB.Arfa - Newcastle,2012-13,Danny Arbon,MID,16,1,38
+2012-13-player-J.Guzman - Swansea,2012-13,Danny Arbon,MID,1,1,38
+2012-13-player-M.Marin - Chelsea,2012-13,Danny Arbon,MID,1,1,38
+2012-13-player-S.Aguero - Man City,2012-13,Danny Arbon,FWD,25,1,38
+2012-13-player-W.Rooney - Man Utd,2012-13,Danny Arbon,FWD,30,1,38
+2012-13-player-S.Ameobi - Newcastle,2012-13,Danny Arbon,FWD,1,1,38
+2012-13-team-Fulham,2012-13,Rory Canham,GK,10,1,38
+2012-13-player-L.Enrique - Liverpool,2012-13,Rory Canham,DEF,3,1,38
+2012-13-player-R.Huth - Stoke,2012-13,Rory Canham,DEF,9,1,38
+2012-13-player-S.Warnock - A.Villa,2012-13,Rory Canham,DEF,1,1,38
+2012-13-player-V.Cabaye - Newcastle,2012-13,Rory Canham,MID,10,1,38
+2012-13-player-J.Mata - Chelsea,2012-13,Rory Canham,MID,15,1,38
+2012-13-player-JS.Park - QPR,2012-13,Rory Canham,MID,2,1,38
+2012-13-player-S.Sessegnon - Sunderland,2012-13,Rory Canham,MID,9,1,38
+2012-13-player-PB.Cisse - Newcastle,2012-13,Rory Canham,FWD,15,1,38
+2012-13-player-P.Odemwingie - West Brom,2012-13,Rory Canham,FWD,7,1,38
+2012-13-player-K.Jones - Stoke,2012-13,Rory Canham,FWD,1,1,38
+2012-13-team-Sunderland,2012-13,Andrea Chapman,GK,22,1,38
+2012-13-player-R.Bennett - Norwich,2012-13,Andrea Chapman,DEF,1,1,38
+2012-13-player-N.Vidic - Man Utd,2012-13,Andrea Chapman,DEF,12,1,38
+2012-13-player-P.Jagielka - Everton,2012-13,Andrea Chapman,DEF,10,1,38
+2012-13-player-L.Osman - Everton,2012-13,Andrea Chapman,MID,7,1,38
+2012-13-player-J.McClean - Sunderland,2012-13,Andrea Chapman,MID,5,1,38
+2012-13-player-A.Pilkington - Norwich,2012-13,Andrea Chapman,MID,15,1,38
+2012-13-player-I.Bannan - A.Villa,2012-13,Andrea Chapman,MID,1,1,38
+2012-13-player-S.Long - West Brom,2012-13,Andrea Chapman,FWD,3,1,38
+2012-13-player-F.Di Santo - Wigan,2012-13,Andrea Chapman,FWD,21,1,38
+2012-13-player-A.Johnson - QPR,2012-13,Andrea Chapman,FWD,1,1,38
+2012-13-team-Chelsea,2012-13,Gary Evans,GK,15,1,38
+2012-13-player-B.Hangeland - Fulham,2012-13,Gary Evans,DEF,6,1,38
+2012-13-player-F.Collocini - Newcastle,2012-13,Gary Evans,DEF,7,1,38
+2012-13-player-G.Johnson - Liverpool,2012-13,Gary Evans,DEF,4,1,38
+2012-13-player-A.Taarabt - QPR,2012-13,Gary Evans,MID,13,1,38
+2012-13-player-S.Sinclair - Man City,2012-13,Gary Evans,MID,14,1,38
+2012-13-player-A.Johnson - Sunderland,2012-13,Gary Evans,MID,9,1,38
+2012-13-player-G.Sigurdsson - Spurs,2012-13,Gary Evans,MID,16,1,38
+2012-13-player-H.Rodallega - Fulham,2012-13,Gary Evans,FWD,5,1,38
+2012-13-player-J.Hernandez - Man Utd,2012-13,Gary Evans,FWD,5,1,38
+2012-13-player-G.Agbonlahor - A.Villa,2012-13,Gary Evans,FWD,4,1,38
+2012-13-team-QPR,2012-13,Steve Gale,GK,16,1,38
+2012-13-player-M.Skrtl - Liverpool,2012-13,Steve Gale,DEF,5,1,38
+2012-13-player-J.Vertonghen - Spurs,2012-13,Steve Gale,DEF,6,1,38
+2012-13-player-M.Taylor - West Ham,2012-13,Steve Gale,DEF,1,1,38
+2012-13-player-W.Hoolahon - Norwich,2012-13,Steve Gale,MID,4,1,38
+2012-13-player-A.Lennon - Spurs,2012-13,Steve Gale,MID,6,1,38
+2012-13-player-A.Valencia - Man Utd,2012-13,Steve Gale,MID,11,1,38
+2012-13-player-A.Oxlaide-Chamberlain - Arsenal,2012-13,Steve Gale,MID,7,1,38
+2012-13-player-J.Defoe - Spurs,2012-13,Steve Gale,FWD,19,1,38
+2012-13-player-D.Ba - Chelsea,2012-13,Steve Gale,FWD,17,1,38
+2012-13-player-V.Moses - Chelsea,2012-13,Steve Gale,FWD,8,1,38
+2012-13-team-Man Utd,2012-13,Pam Hart,GK,46,1,38
+2012-13-player-T.Vermaelen - Arsenal,2012-13,Pam Hart,DEF,19,1,38
+2012-13-player-S.Distin - Everton,2012-13,Pam Hart,DEF,1,1,38
+2012-13-player-K.Gibbs - Arsenal,2012-13,Pam Hart,DEF,1,1,38
+2012-13-player-K.Nolan - West Ham,2012-13,Pam Hart,MID,11,1,38
+2012-13-player-B.Gunnarson - Reading,2012-13,Pam Hart,MID,1,1,38
+2012-13-player-J.McAnuff - Reading,2012-13,Pam Hart,MID,1,1,38
+2012-13-player-S.Ireland - A.Villa,2012-13,Pam Hart,MID,1,1,38
+2012-13-player-D.Bent - A.Villa,2012-13,Pam Hart,FWD,16,1,38
+2012-13-player-E.Adebayor - Spurs,2012-13,Pam Hart,FWD,1,1,38
+2012-13-player-C.Wickham - Sunderland,2012-13,Pam Hart,FWD,1,1,38
+2012-13-team-Norwich,2012-13,Tim Hart,GK,1,1,38
+2012-13-player-M.Turner - Norwich,2012-13,Tim Hart,DEF,1,1,38
+2012-13-player-C.Samba - QPR,2012-13,Tim Hart,DEF,1,1,38
+2012-13-player-A.Pearce - Reading,2012-13,Tim Hart,DEF,1,1,38
+2012-13-player-G.Ramirez - Southampton,2012-13,Tim Hart,MID,20,1,38
+2012-13-player-S.Gerard - Liverpool,2012-13,Tim Hart,MID,20,1,38
+2012-13-player-F.Lampard - Chelsea,2012-13,Tim Hart,MID,25,1,38
+2012-13-player-S.Kagawa - Man Utd,2012-13,Tim Hart,MID,21,1,38
+2012-13-player-A.Kone - Wigan,2012-13,Tim Hart,FWD,8,1,38
+2012-13-player-N.Bendtner - Arsenal,2012-13,Tim Hart,FWD,1,1,38
+2012-13-player-C.Cole - West Ham,2012-13,Tim Hart,FWD,1,1,38
+2012-13-team-West Brom,2012-13,Mike Howling,GK,5,1,38
+2012-13-player-L.Baines - Everton,2012-13,Mike Howling,DEF,12,1,38
+2012-13-player-D.Agger - Liverpool,2012-13,Mike Howling,DEF,3,1,38
+2012-13-player-A.Kolorov - Man City,2012-13,Mike Howling,DEF,3,1,38
+2012-13-player-L.Nani - Man Utd,2012-13,Mike Howling,MID,15,1,38
+2012-13-player-C.Dempsey - Spurs,2012-13,Mike Howling,MID,20,1,38
+2012-13-player-J.Milner - Man City,2012-13,Mike Howling,MID,4,1,38
+2012-13-player-S.Diakita - QPR,2012-13,Mike Howling,MID,1,1,38
+2012-13-player-N.Jelavic - Everton,2012-13,Mike Howling,FWD,19,1,38
+2012-13-player-P.Pogrebnyak - Reading,2012-13,Mike Howling,FWD,10,1,38
+2012-13-player-J.Rodriguez - Southampton,2012-13,Mike Howling,FWD,4,1,38
+2012-13-team-Man City,2012-13,Mick Jones,GK,52,1,38
+2012-13-player-F.Zabaleta - Man City,2012-13,Mick Jones,DEF,2,1,38
+2012-13-player-R.Taylor - Newcastle,2012-13,Mick Jones,DEF,1,1,38
+2012-13-player-P.Bardsley - Sunderland,2012-13,Mick Jones,DEF,1,1,38
+2012-13-player-J.Walters - Stoke,2012-13,Mick Jones,MID,11,1,38
+2012-13-player-F.Pienaar - Everton,2012-13,Mick Jones,MID,9,1,38
+2012-13-player-C.Nzogbia - A.Villa,2012-13,Mick Jones,MID,3,1,38
+2012-13-player-S.Wright-Phillips - QPR,2012-13,Mick Jones,MID,1,1,38
+2012-13-player-R.Lambert - Southampton,2012-13,Mick Jones,FWD,13,1,38
+2012-13-player-F.Campbell - Sunderland,2012-13,Mick Jones,FWD,4,1,38
+2012-13-player-R.Lukaku - West Brom,2012-13,Mick Jones,FWD,1,1,38
+2012-13-team-Swansea City,2012-13,Andy Lockhart,GK,1,1,38
+2012-13-player-B.Ivanovic - Chelsea,2012-13,Andy Lockhart,DEF,6,1,38
+2012-13-player-G.Cahill - Chelsea,2012-13,Andy Lockhart,DEF,10,1,38
+2012-13-player-P.Jones - Man Utd,2012-13,Andy Lockhart,DEF,3,1,38
+2012-13-player-S.Downing - Liverpool,2012-13,Andy Lockhart,MID,1,1,38
+2012-13-player-Y.Toure - Man City,2012-13,Andy Lockhart,MID,17,1,38
+2012-13-player-T.Cleverley - Man Utd,2012-13,Andy Lockhart,MID,7,1,38
+2012-13-player-D.Silva - Man City,2012-13,Andy Lockhart,MID,19,1,38
+2012-13-player-L.Suarez - Liverpool,2012-13,Andy Lockhart,FWD,17,1,38
+2012-13-player-C.Benteke - A.Villa,2012-13,Andy Lockhart,FWD,17,1,38
+2012-13-player-D.Berbatov - Fulham,2012-13,Andy Lockhart,FWD,1,1,38
+2012-13-team-Arsenal,2012-13,Emma Lockhart,GK,26,1,38
+2012-13-player-C.Caldwell - Wigan,2012-13,Emma Lockhart,DEF,2,1,38
+2012-13-player-L.Koscielny - Arsenal,2012-13,Emma Lockhart,DEF,4,1,38
+2012-13-player-P.Senderos - Fulham,2012-13,Emma Lockhart,DEF,1,1,38
+2012-13-player-Ramires - Chelsea,2012-13,Emma Lockhart,MID,14,1,38
+2012-13-player-S.Larsson - Sunderland,2012-13,Emma Lockhart,MID,6,1,38
+2012-13-player-J.Gomez - Wigan,2012-13,Emma Lockhart,MID,3,1,38
+2012-13-player-A.Diarra - West Ham,2012-13,Emma Lockhart,MID,1,1,38
+2012-13-player-E.Dzeko - Man City,2012-13,Emma Lockhart,FWD,6,1,38
+2012-13-player-D.Graham - Sunderland,2012-13,Emma Lockhart,FWD,15,1,38
+2012-13-player-A.Carroll - West Ham,2012-13,Emma Lockhart,FWD,4,1,38
+2012-13-team-Spurs,2012-13,Ken Maggs,GK,25,1,38
+2012-13-player-G.Cameron - Stoke,2012-13,Ken Maggs,DEF,1,1,38
+2012-13-player-M.Lowton - A.Villa,2012-13,Ken Maggs,DEF,5,1,38
+2012-13-player-F.Da Silva - QPR,2012-13,Ken Maggs,DEF,4,1,38
+2012-13-player-J.Hoilett - QPR,2012-13,Ken Maggs,MID,13,1,38
+2012-13-player-J.Miyachi - Wigan,2012-13,Ken Maggs,MID,6,1,38
+2012-13-player-Guly - Southampton,2012-13,Ken Maggs,MID,1,1,38
+2012-13-player-Michu - Swansea,2012-13,Ken Maggs,MID,4,1,38
+2012-13-player-L.Podolski - Arsenal,2012-13,Ken Maggs,FWD,23,1,38
+2012-13-player-F.Borini - Liverpool,2012-13,Ken Maggs,FWD,10,1,38
+2012-13-player-M.Petric - Fulham,2012-13,Ken Maggs,FWD,8,1,38
+2012-13-team-Liverpool,2012-13,Gary Speechley,GK,40,1,38
+2012-13-player-J.Terry - Chelsea,2012-13,Gary Speechley,DEF,7,1,38
+2012-13-player-J.Hooiveld - Southampton,2012-13,Gary Speechley,DEF,3,1,38
+2012-13-player-K.Richardson - Fulham,2012-13,Gary Speechley,DEF,1,1,38
+2012-13-player-C.Adam - Stoke,2012-13,Gary Speechley,MID,4,1,38
+2012-13-player-A.Lallana - Southampton,2012-13,Gary Speechley,MID,4,1,38
+2012-13-player-R.Snodgrass - Norwich,2012-13,Gary Speechley,MID,1,1,38
+2012-13-player-E.Hazard - Chelsea,2012-13,Gary Speechley,MID,13,1,38
+2012-13-player-C.Tevez - Man City,2012-13,Gary Speechley,FWD,14,1,38
+2012-13-player-O.Giroud - Arsenal,2012-13,Gary Speechley,FWD,11,1,38
+2012-13-player-A.Le Fondre - Reading,2012-13,Gary Speechley,FWD,2,1,38
+2012-13-team-Aston Villa,2012-13,Kev Thulbourne,GK,16,1,38
+2012-13-player-D.Luiz - Chelsea,2012-13,Kev Thulbourne,DEF,3,1,38
+2012-13-player-L.Ridgewell - West Brom,2012-13,Kev Thulbourne,DEF,3,1,38
+2012-13-player-J.Lescott - Man City,2012-13,Kev Thulbourne,DEF,6,1,38
+2012-13-player-M.Arteta - Arsenal,2012-13,Kev Thulbourne,MID,9,1,38
+2012-13-player-G.Bale - Spurs,2012-13,Kev Thulbourne,MID,24,1,38
+2012-13-player-M.Fellaini - Everton,2012-13,Kev Thulbourne,MID,11,1,38
+2012-13-player-N.Dyer - Swansea,2012-13,Kev Thulbourne,MID,1,1,38
+2012-13-player-D.Sturridge - Liverpool,2012-13,Kev Thulbourne,FWD,13,1,38
+2012-13-player-B.Zamora - QPR,2012-13,Kev Thulbourne,FWD,11,1,38
+2012-13-player-Gervinho - Arsenal,2012-13,Kev Thulbourne,FWD,1,1,38
+2012-13-team-Everton,2012-13,Wendy Thulbourne,GK,43,1,38
+2012-13-player-A.Cole - Chelsea,2012-13,Wendy Thulbourne,DEF,1,1,38
+2012-13-player-V.Kaboul - Spurs,2012-13,Wendy Thulbourne,DEF,2,1,38
+2012-13-player-A.Santos - Arsenal,2012-13,Wendy Thulbourne,DEF,3,1,38
+2012-13-player-A.Assaidi - Liverpool,2012-13,Wendy Thulbourne,MID,10,1,38
+2012-13-player-F.Malouda - Chelsea,2012-13,Wendy Thulbourne,MID,1,1,38
+2012-13-player-A.Arshavin - Arsenal,2012-13,Wendy Thulbourne,MID,2,1,38
+2012-13-player-J.Wilshere - Arsenal,2012-13,Wendy Thulbourne,MID,1,1,38
+2012-13-player-R.Van Persie - Man Utd,2012-13,Wendy Thulbourne,FWD,25,1,38
+2012-13-player-R.Vaz Te - West Ham,2012-13,Wendy Thulbourne,FWD,3,1,38
+2012-13-player-S.Naismith - Everton,2012-13,Wendy Thulbourne,FWD,5,1,38
+2012-13-team-Stoke City,2012-13,Jamie Wright,GK,20,1,38
+2012-13-player-V.Kompany - Man City,2012-13,Jamie Wright,DEF,9,1,38
+2012-13-player-G.McAuley - West Brom,2012-13,Jamie Wright,DEF,1,1,38
+2012-13-player-A.Ferdinand - QPR,2012-13,Jamie Wright,DEF,1,1,38
+2012-13-player-S.Nasri - Man City,2012-13,Jamie Wright,MID,18,1,38
+2012-13-player-Oscar - Chelsea,2012-13,Jamie Wright,MID,6,1,38
+2012-13-player-S.Cazorla - Arsenal,2012-13,Jamie Wright,MID,14,1,38
+2012-13-player-J.Allen - Liverpool,2012-13,Jamie Wright,MID,3,1,38
+2012-13-player-P.Crouch - Stoke,2012-13,Jamie Wright,FWD,13,1,38
+2012-13-player-D.Cisse - QPR,2012-13,Jamie Wright,FWD,14,1,38
+2012-13-player-V.Anichebe - Everton,2012-13,Jamie Wright,FWD,1,1,38
+2012-13-team-Newcastle,2012-13,Neil Wright,GK,10,1,38
+2012-13-player-M.Dawson - Spurs,2012-13,Neil Wright,DEF,1,1,38
+2012-13-player-M.Shawcross - Stoke,2012-13,Neil Wright,DEF,4,1,38
+2012-13-player-S.Taylor - Newcastle,2012-13,Neil Wright,DEF,6,1,38
+2012-13-player-A.Young - Man Utd,2012-13,Neil Wright,MID,10,1,38
+2012-13-player-A.Ramsey - Arsenal,2012-13,Neil Wright,MID,7,1,38
+2012-13-player-T.Walcott - Arsenal,2012-13,Neil Wright,MID,12,1,38
+2012-13-player-M.Noble - West Ham,2012-13,Neil Wright,MID,9,1,38
+2012-13-player-F.Torres - Chelsea,2012-13,Neil Wright,FWD,21,1,38
+2012-13-player-D.Welbeck - Man Utd,2012-13,Neil Wright,FWD,5,1,38
+2012-13-player-G.Holt - Norwich,2012-13,Neil Wright,FWD,11,1,38
+2013-14-team-Stoke City,2013-14,Thomas Allan,GK,16,1,38
+2013-14-player-D.Luiz - Chelsea,2013-14,Thomas Allan,DEF,12,1,38
+2013-14-player-M.Skrtl - Liverpool,2013-14,Thomas Allan,DEF,4,1,38
+2013-14-player-A.Cole - Chelsea,2013-14,Thomas Allan,DEF,4,1,38
+2013-14-player-A.Taarabt - Fulham,2013-14,Thomas Allan,MID,8,1,38
+2013-14-player-S.Pienarr - Everton,2013-14,Thomas Allan,MID,4,1,38
+2013-14-player-A.Ramsey - Arsenal,2013-14,Thomas Allan,MID,1,1,38
+2013-14-player-Ramires - Chelsea,2013-14,Thomas Allan,MID,1,1,38
+2013-14-player-D.Wellbeck - Man Utd,2013-14,Thomas Allan,FWD,8,1,38
+2013-14-player-L.Podolski - Arsenal,2013-14,Thomas Allan,FWD,16,1,38
+2013-14-player-B.Ruiz - Fulham,2013-14,Thomas Allan,FWD,1,1,38
+2013-14-team-Newcastle,2013-14,Danny Arbon,GK,14,1,38
+2013-14-player-J.Vertonghen - Spurs,2013-14,Danny Arbon,DEF,10,1,38
+2013-14-player-M.Dawson - Spurs,2013-14,Danny Arbon,DEF,4,1,38
+2013-14-player-F.Coloccini - Newcastle,2013-14,Danny Arbon,DEF,1,1,38
+2013-14-player-T.Walcott - Arsenal,2013-14,Danny Arbon,MID,25,1,38
+2013-14-player-M.Arteta - Arsenal,2013-14,Danny Arbon,MID,10,1,38
+2013-14-player-A.Johnson - Sunderland,2013-14,Danny Arbon,MID,2,1,38
+2013-14-player-S.Larsson - Sunderland,2013-14,Danny Arbon,MID,5,1,38
+2013-14-player-PD.Cisse - Newcastle,2013-14,Danny Arbon,FWD,8,1,38
+2013-14-player-E.Dzeko - Man City,2013-14,Danny Arbon,FWD,15,1,38
+2013-14-player-Y.Gouffran - Newcastle,2013-14,Danny Arbon,FWD,1,1,38
+2013-14-team-Fulham,2013-14,Rory Canham,GK,4,1,38
+2013-14-player-S.Caulker - Cardiff City,2013-14,Rory Canham,DEF,7,1,38
+2013-14-player-N.Clyne - Southampton,2013-14,Rory Canham,DEF,1,1,38
+2013-14-player-G.McAuley - West Brom,2013-14,Rory Canham,DEF,4,1,38
+2013-14-player-E.Giaccherini - Sunderland,2013-14,Rory Canham,MID,1,1,38
+2013-14-player-MV.Ginkel - Chelsea,2013-14,Rory Canham,MID,4,1,38
+2013-14-player-R.Sterling - Liverpool,2013-14,Rory Canham,MID,1,1,38
+2013-14-player-A.Tonev - Aston Villa,2013-14,Rory Canham,MID,1,1,38
+2013-14-player-C.Benteke - Aston Villa,2013-14,Rory Canham,FWD,26,1,38
+2013-14-player-W.Bony - Swansea City,2013-14,Rory Canham,FWD,24,1,38
+2013-14-player-K.Mirallas - Everton,2013-14,Rory Canham,FWD,14,1,38
+2013-14-team-West Brom,2013-14,Andrea Chapman,GK,6,1,38
+2013-14-player-R.Vlaar - Aston Villa,2013-14,Andrea Chapman,DEF,7,1,38
+2013-14-player-V.Kompany - Man City,2013-14,Andrea Chapman,DEF,6,1,38
+2013-14-player-Chico - Swansea City,2013-14,Andrea Chapman,DEF,5,1,38
+2013-14-player-M.Walters - Stoke City,2013-14,Andrea Chapman,MID,10,1,38
+2013-14-player-G.Karagounis - Fulham,2013-14,Andrea Chapman,MID,1,1,38
+2013-14-player-J.De Guzman - Swansea City,2013-14,Andrea Chapman,MID,9,1,38
+2013-14-player-W.Hoolahan - Norwich City,2013-14,Andrea Chapman,MID,1,1,38
+2013-14-player-D.Ba - Chelsea,2013-14,Andrea Chapman,FWD,14,1,38
+2013-14-player-J.Dong-Won - Sunderland,2013-14,Andrea Chapman,FWD,1,1,38
+2013-14-player-F.Torres - Chelsea,2013-14,Andrea Chapman,FWD,13,1,38
+2013-14-team-West Ham,2013-14,Gary Evans,GK,21,1,38
+2013-14-player-S.Taylor - Newcastle,2013-14,Gary Evans,DEF,2,1,38
+2013-14-player-P.Zabaleta - Man City,2013-14,Gary Evans,DEF,3,1,38
+2013-14-player-P.Jones - Man Utd,2013-14,Gary Evans,DEF,3,1,38
+2013-14-player-A.Oxlade-Chamberlain - Arsenal,2013-14,Gary Evans,MID,4,1,38
+2013-14-player-K.Nolan - West Ham,2013-14,Gary Evans,MID,19,1,38
+2013-14-player-S.Sessegnon - West Brom,2013-14,Gary Evans,MID,16,1,38
+2013-14-player-T.Ince - Crystal Palace,2013-14,Gary Evans,MID,9,1,38
+2013-14-player-G.Murray - Crystal Palace,2013-14,Gary Evans,FWD,9,1,38
+2013-14-player-E.Adebayor - Spurs,2013-14,Gary Evans,FWD,10,1,38
+2013-14-player-J.Hernandez - Man Utd,2013-14,Gary Evans,FWD,3,1,38
+2013-14-team-Southampton,2013-14,Tom Fowkes,GK,1,1,38
+2013-14-player-B.Ivanovic - Chelsea,2013-14,Tom Fowkes,DEF,16,1,38
+2013-14-player-D.Agger - Liverpool,2013-14,Tom Fowkes,DEF,4,1,38
+2013-14-player-A.Kolorov - Man City,2013-14,Tom Fowkes,DEF,1,1,38
+2013-14-player-J.Navas - Man City,2013-14,Tom Fowkes,MID,13,1,38
+2013-14-player-E.Hazard - Chelsea,2013-14,Tom Fowkes,MID,28,1,38
+2013-14-player-L.Holtby - Fulham,2013-14,Tom Fowkes,MID,1,1,38
+2013-14-player-S.Downing - West Ham,2013-14,Tom Fowkes,MID,1,1,38
+2013-14-player-D.Bent - Fulham,2013-14,Tom Fowkes,FWD,9,1,38
+2013-14-player-W.Rooney - Man Utd,2013-14,Tom Fowkes,FWD,19,1,38
+2013-14-player-A.Schurrle - Chelsea,2013-14,Tom Fowkes,FWD,1,1,38
+2013-14-team-Swansea City,2013-14,Steve Gale,GK,19,1,38
+2013-14-player-C.Clark - Aston Villa,2013-14,Steve Gale,DEF,1,1,38
+2013-14-player-M.Figueroa - Hull City,2013-14,Steve Gale,DEF,1,1,38
+2013-14-player-M.Turner - Norwich City,2013-14,Steve Gale,DEF,1,1,38
+2013-14-player-P.Coutinho - Liverpool,2013-14,Steve Gale,MID,17,1,38
+2013-14-player-D.Silva - Man City,2013-14,Steve Gale,MID,21,1,38
+2013-14-player-M.Dembele - Spurs,2013-14,Steve Gale,MID,4,1,38
+2013-14-player-R.Koren - Hull City,2013-14,Steve Gale,MID,1,1,38
+2013-14-player-C.Bellamy - Cardiff City,2013-14,Steve Gale,FWD,4,1,38
+2013-14-player-G.Agbonlahor - Aston Villa,2013-14,Steve Gale,FWD,11,1,38
+2013-14-player-D.Sturridge - Liverpool,2013-14,Steve Gale,FWD,20,1,38
+2013-14-team-Sunderland,2013-14,Pam Hart,GK,3,1,38
+2013-14-player-B.Hangeland - Fulham,2013-14,Pam Hart,DEF,5,1,38
+2013-14-player-D.Fox - Southampton,2013-14,Pam Hart,DEF,1,1,38
+2013-14-player-R.Da Silva - Man Utd,2013-14,Pam Hart,DEF,3,1,38
+2013-14-player-N.Chadli - Spurs,2013-14,Pam Hart,MID,10,1,38
+2013-14-player-M.Jarvis - West Ham,2013-14,Pam Hart,MID,6,1,38
+2013-14-player-M.Fellaini - Man Utd,2013-14,Pam Hart,MID,21,1,38
+2013-14-player-N.Dyer - Swansea City,2013-14,Pam Hart,MID,2,1,38
+2013-14-player-R.Lukaku - Everton,2013-14,Pam Hart,FWD,16,1,38
+2013-14-player-R.Lambert - Southampton,2013-14,Pam Hart,FWD,20,1,38
+2013-14-player-D.Berbatov - Fulham,2013-14,Pam Hart,FWD,13,1,38
+2013-14-team-Norwich,2013-14,Tim Hart,GK,11,1,38
+2013-14-player-J.Hooiveld - Southampton,2013-14,Tim Hart,DEF,1,1,38
+2013-14-player-A.Williams - Swansea City,2013-14,Tim Hart,DEF,1,1,38
+2013-14-player-A.Luna - Aston Villa,2013-14,Tim Hart,DEF,1,1,38
+2013-14-player-S.Cazorla - Arsenal,2013-14,Tim Hart,MID,21,1,38
+2013-14-player-S.Kagawa - Man Utd,2013-14,Tim Hart,MID,18,1,38
+2013-14-player-J.Mata - Man Utd,2013-14,Tim Hart,MID,20,1,38
+2013-14-player-S.Sinclair - West Brom,2013-14,Tim Hart,MID,1,1,38
+2013-14-player-A.Negredo - Man City,2013-14,Tim Hart,FWD,24,1,38
+2013-14-player-F.Campbell - Cardiff City,2013-14,Tim Hart,FWD,1,1,38
+2013-14-player-Y.Sagbo - Hull City,2013-14,Tim Hart,FWD,1,1,38
+2013-14-team-Man Utd,2013-14,Mick Jones,GK,41,1,38
+2013-14-player-J.Fonte - Southampton,2013-14,Mick Jones,DEF,2,1,38
+2013-14-player-K.Lescott - Man City,2013-14,Mick Jones,DEF,2,1,38
+2013-14-player-S.Coleman - Everton,2013-14,Mick Jones,DEF,1,1,38
+2013-14-player-Oscar - Chelsea,2013-14,Mick Jones,MID,11,1,38
+2013-14-player-Paulinho - Spurs,2013-14,Mick Jones,MID,18,1,38
+2013-14-player-L.Nani - Man Utd,2013-14,Mick Jones,MID,4,1,38
+2013-14-player-V.Wanyama - Southampton,2013-14,Mick Jones,MID,9,1,38
+2013-14-player-S.Eto'o - Chelsea,2013-14,Mick Jones,FWD,3,1,38
+2013-14-player-M.Vydra - West Brom,2013-14,Mick Jones,FWD,3,1,38
+2013-14-player-S.Jovetic - Man City,2013-14,Mick Jones,FWD,5,1,38
+2013-14-team-Liverpool,2013-14,Andy Lockhart,GK,43,1,38
+2013-14-player-S.Bassong - Norwich City,2013-14,Andy Lockhart,DEF,6,1,38
+2013-14-player-Y.Kaboul - Spurs,2013-14,Andy Lockhart,DEF,2,1,38
+2013-14-player-P.Mertesacker - Arsenal,2013-14,Andy Lockhart,DEF,4,1,38
+2013-14-player-M.Schneiderlin - Southampton,2013-14,Andy Lockhart,MID,4,1,38
+2013-14-player-Fernandinho - Man City,2013-14,Andy Lockhart,MID,5,1,38
+2013-14-player-A.Pilkington - Norwich City,2013-14,Andy Lockhart,MID,1,1,38
+2013-14-player-J.Morrison - West Brom,2013-14,Andy Lockhart,MID,1,1,38
+2013-14-player-RV.Persie - Man Utd,2013-14,Andy Lockhart,FWD,27,1,38
+2013-14-player-N.Jelavic - Hull City,2013-14,Andy Lockhart,FWD,6,1,38
+2013-14-player-D.Gayle - Crystal Palace,2013-14,Andy Lockhart,FWD,1,1,38
+2013-14-team-Chelsea,2013-14,Emma Lockhart,GK,42,1,38
+2013-14-player-G.Johnson - Liverpool,2013-14,Emma Lockhart,DEF,3,1,38
+2013-14-player-G.Cahill - Chelsea,2013-14,Emma Lockhart,DEF,5,1,38
+2013-14-player-R.Martin - Norwich City,2013-14,Emma Lockhart,DEF,1,1,38
+2013-14-player-S.Gerard - Liverpool,2013-14,Emma Lockhart,MID,16,1,38
+2013-14-player-G.Boyd - Hull City,2013-14,Emma Lockhart,MID,1,1,38
+2013-14-player-G.Ramirez - Southampton,2013-14,Emma Lockhart,MID,4,1,38
+2013-14-player-W.Zaha - Cardiff City,2013-14,Emma Lockhart,MID,6,1,38
+2013-14-player-L.Suarez - Liverpool,2013-14,Emma Lockhart,FWD,19,1,38
+2013-14-player-V.Anichebe - West Brom,2013-14,Emma Lockhart,FWD,1,1,38
+2013-14-player-A.Weimans - Aston Villa,2013-14,Emma Lockhart,FWD,1,1,38
+2013-14-team-Man City,2013-14,Ken Maggs,GK,40,1,38
+2013-14-player-F.Amorebieta - Fulham,2013-14,Ken Maggs,DEF,5,1,38
+2013-14-player-J.Okore - Aston Villa,2013-14,Ken Maggs,DEF,1,1,38
+2013-14-player-A.Cissokho - Liverpool,2013-14,Ken Maggs,DEF,1,1,38
+2013-14-player-S.Sidwell - Fulham,2013-14,Ken Maggs,MID,7,1,38
+2013-14-player-BK.Kim - Cardiff City,2013-14,Ken Maggs,MID,3,1,38
+2013-14-player-J.Puncheon - Crystal Palace,2013-14,Ken Maggs,MID,7,1,38
+2013-14-player-L.Fer - Norwich City,2013-14,Ken Maggs,MID,4,1,38
+2013-14-player-RV.Wolfswinkel - Norwich City,2013-14,Ken Maggs,FWD,19,1,38
+2013-14-player-J.Altidore - Sunderland,2013-14,Ken Maggs,FWD,6,1,38
+2013-14-player-H.Rodallega - Fulham,2013-14,Ken Maggs,FWD,1,1,38
+2013-14-team-Everton,2013-14,Gary Speechley,GK,24,1,38
+2013-14-player-T.Vermaelen - Arsenal,2013-14,Gary Speechley,DEF,10,1,38
+2013-14-player-J.Evans - Man Utd,2013-14,Gary Speechley,DEF,2,1,38
+2013-14-player-R.Huth - Stoke City,2013-14,Gary Speechley,DEF,2,1,38
+2013-14-player-F.Lampard - Chelsea,2013-14,Gary Speechley,MID,26,1,38
+2013-14-player-A.Lallana - Southampton,2013-14,Gary Speechley,MID,6,1,38
+2013-14-player-A.Young - Man Utd,2013-14,Gary Speechley,MID,2,1,38
+2013-14-player-M.Sissoko - Newcastle,2013-14,Gary Speechley,MID,1,1,38
+2013-14-player-Michu - Swansea City,2013-14,Gary Speechley,FWD,19,1,38
+2013-14-player-G.Hooper - Norwich City,2013-14,Gary Speechley,FWD,7,1,38
+2013-14-player-D.Graham - Hull City,2013-14,Gary Speechley,FWD,1,1,38
+2013-14-team-Aston Villa,2013-14,Kev Thulbourne,GK,9,1,38
+2013-14-player-L.Koscielny - Arsenal,2013-14,Kev Thulbourne,DEF,3,1,38
+2013-14-player-P.Evra - Man Utd,2013-14,Kev Thulbourne,DEF,3,1,38
+2013-14-player-K.Toure - Liverpool,2013-14,Kev Thulbourne,DEF,2,1,38
+2013-14-player-M.Ozul - Arsenal,2013-14,Kev Thulbourne,MID,25,1,38
+2013-14-player-Y.Toure - Man City,2013-14,Kev Thulbourne,MID,20,1,38
+2013-14-player-J.Wilshire - Arsenal,2013-14,Kev Thulbourne,MID,6,1,38
+2013-14-player-C.Adam - Stoke City,2013-14,Kev Thulbourne,MID,3,1,38
+2013-14-player-S.Fletcher - Sunderland,2013-14,Kev Thulbourne,FWD,16,1,38
+2013-14-player-M.Chamakh - Crystal Palace,2013-14,Kev Thulbourne,FWD,5,1,38
+2013-14-player-L.Remy - Newcastle,2013-14,Kev Thulbourne,FWD,7,1,38
+2013-14-team-Arsenal,2013-14,Wendy Thulbourne,GK,37,1,38
+2013-14-player-P.Jagielka - Everton,2013-14,Wendy Thulbourne,DEF,7,1,38
+2013-14-player-M.Richards - Man City,2013-14,Wendy Thulbourne,DEF,1,1,38
+2013-14-player-L.Ridgewell - West Brom,2013-14,Wendy Thulbourne,DEF,1,1,38
+2013-14-player-H.Ben Arfa - Newcastle,2013-14,Wendy Thulbourne,MID,12,1,38
+2013-14-player-R.Snodgrass - Norwich City,2013-14,Wendy Thulbourne,MID,11,1,38
+2013-14-player-G.Dorrans - West Brom,2013-14,Wendy Thulbourne,MID,4,1,38
+2013-14-player-M.Noble - West Ham,2013-14,Wendy Thulbourne,MID,1,1,38
+2013-14-player-O.Giroud - Arsenal,2013-14,Wendy Thulbourne,FWD,10,1,38
+2013-14-player-S.Naismith - Everton,2013-14,Wendy Thulbourne,FWD,1,1,38
+2013-14-player-N.Anelka - West Brom,2013-14,Wendy Thulbourne,FWD,15,1,38
+2013-14-team-Cardiff City,2013-14,Jamie Wright,GK,1,1,38
+2013-14-player-L.Baines - Everton,2013-14,Jamie Wright,DEF,20,1,38
+2013-14-player-R.Ferdinand - Man Utd,2013-14,Jamie Wright,DEF,1,1,38
+2013-14-player-D.Lugano - West Brom,2013-14,Jamie Wright,DEF,2,1,38
+2013-14-player-A.Lennon - Spurs,2013-14,Jamie Wright,MID,1,1,38
+2013-14-player-J.Henderson - Liverpool,2013-14,Jamie Wright,MID,7,1,38
+2013-14-player-EH.Ba - Sunderland,2013-14,Jamie Wright,MID,1,1,38
+2013-14-player-S.Nasri - Man City,2013-14,Jamie Wright,MID,1,1,38
+2013-14-player-R.Soldado - Spurs,2013-14,Jamie Wright,FWD,30,1,38
+2013-14-player-A.Kone - Everton,2013-14,Jamie Wright,FWD,10,1,38
+2013-14-player-I.Aspas - Liverpool,2013-14,Jamie Wright,FWD,4,1,38
+2013-14-team-Spurs,2013-14,Neil Wright,GK,27,1,38
+2013-14-player-N.Vidic - Man Utd,2013-14,Neil Wright,DEF,8,1,38
+2013-14-player-R.Shawcross - Stoke City,2013-14,Neil Wright,DEF,4,1,38
+2013-14-player-J.Terry - Chelsea,2013-14,Neil Wright,DEF,5,1,38
+2013-14-player-J.Shelvey - Swansea City,2013-14,Neil Wright,MID,6,1,38
+2013-14-player-T.Cleverley - Man Utd,2013-14,Neil Wright,MID,2,1,38
+2013-14-player-T.Rosicky - Arsenal,2013-14,Neil Wright,MID,1,1,38
+2013-14-player-C.N'Zogbia - Aston Villa,2013-14,Neil Wright,MID,1,1,38
+2013-14-player-A.Carroll - West Ham,2013-14,Neil Wright,FWD,19,1,38
+2013-14-player-S.Aguero - Man City,2013-14,Neil Wright,FWD,20,1,38
+2013-14-player-P.Crouch - Stoke City,2013-14,Neil Wright,FWD,7,1,38
+2014-15-team-Newcastle,2014-15,Thomas Allan,GK,7,1,38
+2014-15-player-M.Skrtl - Liverpool,2014-15,Thomas Allan,DEF,10,1,38
+2014-15-player-M.Debuchy - Arsenal,2014-15,Thomas Allan,DEF,9,1,38
+2014-15-player-L.Koscielny - Arsenal,2014-15,Thomas Allan,DEF,5,1,38
+2014-15-player-S.Sessegnon - West Brom,2014-15,Thomas Allan,MID,4,1,38
+2014-15-player-J.Walters - Stoke City,2014-15,Thomas Allan,MID,6,1,38
+2014-15-player-J.Puncheon - C.Palace,2014-15,Thomas Allan,MID,5,1,38
+2014-15-player-J.Navas - Man City,2014-15,Thomas Allan,MID,3,1,38
+2014-15-player-D.Nugent - Leicester,2014-15,Thomas Allan,FWD,9,1,38
+2014-15-player-A.Schurrle - Chelsea,2014-15,Thomas Allan,FWD,13,1,38
+2014-15-player-S.Ageuro - Man City,2014-15,Thomas Allan,FWD,27,1,38
+2014-15-team-Swansea City,2014-15,Danny Arbon,GK,11,1,38
+2014-15-player-J.Terry - Chelsea,2014-15,Danny Arbon,DEF,7,1,38
+2014-15-player-D.Janmaat - Newcastle,2014-15,Danny Arbon,DEF,5,1,38
+2014-15-player-G.Cahill - Chelsea,2014-15,Danny Arbon,DEF,7,1,38
+2014-15-player-A.Lennon - Everton,2014-15,Danny Arbon,MID,2,1,38
+2014-15-player-R.Cabella - Newcastle,2014-15,Danny Arbon,MID,8,1,38
+2014-15-player-M.Arteta - Arsenal,2014-15,Danny Arbon,MID,9,1,38
+2014-15-player-M.Jedinak - C.Palace,2014-15,Danny Arbon,MID,5,1,38
+2014-15-player-W.Rooney - Man Utd,2014-15,Danny Arbon,FWD,30,1,38
+2014-15-player-S.Vokes - Burnley,2014-15,Danny Arbon,FWD,3,1,38
+2014-15-player-G.Murray - C.Palace,2014-15,Danny Arbon,FWD,7,1,38
+2014-15-team-West Ham,2014-15,Andrea Chapman,GK,6,1,38
+2014-15-player-B.Ivanovic - Chelsea,2014-15,Andrea Chapman,DEF,7,1,38
+2014-15-player-R.Vlaar - A.Villa,2014-15,Andrea Chapman,DEF,6,1,38
+2014-15-player-J.Lescott - West Brom,2014-15,Andrea Chapman,DEF,5,1,38
+2014-15-player-S.Cazorla - Arsenal,2014-15,Andrea Chapman,MID,10,1,38
+2014-15-player-T.Huddlestone - Hull City,2014-15,Andrea Chapman,MID,1,1,38
+2014-15-player-J.Rodwell - Sunderland,2014-15,Andrea Chapman,MID,9,1,38
+2014-15-player-G.Taylor-Fletcher - Leicester,2014-15,Andrea Chapman,MID,1,1,38
+2014-15-player-D.Sturridge - Liverpool,2014-15,Andrea Chapman,FWD,28,1,38
+2014-15-player-K.Mirallas - Everton,2014-15,Andrea Chapman,FWD,1,1,38
+2014-15-player-E.Riviere - Newcastle,2014-15,Andrea Chapman,FWD,13,1,38
+2014-15-team-West Brom,2014-15,Gary Evans,GK,1,1,38
+2014-15-player-D.Rose - Spurs,2014-15,Gary Evans,DEF,1,1,38
+2014-15-player-C.Smalling - Man Utd,2014-15,Gary Evans,DEF,1,1,38
+2014-15-player-M.Demichellis - Man City,2014-15,Gary Evans,DEF,2,1,38
+2014-15-player-K.Nolan - West Ham,2014-15,Gary Evans,MID,13,1,38
+2014-15-player-Oscar - Chelsea,2014-15,Gary Evans,MID,19,1,38
+2014-15-player-C.Eriksen - Spurs,2014-15,Gary Evans,MID,19,1,38
+2014-15-player-M.Ozil - Arsenal,2014-15,Gary Evans,MID,19,1,38
+2014-15-player-E.Dzeko - Man City,2014-15,Gary Evans,FWD,18,1,38
+2014-15-player-R.Soldado - Spurs,2014-15,Gary Evans,FWD,5,1,38
+2014-15-player-S.Berahino - West Brom,2014-15,Gary Evans,FWD,1,1,38
+2014-15-team-Chelsea,2014-15,Andy Fowkes,GK,42,1,38
+2014-15-player-G.Johnson - Liverpool,2014-15,Andy Fowkes,DEF,5,1,38
+2014-15-player-J.Fonte - Southampton,2014-15,Andy Fowkes,DEF,5,1,38
+2014-15-player-H.Maguire - Hull City,2014-15,Andy Fowkes,DEF,1,1,38
+2014-15-player-M.Taylor - Burnley,2014-15,Andy Fowkes,MID,6,1,38
+2014-15-player-M.Noble - West Ham,2014-15,Andy Fowkes,MID,5,1,38
+2014-15-player-J.Allen - Liverpool,2014-15,Andy Fowkes,MID,1,1,38
+2014-15-player-C.Adam - Stoke City,2014-15,Andy Fowkes,MID,12,1,38
+2014-15-player-D.Ings - Burnley,2014-15,Andy Fowkes,FWD,10,1,38
+2014-15-player-S.Fletcher - Sunderland,2014-15,Andy Fowkes,FWD,3,1,38
+2014-15-player-J.Hernandez - Man Utd,2014-15,Andy Fowkes,FWD,10,1,38
+2014-15-team-Leicester,2014-15,Tom Fowkes,GK,1,1,38
+2014-15-player-J.Stones - Everton,2014-15,Tom Fowkes,DEF,2,1,38
+2014-15-player-J.Vertonghen - Spurs,2014-15,Tom Fowkes,DEF,4,1,38
+2014-15-player-E.Mangala - Man City,2014-15,Tom Fowkes,DEF,3,1,38
+2014-15-player-M.Schneiderlin - Southampton,2014-15,Tom Fowkes,MID,4,1,38
+2014-15-player-A.Lallana - Liverpool,2014-15,Tom Fowkes,MID,14,1,38
+2014-15-player-A.Valencia - Man Utd,2014-15,Tom Fowkes,MID,1,1,38
+2014-15-player-M.Kightley - Burnley,2014-15,Tom Fowkes,MID,1,1,38
+2014-15-player-R.Lukaku - Everton,2014-15,Tom Fowkes,FWD,21,1,38
+2014-15-player-L.Costa - Chelsea,2014-15,Tom Fowkes,FWD,33,1,38
+2014-15-player-S.Long - Southampton,2014-15,Tom Fowkes,FWD,9,1,38
+2014-15-team-QPR,2014-15,Steve Gale,GK,12,1,38
+2014-15-player-R.Shawcross - Stoke City,2014-15,Steve Gale,DEF,3,1,38
+2014-15-player-F.Coloccini - Newcastle,2014-15,Steve Gale,DEF,1,1,38
+2014-15-player-H.Kaboul - Spurs,2014-15,Steve Gale,DEF,2,1,38
+2014-15-player-F.Pienaar - Everton,2014-15,Steve Gale,MID,9,1,38
+2014-15-player-J.Wilshire - Arsenal,2014-15,Steve Gale,MID,7,1,38
+2014-15-player-N.Dyer - Swansea,2014-15,Steve Gale,MID,1,1,38
+2014-15-player-Willian - Chelsea,2014-15,Steve Gale,MID,10,1,38
+2014-15-player-R.Van Persie - Man Utd,2014-15,Steve Gale,FWD,32,1,38
+2014-15-player-O.Giroud - Arsenal,2014-15,Steve Gale,FWD,20,1,38
+2014-15-player-S.Naismith - Everton,2014-15,Steve Gale,FWD,3,1,38
+2014-15-team-Everton,2014-15,Pam Hart,GK,36,1,38
+2014-15-player-L.Shaw - Man Utd,2014-15,Pam Hart,DEF,1,1,38
+2014-15-player-P.Jones - Man Utd,2014-15,Pam Hart,DEF,2,1,38
+2014-15-player-J.Schlupp - Leicester,2014-15,Pam Hart,DEF,1,1,38
+2014-15-player-C.Fabregas - Chelsea,2014-15,Pam Hart,MID,29,1,38
+2014-15-player-A.Di Maria - Man Utd,2014-15,Pam Hart,MID,3,1,38
+2014-15-player-Fernandinho - Man City,2014-15,Pam Hart,MID,2,1,38
+2014-15-player-C.'Zogbia - A.Villa,2014-15,Pam Hart,MID,1,1,38
+2014-15-player-D.Drogba - Chelsea,2014-15,Pam Hart,FWD,3,1,38
+2014-15-player-A.Sanchez - Arsenal,2014-15,Pam Hart,FWD,20,1,38
+2014-15-player-V.Anichebe - West Brom,2014-15,Pam Hart,FWD,2,1,38
+2014-15-team-Sunderland,2014-15,Tim Hart,GK,8,1,38
+2014-15-player-W.Morgan - Leicester,2014-15,Tim Hart,DEF,1,1,38
+2014-15-player-C.Davies - Hull City,2014-15,Tim Hart,DEF,1,1,38
+2014-15-player-M.Lowton - A.Villa,2014-15,Tim Hart,DEF,1,1,38
+2014-15-player-J.Mata - Man Utd,2014-15,Tim Hart,MID,24,1,38
+2014-15-player-T.Walcott - Arsenal,2014-15,Tim Hart,MID,23,1,38
+2014-15-player-J.Henderson - Liverpool,2014-15,Tim Hart,MID,8,1,38
+2014-15-player-S.Aluko - Hull City,2014-15,Tim Hart,MID,1,1,38
+2014-15-player-A.Negredo - Man City,2014-15,Tim Hart,FWD,14,1,38
+2014-15-player-B.Krkic - Stoke City,2014-15,Tim Hart,FWD,15,1,38
+2014-15-player-G.Agbonlahor - A.Villa,2014-15,Tim Hart,FWD,4,1,38
+2014-15-team-Arsenal,2014-15,Mick Jones,GK,36,1,38
+2014-15-player-A.Kolarov - Man City,2014-15,Mick Jones,DEF,1,1,38
+2014-15-player-B.Davies - Spurs,2014-15,Mick Jones,DEF,1,1,38
+2014-15-player-D.Blind - Man Utd,2014-15,Mick Jones,DEF,1,1,38
+2014-15-player-E.Hazard - Chelsea,2014-15,Mick Jones,MID,33,1,38
+2014-15-player-M.Arnautovic - Stoke City,2014-15,Mick Jones,MID,5,1,38
+2014-15-player-D.Silva - Man City,2014-15,Mick Jones,MID,13,1,38
+2014-15-player-A.Young - Man Utd,2014-15,Mick Jones,MID,2,1,38
+2014-15-player-R.Lamela - Spurs,2014-15,Mick Jones,FWD,3,1,38
+2014-15-player-S.de Jong - Newcastle,2014-15,Mick Jones,FWD,1,1,38
+2014-15-player-M.Gayle - C.Palace,2014-15,Mick Jones,FWD,1,1,38
+2014-15-team-Aston Villa,2014-15,Andy Lockhart,GK,2,1,38
+2014-15-player-D.Lovren - Liverpool,2014-15,Andy Lockhart,DEF,9,1,38
+2014-15-player-F.Luis - Chelsea,2014-15,Andy Lockhart,DEF,10,1,38
+2014-15-player-A.Williams - Swansea,2014-15,Andy Lockhart,DEF,1,1,38
+2014-15-player-A.Hererra - Man Utd,2014-15,Andy Lockhart,MID,21,1,38
+2014-15-player-A.Knockeart - Leicester,2014-15,Andy Lockhart,MID,5,1,38
+2014-15-player-L.Markovic - Liverpool,2014-15,Andy Lockhart,MID,16,1,38
+2014-15-player-T.Ince - Hull City,2014-15,Andy Lockhart,MID,4,1,38
+2014-15-player-L.Remy - Chelsea,2014-15,Andy Lockhart,FWD,12,1,38
+2014-15-player-J.Rodriguez - Southampton,2014-15,Andy Lockhart,FWD,10,1,38
+2014-15-player-C.Benteke - A.Villa,2014-15,Andy Lockhart,FWD,10,1,38
+2014-15-team-Southampton,2014-15,Debbie Lockhart,GK,22,1,38
+2014-15-player-R.Huth - Leicester,2014-15,Debbie Lockhart,DEF,3,1,38
+2014-15-player-J.O'Shea - Sunderland,2014-15,Debbie Lockhart,DEF,1,1,38
+2014-15-player-J.Enrique - Liverpool,2014-15,Debbie Lockhart,DEF,1,1,38
+2014-15-player-M.Sissoko - Newcastle,2014-15,Debbie Lockhart,MID,4,1,38
+2014-15-player-YY.Toure - Man City,2014-15,Debbie Lockhart,MID,31,1,38
+2014-15-player-J.McCarthy - Everton,2014-15,Debbie Lockhart,MID,1,1,38
+2014-15-player-Ramires - Chelsea,2014-15,Debbie Lockhart,MID,9,1,38
+2014-15-player-F.Campbell - C.Palace,2014-15,Debbie Lockhart,FWD,5,1,38
+2014-15-player-E.Adebayor - Spurs,2014-15,Debbie Lockhart,FWD,14,1,38
+2014-15-player-PD.Cisse - Newcastle,2014-15,Debbie Lockhart,FWD,1,1,38
+2014-15-team-Spurs,2014-15,Ken Maggs,GK,32,1,38
+2014-15-player-B.Gomis - Swansea,2014-15,Ken Maggs,DEF,10,1,38
+2014-15-player-PV.Aanholt - Sunderland,2014-15,Ken Maggs,DEF,3,1,38
+2014-15-player-S.Caulker - QPR,2014-15,Ken Maggs,DEF,7,1,38
+2014-15-player-D.Tadic - Southampton,2014-15,Ken Maggs,MID,16,1,38
+2014-15-player-D.Drinkwater - Leicester,2014-15,Ken Maggs,MID,2,1,38
+2014-15-player-G.Boyd - Burnley,2014-15,Ken Maggs,MID,1,1,38
+2014-15-player-J.Mutch - C.Palace,2014-15,Ken Maggs,MID,1,1,38
+2014-15-player-B.Ideye - West Brom,2014-15,Ken Maggs,FWD,3,1,38
+2014-15-player-E.Valencia - West Ham,2014-15,Ken Maggs,FWD,11,1,38
+2014-15-player-G.Pelle - Southampton,2014-15,Ken Maggs,FWD,14,1,38
+2014-15-team-Man Utd,2014-15,Gary Speechley,GK,40,1,38
+2014-15-player-V.Kompany - Man City,2014-15,Gary Speechley,DEF,12,1,38
+2014-15-player-L.Baines - Everton,2014-15,Gary Speechley,DEF,12,1,38
+2014-15-player-G.McAuley - West Brom,2014-15,Gary Speechley,DEF,4,1,38
+2014-15-player-J.Shelvey - Swansea,2014-15,Gary Speechley,MID,8,1,38
+2014-15-player-A.Johnson - Sunderland,2014-15,Gary Speechley,MID,7,1,38
+2014-15-player-F.Lampard - Man City,2014-15,Gary Speechley,MID,1,1,38
+2014-15-player-M.Fellaini - Man Utd,2014-15,Gary Speechley,MID,1,1,38
+2014-15-player-D.Wellbeck - Arsenal,2014-15,Gary Speechley,FWD,7,1,38
+2014-15-player-P.Crouch - Stoke City,2014-15,Gary Speechley,FWD,5,1,38
+2014-15-player-L.Ulloa - Leicester,2014-15,Gary Speechley,FWD,3,1,38
+2014-15-team-Hull City,2014-15,Kev Thulbourne,GK,15,1,38
+2014-15-player-K.Richardson - A.Villa,2014-15,Kev Thulbourne,DEF,3,1,38
+2014-15-player-B.Hangeland - C.Palace,2014-15,Kev Thulbourne,DEF,1,1,38
+2014-15-player-P.Jagielka - Everton,2014-15,Kev Thulbourne,DEF,3,1,38
+2014-15-player-G.Sigurdsson - Swansea,2014-15,Kev Thulbourne,MID,16,1,38
+2014-15-player-S.Gerrard - Liverpool,2014-15,Kev Thulbourne,MID,18,1,38
+2014-15-player-J.Paulinho - Spurs,2014-15,Kev Thulbourne,MID,11,1,38
+2014-15-player-R.Barkley - Everton,2014-15,Kev Thulbourne,MID,16,1,38
+2014-15-player-C.Austin - QPR,2014-15,Kev Thulbourne,FWD,12,1,38
+2014-15-player-N.Jelavic - Hull City,2014-15,Kev Thulbourne,FWD,3,1,38
+2014-15-player-F.Torres - Chelsea,2014-15,Kev Thulbourne,FWD,2,1,38
+2014-15-team-Man City,2014-15,Wendy Thulbourne,GK,34,1,38
+2014-15-player-C.Chambers - Arsenal,2014-15,Wendy Thulbourne,DEF,5,1,38
+2014-15-player-K.Trippier - Burnley,2014-15,Wendy Thulbourne,DEF,1,1,38
+2014-15-player-J.Evans - Man Utd,2014-15,Wendy Thulbourne,DEF,1,1,38
+2014-15-player-A.Ramsey - Arsenal,2014-15,Wendy Thulbourne,MID,30,1,38
+2014-15-player-R.Snodgrass - Hull City,2014-15,Wendy Thulbourne,MID,5,1,38
+2014-15-player-H.Ben Arfa - Hull City,2014-15,Wendy Thulbourne,MID,1,1,38
+2014-15-player-G.Barry - Everton,2014-15,Wendy Thulbourne,MID,1,1,38
+2014-15-player-D.Bent - A.Villa,2014-15,Wendy Thulbourne,FWD,8,1,38
+2014-15-player-L.Podolski - Arsenal,2014-15,Wendy Thulbourne,FWD,6,1,38
+2014-15-player-Y.Sanogo - C.Palace,2014-15,Wendy Thulbourne,FWD,7,1,38
+2014-15-team-Stoke City,2014-15,Jamie Wright,GK,16,1,38
+2014-15-player-P.Zabaleta - Man City,2014-15,Jamie Wright,DEF,3,1,38
+2014-15-player-S.Coleman - Everton,2014-15,Jamie Wright,DEF,5,1,38
+2014-15-player-J.Manquilo - Liverpool,2014-15,Jamie Wright,DEF,5,1,38
+2014-15-player-R.Sterling - Liverpool,2014-15,Jamie Wright,MID,30,1,38
+2014-15-player-P.Coutinho - Liverpool,2014-15,Jamie Wright,MID,10,1,38
+2014-15-player-N.Chadli - Spurs,2014-15,Jamie Wright,MID,1,1,38
+2014-15-player-C.Atsu - Everton,2014-15,Jamie Wright,MID,1,1,38
+2014-15-player-W.Bony - Man City,2014-15,Jamie Wright,FWD,19,1,38
+2014-15-player-S.Jovetic - Man City,2014-15,Jamie Wright,FWD,7,1,38
+2014-15-player-P.Odemwingie - Stoke City,2014-15,Jamie Wright,FWD,3,1,38
+2014-15-team-Liverpool,2014-15,Neil Wright,GK,38,1,38
+2014-15-player-M.Upson - Leicester,2014-15,Neil Wright,DEF,4,1,38
+2014-15-player-P.Mertesacker - Arsenal,2014-15,Neil Wright,DEF,7,1,38
+2014-15-player-S.Taylor - Newcastle,2014-15,Neil Wright,DEF,1,1,38
+2014-15-player-S.Nasri - Man City,2014-15,Neil Wright,MID,17,1,38
+2014-15-player-A.Oxlade-Chamberlain - Arsenal,2014-15,Neil Wright,MID,15,1,38
+2014-15-player-S.Sidwell - Stoke City,2014-15,Neil Wright,MID,1,1,38
+2014-15-player-W.Zaha - Crystal Palace,2014-15,Neil Wright,MID,1,1,38
+2014-15-player-R.Lambert - Liverpool,2014-15,Neil Wright,FWD,13,1,38
+2014-15-player-Y.Gouffran - Newcastle,2014-15,Neil Wright,FWD,1,1,38
+2014-15-player-M.Chamakh - C.Palace,2014-15,Neil Wright,FWD,1,1,38
+2015-16-team-Crystal Palace,2015-16,Thomas Allan,GK,9,1,38
+2015-16-player-J.Terry - Chelsea,2015-16,Thomas Allan,DEF,10,1,38
+2015-16-player-B.Hangeland - C.Palace,2015-16,Thomas Allan,DEF,1,1,38
+2015-16-player-P.Jagielka - Everton,2015-16,Thomas Allan,DEF,6,1,38
+2015-16-player-B.Schweinsteiger - Man Utd,2015-16,Thomas Allan,MID,13,1,38
+2015-16-player-A.Herrera - Man Utd,2015-16,Thomas Allan,MID,3,1,38
+2015-16-player-M.Jedinak - C.Palace,2015-16,Thomas Allan,MID,1,1,38
+2015-16-player-J.Montero - Swansea City,2015-16,Thomas Allan,MID,11,1,38
+2015-16-player-R.Falcao - Chelsea,2015-16,Thomas Allan,FWD,8,1,38
+2015-16-player-R.Lukaku - Everton,2015-16,Thomas Allan,FWD,14,1,38
+2015-16-player-A.Sanchez - Arsenal,2015-16,Thomas Allan,FWD,24,1,38
+2015-16-team-Newcastle,2015-16,Karl Allen,GK,1,1,38
+2015-16-player-L.Koscielny - Arsenal,2015-16,Karl Allen,DEF,6,1,38
+2015-16-player-R.Martin - Norwich City,2015-16,Karl Allen,DEF,7,1,38
+2015-16-player-J.Vertonghen - Spurs,2015-16,Karl Allen,DEF,5,1,38
+2015-16-player-M.Sissoko - Newcastle,2015-16,Karl Allen,MID,1,1,38
+2015-16-player-J.Milner - Liverpool,2015-16,Karl Allen,MID,4,1,38
+2015-16-player-S.Sinclair - A.Villa,2015-16,Karl Allen,MID,10,1,38
+2015-16-player-D.Payet - West Ham Utd,2015-16,Karl Allen,MID,7,1,38
+2015-16-player-D.Costa - Chelsea,2015-16,Karl Allen,FWD,22,1,38
+2015-16-player-G.Pelle - Southampton,2015-16,Karl Allen,FWD,17,1,38
+2015-16-player-S.Rondon - WBA,2015-16,Karl Allen,FWD,7,1,38
+2015-16-team-Everton,2015-16,Danny Arbon,GK,10,1,38
+2015-16-player-M.Skrtl - Liverpool,2015-16,Danny Arbon,DEF,9,1,38
+2015-16-player-C.Mbemba - Newcastle Utd,2015-16,Danny Arbon,DEF,2,1,38
+2015-16-player-C.Azpilicueta - Chelsea,2015-16,Danny Arbon,DEF,1,1,38
+2015-16-player-M.Ozil - Arsenal,2015-16,Danny Arbon,MID,15,1,38
+2015-16-player-C.Fabregas - Chelsea,2015-16,Danny Arbon,MID,11,1,38
+2015-16-player-I.Affelay - Stoke City,2015-16,Danny Arbon,MID,3,1,38
+2015-16-player-Fernandinho - Man City,2015-16,Danny Arbon,MID,1,1,38
+2015-16-player-S.Aguero - Man City,2015-16,Danny Arbon,FWD,26,1,38
+2015-16-player-D.Sturridge - Liverpool,2015-16,Danny Arbon,FWD,6,1,38
+2015-16-player-P.Crouch - Stoke City,2015-16,Danny Arbon,FWD,1,1,38
+2015-16-team-West Ham,2015-16,Andrea Chapman,GK,8,1,38
+2015-16-player-J.Okore - A.Villa,2015-16,Andrea Chapman,DEF,1,1,38
+2015-16-player-R.Huth - Leicester,2015-16,Andrea Chapman,DEF,1,1,38
+2015-16-player-D.Rose - Spurs,2015-16,Andrea Chapman,DEF,3,1,38
+2015-16-player-C.Brunt - WBA,2015-16,Andrea Chapman,MID,1,1,38
+2015-16-player-B.Sako - C.Palace,2015-16,Andrea Chapman,MID,3,1,38
+2015-16-player-J.Navas - Man City,2015-16,Andrea Chapman,MID,1,1,38
+2015-16-player-W.Zaha - C.Palace,2015-16,Andrea Chapman,MID,9,1,38
+2015-16-player-H.Kane - Spurs,2015-16,Andrea Chapman,FWD,27,1,38
+2015-16-player-W.Bony - Man City,2015-16,Andrea Chapman,FWD,11,1,38
+2015-16-player-J.Defoe - Sunderland,2015-16,Andrea Chapman,FWD,10,1,38
+2015-16-team-Leicester,2015-16,Gary Evans,GK,1,1,38
+2015-16-player-R.Shawcross - Stoke City,2015-16,Gary Evans,DEF,1,1,38
+2015-16-player-E.Mangala - Man City,2015-16,Gary Evans,DEF,1,1,38
+2015-16-player-C.Smalling - Man Utd,2015-16,Gary Evans,DEF,3,1,38
+2015-16-player-Oscar - Chelsea,2015-16,Gary Evans,MID,20,1,38
+2015-16-player-Y.Toure - Man City,2015-16,Gary Evans,MID,34,1,38
+2015-16-player-N.Chadli - Spurs,2015-16,Gary Evans,MID,19,1,38
+2015-16-player-J.Walters - Stoke City,2015-16,Gary Evans,MID,11,1,38
+2015-16-player-G.Agbonlahor - A.Villa,2015-16,Gary Evans,FWD,1,1,38
+2015-16-player-Pedro - Chelsea,2015-16,Gary Evans,FWD,5,1,38
+2015-16-player-A.Perez - Newcastle Utd,2015-16,Gary Evans,FWD,1,1,38
+2015-16-team-Swansea City,2015-16,Andy Fowkes,GK,15,1,38
+2015-16-player-S.Coleman - Everton,2015-16,Andy Fowkes,DEF,11,1,38
+2015-16-player-B.Ivanovic - Chelsea,2015-16,Andy Fowkes,DEF,16,1,38
+2015-16-player-G.Johnson - Stoke City,2015-16,Andy Fowkes,DEF,6,1,38
+2015-16-player-M.Ritchie - Bournemouth,2015-16,Andy Fowkes,MID,15,1,38
+2015-16-player-M.Fellaini - Man Utd,2015-16,Andy Fowkes,MID,3,1,38
+2015-16-player-Ramires - Chelsea,2015-16,Andy Fowkes,MID,1,1,38
+2015-16-player-M.Gradel - Bournemouth,2015-16,Andy Fowkes,MID,7,1,38
+2015-16-player-C.Benteke - Liverpool,2015-16,Andy Fowkes,FWD,20,1,38
+2015-16-player-O.Ighalo - Watford,2015-16,Andy Fowkes,FWD,1,1,38
+2015-16-player-P.Bamford - C.Palace,2015-16,Andy Fowkes,FWD,1,1,38
+2015-16-team-Aston Villa,2015-16,Tom Fowkes,GK,5,1,38
+2015-16-player-L.Baines - Everton,2015-16,Tom Fowkes,DEF,3,1,38
+2015-16-player-C.Dawson - WBA,2015-16,Tom Fowkes,DEF,3,1,38
+2015-16-player-M.Darmian - Man Utd,2015-16,Tom Fowkes,DEF,1,1,38
+2015-16-player-E.Hazard - Chelsea,2015-16,Tom Fowkes,MID,32,1,38
+2015-16-player-Willian - Chelsea,2015-16,Tom Fowkes,MID,8,1,38
+2015-16-player-J.Wilshire - Arsenal,2015-16,Tom Fowkes,MID,1,1,38
+2015-16-player-J.Clasie - Southampton,2015-16,Tom Fowkes,MID,1,1,38
+2015-16-player-W.Rooney - Man Utd,2015-16,Tom Fowkes,FWD,30,1,38
+2015-16-player-T.Deeney - Watford,2015-16,Tom Fowkes,FWD,7,1,38
+2015-16-player-L.Remy - Chelsea,2015-16,Tom Fowkes,FWD,5,1,38
+2015-16-team-Man Utd,2015-16,Steve Gale,GK,40,1,38
+2015-16-player-W.Morgan - Leicester City,2015-16,Steve Gale,DEF,2,1,38
+2015-16-player-N.Clyne - Liverpool,2015-16,Steve Gale,DEF,4,1,38
+2015-16-player-P.Zabaleta - Man City,2015-16,Steve Gale,DEF,2,1,38
+2015-16-player-D.Tadic - Southampton,2015-16,Steve Gale,MID,9,1,38
+2015-16-player-A.Young - Man Utd,2015-16,Steve Gale,MID,3,1,38
+2015-16-player-A.Townsend - Newcastle,2015-16,Steve Gale,MID,1,1,38
+2015-16-player-Y.Bolasie - C.Palace,2015-16,Steve Gale,MID,7,1,38
+2015-16-player-S.Berahino - WBA,2015-16,Steve Gale,FWD,12,1,38
+2015-16-player-R.Lambert - WBA,2015-16,Steve Gale,FWD,11,1,38
+2015-16-player-B.Gomis - Swansea City,2015-16,Steve Gale,FWD,9,1,38
+2015-16-team-Spurs,2015-16,Pam Hart,GK,11,1,38
+2015-16-player-J.Schlupp - Leicester City,2015-16,Pam Hart,DEF,5,1,38
+2015-16-player-M.Layun - Watford,2015-16,Pam Hart,DEF,10,1,38
+2015-16-player-K.Naughton - Swansea,2015-16,Pam Hart,DEF,1,1,38
+2015-16-player-E.Giacherrini  - Sunderland,2015-16,Pam Hart,MID,1,1,38
+2015-16-player-S.Cazorla - Arsenal,2015-16,Pam Hart,MID,15,1,38
+2015-16-player-R.Mahrez - Leicester City,2015-16,Pam Hart,MID,20,1,38
+2015-16-player-N.Redmond - Norwich City,2015-16,Pam Hart,MID,9,1,38
+2015-16-player-J.Rodriguez - Southampton,2015-16,Pam Hart,FWD,8,1,38
+2015-16-player-C.Wickham - C.Palace,2015-16,Pam Hart,FWD,9,1,38
+2015-16-player-D.Welbeck - Arsenal,2015-16,Pam Hart,FWD,9,1,38
+2015-16-team-Stoke City,2015-16,Tim Hart,GK,20,1,38
+2015-16-player-D.Janmaat - Newcastle Utd,2015-16,Tim Hart,DEF,1,1,38
+2015-16-player-M.Rojo - Man Utd,2015-16,Tim Hart,DEF,1,1,38
+2015-16-player-S.Dann - C.Palace,2015-16,Tim Hart,DEF,1,1,38
+2015-16-player-M.Dembele - Spurs,2015-16,Tim Hart,MID,1,1,38
+2015-16-player-G.Sigurdsson - Swansea City,2015-16,Tim Hart,MID,17,1,38
+2015-16-player-D.Silva - Man City,2015-16,Tim Hart,MID,23,1,38
+2015-16-player-M.Depay - Man Utd,2015-16,Tim Hart,MID,25,1,38
+2015-16-player-R.Gestede - A.Villa,2015-16,Tim Hart,FWD,8,1,38
+2015-16-player-S.Okazaki - Leicester City,2015-16,Tim Hart,FWD,1,1,38
+2015-16-player-M.Zarate - West Ham Utd,2015-16,Tim Hart,FWD,1,1,38
+2015-16-team-Arsenal,2015-16,Mick Jones,GK,36,1,38
+2015-16-player-L.Shaw - Man Utd,2015-16,Mick Jones,DEF,1,1,38
+2015-16-player-R.Bertrand - Southampton,2015-16,Mick Jones,DEF,2,1,38
+2015-16-player-D.Blind - Man Utd,2015-16,Mick Jones,DEF,5,1,38
+2015-16-player-A.Januzaj - Man Utd,2015-16,Mick Jones,MID,4,1,38
+2015-16-player-A.Johnson - Sunderland,2015-16,Mick Jones,MID,2,1,38
+2015-16-player-R.Sterling - Man City,2015-16,Mick Jones,MID,22,1,38
+2015-16-player-A.Lallana - Liverpool,2015-16,Mick Jones,MID,17,1,38
+2015-16-player-D.Ings - Liverpool,2015-16,Mick Jones,FWD,3,1,38
+2015-16-player-MB.Diouff - Stoke City,2015-16,Mick Jones,FWD,3,1,38
+2015-16-player-C.Jerome - Norwich City,2015-16,Mick Jones,FWD,2,1,38
+2015-16-team-West Brom,2015-16,Ken Maggs,GK,12,1,38
+2015-16-player-Y.Kaboul - Sunderland,2015-16,Ken Maggs,DEF,2,1,38
+2015-16-player-T.Alderweireld - Spurs,2015-16,Ken Maggs,DEF,1,1,38
+2015-16-player-A.Kolarov - Man City,2015-16,Ken Maggs,DEF,9,1,38
+2015-16-player-S.Mane - Southampton,2015-16,Ken Maggs,MID,15,1,38
+2015-16-player-C.Kouyate - West Ham,2015-16,Ken Maggs,MID,9,1,38
+2015-16-player-C.Adam - Stoke City,2015-16,Ken Maggs,MID,13,1,38
+2015-16-player-L.Bacuna - A.Villa,2015-16,Ken Maggs,MID,1,1,38
+2015-16-player-A.Ayew - Swansea City,2015-16,Ken Maggs,FWD,14,1,38
+2015-16-player-C.Wilson - Bournemouth,2015-16,Ken Maggs,FWD,12,1,38
+2015-16-player-J.Vardy - Leicester City,2015-16,Ken Maggs,FWD,6,1,38
+2015-16-team-Man City,2015-16,Gary Speechley,GK,45,1,38
+2015-16-player-V.Kompany - Man City,2015-16,Gary Speechley,DEF,8,1,38
+2015-16-player-F.Coloccini - Newcastle Utd,2015-16,Gary Speechley,DEF,1,1,38
+2015-16-player-J.Chester - WBA,2015-16,Gary Speechley,DEF,1,1,38
+2015-16-player-J.Henderson - Liverpool,2015-16,Gary Speechley,MID,14,1,38
+2015-16-player-K.De Bruyne - Man City,2015-16,Gary Speechley,MID,1,1,38
+2015-16-player-M.Noble - West Ham Utd,2015-16,Gary Speechley,MID,2,1,38
+2015-16-player-Ki.Seung-Yeung - Swansea City,2015-16,Gary Speechley,MID,1,1,38
+2015-16-player-L.Ulloa - Leicester City,2015-16,Gary Speechley,FWD,8,1,38
+2015-16-player-G.Murray - Bournemouth,2015-16,Gary Speechley,FWD,3,1,38
+2015-16-player-D.Sakho - West Ham Utd,2015-16,Gary Speechley,FWD,10,1,38
+2015-16-team-Chelsea,2015-16,Kev Thulbourne,GK,40,1,38
+2015-16-player-J.Stones - Everton,2015-16,Kev Thulbourne,DEF,1,1,38
+2015-16-player-H.Bellerin - Arsenal,2015-16,Kev Thulbourne,DEF,1,1,38
+2015-16-player-J.Lescott - A.Villa,2015-16,Kev Thulbourne,DEF,1,1,38
+2015-16-player-Y.Cabaye - C.Palace,2015-16,Kev Thulbourne,MID,16,1,38
+2015-16-player-A.Ramsey - Arsenal,2015-16,Kev Thulbourne,MID,18,1,38
+2015-16-player-R.Barkley - Everton,2015-16,Kev Thulbourne,MID,13,1,38
+2015-16-player-S.Larsson - Sunderland,2015-16,Kev Thulbourne,MID,1,1,38
+2015-16-player-K.Mirallas - Everton,2015-16,Kev Thulbourne,FWD,4,1,38
+2015-16-player-Eder - Swansea City,2015-16,Kev Thulbourne,FWD,2,1,38
+2015-16-player-S.Naismith - Norwich City,2015-16,Kev Thulbourne,FWD,1,1,38
+2015-16-team-Southampton,2015-16,Wendy Thulbourne,GK,34,1,38
+2015-16-player-P.Mertesacker - Arsenal,2015-16,Wendy Thulbourne,DEF,5,1,38
+2015-16-player-K.Richardson - A.Villa,2015-16,Wendy Thulbourne,DEF,1,1,38
+2015-16-player-D.Delaney - C.Palace,2015-16,Wendy Thulbourne,DEF,4,1,38
+2015-16-player-W.Hoolahan - Norwich City,2015-16,Wendy Thulbourne,MID,4,1,38
+2015-16-player-J.Puncheon - C.Palace,2015-16,Wendy Thulbourne,MID,8,1,38
+2015-16-player-A.Oxlaide-Chamberlain - Arsenal,2015-16,Wendy Thulbourne,MID,8,1,38
+2015-16-player-M.Albrighton - Leicester City,2015-16,Wendy Thulbourne,MID,5,1,38
+2015-16-player-O.Giroud - Arsenal,2015-16,Wendy Thulbourne,FWD,12,1,38
+2015-16-player-P.Cisse - Newcastle Utd,2015-16,Wendy Thulbourne,FWD,9,1,38
+2015-16-player-S.Fletcher - Sunderland,2015-16,Wendy Thulbourne,FWD,3,1,38
+2015-16-team-Liverpool,2015-16,Jamie Wright,GK,26,1,38
+2015-16-player-M.Richards - A.Villa,2015-16,Jamie Wright,DEF,5,1,38
+2015-16-player-S.Caulker - Liverpool,2015-16,Jamie Wright,DEF,1,1,38
+2015-16-player-D.Lovren - Liverpool,2015-16,Jamie Wright,DEF,1,1,38
+2015-16-player-X.Shaquiri - Stoke City,2015-16,Jamie Wright,MID,17,1,38
+2015-16-player-G.Wijnaldum - Newcastle Utd,2015-16,Jamie Wright,MID,20,1,38
+2015-16-player-J.Shelvey - Newcastle Utd,2015-16,Jamie Wright,MID,8,1,38
+2015-16-player-J.Ibe - Liverpool,2015-16,Jamie Wright,MID,5,1,38
+2015-16-player-A.Mitrovic - Newcastle Utd,2015-16,Jamie Wright,FWD,8,1,38
+2015-16-player-G.Deulofeu - Everton,2015-16,Jamie Wright,FWD,1,1,38
+2015-16-player-R.Firmino - Liverpool,2015-16,Jamie Wright,FWD,6,1,38
+2015-16-team-Sunderland,2015-16,Neil Wright,GK,1,1,38
+2015-16-player-G.Cahill - Chelsea,2015-16,Neil Wright,DEF,6,1,38
+2015-16-player-K.Walker - Spurs,2015-16,Neil Wright,DEF,1,1,38
+2015-16-player-A.Cresswell - West Ham Utd,2015-16,Neil Wright,DEF,1,1,38
+2015-16-player-P.Coutinho - Liverpool,2015-16,Neil Wright,MID,16,1,38
+2015-16-player-T.Walcott - Arsenal,2015-16,Neil Wright,MID,25,1,38
+2015-16-player-J.Mata - Man Utd,2015-16,Neil Wright,MID,9,1,38
+2015-16-player-C.Eriksen - Spurs,2015-16,Neil Wright,MID,24,1,38
+2015-16-player-A.Carroll - West Ham Utd,2015-16,Neil Wright,FWD,2,1,38
+2015-16-player-B.Krkic - Stoke City,2015-16,Neil Wright,FWD,3,1,38
+2015-16-player-D.Gayle - C.Palace,2015-16,Neil Wright,FWD,1,1,38
+2016-17-team-Crystal Palace,2016-17,Karl Allen,GK,8,1,38
+2016-17-player-D.Ayala - Middlesbrough,2016-17,Karl Allen,DEF,7,1,38
+2016-17-player-R.Huth - Leicester City,2016-17,Karl Allen,DEF,2,1,38
+2016-17-player-A.Robertson - Hull City,2016-17,Karl Allen,DEF,1,1,38
+2016-17-player-G.Boyd - Burnley,2016-17,Karl Allen,MID,3,1,38
+2016-17-player-M.Noble - West Ham,2016-17,Karl Allen,MID,13,1,38
+2016-17-player-A.Townsend - C.Palace,2016-17,Karl Allen,MID,9,1,38
+2016-17-player-D.Silva - Man City,2016-17,Karl Allen,MID,4,1,38
+2016-17-player-A.Sanchez - Arsenal,2016-17,Karl Allen,FWD,26,1,38
+2016-17-player-J.Vardy - Leicester City,2016-17,Karl Allen,FWD,20,1,38
+2016-17-player-S.Rondon - West Brom,2016-17,Karl Allen,FWD,7,1,38
+2016-17-team-Stoke City,2016-17,Andrea Chapman,GK,19,1,38
+2016-17-player-J.Schlupp - C.Palace,2016-17,Andrea Chapman,DEF,2,1,38
+2016-17-player-B.Ivanovic - Chelsea,2016-17,Andrea Chapman,DEF,5,1,38
+2016-17-player-A.Williams - Everton,2016-17,Andrea Chapman,DEF,7,1,38
+2016-17-player-N.Chadli - West Brom,2016-17,Andrea Chapman,MID,1,1,38
+2016-17-player-A.Elmohamady - Hull City,2016-17,Andrea Chapman,MID,1,1,38
+2016-17-player-W.Routledge - Swansea City,2016-17,Andrea Chapman,MID,1,1,38
+2016-17-player-D.Drinkwater - Leicester City,2016-17,Andrea Chapman,MID,1,1,38
+2016-17-player-S.Vokes - Burnley,2016-17,Andrea Chapman,FWD,1,1,38
+2016-17-player-T.Deeney - Watford,2016-17,Andrea Chapman,FWD,8,1,38
+2016-17-player-J.Rodriguez - Southampton,2016-17,Andrea Chapman,FWD,1,1,38
+2016-17-team-Watford,2016-17,Gary Evans,GK,1,1,38
+2016-17-player-W.Morgan - Leicester City,2016-17,Gary Evans,DEF,6,1,38
+2016-17-player-J.Terry - Chelsea,2016-17,Gary Evans,DEF,2,1,38
+2016-17-player-C.Smalling - Man Utd,2016-17,Gary Evans,DEF,3,1,38
+2016-17-player-Oscar - Chelsea,2016-17,Gary Evans,MID,6,1,38
+2016-17-player-K.De Bruyne - Man City,2016-17,Gary Evans,MID,35,1,38
+2016-17-player-E.Lamela - Spurs,2016-17,Gary Evans,MID,16,1,38
+2016-17-player-D.Payet - West Ham,2016-17,Gary Evans,MID,27,1,38
+2016-17-player-B.Krkic - Stoke City,2016-17,Gary Evans,FWD,1,1,38
+2016-17-player-W.Bony - Stoke City,2016-17,Gary Evans,FWD,2,1,38
+2016-17-player-T.Martinez - West Ham,2016-17,Gary Evans,FWD,1,1,38
+2016-17-team-Spurs,2016-17,Rory Canham,GK,32,1,38
+2016-17-player-V.Kompany - Man City,2016-17,Rory Canham,DEF,3,1,38
+2016-17-player-L.Kone - Sunderland,2016-17,Rory Canham,DEF,3,1,38
+2016-17-player-V.Van Dijk - Southampton,2016-17,Rory Canham,DEF,8,1,38
+2016-17-player-H.Mkhitaryan - Man Utd,2016-17,Rory Canham,MID,20,1,38
+2016-17-player-C.Kouyate - West Ham,2016-17,Rory Canham,MID,5,1,38
+2016-17-player-J.Lens - Sunderland,2016-17,Rory Canham,MID,1,1,38
+2016-17-player-J.Cuadrado - Chelsea,2016-17,Rory Canham,MID,1,1,38
+2016-17-player-F.Llorente - Swansea City,2016-17,Rory Canham,FWD,6,1,38
+2016-17-player-G.Deulofeu - Everton,2016-17,Rory Canham,FWD,5,1,38
+2016-17-player-MB.Diouff - Stoke City,2016-17,Rory Canham,FWD,2,1,38
+2016-17-team-Man City,2016-17,Tom Fowkes,GK,38,1,38
+2016-17-player-T.Alderweild - Spurs,2016-17,Tom Fowkes,DEF,11,1,38
+2016-17-player-J.Matip - Liverpool,2016-17,Tom Fowkes,DEF,2,1,38
+2016-17-player-K.Walker - Spurs,2016-17,Tom Fowkes,DEF,1,1,38
+2016-17-player-J.Ward-Prowse - Southampton,2016-17,Tom Fowkes,MID,5,1,38
+2016-17-player-I.Gundogan - Man City,2016-17,Tom Fowkes,MID,1,1,38
+2016-17-player-J.Lingard - Man Utd,2016-17,Tom Fowkes,MID,1,1,38
+2016-17-player-J.Puncheon - C.Palace,2016-17,Tom Fowkes,MID,1,1,38
+2016-17-player-M.Batshuayi - Chelsea,2016-17,Tom Fowkes,FWD,19,1,38
+2016-17-player-A.Musa - Leicester,2016-17,Tom Fowkes,FWD,6,1,38
+2016-17-player-R.Firmino - Liverpool,2016-17,Tom Fowkes,FWD,14,1,38
+2016-17-team-Everton,2016-17,Steve Gale,GK,24,1,38
+2016-17-player-K.Zouma - Chelsea,2016-17,Steve Gale,DEF,1,1,38
+2016-17-player-A.Cresswell - West Ham,2016-17,Steve Gale,DEF,1,1,38
+2016-17-player-T.Mings - Bournemouth,2016-17,Steve Gale,DEF,1,1,38
+2016-17-player-J.Ibe - Bournemouth,2016-17,Steve Gale,MID,8,1,38
+2016-17-player-A.Lallana - Liverpool,2016-17,Steve Gale,MID,4,1,38
+2016-17-player-Y.Bolassie - Everton,2016-17,Steve Gale,MID,14,1,38
+2016-17-player-A.Januzaj - Sunderland,2016-17,Steve Gale,MID,2,1,38
+2016-17-player-A.Ayew - West Ham,2016-17,Steve Gale,FWD,10,1,38
+2016-17-player-S.Berahino - Stoke City,2016-17,Steve Gale,FWD,8,1,38
+2016-17-player-H.Kane - Spurs,2016-17,Steve Gale,FWD,27,1,38
+2016-17-team-Leicester,2016-17,Abigail Hart,GK,20,1,38
+2016-17-player-Y.Kaboul - Watford,2016-17,Abigail Hart,DEF,3,1,38
+2016-17-player-G.Cahill - Chelsea,2016-17,Abigail Hart,DEF,6,1,38
+2016-17-player-N.Otamendi - Man City,2016-17,Abigail Hart,DEF,1,1,38
+2016-17-player-M.Fellaini - Man Utd,2016-17,Abigail Hart,MID,3,1,38
+2016-17-player-D.Fletcher - West Brom,2016-17,Abigail Hart,MID,1,1,38
+2016-17-player-E.Capoue - Watford,2016-17,Abigail Hart,MID,3,1,38
+2016-17-player-R.Sterling - Man City,2016-17,Abigail Hart,MID,8,1,38
+2016-17-player-S.Aguero - Man City,2016-17,Abigail Hart,FWD,36,1,38
+2016-17-player-W.Rooney - Man Utd,2016-17,Abigail Hart,FWD,17,1,38
+2016-17-player-E.Valencia - Everton,2016-17,Abigail Hart,FWD,1,1,38
+2016-17-team-Arsenal,2016-17,Pam Hart,GK,26,1,38
+2016-17-player-M.Yoshida - Southampton,2016-17,Pam Hart,DEF,1,1,38
+2016-17-player-M.Keane - Burnley,2016-17,Pam Hart,DEF,5,1,38
+2016-17-player-B.Mee - Burnley,2016-17,Pam Hart,DEF,1,1,38
+2016-17-player-D.Tadic - Southampton,2016-17,Pam Hart,MID,18,1,38
+2016-17-player-A.Lennon - Everton,2016-17,Pam Hart,MID,4,1,38
+2016-17-player-M.Antonio - West Ham,2016-17,Pam Hart,MID,9,1,38
+2016-17-player-R.Snodgrass - West Ham,2016-17,Pam Hart,MID,1,1,38
+2016-17-player-C.Wilson - Bournemouth,2016-17,Pam Hart,FWD,11,1,38
+2016-17-player-A.Gray - Burnley,2016-17,Pam Hart,FWD,18,1,38
+2016-17-player-K.Mirallas - Everton,2016-17,Pam Hart,FWD,4,1,38
+2016-17-team-Sunderland,2016-17,Tim Hart,GK,1,1,38
+2016-17-player-E.Bailly - Man Utd,2016-17,Tim Hart,DEF,1,1,38
+2016-17-player-J.Fonte - West Ham,2016-17,Tim Hart,DEF,2,1,38
+2016-17-player-R.Shawcross - Stoke City,2016-17,Tim Hart,DEF,1,1,38
+2016-17-player-M.Arnautovic - Stoke City,2016-17,Tim Hart,MID,21,1,38
+2016-17-player-G.Sigurdsson - Swansea City,2016-17,Tim Hart,MID,21,1,38
+2016-17-player-G.Wijnadum - Liverpool,2016-17,Tim Hart,MID,15,1,38
+2016-17-player-R.Barkley - Everton,2016-17,Tim Hart,MID,16,1,38
+2016-17-player-M.Gabbiadini - Southampton,2016-17,Tim Hart,FWD,10,1,38
+2016-17-player-A.Negredo - Middlesbrough,2016-17,Tim Hart,FWD,6,1,38
+2016-17-player-C.Austin - Southampton,2016-17,Tim Hart,FWD,1,1,38
+2016-17-team-Middlesbrough,2016-17,Mick Jones,GK,2,1,38
+2016-17-player-S.Cook - Bournemouth,2016-17,Mick Jones,DEF,2,1,38
+2016-17-player-H.Bellerin - Arsenal,2016-17,Mick Jones,DEF,1,1,38
+2016-17-player-A.Moreno - Liverpool,2016-17,Mick Jones,DEF,3,1,38
+2016-17-player-E.Hazard - Chelsea,2016-17,Mick Jones,MID,30,1,38
+2016-17-player-N.Redmond - Southampton,2016-17,Mick Jones,MID,9,1,38
+2016-17-player-C.Fabregas - Chelsea,2016-17,Mick Jones,MID,9,1,38
+2016-17-player-A.Oxlaide-Chamberlain - Arsenal,2016-17,Mick Jones,MID,2,1,38
+2016-17-player-R.Lukaku - Everton,2016-17,Mick Jones,FWD,26,1,38
+2016-17-player-A.Martial - Man Utd,2016-17,Mick Jones,FWD,11,1,38
+2016-17-player-Nolito - Man City,2016-17,Mick Jones,FWD,5,1,38
+2016-17-team-Southampton,2016-17,Ken Maggs,GK,18,1,38
+2016-17-player-M.Van Der Hoorn - Swansea City,2016-17,Ken Maggs,DEF,1,1,38
+2016-17-player-S.Dann - C.Palace,2016-17,Ken Maggs,DEF,7,1,38
+2016-17-player-R.Klavan - Liverpool,2016-17,Ken Maggs,DEF,5,1,38
+2016-17-player-D.Alli - Spurs,2016-17,Ken Maggs,MID,18,1,38
+2016-17-player-V.Fischer - Middlesbrough,2016-17,Ken Maggs,MID,3,1,38
+2016-17-player-PE.Hojbjerg - Southampton,2016-17,Ken Maggs,MID,5,1,38
+2016-17-player-S.Arfield - Burnley,2016-17,Ken Maggs,MID,1,1,38
+2016-17-player-A.Hernandez - Hull City,2016-17,Ken Maggs,FWD,8,1,38
+2016-17-player-V.Janssen - Spurs,2016-17,Ken Maggs,FWD,14,1,38
+2016-17-player-B.Baston - Swansea City,2016-17,Ken Maggs,FWD,13,1,38
+2016-17-team-Man Utd,2016-17,Gary Speechley,GK,33,1,38
+2016-17-player-L.Koscielny - Arsenal,2016-17,Gary Speechley,DEF,6,1,38
+2016-17-player-PV Aaanholt - C.Palace,2016-17,Gary Speechley,DEF,5,1,38
+2016-17-player-A.Kolarov - Man City,2016-17,Gary Speechley,DEF,1,1,38
+2016-17-player-L.Sane - Man City,2016-17,Gary Speechley,MID,6,1,38
+2016-17-player-T.Walcott - Arsenal,2016-17,Gary Speechley,MID,1,1,38
+2016-17-player-S.Feghouli - West Ham,2016-17,Gary Speechley,MID,5,1,38
+2016-17-player-J.Milner - Liverpool,2016-17,Gary Speechley,MID,1,1,38
+2016-17-player-Z.Ibrahimovic - Man Utd,2016-17,Gary Speechley,FWD,25,1,38
+2016-17-player-D.Costa - Chelsea,2016-17,Gary Speechley,FWD,16,1,38
+2016-17-player-J.Rhodes - Middlesbrough,2016-17,Gary Speechley,FWD,1,1,38
+2016-17-team-West Ham,2016-17,Kev Thulbourne,GK,7,1,38
+2016-17-player-P.Jagielka - Everton,2016-17,Kev Thulbourne,DEF,1,1,38
+2016-17-player-C.Azpilicueta - Chelsea,2016-17,Kev Thulbourne,DEF,1,1,38
+2016-17-player-J.Vertonghen - Spurs,2016-17,Kev Thulbourne,DEF,3,1,38
+2016-17-player-M.Ozil - Arsenal,2016-17,Kev Thulbourne,MID,16,1,38
+2016-17-player-R.Mahrez - Leicester City,2016-17,Kev Thulbourne,MID,30,1,38
+2016-17-player-Willian - Chelsea,2016-17,Kev Thulbourne,MID,15,1,38
+2016-17-player-Y.Cabaye - C.Palace,2016-17,Kev Thulbourne,MID,3,1,38
+2016-17-player-B.Afobe - Bournemouth,2016-17,Kev Thulbourne,FWD,3,1,38
+2016-17-player-J.Defoe - Sunderland,2016-17,Kev Thulbourne,FWD,10,1,38
+2016-17-player-A.Carroll - West Ham,2016-17,Kev Thulbourne,FWD,8,1,38
+2016-17-team-Chelsea,2016-17,Wendy Thulbourne,GK,33,1,38
+2016-17-player-L.Baines - Everton,2016-17,Wendy Thulbourne,DEF,6,1,38
+2016-17-player-M.Dawson - Hull City,2016-17,Wendy Thulbourne,DEF,3,1,38
+2016-17-player-N.Clyne - Liverpool,2016-17,Wendy Thulbourne,DEF,1,1,38
+2016-17-player-J.Mata - Man Utd,2016-17,Wendy Thulbourne,MID,10,1,38
+2016-17-player-G.Jesus - Man City,2016-17,Wendy Thulbourne,MID,1,1,38
+2016-17-player-J.Allen - Stoke City,2016-17,Wendy Thulbourne,MID,2,1,38
+2016-17-player-S.Cazorla - Arsenal,2016-17,Wendy Thulbourne,MID,12,1,38
+2016-17-player-O.Giroud - Arsenal,2016-17,Wendy Thulbourne,FWD,16,1,38
+2016-17-player-M.Rashford - Man Utd,2016-17,Wendy Thulbourne,FWD,8,1,38
+2016-17-player-S.Long - Southampton,2016-17,Wendy Thulbourne,FWD,8,1,38
+2016-17-team-Liverpool,2016-17,Jamie Wright,GK,29,1,38
+2016-17-player-L.Shaw - Man Utd,2016-17,Jamie Wright,DEF,3,1,38
+2016-17-player-W.Reid - West Ham,2016-17,Jamie Wright,DEF,1,1,38
+2016-17-player-D.Lovren - Liverpool,2016-17,Jamie Wright,DEF,1,1,38
+2016-17-player-G.Ramirez - Middlesbrough,2016-17,Jamie Wright,MID,1,1,38
+2016-17-player-S.Mane - Liverpool,2016-17,Jamie Wright,MID,19,1,38
+2016-17-player-X.Shaquiri - Stoke City,2016-17,Jamie Wright,MID,4,1,38
+2016-17-player-P.Coutinho - Liverpool,2016-17,Jamie Wright,MID,25,1,38
+2016-17-player-F.Borini - Sunderland,2016-17,Jamie Wright,FWD,3,1,38
+2016-17-player-D.Origi - Liverpool,2016-17,Jamie Wright,FWD,9,1,38
+2016-17-player-K.Iheanacho - Man City,2016-17,Jamie Wright,FWD,5,1,38
+2016-17-team-Swansea City,2016-17,Neil Wright,GK,1,1,38
+2016-17-player-S.Coleman - Everton,2016-17,Neil Wright,DEF,5,1,38
+2016-17-player-E.Dier - Spurs,2016-17,Neil Wright,DEF,6,1,38
+2016-17-player-J.Evans - West Brom,2016-17,Neil Wright,DEF,1,1,38
+2016-17-player-A.Ramsey - Arsenal,2016-17,Neil Wright,MID,24,1,38
+2016-17-player-P.Pogba - Man Utd,2016-17,Neil Wright,MID,20,1,38
+2016-17-player-C.Eriksen - Spurs,2016-17,Neil Wright,MID,15,1,38
+2016-17-player-YY.Toure - Man City,2016-17,Neil Wright,MID,10,1,38
+2016-17-player-D.Sturridge - Liverpool,2016-17,Neil Wright,FWD,12,1,38
+2016-17-player-D.Welbeck - Arsenal,2016-17,Neil Wright,FWD,1,1,38
+2016-17-player-C.Benteke - C.Palace,2016-17,Neil Wright,FWD,4,1,38
+2017-18-team-West Brom,2017-18,Thomas Allan,GK,20,1,38
+2017-18-player-G.Cahill - Chelsea,2017-18,Thomas Allan,DEF,11,1,38
+2017-18-player-M.Alonso - Chelsea,2017-18,Thomas Allan,DEF,4,1,38
+2017-18-player-H.Bellerin - Arsenal,2017-18,Thomas Allan,DEF,2,1,38
+2017-18-player-E.Hazard - Chelsea,2017-18,Thomas Allan,MID,25,1,38
+2017-18-player-E.Capoue - Watford,2017-18,Thomas Allan,MID,3,1,38
+2017-18-player-J.Allen - Stoke City,2017-18,Thomas Allan,MID,1,1,38
+2017-18-player-D.Silva - Man City,2017-18,Thomas Allan,MID,8,1,38
+2017-18-player-S.Rondon - West Brom,2017-18,Thomas Allan,FWD,5,1,38
+2017-18-player-Pedro - Chelsea,2017-18,Thomas Allan,FWD,12,1,38
+2017-18-player-K.Mirallas - Everton,2017-18,Thomas Allan,FWD,8,1,38
+2017-18-team-Watford,2017-18,Karl Allen,GK,7,1,38
+2017-18-player-C.Azpilicueta - Chelsea,2017-18,Karl Allen,DEF,5,1,38
+2017-18-player-C.Dawson - West Brom,2017-18,Karl Allen,DEF,7,1,38
+2017-18-player-J.Vertonghen - Spurs,2017-18,Karl Allen,DEF,3,1,38
+2017-18-player-A.Lallana - Liverpool,2017-18,Karl Allen,MID,10,1,38
+2017-18-player-J.Lingard - Man Utd,2017-18,Karl Allen,MID,7,1,38
+2017-18-player-M.Arnautovic - West Ham,2017-18,Karl Allen,MID,16,1,38
+2017-18-player-T.Ince - Huddersfield Town,2017-18,Karl Allen,MID,8,1,38
+2017-18-player-M.Gabbiadini - Southampton,2017-18,Karl Allen,FWD,15,1,38
+2017-18-player-M.Gayle - Newcastle,2017-18,Karl Allen,FWD,12,1,38
+2017-18-player-J.Rodriguez - West Brom,2017-18,Karl Allen,FWD,8,1,38
+2017-18-team-West Ham,2017-18,Andrea Chapman,GK,20,1,38
+2017-18-player-T.Alderweild - Spurs,2017-18,Andrea Chapman,DEF,7,1,38
+2017-18-player-J.Lascelles - Newcastle,2017-18,Andrea Chapman,DEF,1,1,38
+2017-18-player-P.Zabaleta - West Ham,2017-18,Andrea Chapman,DEF,3,1,38
+2017-18-player-M.Schneiderlin - Everton,2017-18,Andrea Chapman,MID,3,1,38
+2017-18-player-J.Ward-Prowse - Southampton,2017-18,Andrea Chapman,MID,3,1,38
+2017-18-player-J.Stanislas - Bournemouth,2017-18,Andrea Chapman,MID,3,1,38
+2017-18-player-J.Henderson - Liverpool,2017-18,Andrea Chapman,MID,2,1,38
+2017-18-player-R.Firmino - Liverpool,2017-18,Andrea Chapman,FWD,15,1,38
+2017-18-player-S.Okazaki - Leicester,2017-18,Andrea Chapman,FWD,6,1,38
+2017-18-player-J.Defoe - Bournemouth,2017-18,Andrea Chapman,FWD,20,1,38
+2017-18-team-Southampton,2017-18,Gary Evans,GK,20,1,38
+2017-18-player-P.Jagielka - Everton,2017-18,Gary Evans,DEF,5,1,38
+2017-18-player-Y.Kaboul - Watford,2017-18,Gary Evans,DEF,1,1,38
+2017-18-player-R.Shawcross - Stoke City,2017-18,Gary Evans,DEF,2,1,38
+2017-18-player-D.Alli - Spurs,2017-18,Gary Evans,MID,30,1,38
+2017-18-player-J.Walters - Burnley,2017-18,Gary Evans,MID,10,1,38
+2017-18-player-M.Antonio - West Ham,2017-18,Gary Evans,MID,17,1,38
+2017-18-player-W.Zaha - C.Palace,2017-18,Gary Evans,MID,10,1,38
+2017-18-player-C.Wickham - C.Palace,2017-18,Gary Evans,FWD,3,1,38
+2017-18-player-D.Origi - Liverpool,2017-18,Gary Evans,FWD,1,1,38
+2017-18-player-V.Janssen - Spurs,2017-18,Gary Evans,FWD,1,1,38
+2017-18-team-Stoke City,2017-18,Mark Forth,GK,11,1,38
+2017-18-player-V.Kompany - Man City,2017-18,Mark Forth,DEF,6,1,38
+2017-18-player-C.Smalling - Man Utd,2017-18,Mark Forth,DEF,4,1,38
+2017-18-player-A.Williams - Everton,2017-18,Mark Forth,DEF,3,1,38
+2017-18-player-D.Fletcher - Stoke City,2017-18,Mark Forth,MID,6,1,38
+2017-18-player-M.Fellaini - Man Utd,2017-18,Mark Forth,MID,6,1,38
+2017-18-player-J.Mata - Man Utd,2017-18,Mark Forth,MID,4,1,38
+2017-18-player-R.Snodgrass - West Ham,2017-18,Mark Forth,MID,1,1,38
+2017-18-player-A.Lacazette - Arsenal,2017-18,Mark Forth,FWD,30,1,38
+2017-18-player-D.Sturridge - West Brom,2017-18,Mark Forth,FWD,9,1,38
+2017-18-player-G.Jesus - Man City,2017-18,Mark Forth,FWD,13,1,38
+2017-18-team-Bournemouth,2017-18,Tom Fowkes,GK,1,1,38
+2017-18-player-V.Van Dijk - Liverpool,2017-18,Tom Fowkes,DEF,4,1,38
+2017-18-player-P.Van Aanholt - C.Palace,2017-18,Tom Fowkes,DEF,5,1,38
+2017-18-player-L.Koscielny - Arsenal,2017-18,Tom Fowkes,DEF,8,1,38
+2017-18-player-A.Oxlaide-Chamberlain - Liverpool,2017-18,Tom Fowkes,MID,8,1,38
+2017-18-player-X.Shaquiri - Stoke City,2017-18,Tom Fowkes,MID,10,1,38
+2017-18-player-R.Barkley - Chelsea,2017-18,Tom Fowkes,MID,9,1,38
+2017-18-player-C.Atsu - Newcastle,2017-18,Tom Fowkes,MID,3,1,38
+2017-18-player-M.Rashford - Man Utd,2017-18,Tom Fowkes,FWD,9,1,38
+2017-18-player-A.Morata - Chelsea,2017-18,Tom Fowkes,FWD,12,1,38
+2017-18-player-S.Aguero - Man City,2017-18,Tom Fowkes,FWD,26,1,38
+2017-18-team-Man Utd,2017-18,Steve Gale,GK,51,1,38
+2017-18-player-B.Mendy - Man City,2017-18,Steve Gale,DEF,1,1,38
+2017-18-player-H.McGuire - Leicester City,2017-18,Steve Gale,DEF,1,1,38
+2017-18-player-J.Holebas - Watford,2017-18,Steve Gale,DEF,1,1,38
+2017-18-player-J.Puncheon - C.Palace,2017-18,Steve Gale,MID,4,1,38
+2017-18-player-R.Lamela - Spurs,2017-18,Steve Gale,MID,2,1,38
+2017-18-player-N.Chadli - West Brom,2017-18,Steve Gale,MID,7,1,38
+2017-18-player-J.Milner - Liverpool,2017-18,Steve Gale,MID,9,1,38
+2017-18-player-M.Batshuayi - Chelsea,2017-18,Steve Gale,FWD,6,1,38
+2017-18-player-J.Vardy - Leicester City,2017-18,Steve Gale,FWD,12,1,38
+2017-18-player-A.Mitrovic - Newcastle,2017-18,Steve Gale,FWD,5,1,38
+2017-18-team-Spurs,2017-18,Pam Hart,GK,37,1,38
+2017-18-player-L.Baines - Everton,2017-18,Pam Hart,DEF,8,1,38
+2017-18-player-M.Keane - Everton,2017-18,Pam Hart,DEF,1,1,38
+2017-18-player-T.Smith - Huddersfield Town,2017-18,Pam Hart,DEF,1,1,38
+2017-18-player-M.Ritchie - Newcastle,2017-18,Pam Hart,MID,10,1,38
+2017-18-player-J.Murphy - Newcastle,2017-18,Pam Hart,MID,1,1,38
+2017-18-player-Y.Cabaye - C.Palace,2017-18,Pam Hart,MID,1,1,38
+2017-18-player-W.Routledge - C.Palace,2017-18,Pam Hart,MID,1,1,38
+2017-18-player-W.Rooney - Everton,2017-18,Pam Hart,FWD,18,1,38
+2017-18-player-J.Hernandez - West Ham,2017-18,Pam Hart,FWD,20,1,38
+2017-18-player-A.Perez - Newcastle,2017-18,Pam Hart,FWD,1,1,38
+2017-18-team-Everton,2017-18,Tim Hart,GK,35,1,38
+2017-18-player-S.Dann - C.Palace,2017-18,Tim Hart,DEF,7,1,38
+2017-18-player-N.Ake - Bournemouth,2017-18,Tim Hart,DEF,8,1,38
+2017-18-player-Danilo - Man City,2017-18,Tim Hart,DEF,1,1,38
+2017-18-player-R.Mahrez - Leicester City,2017-18,Tim Hart,MID,10,1,38
+2017-18-player-L.Moura - Spurs,2017-18,Tim Hart,MID,6,1,38
+2017-18-player-D.Klassen - Everton,2017-18,Tim Hart,MID,5,1,38
+2017-18-player-W.Hughes - Watford,2017-18,Tim Hart,MID,5,1,38
+2017-18-player-A.Gray - Watford,2017-18,Tim Hart,FWD,12,1,38
+2017-18-player-G.Murray - Brighton,2017-18,Tim Hart,FWD,5,1,38
+2017-18-player-S.Ramirez - Everton,2017-18,Tim Hart,FWD,6,1,38
+2017-18-team-Crystal Palace,2017-18,Mick Jones,GK,8,1,38
+2017-18-player-J.Schlupp - C.Palace,2017-18,Mick Jones,DEF,2,1,38
+2017-18-player-K.Trippier - Spurs,2017-18,Mick Jones,DEF,1,1,38
+2017-18-player-R.Bertrand - Southampton,2017-18,Mick Jones,DEF,4,1,38
+2017-18-player-C.Eriksen - Spurs,2017-18,Mick Jones,MID,21,1,38
+2017-18-player-L.Sane - Man City,2017-18,Mick Jones,MID,11,1,38
+2017-18-player-H.Mkhitaryan - Arsenal,2017-18,Mick Jones,MID,20,1,38
+2017-18-player-Willian - Chelsea,2017-18,Mick Jones,MID,13,1,38
+2017-18-player-C.Austin - Southampton,2017-18,Mick Jones,FWD,8,1,38
+2017-18-player-O.Giroud - Chelsea,2017-18,Mick Jones,FWD,9,1,38
+2017-18-player-A.Martial - Man Utd,2017-18,Mick Jones,FWD,3,1,38
+2017-18-team-Liverpool,2017-18,Ken Maggs,GK,31,1,38
+2017-18-player-A.Mawson - Swansea,2017-18,Ken Maggs,DEF,7,1,38
+2017-18-player-G.McAuley - West Brom,2017-18,Ken Maggs,DEF,7,1,38
+2017-18-player-C.Daniels - Bournemouth,2017-18,Ken Maggs,DEF,3,1,38
+2017-18-player-A.Knockheart - Brighton HA,2017-18,Ken Maggs,MID,8,1,38
+2017-18-player-M.Noble - West Ham,2017-18,Ken Maggs,MID,2,1,38
+2017-18-player-L.Milivojevic - C.Palace,2017-18,Ken Maggs,MID,1,1,38
+2017-18-player-E.Kachunga - Huddersfield Town,2017-18,Ken Maggs,MID,11,1,38
+2017-18-player-T.Abraham - Swansea,2017-18,Ken Maggs,FWD,15,1,38
+2017-18-player-K.Ihenachio - Leicester City,2017-18,Ken Maggs,FWD,14,1,38
+2017-18-player-B.Afobe - Bournemouth,2017-18,Ken Maggs,FWD,1,1,38
+2017-18-team-Man City,2017-18,Gary Speechley,GK,44,1,38
+2017-18-player-D.Rose - Spurs,2017-18,Gary Speechley,DEF,1,1,38
+2017-18-player-C.Clark - Newcastle,2017-18,Gary Speechley,DEF,1,1,38
+2017-18-player-C.Lowe - Huddersfield Town,2017-18,Gary Speechley,DEF,1,1,38
+2017-18-player-R.Sterling - Man City,2017-18,Gary Speechley,MID,11,1,38
+2017-18-player-T.Walcott - Everton,2017-18,Gary Speechley,MID,14,1,38
+2017-18-player-M.Lanzini - West Ham,2017-18,Gary Speechley,MID,12,1,38
+2017-18-player-G.Wijnaldum - Liverpool,2017-18,Gary Speechley,MID,3,1,38
+2017-18-player-PE.Aubameyang - Arsenal,2017-18,Gary Speechley,FWD,8,1,38
+2017-18-player-S.Vokes - Burnley,2017-18,Gary Speechley,FWD,1,1,38
+2017-18-player-T.Deeney - Watford,2017-18,Gary Speechley,FWD,4,1,38
+2017-18-team-Swansea City,2017-18,Kev Thulbourne,GK,12,1,38
+2017-18-player-W.Morgan - Leicester City,2017-18,Kev Thulbourne,DEF,1,1,38
+2017-18-player-S.Mustafi - Arsenal,2017-18,Kev Thulbourne,DEF,1,1,38
+2017-18-player-E.Dier - Spurs,2017-18,Kev Thulbourne,DEF,1,1,38
+2017-18-player-K.de Bruyne - Man City,2017-18,Kev Thulbourne,MID,26,1,38
+2017-18-player-D.Tadic - Southampton,2017-18,Kev Thulbourne,MID,5,1,38
+2017-18-player-G.Sigurdsson - Everton,2017-18,Kev Thulbourne,MID,22,1,38
+2017-18-player-Y.Toure - Man City,2017-18,Kev Thulbourne,MID,7,1,38
+2017-18-player-F.Llorente - Spurs,2017-18,Kev Thulbourne,FWD,8,1,38
+2017-18-player-D.Welbeck - Arsenal,2017-18,Kev Thulbourne,FWD,10,1,38
+2017-18-player-J.Ayew - Swansea City,2017-18,Kev Thulbourne,FWD,2,1,38
+2017-18-team-Chelsea,2017-18,Wendy Thulbourne,GK,40,1,38
+2017-18-player-S.Cook - Bournemouth,2017-18,Wendy Thulbourne,DEF,1,1,38
+2017-18-player-J.Matip - Liverpool,2017-18,Wendy Thulbourne,DEF,1,1,38
+2017-18-player-D.Luiz - Chelsea,2017-18,Wendy Thulbourne,DEF,2,1,38
+2017-18-player-M.Ozil - Arsenal,2017-18,Wendy Thulbourne,MID,16,1,38
+2017-18-player-D.Propper - Brighton HA,2017-18,Wendy Thulbourne,MID,3,1,38
+2017-18-player-C.Fabregas - Chelsea,2017-18,Wendy Thulbourne,MID,4,1,38
+2017-18-player-H.Arter - Bournemouth,2017-18,Wendy Thulbourne,MID,1,1,38
+2017-18-player-A.Sanchez - Man Utd,2017-18,Wendy Thulbourne,FWD,15,1,38
+2017-18-player-C.Benteke - C.Palace,2017-18,Wendy Thulbourne,FWD,11,1,38
+2017-18-player-MB.Diouff - Stoke City,2017-18,Wendy Thulbourne,FWD,3,1,38
+2017-18-team-Leicester,2017-18,Mitchell Walker,GK,13,1,38
+2017-18-player-P.Dummett - Newcastle,2017-18,Mitchell Walker,DEF,2,1,38
+2017-18-player-J.Stones - Man City,2017-18,Mitchell Walker,DEF,6,1,38
+2017-18-player-N.Clyne - Liverpool,2017-18,Mitchell Walker,DEF,1,1,38
+2017-18-player-Y.Bolassie - Everton,2017-18,Mitchell Walker,MID,4,1,38
+2017-18-player-V.Moses - Chelsea,2017-18,Mitchell Walker,MID,2,1,38
+2017-18-player-A.Townsend - C.Palace,2017-18,Mitchell Walker,MID,2,1,38
+2017-18-player-A.Herrara - Man Utd,2017-18,Mitchell Walker,MID,1,1,38
+2017-18-player-H.Kane - Spurs,2017-18,Mitchell Walker,FWD,30,1,38
+2017-18-player-R.Lukaku - Man Utd,2017-18,Mitchell Walker,FWD,30,1,38
+2017-18-player-P.Crouch - Stoke City,2017-18,Mitchell Walker,FWD,1,1,38
+2017-18-team-Newcastle,2017-18,Jamie Wright,GK,6,1,38
+2017-18-player-J.Fonte - West Ham,2017-18,Jamie Wright,DEF,1,1,38
+2017-18-player-D.Lovren - Liverpool,2017-18,Jamie Wright,DEF,1,1,38
+2017-18-player-S.Kolasnic - Arsenal,2017-18,Jamie Wright,DEF,1,1,38
+2017-18-player-S.Mane - Liverpool,2017-18,Jamie Wright,MID,29,1,38
+2017-18-player-M.Salah - Liverpool,2017-18,Jamie Wright,MID,28,1,38
+2017-18-player-EM.Choupo-Mouting - Stoke City,2017-18,Jamie Wright,MID,1,1,38
+2017-18-player-B.Silva - Man City,2017-18,Jamie Wright,MID,1,1,38
+2017-18-player-Son.Heung-Min - Spurs,2017-18,Jamie Wright,FWD,19,1,38
+2017-18-player-J.King - Bournemouth,2017-18,Jamie Wright,FWD,12,1,38
+2017-18-player-D.Solanke - Liverpool,2017-18,Jamie Wright,FWD,1,1,38
+2017-18-team-Arsenal,2017-18,Neil Wright,GK,40,1,38
+2017-18-player-S.Coleman - Everton,2017-18,Neil Wright,DEF,5,1,38
+2017-18-player-J.Tomkins - C.Palace,2017-18,Neil Wright,DEF,2,1,38
+2017-18-player-P.Mertesacker - Arsenal,2017-18,Neil Wright,DEF,2,1,38
+2017-18-player-P.Pogba - Man Utd,2017-18,Neil Wright,MID,20,1,38
+2017-18-player-A.Ramsey - Arsenal,2017-18,Neil Wright,MID,12,1,38
+2017-18-player-N.Redmond - Southampton,2017-18,Neil Wright,MID,7,1,38
+2017-18-player-L.Fer - Swansea City,2017-18,Neil Wright,MID,1,1,38
+2017-18-player-S.Berahino - West Brom,2017-18,Neil Wright,FWD,4,1,38
+2017-18-player-A.Carroll - West Ham,2017-18,Neil Wright,FWD,3,1,38
+2017-18-player-I.Slimani - Newcastle,2017-18,Neil Wright,FWD,2,1,38

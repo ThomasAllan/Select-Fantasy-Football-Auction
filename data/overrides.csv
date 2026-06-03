@@ -2,3 +2,4351 @@ player_code,season_id,game_week,override_points
 2024-25-player-110,2024-25,9,2
 2023-24-player-5,2023-24,21,6
 2023-24-player-447,2023-24,36,7
+2009-10-team-Hull City,2009-10,1,-2
+2009-10-team-Hull City,2009-10,2,-5
+2009-10-team-Hull City,2009-10,4,-1
+2009-10-team-Hull City,2009-10,5,-4
+2009-10-team-Hull City,2009-10,6,-1
+2009-10-team-Hull City,2009-10,7,-6
+2009-10-team-Hull City,2009-10,8,-1
+2009-10-team-Hull City,2009-10,9,-2
+2009-10-team-Hull City,2009-10,11,-2
+2009-10-team-Hull City,2009-10,12,-1
+2009-10-team-Hull City,2009-10,13,-3
+2009-10-team-Hull City,2009-10,14,-2
+2009-10-team-Hull City,2009-10,15,-1
+2009-10-team-Hull City,2009-10,16,-3
+2009-10-team-Hull City,2009-10,18,-3
+2009-10-team-Hull City,2009-10,19,-3
+2009-10-team-Hull City,2009-10,20,-2
+2009-10-team-Hull City,2009-10,22,-4
+2009-10-team-Hull City,2009-10,23,-2
+2009-10-team-Hull City,2009-10,24,-1
+2009-10-team-Hull City,2009-10,25,-1
+2009-10-team-Hull City,2009-10,26,-1
+2009-10-team-Hull City,2009-10,27,-3
+2009-10-team-Hull City,2009-10,28,-5
+2009-10-team-Hull City,2009-10,29,-2
+2009-10-team-Hull City,2009-10,30,-3
+2009-10-team-Hull City,2009-10,32,-2
+2009-10-team-Hull City,2009-10,33,-4
+2009-10-team-Hull City,2009-10,35,-2
+2009-10-team-Hull City,2009-10,36,-1
+2009-10-team-Hull City,2009-10,37,-2
+2009-10-team-Bolton,2009-10,1,-1
+2009-10-team-Bolton,2009-10,2,-1
+2009-10-team-Bolton,2009-10,3,-3
+2009-10-team-Bolton,2009-10,4,-2
+2009-10-team-Bolton,2009-10,5,-1
+2009-10-team-Bolton,2009-10,6,-1
+2009-10-team-Bolton,2009-10,7,-2
+2009-10-team-Bolton,2009-10,8,-2
+2009-10-team-Bolton,2009-10,9,-2
+2009-10-team-Bolton,2009-10,10,-4
+2009-10-team-Bolton,2009-10,11,-5
+2009-10-team-Bolton,2009-10,12,-2
+2009-10-team-Bolton,2009-10,13,-1
+2009-10-team-Bolton,2009-10,14,-2
+2009-10-team-Bolton,2009-10,15,-3
+2009-10-team-Bolton,2009-10,16,-1
+2009-10-team-Bolton,2009-10,17,-1
+2009-10-team-Bolton,2009-10,18,-2
+2009-10-team-Bolton,2009-10,19,-2
+2009-10-team-Bolton,2009-10,20,-4
+2009-10-team-Bolton,2009-10,22,-2
+2009-10-team-Bolton,2009-10,24,-2
+2009-10-team-Bolton,2009-10,26,-3
+2009-10-team-Bolton,2009-10,28,-1
+2009-10-team-Bolton,2009-10,29,-4
+2009-10-team-Bolton,2009-10,31,-2
+2009-10-team-Bolton,2009-10,32,-4
+2009-10-team-Bolton,2009-10,33,-1
+2009-10-team-Bolton,2009-10,34,-1
+2009-10-team-Bolton,2009-10,35,-1
+2009-10-team-Bolton,2009-10,36,-2
+2009-10-team-Bolton,2009-10,37,-1
+2009-10-team-Bolton,2009-10,38,-1
+2009-10-team-Stoke City,2009-10,2,-4
+2009-10-team-Stoke City,2009-10,5,-2
+2009-10-team-Stoke City,2009-10,6,-1
+2009-10-team-Stoke City,2009-10,7,-2
+2009-10-team-Stoke City,2009-10,8,-1
+2009-10-team-Stoke City,2009-10,9,-1
+2009-10-team-Stoke City,2009-10,11,-2
+2009-10-team-Stoke City,2009-10,12,-2
+2009-10-team-Stoke City,2009-10,15,-2
+2009-10-team-Stoke City,2009-10,16,-2
+2009-10-team-Stoke City,2009-10,17,-1
+2009-10-team-Stoke City,2009-10,18,-2
+2009-10-team-Stoke City,2009-10,19,-1
+2009-10-team-Stoke City,2009-10,20,-2
+2009-10-team-Stoke City,2009-10,21,-1
+2009-10-team-Stoke City,2009-10,24,-1
+2009-10-team-Stoke City,2009-10,25,-1
+2009-10-team-Stoke City,2009-10,26,-1
+2009-10-team-Stoke City,2009-10,27,-3
+2009-10-team-Stoke City,2009-10,28,-1
+2009-10-team-Stoke City,2009-10,30,-2
+2009-10-team-Stoke City,2009-10,34,-2
+2009-10-team-Stoke City,2009-10,35,-7
+2009-10-team-Stoke City,2009-10,38,-4
+2009-10-team-Arsenal,2009-10,1,-1
+2009-10-team-Arsenal,2009-10,2,-1
+2009-10-team-Arsenal,2009-10,3,-2
+2009-10-team-Arsenal,2009-10,4,-4
+2009-10-team-Arsenal,2009-10,7,-2
+2009-10-team-Arsenal,2009-10,8,-1
+2009-10-team-Arsenal,2009-10,9,-2
+2009-10-team-Arsenal,2009-10,11,-1
+2009-10-team-Arsenal,2009-10,12,-1
+2009-10-team-Arsenal,2009-10,13,-3
+2009-10-team-Arsenal,2009-10,15,-1
+2009-10-team-Arsenal,2009-10,16,-1
+2009-10-team-Arsenal,2009-10,19,-1
+2009-10-team-Arsenal,2009-10,20,-2
+2009-10-team-Arsenal,2009-10,22,-2
+2009-10-team-Arsenal,2009-10,24,-3
+2009-10-team-Arsenal,2009-10,25,-2
+2009-10-team-Arsenal,2009-10,28,-1
+2009-10-team-Arsenal,2009-10,29,-1
+2009-10-team-Arsenal,2009-10,30,-1
+2009-10-team-Arsenal,2009-10,32,-1
+2009-10-team-Arsenal,2009-10,34,-2
+2009-10-team-Arsenal,2009-10,35,-3
+2009-10-team-Arsenal,2009-10,37,-2
+2009-10-team-Burnley,2009-10,1,-2
+2009-10-team-Burnley,2009-10,4,-3
+2009-10-team-Burnley,2009-10,5,-4
+2009-10-team-Burnley,2009-10,6,-1
+2009-10-team-Burnley,2009-10,7,-5
+2009-10-team-Burnley,2009-10,8,-1
+2009-10-team-Burnley,2009-10,9,-3
+2009-10-team-Burnley,2009-10,10,-3
+2009-10-team-Burnley,2009-10,12,-3
+2009-10-team-Burnley,2009-10,13,-1
+2009-10-team-Burnley,2009-10,14,-5
+2009-10-team-Burnley,2009-10,15,-2
+2009-10-team-Burnley,2009-10,16,-1
+2009-10-team-Burnley,2009-10,17,-1
+2009-10-team-Burnley,2009-10,18,-2
+2009-10-team-Burnley,2009-10,19,-1
+2009-10-team-Burnley,2009-10,20,-2
+2009-10-team-Burnley,2009-10,21,-3
+2009-10-team-Burnley,2009-10,22,-1
+2009-10-team-Burnley,2009-10,23,-2
+2009-10-team-Burnley,2009-10,24,-1
+2009-10-team-Burnley,2009-10,25,-3
+2009-10-team-Burnley,2009-10,26,-5
+2009-10-team-Burnley,2009-10,27,-2
+2009-10-team-Burnley,2009-10,28,-3
+2009-10-team-Burnley,2009-10,29,-1
+2009-10-team-Burnley,2009-10,30,-2
+2009-10-team-Burnley,2009-10,31,-1
+2009-10-team-Burnley,2009-10,32,-1
+2009-10-team-Burnley,2009-10,33,-6
+2009-10-team-Burnley,2009-10,34,-1
+2009-10-team-Burnley,2009-10,35,-2
+2009-10-team-Burnley,2009-10,36,-4
+2009-10-team-Burnley,2009-10,37,-2
+2009-10-team-Burnley,2009-10,38,-2
+2009-10-team-Sunderland,2009-10,2,-3
+2009-10-team-Sunderland,2009-10,3,-1
+2009-10-team-Sunderland,2009-10,4,-1
+2009-10-team-Sunderland,2009-10,5,-1
+2009-10-team-Sunderland,2009-10,6,-3
+2009-10-team-Sunderland,2009-10,7,-2
+2009-10-team-Sunderland,2009-10,8,-2
+2009-10-team-Sunderland,2009-10,10,-2
+2009-10-team-Sunderland,2009-10,11,-2
+2009-10-team-Sunderland,2009-10,12,-2
+2009-10-team-Sunderland,2009-10,14,-1
+2009-10-team-Sunderland,2009-10,15,-1
+2009-10-team-Sunderland,2009-10,16,-1
+2009-10-team-Sunderland,2009-10,17,-2
+2009-10-team-Sunderland,2009-10,18,-4
+2009-10-team-Sunderland,2009-10,19,-1
+2009-10-team-Sunderland,2009-10,20,-2
+2009-10-team-Sunderland,2009-10,21,-7
+2009-10-team-Sunderland,2009-10,22,-2
+2009-10-team-Sunderland,2009-10,24,-1
+2009-10-team-Sunderland,2009-10,25,-1
+2009-10-team-Sunderland,2009-10,26,-2
+2009-10-team-Sunderland,2009-10,29,-1
+2009-10-team-Sunderland,2009-10,30,-1
+2009-10-team-Sunderland,2009-10,31,-1
+2009-10-team-Sunderland,2009-10,32,-3
+2009-10-team-Sunderland,2009-10,33,-1
+2009-10-team-Sunderland,2009-10,34,-1
+2009-10-team-Sunderland,2009-10,35,-1
+2009-10-team-Sunderland,2009-10,37,-1
+2009-10-team-Sunderland,2009-10,38,-2
+2009-10-team-Liverpool,2009-10,1,-2
+2009-10-team-Liverpool,2009-10,3,-3
+2009-10-team-Liverpool,2009-10,4,-2
+2009-10-team-Liverpool,2009-10,6,-2
+2009-10-team-Liverpool,2009-10,7,-1
+2009-10-team-Liverpool,2009-10,8,-2
+2009-10-team-Liverpool,2009-10,9,-1
+2009-10-team-Liverpool,2009-10,11,-3
+2009-10-team-Liverpool,2009-10,12,-2
+2009-10-team-Liverpool,2009-10,13,-2
+2009-10-team-Liverpool,2009-10,16,-2
+2009-10-team-Liverpool,2009-10,17,-1
+2009-10-team-Liverpool,2009-10,18,-2
+2009-10-team-Liverpool,2009-10,21,-1
+2009-10-team-Liverpool,2009-10,26,-1
+2009-10-team-Liverpool,2009-10,28,-1
+2009-10-team-Liverpool,2009-10,29,-1
+2009-10-team-Liverpool,2009-10,30,-1
+2009-10-team-Liverpool,2009-10,31,-2
+2009-10-team-Liverpool,2009-10,33,-1
+2009-10-team-Liverpool,2009-10,37,-2
+2009-10-team-Wigan,2009-10,2,-1
+2009-10-team-Wigan,2009-10,3,-5
+2009-10-team-Wigan,2009-10,4,-2
+2009-10-team-Wigan,2009-10,6,-4
+2009-10-team-Wigan,2009-10,7,-1
+2009-10-team-Wigan,2009-10,8,-2
+2009-10-team-Wigan,2009-10,9,-1
+2009-10-team-Wigan,2009-10,10,-1
+2009-10-team-Wigan,2009-10,11,-4
+2009-10-team-Wigan,2009-10,12,-1
+2009-10-team-Wigan,2009-10,13,-9
+2009-10-team-Wigan,2009-10,15,-3
+2009-10-team-Wigan,2009-10,16,-2
+2009-10-team-Wigan,2009-10,17,-2
+2009-10-team-Wigan,2009-10,18,-1
+2009-10-team-Wigan,2009-10,19,-5
+2009-10-team-Wigan,2009-10,21,-2
+2009-10-team-Wigan,2009-10,22,-1
+2009-10-team-Wigan,2009-10,23,-1
+2009-10-team-Wigan,2009-10,24,-1
+2009-10-team-Wigan,2009-10,26,-3
+2009-10-team-Wigan,2009-10,27,-1
+2009-10-team-Wigan,2009-10,29,-4
+2009-10-team-Wigan,2009-10,30,-2
+2009-10-team-Wigan,2009-10,32,-3
+2009-10-team-Wigan,2009-10,33,-2
+2009-10-team-Wigan,2009-10,35,-2
+2009-10-team-Wigan,2009-10,36,-3
+2009-10-team-Wigan,2009-10,37,-2
+2009-10-team-Wigan,2009-10,38,-8
+2009-10-team-Wolves,2009-10,1,-2
+2009-10-team-Wolves,2009-10,3,-1
+2009-10-team-Wolves,2009-10,4,-1
+2009-10-team-Wolves,2009-10,5,-3
+2009-10-team-Wolves,2009-10,6,-1
+2009-10-team-Wolves,2009-10,7,-5
+2009-10-team-Wolves,2009-10,8,-1
+2009-10-team-Wolves,2009-10,9,-1
+2009-10-team-Wolves,2009-10,10,-1
+2009-10-team-Wolves,2009-10,11,-2
+2009-10-team-Wolves,2009-10,12,-4
+2009-10-team-Wolves,2009-10,13,-4
+2009-10-team-Wolves,2009-10,14,-1
+2009-10-team-Wolves,2009-10,15,-1
+2009-10-team-Wolves,2009-10,17,-3
+2009-10-team-Wolves,2009-10,19,-2
+2009-10-team-Wolves,2009-10,20,-3
+2009-10-team-Wolves,2009-10,21,-2
+2009-10-team-Wolves,2009-10,23,-2
+2009-10-team-Wolves,2009-10,24,-2
+2009-10-team-Wolves,2009-10,26,-2
+2009-10-team-Wolves,2009-10,27,-1
+2009-10-team-Wolves,2009-10,28,-1
+2009-10-team-Wolves,2009-10,29,-1
+2009-10-team-Wolves,2009-10,30,-2
+2009-10-team-Wolves,2009-10,31,-1
+2009-10-team-Wolves,2009-10,33,-1
+2009-10-team-Wolves,2009-10,36,-1
+2009-10-team-Wolves,2009-10,37,-3
+2009-10-team-Wolves,2009-10,38,-1
+2009-10-team-West Ham,2009-10,2,-2
+2009-10-team-West Ham,2009-10,4,-1
+2009-10-team-West Ham,2009-10,5,-3
+2009-10-team-West Ham,2009-10,6,-3
+2009-10-team-West Ham,2009-10,7,-2
+2009-10-team-West Ham,2009-10,8,-2
+2009-10-team-West Ham,2009-10,9,-2
+2009-10-team-West Ham,2009-10,10,-2
+2009-10-team-West Ham,2009-10,11,-1
+2009-10-team-West Ham,2009-10,12,-2
+2009-10-team-West Ham,2009-10,13,-3
+2009-10-team-West Ham,2009-10,14,-3
+2009-10-team-West Ham,2009-10,15,-4
+2009-10-team-West Ham,2009-10,16,-1
+2009-10-team-West Ham,2009-10,17,-3
+2009-10-team-West Ham,2009-10,18,-1
+2009-10-team-West Ham,2009-10,20,-2
+2009-10-team-West Ham,2009-10,22,-1
+2009-10-team-West Ham,2009-10,24,-2
+2009-10-team-West Ham,2009-10,27,-3
+2009-10-team-West Ham,2009-10,28,-2
+2009-10-team-West Ham,2009-10,29,-4
+2009-10-team-West Ham,2009-10,30,-2
+2009-10-team-West Ham,2009-10,31,-3
+2009-10-team-West Ham,2009-10,32,-1
+2009-10-team-West Ham,2009-10,33,-2
+2009-10-team-West Ham,2009-10,35,-3
+2009-10-team-West Ham,2009-10,36,-2
+2009-10-team-West Ham,2009-10,37,-3
+2009-10-team-West Ham,2009-10,38,-1
+2009-10-team-Spurs,2009-10,1,-1
+2009-10-team-Spurs,2009-10,2,-1
+2009-10-team-Spurs,2009-10,3,-1
+2009-10-team-Spurs,2009-10,4,-1
+2009-10-team-Spurs,2009-10,5,-3
+2009-10-team-Spurs,2009-10,6,-3
+2009-10-team-Spurs,2009-10,8,-2
+2009-10-team-Spurs,2009-10,9,-1
+2009-10-team-Spurs,2009-10,10,-1
+2009-10-team-Spurs,2009-10,11,-3
+2009-10-team-Spurs,2009-10,13,-1
+2009-10-team-Spurs,2009-10,14,-1
+2009-10-team-Spurs,2009-10,15,-2
+2009-10-team-Spurs,2009-10,16,-1
+2009-10-team-Spurs,2009-10,22,-2
+2009-10-team-Spurs,2009-10,24,-1
+2009-10-team-Spurs,2009-10,26,-1
+2009-10-team-Spurs,2009-10,28,-1
+2009-10-team-Spurs,2009-10,29,-1
+2009-10-team-Spurs,2009-10,30,-1
+2009-10-team-Spurs,2009-10,32,-3
+2009-10-team-Spurs,2009-10,33,-1
+2009-10-team-Spurs,2009-10,34,-1
+2009-10-team-Spurs,2009-10,35,-3
+2009-10-team-Spurs,2009-10,38,-4
+2009-10-team-Everton,2009-10,1,-6
+2009-10-team-Everton,2009-10,2,-1
+2009-10-team-Everton,2009-10,3,-1
+2009-10-team-Everton,2009-10,4,-2
+2009-10-team-Everton,2009-10,7,-1
+2009-10-team-Everton,2009-10,8,-1
+2009-10-team-Everton,2009-10,9,-3
+2009-10-team-Everton,2009-10,10,-1
+2009-10-team-Everton,2009-10,11,-1
+2009-10-team-Everton,2009-10,12,-3
+2009-10-team-Everton,2009-10,13,-3
+2009-10-team-Everton,2009-10,14,-2
+2009-10-team-Everton,2009-10,15,-2
+2009-10-team-Everton,2009-10,16,-3
+2009-10-team-Everton,2009-10,17,-1
+2009-10-team-Everton,2009-10,18,-1
+2009-10-team-Everton,2009-10,20,-2
+2009-10-team-Everton,2009-10,24,-1
+2009-10-team-Everton,2009-10,25,-1
+2009-10-team-Everton,2009-10,26,-1
+2009-10-team-Everton,2009-10,27,-2
+2009-10-team-Everton,2009-10,28,-1
+2009-10-team-Everton,2009-10,29,-2
+2009-10-team-Everton,2009-10,33,-2
+2009-10-team-Everton,2009-10,34,-2
+2009-10-team-Everton,2009-10,35,-2
+2009-10-team-Everton,2009-10,36,-1
+2009-10-team-Chelsea,2009-10,1,-1
+2009-10-team-Chelsea,2009-10,2,-1
+2009-10-team-Chelsea,2009-10,5,-1
+2009-10-team-Chelsea,2009-10,7,-3
+2009-10-team-Chelsea,2009-10,9,-2
+2009-10-team-Chelsea,2009-10,15,-2
+2009-10-team-Chelsea,2009-10,16,-3
+2009-10-team-Chelsea,2009-10,17,-1
+2009-10-team-Chelsea,2009-10,18,-1
+2009-10-team-Chelsea,2009-10,20,-1
+2009-10-team-Chelsea,2009-10,21,-2
+2009-10-team-Chelsea,2009-10,23,-1
+2009-10-team-Chelsea,2009-10,24,-1
+2009-10-team-Chelsea,2009-10,26,-2
+2009-10-team-Chelsea,2009-10,28,-4
+2009-10-team-Chelsea,2009-10,29,-1
+2009-10-team-Chelsea,2009-10,30,-1
+2009-10-team-Chelsea,2009-10,32,-1
+2009-10-team-Chelsea,2009-10,33,-1
+2009-10-team-Chelsea,2009-10,35,-2
+2009-10-team-Man City,2009-10,4,-2
+2009-10-team-Man City,2009-10,5,-4
+2009-10-team-Man City,2009-10,6,-1
+2009-10-team-Man City,2009-10,7,-1
+2009-10-team-Man City,2009-10,8,-1
+2009-10-team-Man City,2009-10,9,-2
+2009-10-team-Man City,2009-10,11,-3
+2009-10-team-Man City,2009-10,12,-2
+2009-10-team-Man City,2009-10,13,-1
+2009-10-team-Man City,2009-10,14,-1
+2009-10-team-Man City,2009-10,15,-3
+2009-10-team-Man City,2009-10,16,-3
+2009-10-team-Man City,2009-10,17,-3
+2009-10-team-Man City,2009-10,20,-1
+2009-10-team-Man City,2009-10,21,-2
+2009-10-team-Man City,2009-10,23,-2
+2009-10-team-Man City,2009-10,25,-1
+2009-10-team-Man City,2009-10,27,-2
+2009-10-team-Man City,2009-10,28,-1
+2009-10-team-Man City,2009-10,29,-1
+2009-10-team-Man City,2009-10,30,-2
+2009-10-team-Man City,2009-10,32,-1
+2009-10-team-Man City,2009-10,33,-1
+2009-10-team-Man City,2009-10,34,-1
+2009-10-team-Man City,2009-10,36,-1
+2009-10-team-Man City,2009-10,37,-1
+2009-10-team-Man City,2009-10,38,-1
+2009-10-team-Fulham,2009-10,2,-2
+2009-10-team-Fulham,2009-10,3,-2
+2009-10-team-Fulham,2009-10,4,-1
+2009-10-team-Fulham,2009-10,5,-2
+2009-10-team-Fulham,2009-10,6,-1
+2009-10-team-Fulham,2009-10,7,-2
+2009-10-team-Fulham,2009-10,9,-2
+2009-10-team-Fulham,2009-10,10,-1
+2009-10-team-Fulham,2009-10,11,-1
+2009-10-team-Fulham,2009-10,12,-1
+2009-10-team-Fulham,2009-10,14,-1
+2009-10-team-Fulham,2009-10,16,-1
+2009-10-team-Fulham,2009-10,19,-2
+2009-10-team-Fulham,2009-10,20,-3
+2009-10-team-Fulham,2009-10,21,-2
+2009-10-team-Fulham,2009-10,22,-2
+2009-10-team-Fulham,2009-10,23,-2
+2009-10-team-Fulham,2009-10,27,-1
+2009-10-team-Fulham,2009-10,29,-3
+2009-10-team-Fulham,2009-10,30,-2
+2009-10-team-Fulham,2009-10,31,-2
+2009-10-team-Fulham,2009-10,32,-1
+2009-10-team-Fulham,2009-10,35,-2
+2009-10-team-Fulham,2009-10,36,-2
+2009-10-team-Fulham,2009-10,37,-1
+2009-10-team-Fulham,2009-10,38,-4
+2009-10-team-Aston Villa,2009-10,1,-2
+2009-10-team-Aston Villa,2009-10,2,-1
+2009-10-team-Aston Villa,2009-10,6,-2
+2009-10-team-Aston Villa,2009-10,7,-1
+2009-10-team-Aston Villa,2009-10,8,-1
+2009-10-team-Aston Villa,2009-10,9,-1
+2009-10-team-Aston Villa,2009-10,10,-1
+2009-10-team-Aston Villa,2009-10,11,-2
+2009-10-team-Aston Villa,2009-10,12,-1
+2009-10-team-Aston Villa,2009-10,13,-1
+2009-10-team-Aston Villa,2009-10,14,-1
+2009-10-team-Aston Villa,2009-10,19,-3
+2009-10-team-Aston Villa,2009-10,20,-1
+2009-10-team-Aston Villa,2009-10,25,-1
+2009-10-team-Aston Villa,2009-10,26,-2
+2009-10-team-Aston Villa,2009-10,28,-1
+2009-10-team-Aston Villa,2009-10,29,-2
+2009-10-team-Aston Villa,2009-10,30,-1
+2009-10-team-Aston Villa,2009-10,31,-7
+2009-10-team-Aston Villa,2009-10,33,-2
+2009-10-team-Aston Villa,2009-10,34,-1
+2009-10-team-Aston Villa,2009-10,37,-3
+2009-10-team-Aston Villa,2009-10,38,-1
+2009-10-team-Blackburn,2009-10,1,-2
+2009-10-team-Blackburn,2009-10,2,-2
+2009-10-team-Blackburn,2009-10,4,-1
+2009-10-team-Blackburn,2009-10,5,-3
+2009-10-team-Blackburn,2009-10,6,-1
+2009-10-team-Blackburn,2009-10,7,-6
+2009-10-team-Blackburn,2009-10,8,-2
+2009-10-team-Blackburn,2009-10,9,-5
+2009-10-team-Blackburn,2009-10,10,-2
+2009-10-team-Blackburn,2009-10,11,-1
+2009-10-team-Blackburn,2009-10,13,-3
+2009-10-team-Blackburn,2009-10,17,-2
+2009-10-team-Blackburn,2009-10,18,-2
+2009-10-team-Blackburn,2009-10,19,-1
+2009-10-team-Blackburn,2009-10,20,-2
+2009-10-team-Blackburn,2009-10,21,-4
+2009-10-team-Blackburn,2009-10,23,-1
+2009-10-team-Blackburn,2009-10,25,-3
+2009-10-team-Blackburn,2009-10,28,-2
+2009-10-team-Blackburn,2009-10,29,-3
+2009-10-team-Blackburn,2009-10,30,-1
+2009-10-team-Blackburn,2009-10,31,-1
+2009-10-team-Blackburn,2009-10,35,-3
+2009-10-team-Blackburn,2009-10,36,-1
+2009-10-team-Blackburn,2009-10,37,-1
+2009-10-team-Portsmouth,2009-10,1,-1
+2009-10-team-Portsmouth,2009-10,2,-1
+2009-10-team-Portsmouth,2009-10,3,-4
+2009-10-team-Portsmouth,2009-10,4,-1
+2009-10-team-Portsmouth,2009-10,5,-3
+2009-10-team-Portsmouth,2009-10,6,-2
+2009-10-team-Portsmouth,2009-10,7,-1
+2009-10-team-Portsmouth,2009-10,9,-2
+2009-10-team-Portsmouth,2009-10,12,-3
+2009-10-team-Portsmouth,2009-10,13,-1
+2009-10-team-Portsmouth,2009-10,14,-4
+2009-10-team-Portsmouth,2009-10,16,-1
+2009-10-team-Portsmouth,2009-10,17,-2
+2009-10-team-Portsmouth,2009-10,19,-2
+2009-10-team-Portsmouth,2009-10,20,-4
+2009-10-team-Portsmouth,2009-10,21,-1
+2009-10-team-Portsmouth,2009-10,22,-2
+2009-10-team-Portsmouth,2009-10,23,-1
+2009-10-team-Portsmouth,2009-10,24,-5
+2009-10-team-Portsmouth,2009-10,25,-1
+2009-10-team-Portsmouth,2009-10,26,-2
+2009-10-team-Portsmouth,2009-10,27,-1
+2009-10-team-Portsmouth,2009-10,28,-2
+2009-10-team-Portsmouth,2009-10,29,-2
+2009-10-team-Portsmouth,2009-10,30,-4
+2009-10-team-Portsmouth,2009-10,31,-5
+2009-10-team-Portsmouth,2009-10,32,-2
+2009-10-team-Portsmouth,2009-10,35,-2
+2009-10-team-Portsmouth,2009-10,36,-2
+2009-10-team-Portsmouth,2009-10,37,-1
+2009-10-team-Portsmouth,2009-10,38,-1
+2009-10-team-Man Utd,2009-10,2,-1
+2009-10-team-Man Utd,2009-10,4,-1
+2009-10-team-Man Utd,2009-10,5,-1
+2009-10-team-Man Utd,2009-10,6,-3
+2009-10-team-Man Utd,2009-10,8,-2
+2009-10-team-Man Utd,2009-10,9,-1
+2009-10-team-Man Utd,2009-10,10,-2
+2009-10-team-Man Utd,2009-10,12,-1
+2009-10-team-Man Utd,2009-10,14,-1
+2009-10-team-Man Utd,2009-10,16,-1
+2009-10-team-Man Utd,2009-10,18,-3
+2009-10-team-Man Utd,2009-10,19,-1
+2009-10-team-Man Utd,2009-10,21,-1
+2009-10-team-Man Utd,2009-10,24,-1
+2009-10-team-Man Utd,2009-10,26,-1
+2009-10-team-Man Utd,2009-10,27,-3
+2009-10-team-Man Utd,2009-10,31,-1
+2009-10-team-Man Utd,2009-10,33,-2
+2009-10-team-Man Utd,2009-10,36,-1
+2010-11-team-Spurs,2010-11,2,-1
+2010-11-team-Spurs,2010-11,3,-1
+2010-11-team-Spurs,2010-11,4,-1
+2010-11-team-Spurs,2010-11,5,-1
+2010-11-team-Spurs,2010-11,6,-1
+2010-11-team-Spurs,2010-11,7,-1
+2010-11-team-Spurs,2010-11,8,-1
+2010-11-team-Spurs,2010-11,9,-1
+2010-11-team-Spurs,2010-11,10,-2
+2010-11-team-Spurs,2010-11,11,-4
+2010-11-team-Spurs,2010-11,12,-1
+2010-11-team-Spurs,2010-11,13,-2
+2010-11-team-Spurs,2010-11,14,-2
+2010-11-team-Spurs,2010-11,15,-1
+2010-11-team-Spurs,2010-11,16,-1
+2010-11-team-Spurs,2010-11,17,-1
+2010-11-team-Spurs,2010-11,18,-1
+2010-11-team-Spurs,2010-11,21,-2
+2010-11-team-Spurs,2010-11,23,-1
+2010-11-team-Spurs,2010-11,25,-1
+2010-11-team-Spurs,2010-11,26,-1
+2010-11-team-Spurs,2010-11,27,-3
+2010-11-team-Spurs,2010-11,28,-3
+2010-11-team-Spurs,2010-11,31,-2
+2010-11-team-Spurs,2010-11,32,-3
+2010-11-team-Spurs,2010-11,33,-2
+2010-11-team-Spurs,2010-11,34,-2
+2010-11-team-Spurs,2010-11,35,-1
+2010-11-team-Spurs,2010-11,36,-1
+2010-11-team-Spurs,2010-11,38,-1
+2010-11-team-Newcastle,2010-11,1,-3
+2010-11-team-Newcastle,2010-11,3,-1
+2010-11-team-Newcastle,2010-11,4,-2
+2010-11-team-Newcastle,2010-11,6,-2
+2010-11-team-Newcastle,2010-11,7,-2
+2010-11-team-Newcastle,2010-11,8,-2
+2010-11-team-Newcastle,2010-11,9,-1
+2010-11-team-Newcastle,2010-11,10,-1
+2010-11-team-Newcastle,2010-11,12,-2
+2010-11-team-Newcastle,2010-11,14,-5
+2010-11-team-Newcastle,2010-11,15,-1
+2010-11-team-Newcastle,2010-11,16,-3
+2010-11-team-Newcastle,2010-11,17,-1
+2010-11-team-Newcastle,2010-11,18,-3
+2010-11-team-Newcastle,2010-11,19,-2
+2010-11-team-Newcastle,2010-11,22,-1
+2010-11-team-Newcastle,2010-11,23,-1
+2010-11-team-Newcastle,2010-11,24,-1
+2010-11-team-Newcastle,2010-11,25,-4
+2010-11-team-Newcastle,2010-11,28,-1
+2010-11-team-Newcastle,2010-11,29,-2
+2010-11-team-Newcastle,2010-11,30,-4
+2010-11-team-Newcastle,2010-11,31,-1
+2010-11-team-Newcastle,2010-11,32,-1
+2010-11-team-Newcastle,2010-11,34,-1
+2010-11-team-Newcastle,2010-11,35,-3
+2010-11-team-Newcastle,2010-11,36,-1
+2010-11-team-Newcastle,2010-11,37,-2
+2010-11-team-Newcastle,2010-11,38,-3
+2010-11-team-Stoke City,2010-11,1,-2
+2010-11-team-Stoke City,2010-11,2,-2
+2010-11-team-Stoke City,2010-11,3,-2
+2010-11-team-Stoke City,2010-11,4,-1
+2010-11-team-Stoke City,2010-11,5,-1
+2010-11-team-Stoke City,2010-11,6,-1
+2010-11-team-Stoke City,2010-11,8,-2
+2010-11-team-Stoke City,2010-11,9,-2
+2010-11-team-Stoke City,2010-11,10,-1
+2010-11-team-Stoke City,2010-11,11,-2
+2010-11-team-Stoke City,2010-11,12,-2
+2010-11-team-Stoke City,2010-11,15,-1
+2010-11-team-Stoke City,2010-11,16,-2
+2010-11-team-Stoke City,2010-11,17,-1
+2010-11-team-Stoke City,2010-11,19,-2
+2010-11-team-Stoke City,2010-11,21,-2
+2010-11-team-Stoke City,2010-11,23,-2
+2010-11-team-Stoke City,2010-11,24,-2
+2010-11-team-Stoke City,2010-11,25,-2
+2010-11-team-Stoke City,2010-11,26,-1
+2010-11-team-Stoke City,2010-11,27,-1
+2010-11-team-Stoke City,2010-11,28,-1
+2010-11-team-Stoke City,2010-11,29,-3
+2010-11-team-Stoke City,2010-11,31,-1
+2010-11-team-Stoke City,2010-11,32,-3
+2010-11-team-Stoke City,2010-11,33,-1
+2010-11-team-Stoke City,2010-11,36,-1
+2010-11-team-Stoke City,2010-11,37,-3
+2010-11-team-Stoke City,2010-11,38,-1
+2010-11-team-Wolves,2010-11,1,-1
+2010-11-team-Wolves,2010-11,2,-1
+2010-11-team-Wolves,2010-11,3,-1
+2010-11-team-Wolves,2010-11,4,-2
+2010-11-team-Wolves,2010-11,5,-3
+2010-11-team-Wolves,2010-11,6,-2
+2010-11-team-Wolves,2010-11,7,-2
+2010-11-team-Wolves,2010-11,8,-1
+2010-11-team-Wolves,2010-11,9,-2
+2010-11-team-Wolves,2010-11,10,-1
+2010-11-team-Wolves,2010-11,11,-2
+2010-11-team-Wolves,2010-11,12,-2
+2010-11-team-Wolves,2010-11,13,-3
+2010-11-team-Wolves,2010-11,14,-2
+2010-11-team-Wolves,2010-11,15,-2
+2010-11-team-Wolves,2010-11,16,-3
+2010-11-team-Wolves,2010-11,18,-2
+2010-11-team-Wolves,2010-11,20,-2
+2010-11-team-Wolves,2010-11,22,-4
+2010-11-team-Wolves,2010-11,23,-3
+2010-11-team-Wolves,2010-11,24,-1
+2010-11-team-Wolves,2010-11,25,-1
+2010-11-team-Wolves,2010-11,26,-2
+2010-11-team-Wolves,2010-11,27,-1
+2010-11-team-Wolves,2010-11,29,-3
+2010-11-team-Wolves,2010-11,31,-4
+2010-11-team-Wolves,2010-11,32,-3
+2010-11-team-Wolves,2010-11,33,-1
+2010-11-team-Wolves,2010-11,34,-3
+2010-11-team-Wolves,2010-11,35,-1
+2010-11-team-Wolves,2010-11,36,-1
+2010-11-team-Wolves,2010-11,37,-1
+2010-11-team-Wolves,2010-11,38,-3
+2010-11-team-West Brom,2010-11,1,-6
+2010-11-team-West Brom,2010-11,3,-1
+2010-11-team-West Brom,2010-11,4,-1
+2010-11-team-West Brom,2010-11,5,-1
+2010-11-team-West Brom,2010-11,6,-2
+2010-11-team-West Brom,2010-11,7,-1
+2010-11-team-West Brom,2010-11,8,-2
+2010-11-team-West Brom,2010-11,9,-1
+2010-11-team-West Brom,2010-11,10,-2
+2010-11-team-West Brom,2010-11,11,-2
+2010-11-team-West Brom,2010-11,12,-2
+2010-11-team-West Brom,2010-11,13,-1
+2010-11-team-West Brom,2010-11,14,-3
+2010-11-team-West Brom,2010-11,15,-1
+2010-11-team-West Brom,2010-11,16,-1
+2010-11-team-West Brom,2010-11,17,-2
+2010-11-team-West Brom,2010-11,18,-2
+2010-11-team-West Brom,2010-11,19,-3
+2010-11-team-West Brom,2010-11,20,-2
+2010-11-team-West Brom,2010-11,21,-3
+2010-11-team-West Brom,2010-11,22,-2
+2010-11-team-West Brom,2010-11,23,-2
+2010-11-team-West Brom,2010-11,24,-2
+2010-11-team-West Brom,2010-11,25,-3
+2010-11-team-West Brom,2010-11,26,-3
+2010-11-team-West Brom,2010-11,27,-1
+2010-11-team-West Brom,2010-11,28,-1
+2010-11-team-West Brom,2010-11,29,-1
+2010-11-team-West Brom,2010-11,30,-2
+2010-11-team-West Brom,2010-11,31,-1
+2010-11-team-West Brom,2010-11,32,-2
+2010-11-team-West Brom,2010-11,33,-3
+2010-11-team-West Brom,2010-11,34,-2
+2010-11-team-West Brom,2010-11,35,-1
+2010-11-team-West Brom,2010-11,36,-3
+2010-11-team-West Brom,2010-11,38,-3
+2010-11-team-Birmingham City,2010-11,1,-2
+2010-11-team-Birmingham City,2010-11,2,-1
+2010-11-team-Birmingham City,2010-11,3,-2
+2010-11-team-Birmingham City,2010-11,5,-3
+2010-11-team-Birmingham City,2010-11,7,-2
+2010-11-team-Birmingham City,2010-11,8,-2
+2010-11-team-Birmingham City,2010-11,11,-2
+2010-11-team-Birmingham City,2010-11,12,-3
+2010-11-team-Birmingham City,2010-11,15,-1
+2010-11-team-Birmingham City,2010-11,16,-1
+2010-11-team-Birmingham City,2010-11,17,-1
+2010-11-team-Birmingham City,2010-11,18,-1
+2010-11-team-Birmingham City,2010-11,19,-3
+2010-11-team-Birmingham City,2010-11,20,-1
+2010-11-team-Birmingham City,2010-11,21,-1
+2010-11-team-Birmingham City,2010-11,22,-5
+2010-11-team-Birmingham City,2010-11,23,-2
+2010-11-team-Birmingham City,2010-11,26,-2
+2010-11-team-Birmingham City,2010-11,27,-3
+2010-11-team-Birmingham City,2010-11,28,-1
+2010-11-team-Birmingham City,2010-11,29,-2
+2010-11-team-Birmingham City,2010-11,30,-1
+2010-11-team-Birmingham City,2010-11,31,-1
+2010-11-team-Birmingham City,2010-11,33,-3
+2010-11-team-Birmingham City,2010-11,34,-5
+2010-11-team-Birmingham City,2010-11,35,-1
+2010-11-team-Birmingham City,2010-11,36,-2
+2010-11-team-Birmingham City,2010-11,37,-2
+2010-11-team-Birmingham City,2010-11,38,-2
+2010-11-team-Blackburn,2010-11,2,-2
+2010-11-team-Blackburn,2010-11,3,-2
+2010-11-team-Blackburn,2010-11,4,-1
+2010-11-team-Blackburn,2010-11,5,-1
+2010-11-team-Blackburn,2010-11,6,-1
+2010-11-team-Blackburn,2010-11,7,-1
+2010-11-team-Blackburn,2010-11,9,-2
+2010-11-team-Blackburn,2010-11,10,-2
+2010-11-team-Blackburn,2010-11,11,-1
+2010-11-team-Blackburn,2010-11,12,-1
+2010-11-team-Blackburn,2010-11,13,-4
+2010-11-team-Blackburn,2010-11,15,-7
+2010-11-team-Blackburn,2010-11,17,-2
+2010-11-team-Blackburn,2010-11,18,-1
+2010-11-team-Blackburn,2010-11,19,-2
+2010-11-team-Blackburn,2010-11,20,-1
+2010-11-team-Blackburn,2010-11,21,-3
+2010-11-team-Blackburn,2010-11,22,-1
+2010-11-team-Blackburn,2010-11,23,-2
+2010-11-team-Blackburn,2010-11,25,-1
+2010-11-team-Blackburn,2010-11,26,-4
+2010-11-team-Blackburn,2010-11,28,-4
+2010-11-team-Blackburn,2010-11,29,-3
+2010-11-team-Blackburn,2010-11,30,-2
+2010-11-team-Blackburn,2010-11,32,-1
+2010-11-team-Blackburn,2010-11,33,-2
+2010-11-team-Blackburn,2010-11,34,-1
+2010-11-team-Blackburn,2010-11,36,-1
+2010-11-team-Blackburn,2010-11,37,-1
+2010-11-team-Blackburn,2010-11,38,-2
+2010-11-team-Man Utd,2010-11,2,-2
+2010-11-team-Man Utd,2010-11,4,-3
+2010-11-team-Man Utd,2010-11,5,-2
+2010-11-team-Man Utd,2010-11,6,-2
+2010-11-team-Man Utd,2010-11,8,-2
+2010-11-team-Man Utd,2010-11,9,-1
+2010-11-team-Man Utd,2010-11,11,-1
+2010-11-team-Man Utd,2010-11,13,-2
+2010-11-team-Man Utd,2010-11,15,-1
+2010-11-team-Man Utd,2010-11,18,-1
+2010-11-team-Man Utd,2010-11,19,-1
+2010-11-team-Man Utd,2010-11,20,-1
+2010-11-team-Man Utd,2010-11,23,-2
+2010-11-team-Man Utd,2010-11,24,-1
+2010-11-team-Man Utd,2010-11,25,-2
+2010-11-team-Man Utd,2010-11,26,-1
+2010-11-team-Man Utd,2010-11,28,-2
+2010-11-team-Man Utd,2010-11,29,-3
+2010-11-team-Man Utd,2010-11,31,-2
+2010-11-team-Man Utd,2010-11,35,-1
+2010-11-team-Man Utd,2010-11,36,-1
+2010-11-team-Man Utd,2010-11,37,-1
+2010-11-team-Man Utd,2010-11,38,-2
+2010-11-team-Wigan,2010-11,1,-4
+2010-11-team-Wigan,2010-11,2,-6
+2010-11-team-Wigan,2010-11,4,-1
+2010-11-team-Wigan,2010-11,5,-2
+2010-11-team-Wigan,2010-11,8,-2
+2010-11-team-Wigan,2010-11,9,-1
+2010-11-team-Wigan,2010-11,10,-2
+2010-11-team-Wigan,2010-11,11,-2
+2010-11-team-Wigan,2010-11,12,-1
+2010-11-team-Wigan,2010-11,14,-2
+2010-11-team-Wigan,2010-11,15,-3
+2010-11-team-Wigan,2010-11,16,-2
+2010-11-team-Wigan,2010-11,18,-1
+2010-11-team-Wigan,2010-11,19,-2
+2010-11-team-Wigan,2010-11,20,-1
+2010-11-team-Wigan,2010-11,21,-1
+2010-11-team-Wigan,2010-11,22,-1
+2010-11-team-Wigan,2010-11,23,-3
+2010-11-team-Wigan,2010-11,24,-2
+2010-11-team-Wigan,2010-11,25,-2
+2010-11-team-Wigan,2010-11,26,-3
+2010-11-team-Wigan,2010-11,27,-1
+2010-11-team-Wigan,2010-11,28,-4
+2010-11-team-Wigan,2010-11,29,-1
+2010-11-team-Wigan,2010-11,30,-1
+2010-11-team-Wigan,2010-11,32,-1
+2010-11-team-Wigan,2010-11,33,-1
+2010-11-team-Wigan,2010-11,34,-4
+2010-11-team-Wigan,2010-11,35,-1
+2010-11-team-Wigan,2010-11,36,-1
+2010-11-team-Wigan,2010-11,37,-2
+2010-11-team-Sunderland,2010-11,1,-2
+2010-11-team-Sunderland,2010-11,2,-1
+2010-11-team-Sunderland,2010-11,4,-1
+2010-11-team-Sunderland,2010-11,5,-1
+2010-11-team-Sunderland,2010-11,6,-2
+2010-11-team-Sunderland,2010-11,10,-5
+2010-11-team-Sunderland,2010-11,12,-1
+2010-11-team-Sunderland,2010-11,14,-2
+2010-11-team-Sunderland,2010-11,15,-3
+2010-11-team-Sunderland,2010-11,19,-2
+2010-11-team-Sunderland,2010-11,20,-2
+2010-11-team-Sunderland,2010-11,23,-1
+2010-11-team-Sunderland,2010-11,24,-1
+2010-11-team-Sunderland,2010-11,25,-4
+2010-11-team-Sunderland,2010-11,26,-3
+2010-11-team-Sunderland,2010-11,27,-2
+2010-11-team-Sunderland,2010-11,28,-2
+2010-11-team-Sunderland,2010-11,30,-2
+2010-11-team-Sunderland,2010-11,31,-5
+2010-11-team-Sunderland,2010-11,32,-3
+2010-11-team-Sunderland,2010-11,33,-2
+2010-11-team-Sunderland,2010-11,34,-2
+2010-11-team-Sunderland,2010-11,35,-3
+2010-11-team-Sunderland,2010-11,36,-1
+2010-11-team-Sunderland,2010-11,37,-3
+2010-11-team-Chelsea,2010-11,4,-1
+2010-11-team-Chelsea,2010-11,6,-1
+2010-11-team-Chelsea,2010-11,10,-1
+2010-11-team-Chelsea,2010-11,11,-2
+2010-11-team-Chelsea,2010-11,13,-3
+2010-11-team-Chelsea,2010-11,14,-1
+2010-11-team-Chelsea,2010-11,15,-1
+2010-11-team-Chelsea,2010-11,16,-1
+2010-11-team-Chelsea,2010-11,17,-1
+2010-11-team-Chelsea,2010-11,18,-3
+2010-11-team-Chelsea,2010-11,20,-3
+2010-11-team-Chelsea,2010-11,21,-1
+2010-11-team-Chelsea,2010-11,24,-2
+2010-11-team-Chelsea,2010-11,25,-1
+2010-11-team-Chelsea,2010-11,27,-1
+2010-11-team-Chelsea,2010-11,28,-1
+2010-11-team-Chelsea,2010-11,30,-1
+2010-11-team-Chelsea,2010-11,32,-1
+2010-11-team-Chelsea,2010-11,33,-1
+2010-11-team-Chelsea,2010-11,35,-1
+2010-11-team-Chelsea,2010-11,36,-2
+2010-11-team-Chelsea,2010-11,37,-2
+2010-11-team-Chelsea,2010-11,38,-1
+2010-11-team-Man City,2010-11,3,-1
+2010-11-team-Man City,2010-11,4,-1
+2010-11-team-Man City,2010-11,7,-1
+2010-11-team-Man City,2010-11,8,-2
+2010-11-team-Man City,2010-11,9,-3
+2010-11-team-Man City,2010-11,10,-2
+2010-11-team-Man City,2010-11,14,-1
+2010-11-team-Man City,2010-11,15,-1
+2010-11-team-Man City,2010-11,17,-1
+2010-11-team-Man City,2010-11,18,-2
+2010-11-team-Man City,2010-11,19,-1
+2010-11-team-Man City,2010-11,23,-3
+2010-11-team-Man City,2010-11,24,-1
+2010-11-team-Man City,2010-11,25,-2
+2010-11-team-Man City,2010-11,27,-2
+2010-11-team-Man City,2010-11,28,-1
+2010-11-team-Man City,2010-11,30,-2
+2010-11-team-Man City,2010-11,32,-3
+2010-11-team-Man City,2010-11,34,-1
+2010-11-team-Man City,2010-11,35,-2
+2010-11-team-Aston Villa,2010-11,2,-6
+2010-11-team-Aston Villa,2010-11,4,-2
+2010-11-team-Aston Villa,2010-11,5,-1
+2010-11-team-Aston Villa,2010-11,6,-1
+2010-11-team-Aston Villa,2010-11,7,-2
+2010-11-team-Aston Villa,2010-11,9,-1
+2010-11-team-Aston Villa,2010-11,11,-1
+2010-11-team-Aston Villa,2010-11,12,-2
+2010-11-team-Aston Villa,2010-11,13,-2
+2010-11-team-Aston Villa,2010-11,14,-2
+2010-11-team-Aston Villa,2010-11,15,-4
+2010-11-team-Aston Villa,2010-11,16,-3
+2010-11-team-Aston Villa,2010-11,17,-1
+2010-11-team-Aston Villa,2010-11,18,-2
+2010-11-team-Aston Villa,2010-11,19,-4
+2010-11-team-Aston Villa,2010-11,20,-3
+2010-11-team-Aston Villa,2010-11,21,-1
+2010-11-team-Aston Villa,2010-11,22,-1
+2010-11-team-Aston Villa,2010-11,24,-1
+2010-11-team-Aston Villa,2010-11,25,-3
+2010-11-team-Aston Villa,2010-11,26,-2
+2010-11-team-Aston Villa,2010-11,27,-1
+2010-11-team-Aston Villa,2010-11,28,-1
+2010-11-team-Aston Villa,2010-11,29,-3
+2010-11-team-Aston Villa,2010-11,30,-1
+2010-11-team-Aston Villa,2010-11,31,-2
+2010-11-team-Aston Villa,2010-11,33,-1
+2010-11-team-Aston Villa,2010-11,34,-1
+2010-11-team-Aston Villa,2010-11,35,-2
+2010-11-team-Aston Villa,2010-11,36,-1
+2010-11-team-Aston Villa,2010-11,37,-1
+2010-11-team-Liverpool,2010-11,1,-1
+2010-11-team-Liverpool,2010-11,2,-3
+2010-11-team-Liverpool,2010-11,5,-3
+2010-11-team-Liverpool,2010-11,6,-2
+2010-11-team-Liverpool,2010-11,7,-2
+2010-11-team-Liverpool,2010-11,8,-2
+2010-11-team-Liverpool,2010-11,9,-1
+2010-11-team-Liverpool,2010-11,12,-1
+2010-11-team-Liverpool,2010-11,13,-2
+2010-11-team-Liverpool,2010-11,15,-2
+2010-11-team-Liverpool,2010-11,17,-3
+2010-11-team-Liverpool,2010-11,18,-1
+2010-11-team-Liverpool,2010-11,19,-1
+2010-11-team-Liverpool,2010-11,20,-3
+2010-11-team-Liverpool,2010-11,21,-2
+2010-11-team-Liverpool,2010-11,22,-2
+2010-11-team-Liverpool,2010-11,27,-1
+2010-11-team-Liverpool,2010-11,28,-3
+2010-11-team-Liverpool,2010-11,29,-1
+2010-11-team-Liverpool,2010-11,31,-2
+2010-11-team-Liverpool,2010-11,33,-1
+2010-11-team-Liverpool,2010-11,36,-2
+2010-11-team-Liverpool,2010-11,37,-2
+2010-11-team-Liverpool,2010-11,38,-1
+2010-11-team-Fulham,2010-11,2,-2
+2010-11-team-Fulham,2010-11,3,-2
+2010-11-team-Fulham,2010-11,4,-1
+2010-11-team-Fulham,2010-11,5,-1
+2010-11-team-Fulham,2010-11,7,-1
+2010-11-team-Fulham,2010-11,8,-2
+2010-11-team-Fulham,2010-11,9,-2
+2010-11-team-Fulham,2010-11,11,-1
+2010-11-team-Fulham,2010-11,12,-1
+2010-11-team-Fulham,2010-11,14,-4
+2010-11-team-Fulham,2010-11,15,-1
+2010-11-team-Fulham,2010-11,16,-2
+2010-11-team-Fulham,2010-11,18,-3
+2010-11-team-Fulham,2010-11,20,-1
+2010-11-team-Fulham,2010-11,22,-1
+2010-11-team-Fulham,2010-11,24,-1
+2010-11-team-Fulham,2010-11,26,-2
+2010-11-team-Fulham,2010-11,28,-1
+2010-11-team-Fulham,2010-11,29,-2
+2010-11-team-Fulham,2010-11,30,-2
+2010-11-team-Fulham,2010-11,32,-2
+2010-11-team-Fulham,2010-11,33,-1
+2010-11-team-Fulham,2010-11,36,-5
+2010-11-team-Fulham,2010-11,38,-2
+2010-11-team-West Ham,2010-11,1,-3
+2010-11-team-West Ham,2010-11,2,-3
+2010-11-team-West Ham,2010-11,3,-3
+2010-11-team-West Ham,2010-11,4,-3
+2010-11-team-West Ham,2010-11,5,-1
+2010-11-team-West Ham,2010-11,7,-1
+2010-11-team-West Ham,2010-11,8,-1
+2010-11-team-West Ham,2010-11,9,-2
+2010-11-team-West Ham,2010-11,10,-1
+2010-11-team-West Ham,2010-11,11,-2
+2010-11-team-West Ham,2010-11,12,-2
+2010-11-team-West Ham,2010-11,14,-3
+2010-11-team-West Ham,2010-11,15,-1
+2010-11-team-West Ham,2010-11,16,-1
+2010-11-team-West Ham,2010-11,17,-3
+2010-11-team-West Ham,2010-11,18,-1
+2010-11-team-West Ham,2010-11,19,-1
+2010-11-team-West Ham,2010-11,20,-1
+2010-11-team-West Ham,2010-11,22,-5
+2010-11-team-West Ham,2010-11,23,-3
+2010-11-team-West Ham,2010-11,24,-2
+2010-11-team-West Ham,2010-11,25,-1
+2010-11-team-West Ham,2010-11,26,-1
+2010-11-team-West Ham,2010-11,27,-3
+2010-11-team-West Ham,2010-11,28,-1
+2010-11-team-West Ham,2010-11,31,-4
+2010-11-team-West Ham,2010-11,32,-3
+2010-11-team-West Ham,2010-11,33,-2
+2010-11-team-West Ham,2010-11,34,-3
+2010-11-team-West Ham,2010-11,35,-2
+2010-11-team-West Ham,2010-11,36,-1
+2010-11-team-West Ham,2010-11,37,-3
+2010-11-team-West Ham,2010-11,38,-3
+2010-11-team-Arsenal,2010-11,1,-1
+2010-11-team-Arsenal,2010-11,3,-1
+2010-11-team-Arsenal,2010-11,4,-1
+2010-11-team-Arsenal,2010-11,5,-1
+2010-11-team-Arsenal,2010-11,6,-3
+2010-11-team-Arsenal,2010-11,7,-2
+2010-11-team-Arsenal,2010-11,8,-1
+2010-11-team-Arsenal,2010-11,11,-1
+2010-11-team-Arsenal,2010-11,13,-1
+2010-11-team-Arsenal,2010-11,14,-3
+2010-11-team-Arsenal,2010-11,15,-2
+2010-11-team-Arsenal,2010-11,16,-1
+2010-11-team-Arsenal,2010-11,17,-1
+2010-11-team-Arsenal,2010-11,18,-1
+2010-11-team-Arsenal,2010-11,19,-2
+2010-11-team-Arsenal,2010-11,24,-1
+2010-11-team-Arsenal,2010-11,25,-4
+2010-11-team-Arsenal,2010-11,29,-2
+2010-11-team-Arsenal,2010-11,31,-1
+2010-11-team-Arsenal,2010-11,32,-1
+2010-11-team-Arsenal,2010-11,33,-3
+2010-11-team-Arsenal,2010-11,34,-2
+2010-11-team-Arsenal,2010-11,36,-3
+2010-11-team-Arsenal,2010-11,37,-2
+2010-11-team-Arsenal,2010-11,38,-2
+2010-11-team-Everton,2010-11,1,-1
+2010-11-team-Everton,2010-11,2,-1
+2010-11-team-Everton,2010-11,3,-1
+2010-11-team-Everton,2010-11,4,-3
+2010-11-team-Everton,2010-11,5,-1
+2010-11-team-Everton,2010-11,9,-1
+2010-11-team-Everton,2010-11,11,-2
+2010-11-team-Everton,2010-11,12,-1
+2010-11-team-Everton,2010-11,13,-2
+2010-11-team-Everton,2010-11,14,-2
+2010-11-team-Everton,2010-11,15,-4
+2010-11-team-Everton,2010-11,16,-1
+2010-11-team-Everton,2010-11,18,-1
+2010-11-team-Everton,2010-11,19,-1
+2010-11-team-Everton,2010-11,20,-2
+2010-11-team-Everton,2010-11,21,-1
+2010-11-team-Everton,2010-11,22,-2
+2010-11-team-Everton,2010-11,23,-2
+2010-11-team-Everton,2010-11,24,-2
+2010-11-team-Everton,2010-11,25,-3
+2010-11-team-Everton,2010-11,26,-2
+2010-11-team-Everton,2010-11,28,-1
+2010-11-team-Everton,2010-11,29,-1
+2010-11-team-Everton,2010-11,30,-1
+2010-11-team-Everton,2010-11,31,-2
+2010-11-team-Everton,2010-11,34,-1
+2010-11-team-Everton,2010-11,35,-1
+2010-11-team-Everton,2010-11,36,-1
+2010-11-team-Everton,2010-11,37,-1
+2010-11-team-Bolton,2010-11,2,-1
+2010-11-team-Bolton,2010-11,3,-2
+2010-11-team-Bolton,2010-11,4,-4
+2010-11-team-Bolton,2010-11,5,-1
+2010-11-team-Bolton,2010-11,6,-2
+2010-11-team-Bolton,2010-11,7,-1
+2010-11-team-Bolton,2010-11,8,-1
+2010-11-team-Bolton,2010-11,9,-1
+2010-11-team-Bolton,2010-11,10,-1
+2010-11-team-Bolton,2010-11,11,-2
+2010-11-team-Bolton,2010-11,12,-1
+2010-11-team-Bolton,2010-11,13,-2
+2010-11-team-Bolton,2010-11,14,-1
+2010-11-team-Bolton,2010-11,15,-2
+2010-11-team-Bolton,2010-11,16,-1
+2010-11-team-Bolton,2010-11,17,-1
+2010-11-team-Bolton,2010-11,18,-1
+2010-11-team-Bolton,2010-11,20,-1
+2010-11-team-Bolton,2010-11,21,-2
+2010-11-team-Bolton,2010-11,22,-1
+2010-11-team-Bolton,2010-11,23,-2
+2010-11-team-Bolton,2010-11,24,-4
+2010-11-team-Bolton,2010-11,26,-2
+2010-11-team-Bolton,2010-11,28,-1
+2010-11-team-Bolton,2010-11,29,-2
+2010-11-team-Bolton,2010-11,30,-1
+2010-11-team-Bolton,2010-11,31,-2
+2010-11-team-Bolton,2010-11,33,-1
+2010-11-team-Bolton,2010-11,34,-3
+2010-11-team-Bolton,2010-11,35,-1
+2010-11-team-Bolton,2010-11,36,-2
+2010-11-team-Bolton,2010-11,37,-4
+2010-11-team-Bolton,2010-11,38,-2
+2011-12-team-Norwich,2011-12,1,-1
+2011-12-team-Norwich,2011-12,2,-1
+2011-12-team-Norwich,2011-12,3,-3
+2011-12-team-Norwich,2011-12,4,-1
+2011-12-team-Norwich,2011-12,5,-1
+2011-12-team-Norwich,2011-12,6,-1
+2011-12-team-Norwich,2011-12,7,-2
+2011-12-team-Norwich,2011-12,8,-1
+2011-12-team-Norwich,2011-12,9,-1
+2011-12-team-Norwich,2011-12,10,-3
+2011-12-team-Norwich,2011-12,11,-3
+2011-12-team-Norwich,2011-12,12,-2
+2011-12-team-Norwich,2011-12,13,-1
+2011-12-team-Norwich,2011-12,14,-5
+2011-12-team-Norwich,2011-12,15,-2
+2011-12-team-Norwich,2011-12,16,-1
+2011-12-team-Norwich,2011-12,17,-2
+2011-12-team-Norwich,2011-12,18,-2
+2011-12-team-Norwich,2011-12,19,-1
+2011-12-team-Norwich,2011-12,20,-1
+2011-12-team-Norwich,2011-12,21,-1
+2011-12-team-Norwich,2011-12,23,-3
+2011-12-team-Norwich,2011-12,25,-2
+2011-12-team-Norwich,2011-12,26,-2
+2011-12-team-Norwich,2011-12,27,-1
+2011-12-team-Norwich,2011-12,28,-1
+2011-12-team-Norwich,2011-12,29,-1
+2011-12-team-Norwich,2011-12,30,-1
+2011-12-team-Norwich,2011-12,31,-2
+2011-12-team-Norwich,2011-12,32,-2
+2011-12-team-Norwich,2011-12,33,-1
+2011-12-team-Norwich,2011-12,34,-6
+2011-12-team-Norwich,2011-12,35,-2
+2011-12-team-Norwich,2011-12,36,-3
+2011-12-team-Norwich,2011-12,37,-3
+2011-12-team-Blackburn,2011-12,1,-2
+2011-12-team-Blackburn,2011-12,2,-3
+2011-12-team-Blackburn,2011-12,3,-1
+2011-12-team-Blackburn,2011-12,4,-1
+2011-12-team-Blackburn,2011-12,5,-3
+2011-12-team-Blackburn,2011-12,6,-3
+2011-12-team-Blackburn,2011-12,7,-4
+2011-12-team-Blackburn,2011-12,8,-1
+2011-12-team-Blackburn,2011-12,9,-2
+2011-12-team-Blackburn,2011-12,10,-3
+2011-12-team-Blackburn,2011-12,11,-1
+2011-12-team-Blackburn,2011-12,12,-3
+2011-12-team-Blackburn,2011-12,13,-3
+2011-12-team-Blackburn,2011-12,14,-2
+2011-12-team-Blackburn,2011-12,15,-2
+2011-12-team-Blackburn,2011-12,16,-2
+2011-12-team-Blackburn,2011-12,17,-2
+2011-12-team-Blackburn,2011-12,18,-1
+2011-12-team-Blackburn,2011-12,19,-2
+2011-12-team-Blackburn,2011-12,20,-2
+2011-12-team-Blackburn,2011-12,21,-1
+2011-12-team-Blackburn,2011-12,22,-1
+2011-12-team-Blackburn,2011-12,23,-2
+2011-12-team-Blackburn,2011-12,24,-7
+2011-12-team-Blackburn,2011-12,25,-2
+2011-12-team-Blackburn,2011-12,26,-3
+2011-12-team-Blackburn,2011-12,27,-1
+2011-12-team-Blackburn,2011-12,30,-2
+2011-12-team-Blackburn,2011-12,31,-2
+2011-12-team-Blackburn,2011-12,32,-3
+2011-12-team-Blackburn,2011-12,33,-3
+2011-12-team-Blackburn,2011-12,34,-3
+2011-12-team-Blackburn,2011-12,36,-2
+2011-12-team-Blackburn,2011-12,37,-1
+2011-12-team-Blackburn,2011-12,38,-2
+2011-12-team-Sunderland,2011-12,1,-1
+2011-12-team-Sunderland,2011-12,2,-1
+2011-12-team-Sunderland,2011-12,4,-2
+2011-12-team-Sunderland,2011-12,6,-2
+2011-12-team-Sunderland,2011-12,7,-2
+2011-12-team-Sunderland,2011-12,8,-2
+2011-12-team-Sunderland,2011-12,10,-2
+2011-12-team-Sunderland,2011-12,11,-1
+2011-12-team-Sunderland,2011-12,13,-2
+2011-12-team-Sunderland,2011-12,14,-2
+2011-12-team-Sunderland,2011-12,15,-1
+2011-12-team-Sunderland,2011-12,16,-1
+2011-12-team-Sunderland,2011-12,17,-2
+2011-12-team-Sunderland,2011-12,18,-1
+2011-12-team-Sunderland,2011-12,20,-1
+2011-12-team-Sunderland,2011-12,21,-1
+2011-12-team-Sunderland,2011-12,25,-2
+2011-12-team-Sunderland,2011-12,26,-4
+2011-12-team-Sunderland,2011-12,27,-1
+2011-12-team-Sunderland,2011-12,29,-2
+2011-12-team-Sunderland,2011-12,30,-1
+2011-12-team-Sunderland,2011-12,31,-3
+2011-12-team-Sunderland,2011-12,33,-4
+2011-12-team-Sunderland,2011-12,36,-2
+2011-12-team-Sunderland,2011-12,37,-2
+2011-12-team-Sunderland,2011-12,38,-1
+2011-12-team-QPR,2011-12,1,-4
+2011-12-team-QPR,2011-12,3,-2
+2011-12-team-QPR,2011-12,6,-1
+2011-12-team-QPR,2011-12,7,-6
+2011-12-team-QPR,2011-12,8,-1
+2011-12-team-QPR,2011-12,10,-3
+2011-12-team-QPR,2011-12,11,-3
+2011-12-team-QPR,2011-12,12,-2
+2011-12-team-QPR,2011-12,13,-2
+2011-12-team-QPR,2011-12,14,-1
+2011-12-team-QPR,2011-12,15,-1
+2011-12-team-QPR,2011-12,16,-2
+2011-12-team-QPR,2011-12,17,-3
+2011-12-team-QPR,2011-12,18,-1
+2011-12-team-QPR,2011-12,19,-1
+2011-12-team-QPR,2011-12,20,-2
+2011-12-team-QPR,2011-12,21,-1
+2011-12-team-QPR,2011-12,22,-1
+2011-12-team-QPR,2011-12,23,-2
+2011-12-team-QPR,2011-12,24,-2
+2011-12-team-QPR,2011-12,25,-3
+2011-12-team-QPR,2011-12,26,-1
+2011-12-team-QPR,2011-12,27,-1
+2011-12-team-QPR,2011-12,28,-2
+2011-12-team-QPR,2011-12,29,-2
+2011-12-team-QPR,2011-12,30,-3
+2011-12-team-QPR,2011-12,31,-1
+2011-12-team-QPR,2011-12,32,-2
+2011-12-team-QPR,2011-12,34,-1
+2011-12-team-QPR,2011-12,36,-6
+2011-12-team-QPR,2011-12,38,-3
+2011-12-team-Aston Villa,2011-12,2,-1
+2011-12-team-Aston Villa,2011-12,4,-2
+2011-12-team-Aston Villa,2011-12,5,-1
+2011-12-team-Aston Villa,2011-12,6,-1
+2011-12-team-Aston Villa,2011-12,8,-4
+2011-12-team-Aston Villa,2011-12,9,-2
+2011-12-team-Aston Villa,2011-12,10,-2
+2011-12-team-Aston Villa,2011-12,11,-2
+2011-12-team-Aston Villa,2011-12,12,-2
+2011-12-team-Aston Villa,2011-12,14,-1
+2011-12-team-Aston Villa,2011-12,15,-1
+2011-12-team-Aston Villa,2011-12,16,-2
+2011-12-team-Aston Villa,2011-12,17,-2
+2011-12-team-Aston Villa,2011-12,19,-1
+2011-12-team-Aston Villa,2011-12,20,-2
+2011-12-team-Aston Villa,2011-12,21,-1
+2011-12-team-Aston Villa,2011-12,22,-2
+2011-12-team-Aston Villa,2011-12,23,-2
+2011-12-team-Aston Villa,2011-12,24,-2
+2011-12-team-Aston Villa,2011-12,25,-1
+2011-12-team-Aston Villa,2011-12,27,-1
+2011-12-team-Aston Villa,2011-12,29,-3
+2011-12-team-Aston Villa,2011-12,30,-4
+2011-12-team-Aston Villa,2011-12,31,-1
+2011-12-team-Aston Villa,2011-12,32,-1
+2011-12-team-Aston Villa,2011-12,33,-4
+2011-12-team-Aston Villa,2011-12,35,-2
+2011-12-team-Aston Villa,2011-12,37,-1
+2011-12-team-Aston Villa,2011-12,38,-2
+2011-12-team-Stoke City,2011-12,2,-1
+2011-12-team-Stoke City,2011-12,5,-4
+2011-12-team-Stoke City,2011-12,6,-1
+2011-12-team-Stoke City,2011-12,7,-2
+2011-12-team-Stoke City,2011-12,9,-3
+2011-12-team-Stoke City,2011-12,10,-3
+2011-12-team-Stoke City,2011-12,11,-5
+2011-12-team-Stoke City,2011-12,12,-3
+2011-12-team-Stoke City,2011-12,13,-1
+2011-12-team-Stoke City,2011-12,15,-1
+2011-12-team-Stoke City,2011-12,16,-1
+2011-12-team-Stoke City,2011-12,17,-3
+2011-12-team-Stoke City,2011-12,19,-2
+2011-12-team-Stoke City,2011-12,20,-1
+2011-12-team-Stoke City,2011-12,22,-2
+2011-12-team-Stoke City,2011-12,23,-2
+2011-12-team-Stoke City,2011-12,24,-1
+2011-12-team-Stoke City,2011-12,25,-2
+2011-12-team-Stoke City,2011-12,28,-1
+2011-12-team-Stoke City,2011-12,29,-1
+2011-12-team-Stoke City,2011-12,30,-1
+2011-12-team-Stoke City,2011-12,31,-2
+2011-12-team-Stoke City,2011-12,32,-1
+2011-12-team-Stoke City,2011-12,33,-1
+2011-12-team-Stoke City,2011-12,34,-3
+2011-12-team-Stoke City,2011-12,35,-1
+2011-12-team-Stoke City,2011-12,36,-1
+2011-12-team-Stoke City,2011-12,37,-1
+2011-12-team-Stoke City,2011-12,38,-2
+2011-12-team-Fulham,2011-12,2,-2
+2011-12-team-Fulham,2011-12,3,-2
+2011-12-team-Fulham,2011-12,4,-1
+2011-12-team-Fulham,2011-12,5,-2
+2011-12-team-Fulham,2011-12,8,-2
+2011-12-team-Fulham,2011-12,9,-3
+2011-12-team-Fulham,2011-12,11,-3
+2011-12-team-Fulham,2011-12,13,-1
+2011-12-team-Fulham,2011-12,15,-2
+2011-12-team-Fulham,2011-12,17,-5
+2011-12-team-Fulham,2011-12,18,-1
+2011-12-team-Fulham,2011-12,19,-1
+2011-12-team-Fulham,2011-12,20,-1
+2011-12-team-Fulham,2011-12,21,-3
+2011-12-team-Fulham,2011-12,22,-2
+2011-12-team-Fulham,2011-12,23,-1
+2011-12-team-Fulham,2011-12,24,-3
+2011-12-team-Fulham,2011-12,25,-1
+2011-12-team-Fulham,2011-12,28,-1
+2011-12-team-Fulham,2011-12,29,-3
+2011-12-team-Fulham,2011-12,30,-1
+2011-12-team-Fulham,2011-12,31,-1
+2011-12-team-Fulham,2011-12,33,-1
+2011-12-team-Fulham,2011-12,34,-1
+2011-12-team-Fulham,2011-12,35,-4
+2011-12-team-Fulham,2011-12,37,-1
+2011-12-team-Fulham,2011-12,38,-2
+2011-12-team-Swansea City,2011-12,1,-4
+2011-12-team-Swansea City,2011-12,4,-1
+2011-12-team-Swansea City,2011-12,6,-4
+2011-12-team-Swansea City,2011-12,8,-3
+2011-12-team-Swansea City,2011-12,9,-2
+2011-12-team-Swansea City,2011-12,10,-1
+2011-12-team-Swansea City,2011-12,12,-1
+2011-12-team-Swansea City,2011-12,14,-4
+2011-12-team-Swansea City,2011-12,17,-1
+2011-12-team-Swansea City,2011-12,18,-1
+2011-12-team-Swansea City,2011-12,19,-1
+2011-12-team-Swansea City,2011-12,21,-2
+2011-12-team-Swansea City,2011-12,22,-2
+2011-12-team-Swansea City,2011-12,23,-1
+2011-12-team-Swansea City,2011-12,24,-1
+2011-12-team-Swansea City,2011-12,25,-3
+2011-12-team-Swansea City,2011-12,26,-2
+2011-12-team-Swansea City,2011-12,30,-2
+2011-12-team-Swansea City,2011-12,31,-3
+2011-12-team-Swansea City,2011-12,32,-2
+2011-12-team-Swansea City,2011-12,33,-3
+2011-12-team-Swansea City,2011-12,35,-1
+2011-12-team-Swansea City,2011-12,36,-4
+2011-12-team-Swansea City,2011-12,37,-2
+2011-12-team-Liverpool,2011-12,1,-1
+2011-12-team-Liverpool,2011-12,3,-1
+2011-12-team-Liverpool,2011-12,4,-1
+2011-12-team-Liverpool,2011-12,5,-4
+2011-12-team-Liverpool,2011-12,6,-1
+2011-12-team-Liverpool,2011-12,8,-1
+2011-12-team-Liverpool,2011-12,9,-1
+2011-12-team-Liverpool,2011-12,12,-1
+2011-12-team-Liverpool,2011-12,13,-1
+2011-12-team-Liverpool,2011-12,14,-1
+2011-12-team-Liverpool,2011-12,18,-1
+2011-12-team-Liverpool,2011-12,19,-1
+2011-12-team-Liverpool,2011-12,20,-3
+2011-12-team-Liverpool,2011-12,22,-3
+2011-12-team-Liverpool,2011-12,25,-2
+2011-12-team-Liverpool,2011-12,26,-2
+2011-12-team-Liverpool,2011-12,27,-1
+2011-12-team-Liverpool,2011-12,29,-3
+2011-12-team-Liverpool,2011-12,30,-2
+2011-12-team-Liverpool,2011-12,31,-2
+2011-12-team-Liverpool,2011-12,32,-1
+2011-12-team-Liverpool,2011-12,33,-2
+2011-12-team-Liverpool,2011-12,34,-1
+2011-12-team-Liverpool,2011-12,36,-1
+2011-12-team-Liverpool,2011-12,37,-1
+2011-12-team-Liverpool,2011-12,38,-1
+2011-12-team-West Brom,2011-12,1,-2
+2011-12-team-West Brom,2011-12,2,-2
+2011-12-team-West Brom,2011-12,3,-1
+2011-12-team-West Brom,2011-12,5,-3
+2011-12-team-West Brom,2011-12,7,-2
+2011-12-team-West Brom,2011-12,9,-1
+2011-12-team-West Brom,2011-12,10,-2
+2011-12-team-West Brom,2011-12,11,-3
+2011-12-team-West Brom,2011-12,12,-1
+2011-12-team-West Brom,2011-12,13,-3
+2011-12-team-West Brom,2011-12,14,-1
+2011-12-team-West Brom,2011-12,15,-2
+2011-12-team-West Brom,2011-12,16,-1
+2011-12-team-West Brom,2011-12,17,-2
+2011-12-team-West Brom,2011-12,19,-1
+2011-12-team-West Brom,2011-12,20,-1
+2011-12-team-West Brom,2011-12,21,-2
+2011-12-team-West Brom,2011-12,22,-1
+2011-12-team-West Brom,2011-12,23,-1
+2011-12-team-West Brom,2011-12,24,-2
+2011-12-team-West Brom,2011-12,25,-1
+2011-12-team-West Brom,2011-12,28,-2
+2011-12-team-West Brom,2011-12,29,-1
+2011-12-team-West Brom,2011-12,30,-3
+2011-12-team-West Brom,2011-12,31,-2
+2011-12-team-West Brom,2011-12,33,-4
+2011-12-team-West Brom,2011-12,37,-2
+2011-12-team-West Brom,2011-12,38,-3
+2011-12-team-Arsenal,2011-12,2,-2
+2011-12-team-Arsenal,2011-12,3,-8
+2011-12-team-Arsenal,2011-12,5,-4
+2011-12-team-Arsenal,2011-12,7,-2
+2011-12-team-Arsenal,2011-12,8,-1
+2011-12-team-Arsenal,2011-12,9,-1
+2011-12-team-Arsenal,2011-12,10,-3
+2011-12-team-Arsenal,2011-12,12,-1
+2011-12-team-Arsenal,2011-12,13,-1
+2011-12-team-Arsenal,2011-12,16,-1
+2011-12-team-Arsenal,2011-12,17,-1
+2011-12-team-Arsenal,2011-12,18,-1
+2011-12-team-Arsenal,2011-12,20,-2
+2011-12-team-Arsenal,2011-12,21,-3
+2011-12-team-Arsenal,2011-12,22,-2
+2011-12-team-Arsenal,2011-12,24,-1
+2011-12-team-Arsenal,2011-12,25,-1
+2011-12-team-Arsenal,2011-12,26,-2
+2011-12-team-Arsenal,2011-12,27,-1
+2011-12-team-Arsenal,2011-12,28,-1
+2011-12-team-Arsenal,2011-12,31,-2
+2011-12-team-Arsenal,2011-12,34,-2
+2011-12-team-Arsenal,2011-12,36,-1
+2011-12-team-Arsenal,2011-12,37,-3
+2011-12-team-Arsenal,2011-12,38,-2
+2011-12-team-Newcastle,2011-12,3,-1
+2011-12-team-Newcastle,2011-12,5,-1
+2011-12-team-Newcastle,2011-12,6,-1
+2011-12-team-Newcastle,2011-12,7,-1
+2011-12-team-Newcastle,2011-12,8,-2
+2011-12-team-Newcastle,2011-12,10,-1
+2011-12-team-Newcastle,2011-12,11,-1
+2011-12-team-Newcastle,2011-12,12,-3
+2011-12-team-Newcastle,2011-12,13,-1
+2011-12-team-Newcastle,2011-12,14,-3
+2011-12-team-Newcastle,2011-12,15,-4
+2011-12-team-Newcastle,2011-12,17,-3
+2011-12-team-Newcastle,2011-12,19,-3
+2011-12-team-Newcastle,2011-12,22,-5
+2011-12-team-Newcastle,2011-12,24,-1
+2011-12-team-Newcastle,2011-12,25,-5
+2011-12-team-Newcastle,2011-12,26,-2
+2011-12-team-Newcastle,2011-12,27,-1
+2011-12-team-Newcastle,2011-12,28,-2
+2011-12-team-Newcastle,2011-12,30,-1
+2011-12-team-Newcastle,2011-12,35,-4
+2011-12-team-Newcastle,2011-12,37,-2
+2011-12-team-Newcastle,2011-12,38,-3
+2011-12-team-Bolton,2011-12,2,-3
+2011-12-team-Bolton,2011-12,3,-3
+2011-12-team-Bolton,2011-12,4,-5
+2011-12-team-Bolton,2011-12,5,-2
+2011-12-team-Bolton,2011-12,6,-3
+2011-12-team-Bolton,2011-12,7,-5
+2011-12-team-Bolton,2011-12,8,-1
+2011-12-team-Bolton,2011-12,9,-2
+2011-12-team-Bolton,2011-12,10,-3
+2011-12-team-Bolton,2011-12,12,-2
+2011-12-team-Bolton,2011-12,13,-2
+2011-12-team-Bolton,2011-12,14,-3
+2011-12-team-Bolton,2011-12,15,-2
+2011-12-team-Bolton,2011-12,16,-2
+2011-12-team-Bolton,2011-12,17,-1
+2011-12-team-Bolton,2011-12,18,-2
+2011-12-team-Bolton,2011-12,19,-1
+2011-12-team-Bolton,2011-12,20,-1
+2011-12-team-Bolton,2011-12,21,-3
+2011-12-team-Bolton,2011-12,22,-1
+2011-12-team-Bolton,2011-12,24,-2
+2011-12-team-Bolton,2011-12,25,-2
+2011-12-team-Bolton,2011-12,26,-3
+2011-12-team-Bolton,2011-12,27,-2
+2011-12-team-Bolton,2011-12,28,-1
+2011-12-team-Bolton,2011-12,29,-1
+2011-12-team-Bolton,2011-12,30,-2
+2011-12-team-Bolton,2011-12,31,-3
+2011-12-team-Bolton,2011-12,32,-2
+2011-12-team-Bolton,2011-12,33,-1
+2011-12-team-Bolton,2011-12,34,-1
+2011-12-team-Bolton,2011-12,35,-2
+2011-12-team-Bolton,2011-12,36,-4
+2011-12-team-Bolton,2011-12,37,-2
+2011-12-team-Bolton,2011-12,38,-2
+2011-12-team-Spurs,2011-12,1,-3
+2011-12-team-Spurs,2011-12,2,-5
+2011-12-team-Spurs,2011-12,5,-1
+2011-12-team-Spurs,2011-12,6,-1
+2011-12-team-Spurs,2011-12,7,-2
+2011-12-team-Spurs,2011-12,8,-1
+2011-12-team-Spurs,2011-12,9,-1
+2011-12-team-Spurs,2011-12,10,-1
+2011-12-team-Spurs,2011-12,12,-1
+2011-12-team-Spurs,2011-12,14,-2
+2011-12-team-Spurs,2011-12,16,-1
+2011-12-team-Spurs,2011-12,18,-1
+2011-12-team-Spurs,2011-12,21,-1
+2011-12-team-Spurs,2011-12,22,-3
+2011-12-team-Spurs,2011-12,23,-1
+2011-12-team-Spurs,2011-12,26,-5
+2011-12-team-Spurs,2011-12,27,-3
+2011-12-team-Spurs,2011-12,28,-1
+2011-12-team-Spurs,2011-12,29,-1
+2011-12-team-Spurs,2011-12,31,-1
+2011-12-team-Spurs,2011-12,33,-2
+2011-12-team-Spurs,2011-12,34,-1
+2011-12-team-Spurs,2011-12,36,-1
+2011-12-team-Spurs,2011-12,37,-1
+2011-12-team-Chelsea,2011-12,2,-1
+2011-12-team-Chelsea,2011-12,3,-1
+2011-12-team-Chelsea,2011-12,4,-1
+2011-12-team-Chelsea,2011-12,5,-3
+2011-12-team-Chelsea,2011-12,6,-1
+2011-12-team-Chelsea,2011-12,7,-1
+2011-12-team-Chelsea,2011-12,8,-1
+2011-12-team-Chelsea,2011-12,9,-1
+2011-12-team-Chelsea,2011-12,10,-5
+2011-12-team-Chelsea,2011-12,12,-2
+2011-12-team-Chelsea,2011-12,15,-1
+2011-12-team-Chelsea,2011-12,16,-1
+2011-12-team-Chelsea,2011-12,17,-1
+2011-12-team-Chelsea,2011-12,18,-1
+2011-12-team-Chelsea,2011-12,19,-3
+2011-12-team-Chelsea,2011-12,20,-1
+2011-12-team-Chelsea,2011-12,23,-1
+2011-12-team-Chelsea,2011-12,24,-3
+2011-12-team-Chelsea,2011-12,25,-2
+2011-12-team-Chelsea,2011-12,27,-1
+2011-12-team-Chelsea,2011-12,29,-2
+2011-12-team-Chelsea,2011-12,31,-2
+2011-12-team-Chelsea,2011-12,32,-1
+2011-12-team-Chelsea,2011-12,33,-1
+2011-12-team-Chelsea,2011-12,35,-1
+2011-12-team-Chelsea,2011-12,36,-2
+2011-12-team-Chelsea,2011-12,37,-4
+2011-12-team-Chelsea,2011-12,38,-1
+2011-12-team-Man City,2011-12,2,-2
+2011-12-team-Man City,2011-12,3,-1
+2011-12-team-Man City,2011-12,5,-2
+2011-12-team-Man City,2011-12,8,-1
+2011-12-team-Man City,2011-12,9,-1
+2011-12-team-Man City,2011-12,10,-1
+2011-12-team-Man City,2011-12,11,-2
+2011-12-team-Man City,2011-12,12,-1
+2011-12-team-Man City,2011-12,13,-1
+2011-12-team-Man City,2011-12,14,-1
+2011-12-team-Man City,2011-12,15,-2
+2011-12-team-Man City,2011-12,19,-1
+2011-12-team-Man City,2011-12,22,-2
+2011-12-team-Man City,2011-12,23,-1
+2011-12-team-Man City,2011-12,28,-1
+2011-12-team-Man City,2011-12,29,-1
+2011-12-team-Man City,2011-12,30,-1
+2011-12-team-Man City,2011-12,31,-3
+2011-12-team-Man City,2011-12,32,-1
+2011-12-team-Man City,2011-12,34,-1
+2011-12-team-Man City,2011-12,38,-2
+2011-12-team-Wolves,2011-12,1,-1
+2011-12-team-Wolves,2011-12,4,-2
+2011-12-team-Wolves,2011-12,5,-3
+2011-12-team-Wolves,2011-12,6,-2
+2011-12-team-Wolves,2011-12,7,-2
+2011-12-team-Wolves,2011-12,8,-2
+2011-12-team-Wolves,2011-12,9,-2
+2011-12-team-Wolves,2011-12,10,-3
+2011-12-team-Wolves,2011-12,11,-1
+2011-12-team-Wolves,2011-12,12,-2
+2011-12-team-Wolves,2011-12,13,-3
+2011-12-team-Wolves,2011-12,14,-1
+2011-12-team-Wolves,2011-12,15,-4
+2011-12-team-Wolves,2011-12,16,-2
+2011-12-team-Wolves,2011-12,17,-2
+2011-12-team-Wolves,2011-12,18,-1
+2011-12-team-Wolves,2011-12,19,-1
+2011-12-team-Wolves,2011-12,20,-2
+2011-12-team-Wolves,2011-12,21,-1
+2011-12-team-Wolves,2011-12,22,-3
+2011-12-team-Wolves,2011-12,23,-3
+2011-12-team-Wolves,2011-12,24,-1
+2011-12-team-Wolves,2011-12,25,-5
+2011-12-team-Wolves,2011-12,26,-2
+2011-12-team-Wolves,2011-12,27,-5
+2011-12-team-Wolves,2011-12,28,-2
+2011-12-team-Wolves,2011-12,29,-5
+2011-12-team-Wolves,2011-12,30,-2
+2011-12-team-Wolves,2011-12,31,-3
+2011-12-team-Wolves,2011-12,32,-2
+2011-12-team-Wolves,2011-12,33,-3
+2011-12-team-Wolves,2011-12,35,-2
+2011-12-team-Wolves,2011-12,36,-4
+2011-12-team-Wolves,2011-12,38,-3
+2011-12-team-Everton,2011-12,1,-1
+2011-12-team-Everton,2011-12,3,-2
+2011-12-team-Everton,2011-12,4,-1
+2011-12-team-Everton,2011-12,5,-2
+2011-12-team-Everton,2011-12,6,-2
+2011-12-team-Everton,2011-12,7,-3
+2011-12-team-Everton,2011-12,8,-1
+2011-12-team-Everton,2011-12,9,-1
+2011-12-team-Everton,2011-12,10,-2
+2011-12-team-Everton,2011-12,11,-1
+2011-12-team-Everton,2011-12,13,-1
+2011-12-team-Everton,2011-12,14,-1
+2011-12-team-Everton,2011-12,15,-1
+2011-12-team-Everton,2011-12,17,-1
+2011-12-team-Everton,2011-12,19,2
+2011-12-team-Everton,2011-12,20,-2
+2011-12-team-Everton,2011-12,21,-1
+2011-12-team-Everton,2011-12,22,-1
+2011-12-team-Everton,2011-12,24,-1
+2011-12-team-Everton,2011-12,26,-1
+2011-12-team-Everton,2011-12,28,-3
+2011-12-team-Everton,2011-12,29,-1
+2011-12-team-Everton,2011-12,32,-2
+2011-12-team-Everton,2011-12,34,-4
+2011-12-team-Everton,2011-12,36,-1
+2011-12-team-Everton,2011-12,38,-1
+2011-12-team-Wigan,2011-12,1,-1
+2011-12-team-Wigan,2011-12,4,-3
+2011-12-team-Wigan,2011-12,5,-3
+2011-12-team-Wigan,2011-12,6,-2
+2011-12-team-Wigan,2011-12,7,-2
+2011-12-team-Wigan,2011-12,8,-3
+2011-12-team-Wigan,2011-12,9,-1
+2011-12-team-Wigan,2011-12,10,-2
+2011-12-team-Wigan,2011-12,11,-3
+2011-12-team-Wigan,2011-12,12,-3
+2011-12-team-Wigan,2011-12,13,-1
+2011-12-team-Wigan,2011-12,14,-4
+2011-12-team-Wigan,2011-12,15,-1
+2011-12-team-Wigan,2011-12,16,-1
+2011-12-team-Wigan,2011-12,18,-5
+2011-12-team-Wigan,2011-12,19,-2
+2011-12-team-Wigan,2011-12,20,-4
+2011-12-team-Wigan,2011-12,21,-1
+2011-12-team-Wigan,2011-12,22,-3
+2011-12-team-Wigan,2011-12,23,-3
+2011-12-team-Wigan,2011-12,24,-1
+2011-12-team-Wigan,2011-12,25,-1
+2011-12-team-Wigan,2011-12,27,-2
+2011-12-team-Wigan,2011-12,28,-1
+2011-12-team-Wigan,2011-12,29,-1
+2011-12-team-Wigan,2011-12,30,-1
+2011-12-team-Wigan,2011-12,32,-2
+2011-12-team-Wigan,2011-12,34,-1
+2011-12-team-Wigan,2011-12,35,-2
+2011-12-team-Wigan,2011-12,38,-2
+2011-12-team-Man Utd,2011-12,1,-1
+2011-12-team-Man Utd,2011-12,3,-2
+2011-12-team-Man Utd,2011-12,5,-1
+2011-12-team-Man Utd,2011-12,6,-1
+2011-12-team-Man Utd,2011-12,8,-1
+2011-12-team-Man Utd,2011-12,9,-6
+2011-12-team-Man Utd,2011-12,13,-1
+2011-12-team-Man Utd,2011-12,15,-1
+2011-12-team-Man Utd,2011-12,19,-3
+2011-12-team-Man Utd,2011-12,20,-3
+2011-12-team-Man Utd,2011-12,22,-1
+2011-12-team-Man Utd,2011-12,24,-3
+2011-12-team-Man Utd,2011-12,25,-1
+2011-12-team-Man Utd,2011-12,26,-1
+2011-12-team-Man Utd,2011-12,27,-1
+2011-12-team-Man Utd,2011-12,33,-1
+2011-12-team-Man Utd,2011-12,35,-4
+2011-12-team-Man Utd,2011-12,36,-1
+2012-13-team-West Ham,2012-13,2,-3
+2012-13-team-West Ham,2012-13,5,-1
+2012-13-team-West Ham,2012-13,6,-1
+2012-13-team-West Ham,2012-13,7,-3
+2012-13-team-West Ham,2012-13,8,-1
+2012-13-team-West Ham,2012-13,9,-2
+2012-13-team-West Ham,2012-13,12,-1
+2012-13-team-West Ham,2012-13,13,-3
+2012-13-team-West Ham,2012-13,14,-1
+2012-13-team-West Ham,2012-13,15,-1
+2012-13-team-West Ham,2012-13,16,-3
+2012-13-team-West Ham,2012-13,18,-2
+2012-13-team-West Ham,2012-13,19,-1
+2012-13-team-West Ham,2012-13,20,-1
+2012-13-team-West Ham,2012-13,21,-3
+2012-13-team-West Ham,2012-13,22,-1
+2012-13-team-West Ham,2012-13,23,-5
+2012-13-team-West Ham,2012-13,24,-3
+2012-13-team-West Ham,2012-13,26,-2
+2012-13-team-West Ham,2012-13,27,-3
+2012-13-team-West Ham,2012-13,29,-2
+2012-13-team-West Ham,2012-13,30,-1
+2012-13-team-West Ham,2012-13,32,-1
+2012-13-team-West Ham,2012-13,33,-2
+2012-13-team-West Ham,2012-13,35,-2
+2012-13-team-West Ham,2012-13,37,-2
+2012-13-team-West Ham,2012-13,38,-2
+2012-13-team-Fulham,2012-13,2,-3
+2012-13-team-Fulham,2012-13,3,-3
+2012-13-team-Fulham,2012-13,5,-1
+2012-13-team-Fulham,2012-13,6,-2
+2012-13-team-Fulham,2012-13,7,-2
+2012-13-team-Fulham,2012-13,9,-3
+2012-13-team-Fulham,2012-13,10,-2
+2012-13-team-Fulham,2012-13,11,-3
+2012-13-team-Fulham,2012-13,12,-3
+2012-13-team-Fulham,2012-13,13,-1
+2012-13-team-Fulham,2012-13,15,-3
+2012-13-team-Fulham,2012-13,16,-1
+2012-13-team-Fulham,2012-13,17,-2
+2012-13-team-Fulham,2012-13,18,-4
+2012-13-team-Fulham,2012-13,19,-1
+2012-13-team-Fulham,2012-13,20,-2
+2012-13-team-Fulham,2012-13,21,-1
+2012-13-team-Fulham,2012-13,22,-1
+2012-13-team-Fulham,2012-13,23,-2
+2012-13-team-Fulham,2012-13,24,-1
+2012-13-team-Fulham,2012-13,25,-1
+2012-13-team-Fulham,2012-13,28,-2
+2012-13-team-Fulham,2012-13,30,-2
+2012-13-team-Fulham,2012-13,31,-1
+2012-13-team-Fulham,2012-13,32,-1
+2012-13-team-Fulham,2012-13,33,-3
+2012-13-team-Fulham,2012-13,34,-1
+2012-13-team-Fulham,2012-13,35,-1
+2012-13-team-Fulham,2012-13,36,-4
+2012-13-team-Fulham,2012-13,37,-3
+2012-13-team-Sunderland,2012-13,2,-2
+2012-13-team-Sunderland,2012-13,3,-1
+2012-13-team-Sunderland,2012-13,4,-1
+2012-13-team-Sunderland,2012-13,6,-3
+2012-13-team-Sunderland,2012-13,7,-1
+2012-13-team-Sunderland,2012-13,9,-1
+2012-13-team-Sunderland,2012-13,10,-2
+2012-13-team-Sunderland,2012-13,11,-1
+2012-13-team-Sunderland,2012-13,12,-4
+2012-13-team-Sunderland,2012-13,14,-2
+2012-13-team-Sunderland,2012-13,15,-3
+2012-13-team-Sunderland,2012-13,17,-3
+2012-13-team-Sunderland,2012-13,20,-2
+2012-13-team-Sunderland,2012-13,21,-3
+2012-13-team-Sunderland,2012-13,23,-2
+2012-13-team-Sunderland,2012-13,25,-2
+2012-13-team-Sunderland,2012-13,26,-1
+2012-13-team-Sunderland,2012-13,27,-2
+2012-13-team-Sunderland,2012-13,28,-2
+2012-13-team-Sunderland,2012-13,29,-3
+2012-13-team-Sunderland,2012-13,30,-1
+2012-13-team-Sunderland,2012-13,31,-1
+2012-13-team-Sunderland,2012-13,32,-2
+2012-13-team-Sunderland,2012-13,35,-6
+2012-13-team-Sunderland,2012-13,36,-1
+2012-13-team-Sunderland,2012-13,37,-1
+2012-13-team-Sunderland,2012-13,38,-1
+2012-13-team-Chelsea,2012-13,2,-2
+2012-13-team-Chelsea,2012-13,6,-1
+2012-13-team-Chelsea,2012-13,7,-1
+2012-13-team-Chelsea,2012-13,8,-2
+2012-13-team-Chelsea,2012-13,9,-3
+2012-13-team-Chelsea,2012-13,10,-1
+2012-13-team-Chelsea,2012-13,11,-1
+2012-13-team-Chelsea,2012-13,12,-2
+2012-13-team-Chelsea,2012-13,15,-3
+2012-13-team-Chelsea,2012-13,16,-1
+2012-13-team-Chelsea,2012-13,19,-1
+2012-13-team-Chelsea,2012-13,20,-1
+2012-13-team-Chelsea,2012-13,22,-2
+2012-13-team-Chelsea,2012-13,23,-1
+2012-13-team-Chelsea,2012-13,24,-2
+2012-13-team-Chelsea,2012-13,25,-3
+2012-13-team-Chelsea,2012-13,26,-1
+2012-13-team-Chelsea,2012-13,27,-2
+2012-13-team-Chelsea,2012-13,30,-2
+2012-13-team-Chelsea,2012-13,31,-1
+2012-13-team-Chelsea,2012-13,33,-2
+2012-13-team-Chelsea,2012-13,36,-2
+2012-13-team-Chelsea,2012-13,37,-1
+2012-13-team-Chelsea,2012-13,38,-1
+2012-13-team-QPR,2012-13,1,-5
+2012-13-team-QPR,2012-13,2,-1
+2012-13-team-QPR,2012-13,3,-3
+2012-13-team-QPR,2012-13,5,-2
+2012-13-team-QPR,2012-13,6,-2
+2012-13-team-QPR,2012-13,7,-3
+2012-13-team-QPR,2012-13,8,-1
+2012-13-team-QPR,2012-13,9,-1
+2012-13-team-QPR,2012-13,10,-1
+2012-13-team-QPR,2012-13,11,-1
+2012-13-team-QPR,2012-13,12,-3
+2012-13-team-QPR,2012-13,13,-3
+2012-13-team-QPR,2012-13,15,-1
+2012-13-team-QPR,2012-13,16,-2
+2012-13-team-QPR,2012-13,17,-1
+2012-13-team-QPR,2012-13,18,-1
+2012-13-team-QPR,2012-13,19,-2
+2012-13-team-QPR,2012-13,20,-3
+2012-13-team-QPR,2012-13,23,-1
+2012-13-team-QPR,2012-13,26,-4
+2012-13-team-QPR,2012-13,27,-2
+2012-13-team-QPR,2012-13,28,-1
+2012-13-team-QPR,2012-13,29,-1
+2012-13-team-QPR,2012-13,30,-3
+2012-13-team-QPR,2012-13,31,-3
+2012-13-team-QPR,2012-13,32,-1
+2012-13-team-QPR,2012-13,33,-2
+2012-13-team-QPR,2012-13,34,-2
+2012-13-team-QPR,2012-13,36,-1
+2012-13-team-QPR,2012-13,37,-2
+2012-13-team-QPR,2012-13,38,-1
+2012-13-team-Man Utd,2012-13,1,-1
+2012-13-team-Man Utd,2012-13,2,-2
+2012-13-team-Man Utd,2012-13,3,-2
+2012-13-team-Man Utd,2012-13,5,-1
+2012-13-team-Man Utd,2012-13,6,-3
+2012-13-team-Man Utd,2012-13,8,-2
+2012-13-team-Man Utd,2012-13,9,-2
+2012-13-team-Man Utd,2012-13,10,-1
+2012-13-team-Man Utd,2012-13,11,-2
+2012-13-team-Man Utd,2012-13,12,-1
+2012-13-team-Man Utd,2012-13,13,-1
+2012-13-team-Man Utd,2012-13,15,-3
+2012-13-team-Man Utd,2012-13,16,-2
+2012-13-team-Man Utd,2012-13,17,-1
+2012-13-team-Man Utd,2012-13,18,-1
+2012-13-team-Man Utd,2012-13,19,-3
+2012-13-team-Man Utd,2012-13,22,-1
+2012-13-team-Man Utd,2012-13,23,-1
+2012-13-team-Man Utd,2012-13,24,-1
+2012-13-team-Man Utd,2012-13,31,-2
+2012-13-team-Man Utd,2012-13,33,-2
+2012-13-team-Man Utd,2012-13,35,-1
+2012-13-team-Man Utd,2012-13,36,-1
+2012-13-team-Man Utd,2012-13,37,-1
+2012-13-team-Man Utd,2012-13,38,-5
+2012-13-team-Norwich,2012-13,1,-5
+2012-13-team-Norwich,2012-13,2,-1
+2012-13-team-Norwich,2012-13,3,-1
+2012-13-team-Norwich,2012-13,5,-1
+2012-13-team-Norwich,2012-13,6,-5
+2012-13-team-Norwich,2012-13,7,-4
+2012-13-team-Norwich,2012-13,9,-1
+2012-13-team-Norwich,2012-13,13,-1
+2012-13-team-Norwich,2012-13,14,-1
+2012-13-team-Norwich,2012-13,15,-1
+2012-13-team-Norwich,2012-13,16,-3
+2012-13-team-Norwich,2012-13,17,-1
+2012-13-team-Norwich,2012-13,18,-2
+2012-13-team-Norwich,2012-13,19,-1
+2012-13-team-Norwich,2012-13,20,-4
+2012-13-team-Norwich,2012-13,21,-2
+2012-13-team-Norwich,2012-13,23,-5
+2012-13-team-Norwich,2012-13,24,-1
+2012-13-team-Norwich,2012-13,27,-1
+2012-13-team-Norwich,2012-13,28,-4
+2012-13-team-Norwich,2012-13,30,-1
+2012-13-team-Norwich,2012-13,31,-1
+2012-13-team-Norwich,2012-13,32,-2
+2012-13-team-Norwich,2012-13,33,-3
+2012-13-team-Norwich,2012-13,34,-1
+2012-13-team-Norwich,2012-13,35,-1
+2012-13-team-Norwich,2012-13,36,-2
+2012-13-team-Norwich,2012-13,38,-2
+2012-13-team-West Brom,2012-13,2,-1
+2012-13-team-West Brom,2012-13,4,-3
+2012-13-team-West Brom,2012-13,6,-1
+2012-13-team-West Brom,2012-13,7,-2
+2012-13-team-West Brom,2012-13,8,-2
+2012-13-team-West Brom,2012-13,9,-2
+2012-13-team-West Brom,2012-13,11,-1
+2012-13-team-West Brom,2012-13,12,-1
+2012-13-team-West Brom,2012-13,13,-2
+2012-13-team-West Brom,2012-13,14,-3
+2012-13-team-West Brom,2012-13,15,-1
+2012-13-team-West Brom,2012-13,16,-2
+2012-13-team-West Brom,2012-13,18,-1
+2012-13-team-West Brom,2012-13,19,-1
+2012-13-team-West Brom,2012-13,20,-2
+2012-13-team-West Brom,2012-13,21,-2
+2012-13-team-West Brom,2012-13,22,-3
+2012-13-team-West Brom,2012-13,23,-2
+2012-13-team-West Brom,2012-13,24,-2
+2012-13-team-West Brom,2012-13,25,-1
+2012-13-team-West Brom,2012-13,27,-1
+2012-13-team-West Brom,2012-13,28,-1
+2012-13-team-West Brom,2012-13,29,-1
+2012-13-team-West Brom,2012-13,31,-3
+2012-13-team-West Brom,2012-13,32,-2
+2012-13-team-West Brom,2012-13,33,-1
+2012-13-team-West Brom,2012-13,35,-3
+2012-13-team-West Brom,2012-13,36,-1
+2012-13-team-West Brom,2012-13,37,-4
+2012-13-team-West Brom,2012-13,38,-5
+2012-13-team-Man City,2012-13,1,-2
+2012-13-team-Man City,2012-13,2,-2
+2012-13-team-Man City,2012-13,3,-1
+2012-13-team-Man City,2012-13,4,-1
+2012-13-team-Man City,2012-13,5,-1
+2012-13-team-Man City,2012-13,6,-1
+2012-13-team-Man City,2012-13,8,-1
+2012-13-team-Man City,2012-13,11,-1
+2012-13-team-Man City,2012-13,15,-1
+2012-13-team-Man City,2012-13,16,-3
+2012-13-team-Man City,2012-13,17,-1
+2012-13-team-Man City,2012-13,19,-1
+2012-13-team-Man City,2012-13,20,-3
+2012-13-team-Man City,2012-13,25,-2
+2012-13-team-Man City,2012-13,26,-3
+2012-13-team-Man City,2012-13,29,-2
+2012-13-team-Man City,2012-13,31,-1
+2012-13-team-Man City,2012-13,33,-3
+2012-13-team-Man City,2012-13,34,-1
+2012-13-team-Man City,2012-13,38,-3
+2012-13-team-Swansea City,2012-13,3,-2
+2012-13-team-Swansea City,2012-13,4,-2
+2012-13-team-Swansea City,2012-13,5,-3
+2012-13-team-Swansea City,2012-13,6,-2
+2012-13-team-Swansea City,2012-13,7,-2
+2012-13-team-Swansea City,2012-13,8,-1
+2012-13-team-Swansea City,2012-13,9,-1
+2012-13-team-Swansea City,2012-13,10,-1
+2012-13-team-Swansea City,2012-13,11,-1
+2012-13-team-Swansea City,2012-13,12,-1
+2012-13-team-Swansea City,2012-13,14,-1
+2012-13-team-Swansea City,2012-13,16,-4
+2012-13-team-Swansea City,2012-13,17,-1
+2012-13-team-Swansea City,2012-13,18,-1
+2012-13-team-Swansea City,2012-13,20,-1
+2012-13-team-Swansea City,2012-13,21,-2
+2012-13-team-Swansea City,2012-13,23,-1
+2012-13-team-Swansea City,2012-13,25,-1
+2012-13-team-Swansea City,2012-13,26,-1
+2012-13-team-Swansea City,2012-13,27,-5
+2012-13-team-Swansea City,2012-13,29,-2
+2012-13-team-Swansea City,2012-13,30,-2
+2012-13-team-Swansea City,2012-13,31,-2
+2012-13-team-Swansea City,2012-13,32,-2
+2012-13-team-Swansea City,2012-13,34,-2
+2012-13-team-Swansea City,2012-13,36,-2
+2012-13-team-Swansea City,2012-13,37,-2
+2012-13-team-Swansea City,2012-13,38,-3
+2012-13-team-Arsenal,2012-13,4,-1
+2012-13-team-Arsenal,2012-13,5,-1
+2012-13-team-Arsenal,2012-13,6,-2
+2012-13-team-Arsenal,2012-13,7,-1
+2012-13-team-Arsenal,2012-13,8,-1
+2012-13-team-Arsenal,2012-13,10,-2
+2012-13-team-Arsenal,2012-13,11,-3
+2012-13-team-Arsenal,2012-13,12,-2
+2012-13-team-Arsenal,2012-13,14,-1
+2012-13-team-Arsenal,2012-13,15,-2
+2012-13-team-Arsenal,2012-13,17,-2
+2012-13-team-Arsenal,2012-13,19,-3
+2012-13-team-Arsenal,2012-13,20,-1
+2012-13-team-Arsenal,2012-13,21,-2
+2012-13-team-Arsenal,2012-13,22,-2
+2012-13-team-Arsenal,2012-13,23,-1
+2012-13-team-Arsenal,2012-13,24,-2
+2012-13-team-Arsenal,2012-13,27,-1
+2012-13-team-Arsenal,2012-13,28,-2
+2012-13-team-Arsenal,2012-13,30,-1
+2012-13-team-Arsenal,2012-13,31,-1
+2012-13-team-Arsenal,2012-13,32,-1
+2012-13-team-Arsenal,2012-13,35,-1
+2012-13-team-Arsenal,2012-13,37,-1
+2012-13-team-Spurs,2012-13,1,-2
+2012-13-team-Spurs,2012-13,2,-1
+2012-13-team-Spurs,2012-13,3,-1
+2012-13-team-Spurs,2012-13,4,-1
+2012-13-team-Spurs,2012-13,5,-1
+2012-13-team-Spurs,2012-13,6,-2
+2012-13-team-Spurs,2012-13,8,-4
+2012-13-team-Spurs,2012-13,9,-1
+2012-13-team-Spurs,2012-13,10,-1
+2012-13-team-Spurs,2012-13,11,-2
+2012-13-team-Spurs,2012-13,12,-5
+2012-13-team-Spurs,2012-13,13,-1
+2012-13-team-Spurs,2012-13,14,-1
+2012-13-team-Spurs,2012-13,16,-2
+2012-13-team-Spurs,2012-13,20,-1
+2012-13-team-Spurs,2012-13,21,-1
+2012-13-team-Spurs,2012-13,23,-1
+2012-13-team-Spurs,2012-13,24,-1
+2012-13-team-Spurs,2012-13,26,-1
+2012-13-team-Spurs,2012-13,27,-2
+2012-13-team-Spurs,2012-13,28,-1
+2012-13-team-Spurs,2012-13,29,-3
+2012-13-team-Spurs,2012-13,30,-1
+2012-13-team-Spurs,2012-13,31,-1
+2012-13-team-Spurs,2012-13,32,-2
+2012-13-team-Spurs,2012-13,33,-1
+2012-13-team-Spurs,2012-13,34,-2
+2012-13-team-Spurs,2012-13,36,-2
+2012-13-team-Spurs,2012-13,37,-1
+2012-13-team-Liverpool,2012-13,1,-3
+2012-13-team-Liverpool,2012-13,2,-2
+2012-13-team-Liverpool,2012-13,3,-2
+2012-13-team-Liverpool,2012-13,4,-1
+2012-13-team-Liverpool,2012-13,5,-2
+2012-13-team-Liverpool,2012-13,6,-2
+2012-13-team-Liverpool,2012-13,9,-2
+2012-13-team-Liverpool,2012-13,10,-1
+2012-13-team-Liverpool,2012-13,11,-1
+2012-13-team-Liverpool,2012-13,14,-2
+2012-13-team-Liverpool,2012-13,16,-2
+2012-13-team-Liverpool,2012-13,17,-3
+2012-13-team-Liverpool,2012-13,19,-3
+2012-13-team-Liverpool,2012-13,22,-2
+2012-13-team-Liverpool,2012-13,24,-2
+2012-13-team-Liverpool,2012-13,25,-2
+2012-13-team-Liverpool,2012-13,26,-2
+2012-13-team-Liverpool,2012-13,29,-2
+2012-13-team-Liverpool,2012-13,30,-3
+2012-13-team-Liverpool,2012-13,31,-1
+2012-13-team-Liverpool,2012-13,34,-2
+2012-13-team-Liverpool,2012-13,37,-1
+2012-13-team-Aston Villa,2012-13,1,-1
+2012-13-team-Aston Villa,2012-13,2,-3
+2012-13-team-Aston Villa,2012-13,3,-1
+2012-13-team-Aston Villa,2012-13,5,-4
+2012-13-team-Aston Villa,2012-13,6,-1
+2012-13-team-Aston Villa,2012-13,7,-2
+2012-13-team-Aston Villa,2012-13,8,-1
+2012-13-team-Aston Villa,2012-13,9,-1
+2012-13-team-Aston Villa,2012-13,11,-3
+2012-13-team-Aston Villa,2012-13,12,-5
+2012-13-team-Aston Villa,2012-13,15,-1
+2012-13-team-Aston Villa,2012-13,17,-1
+2012-13-team-Aston Villa,2012-13,18,-8
+2012-13-team-Aston Villa,2012-13,19,-4
+2012-13-team-Aston Villa,2012-13,20,-3
+2012-13-team-Aston Villa,2012-13,21,-2
+2012-13-team-Aston Villa,2012-13,22,-1
+2012-13-team-Aston Villa,2012-13,23,-2
+2012-13-team-Aston Villa,2012-13,24,-2
+2012-13-team-Aston Villa,2012-13,25,-3
+2012-13-team-Aston Villa,2012-13,26,-1
+2012-13-team-Aston Villa,2012-13,27,-2
+2012-13-team-Aston Villa,2012-13,28,-1
+2012-13-team-Aston Villa,2012-13,29,-1
+2012-13-team-Aston Villa,2012-13,30,-2
+2012-13-team-Aston Villa,2012-13,31,-2
+2012-13-team-Aston Villa,2012-13,32,-1
+2012-13-team-Aston Villa,2012-13,33,-1
+2012-13-team-Aston Villa,2012-13,34,-3
+2012-13-team-Aston Villa,2012-13,35,-1
+2012-13-team-Aston Villa,2012-13,36,-1
+2012-13-team-Aston Villa,2012-13,37,-2
+2012-13-team-Aston Villa,2012-13,38,-2
+2012-13-team-Everton,2012-13,2,-1
+2012-13-team-Everton,2012-13,3,-2
+2012-13-team-Everton,2012-13,4,-2
+2012-13-team-Everton,2012-13,6,-1
+2012-13-team-Everton,2012-13,7,-2
+2012-13-team-Everton,2012-13,8,-1
+2012-13-team-Everton,2012-13,9,-2
+2012-13-team-Everton,2012-13,10,-2
+2012-13-team-Everton,2012-13,11,-1
+2012-13-team-Everton,2012-13,12,-2
+2012-13-team-Everton,2012-13,13,-1
+2012-13-team-Everton,2012-13,14,-1
+2012-13-team-Everton,2012-13,15,-1
+2012-13-team-Everton,2012-13,16,-1
+2012-13-team-Everton,2012-13,17,-1
+2012-13-team-Everton,2012-13,18,-1
+2012-13-team-Everton,2012-13,19,-1
+2012-13-team-Everton,2012-13,20,-2
+2012-13-team-Everton,2012-13,21,-1
+2012-13-team-Everton,2012-13,22,-1
+2012-13-team-Everton,2012-13,24,-1
+2012-13-team-Everton,2012-13,25,-3
+2012-13-team-Everton,2012-13,26,-2
+2012-13-team-Everton,2012-13,27,-2
+2012-13-team-Everton,2012-13,28,-1
+2012-13-team-Everton,2012-13,31,-2
+2012-13-team-Everton,2012-13,34,-1
+2012-13-team-Everton,2012-13,38,-2
+2012-13-team-Stoke City,2012-13,1,-1
+2012-13-team-Stoke City,2012-13,3,-2
+2012-13-team-Stoke City,2012-13,4,-1
+2012-13-team-Stoke City,2012-13,5,-1
+2012-13-team-Stoke City,2012-13,8,-4
+2012-13-team-Stoke City,2012-13,10,-1
+2012-13-team-Stoke City,2012-13,12,-1
+2012-13-team-Stoke City,2012-13,14,-1
+2012-13-team-Stoke City,2012-13,17,-1
+2012-13-team-Stoke City,2012-13,19,-1
+2012-13-team-Stoke City,2012-13,20,-3
+2012-13-team-Stoke City,2012-13,21,-3
+2012-13-team-Stoke City,2012-13,22,-4
+2012-13-team-Stoke City,2012-13,23,-3
+2012-13-team-Stoke City,2012-13,24,-2
+2012-13-team-Stoke City,2012-13,25,-1
+2012-13-team-Stoke City,2012-13,26,-1
+2012-13-team-Stoke City,2012-13,27,-1
+2012-13-team-Stoke City,2012-13,28,-1
+2012-13-team-Stoke City,2012-13,29,-2
+2012-13-team-Stoke City,2012-13,31,-1
+2012-13-team-Stoke City,2012-13,32,-3
+2012-13-team-Stoke City,2012-13,33,-2
+2012-13-team-Stoke City,2012-13,36,-1
+2012-13-team-Stoke City,2012-13,37,-2
+2012-13-team-Stoke City,2012-13,38,-1
+2012-13-team-Newcastle,2012-13,1,-1
+2012-13-team-Newcastle,2012-13,2,-2
+2012-13-team-Newcastle,2012-13,3,-1
+2012-13-team-Newcastle,2012-13,4,-2
+2012-13-team-Newcastle,2012-13,6,-2
+2012-13-team-Newcastle,2012-13,7,-3
+2012-13-team-Newcastle,2012-13,8,-1
+2012-13-team-Newcastle,2012-13,9,-1
+2012-13-team-Newcastle,2012-13,10,-1
+2012-13-team-Newcastle,2012-13,11,-1
+2012-13-team-Newcastle,2012-13,12,-2
+2012-13-team-Newcastle,2012-13,13,-2
+2012-13-team-Newcastle,2012-13,14,-2
+2012-13-team-Newcastle,2012-13,16,-2
+2012-13-team-Newcastle,2012-13,17,-3
+2012-13-team-Newcastle,2012-13,19,-4
+2012-13-team-Newcastle,2012-13,20,-7
+2012-13-team-Newcastle,2012-13,21,-2
+2012-13-team-Newcastle,2012-13,23,-2
+2012-13-team-Newcastle,2012-13,24,-1
+2012-13-team-Newcastle,2012-13,25,-2
+2012-13-team-Newcastle,2012-13,26,-2
+2012-13-team-Newcastle,2012-13,27,-2
+2012-13-team-Newcastle,2012-13,28,-1
+2012-13-team-Newcastle,2012-13,29,-1
+2012-13-team-Newcastle,2012-13,30,-2
+2012-13-team-Newcastle,2012-13,31,-4
+2012-13-team-Newcastle,2012-13,33,-3
+2012-13-team-Newcastle,2012-13,34,-1
+2012-13-team-Newcastle,2012-13,35,-6
+2012-13-team-Newcastle,2012-13,37,-1
+2012-13-team-Newcastle,2012-13,38,-1
+2013-14-team-Stoke City,2013-14,1,-1
+2013-14-team-Stoke City,2013-14,2,-1
+2013-14-team-Stoke City,2013-14,5,-3
+2013-14-team-Stoke City,2013-14,6,-1
+2013-14-team-Stoke City,2013-14,7,-1
+2013-14-team-Stoke City,2013-14,9,-3
+2013-14-team-Stoke City,2013-14,10,3
+2013-14-team-Stoke City,2013-14,11,-3
+2013-14-team-Stoke City,2013-14,13,-4
+2013-14-team-Stoke City,2013-14,15,-2
+2013-14-team-Stoke City,2013-14,17,-1
+2013-14-team-Stoke City,2013-14,18,-5
+2013-14-team-Stoke City,2013-14,19,-3
+2013-14-team-Stoke City,2013-14,20,-1
+2013-14-team-Stoke City,2013-14,21,-5
+2013-14-team-Stoke City,2013-14,22,-1
+2013-14-team-Stoke City,2013-14,23,-1
+2013-14-team-Stoke City,2013-14,24,-1
+2013-14-team-Stoke City,2013-14,25,-2
+2013-14-team-Stoke City,2013-14,26,-1
+2013-14-team-Stoke City,2013-14,27,-1
+2013-14-team-Stoke City,2013-14,29,-1
+2013-14-team-Stoke City,2013-14,30,-1
+2013-14-team-Stoke City,2013-14,31,-1
+2013-14-team-Stoke City,2013-14,33,-3
+2013-14-team-Stoke City,2013-14,35,-1
+2013-14-team-Stoke City,2013-14,36,-1
+2013-14-team-Stoke City,2013-14,37,-1
+2013-14-team-Stoke City,2013-14,38,-1
+2013-14-team-Newcastle,2013-14,1,-4
+2013-14-team-Newcastle,2013-14,4,-1
+2013-14-team-Newcastle,2013-14,5,-3
+2013-14-team-Newcastle,2013-14,6,-3
+2013-14-team-Newcastle,2013-14,7,-1
+2013-14-team-Newcastle,2013-14,8,-2
+2013-14-team-Newcastle,2013-14,9,-2
+2013-14-team-Newcastle,2013-14,12,-1
+2013-14-team-Newcastle,2013-14,13,-1
+2013-14-team-Newcastle,2013-14,14,-3
+2013-14-team-Newcastle,2013-14,16,-1
+2013-14-team-Newcastle,2013-14,18,-1
+2013-14-team-Newcastle,2013-14,19,-1
+2013-14-team-Newcastle,2013-14,20,-1
+2013-14-team-Newcastle,2013-14,21,-2
+2013-14-team-Newcastle,2013-14,22,-1
+2013-14-team-Newcastle,2013-14,24,-3
+2013-14-team-Newcastle,2013-14,25,-3
+2013-14-team-Newcastle,2013-14,26,-4
+2013-14-team-Newcastle,2013-14,28,-1
+2013-14-team-Newcastle,2013-14,29,-1
+2013-14-team-Newcastle,2013-14,31,-3
+2013-14-team-Newcastle,2013-14,32,-4
+2013-14-team-Newcastle,2013-14,33,-4
+2013-14-team-Newcastle,2013-14,34,-1
+2013-14-team-Newcastle,2013-14,35,-2
+2013-14-team-Newcastle,2013-14,36,-3
+2013-14-team-Newcastle,2013-14,38,-2
+2013-14-team-Fulham,2013-14,2,-3
+2013-14-team-Fulham,2013-14,3,-1
+2013-14-team-Fulham,2013-14,4,-1
+2013-14-team-Fulham,2013-14,5,-2
+2013-14-team-Fulham,2013-14,6,-2
+2013-14-team-Fulham,2013-14,8,-1
+2013-14-team-Fulham,2013-14,9,-2
+2013-14-team-Fulham,2013-14,10,-3
+2013-14-team-Fulham,2013-14,11,-4
+2013-14-team-Fulham,2013-14,12,-2
+2013-14-team-Fulham,2013-14,13,-3
+2013-14-team-Fulham,2013-14,14,-2
+2013-14-team-Fulham,2013-14,16,-4
+2013-14-team-Fulham,2013-14,17,-4
+2013-14-team-Fulham,2013-14,18,-1
+2013-14-team-Fulham,2013-14,19,-6
+2013-14-team-Fulham,2013-14,20,-1
+2013-14-team-Fulham,2013-14,21,-4
+2013-14-team-Fulham,2013-14,22,-2
+2013-14-team-Fulham,2013-14,23,-2
+2013-14-team-Fulham,2013-14,24,-3
+2013-14-team-Fulham,2013-14,25,-2
+2013-14-team-Fulham,2013-14,26,-3
+2013-14-team-Fulham,2013-14,27,-1
+2013-14-team-Fulham,2013-14,28,-3
+2013-14-team-Fulham,2013-14,29,-3
+2013-14-team-Fulham,2013-14,31,-5
+2013-14-team-Fulham,2013-14,32,-3
+2013-14-team-Fulham,2013-14,33,-1
+2013-14-team-Fulham,2013-14,35,-3
+2013-14-team-Fulham,2013-14,36,-2
+2013-14-team-Fulham,2013-14,37,-4
+2013-14-team-Fulham,2013-14,38,-2
+2013-14-team-West Brom,2013-14,1,-1
+2013-14-team-West Brom,2013-14,3,-2
+2013-14-team-West Brom,2013-14,4,-1
+2013-14-team-West Brom,2013-14,6,-1
+2013-14-team-West Brom,2013-14,7,-1
+2013-14-team-West Brom,2013-14,9,-4
+2013-14-team-West Brom,2013-14,11,-2
+2013-14-team-West Brom,2013-14,12,-2
+2013-14-team-West Brom,2013-14,13,-2
+2013-14-team-West Brom,2013-14,14,-3
+2013-14-team-West Brom,2013-14,15,-2
+2013-14-team-West Brom,2013-14,16,-1
+2013-14-team-West Brom,2013-14,17,-1
+2013-14-team-West Brom,2013-14,18,-1
+2013-14-team-West Brom,2013-14,19,-3
+2013-14-team-West Brom,2013-14,21,-1
+2013-14-team-West Brom,2013-14,22,-1
+2013-14-team-West Brom,2013-14,23,-4
+2013-14-team-West Brom,2013-14,24,-1
+2013-14-team-West Brom,2013-14,25,-3
+2013-14-team-West Brom,2013-14,26,-1
+2013-14-team-West Brom,2013-14,27,-1
+2013-14-team-West Brom,2013-14,28,-3
+2013-14-team-West Brom,2013-14,29,-1
+2013-14-team-West Brom,2013-14,30,-2
+2013-14-team-West Brom,2013-14,31,-3
+2013-14-team-West Brom,2013-14,33,-3
+2013-14-team-West Brom,2013-14,34,-3
+2013-14-team-West Brom,2013-14,35,-1
+2013-14-team-West Brom,2013-14,37,-1
+2013-14-team-West Brom,2013-14,38,-2
+2013-14-team-West Ham,2013-14,3,-1
+2013-14-team-West Ham,2013-14,5,-3
+2013-14-team-West Ham,2013-14,6,-1
+2013-14-team-West Ham,2013-14,8,-3
+2013-14-team-West Ham,2013-14,11,-3
+2013-14-team-West Ham,2013-14,12,-3
+2013-14-team-West Ham,2013-14,14,-1
+2013-14-team-West Ham,2013-14,15,-4
+2013-14-team-West Ham,2013-14,17,-3
+2013-14-team-West Ham,2013-14,18,-3
+2013-14-team-West Ham,2013-14,19,-3
+2013-14-team-West Ham,2013-14,20,-2
+2013-14-team-West Ham,2013-14,22,-3
+2013-14-team-West Ham,2013-14,27,-1
+2013-14-team-West Ham,2013-14,28,-1
+2013-14-team-West Ham,2013-14,29,-3
+2013-14-team-West Ham,2013-14,30,-2
+2013-14-team-West Ham,2013-14,31,-1
+2013-14-team-West Ham,2013-14,32,-1
+2013-14-team-West Ham,2013-14,33,-2
+2013-14-team-West Ham,2013-14,34,-3
+2013-14-team-West Ham,2013-14,35,-1
+2013-14-team-West Ham,2013-14,36,-1
+2013-14-team-West Ham,2013-14,38,-2
+2013-14-team-Southampton,2013-14,2,-1
+2013-14-team-Southampton,2013-14,3,-1
+2013-14-team-Southampton,2013-14,8,-1
+2013-14-team-Southampton,2013-14,10,-1
+2013-14-team-Southampton,2013-14,11,-1
+2013-14-team-Southampton,2013-14,12,-2
+2013-14-team-Southampton,2013-14,13,-3
+2013-14-team-Southampton,2013-14,14,-3
+2013-14-team-Southampton,2013-14,15,-1
+2013-14-team-Southampton,2013-14,16,-1
+2013-14-team-Southampton,2013-14,17,-3
+2013-14-team-Southampton,2013-14,19,-2
+2013-14-team-Southampton,2013-14,20,-3
+2013-14-team-Southampton,2013-14,22,-2
+2013-14-team-Southampton,2013-14,23,-2
+2013-14-team-Southampton,2013-14,25,-2
+2013-14-team-Southampton,2013-14,27,-3
+2013-14-team-Southampton,2013-14,28,-3
+2013-14-team-Southampton,2013-14,30,-2
+2013-14-team-Southampton,2013-14,31,-3
+2013-14-team-Southampton,2013-14,33,-4
+2013-14-team-Southampton,2013-14,34,-1
+2013-14-team-Southampton,2013-14,38,-1
+2013-14-team-Swansea City,2013-14,1,-4
+2013-14-team-Swansea City,2013-14,2,-1
+2013-14-team-Swansea City,2013-14,4,-2
+2013-14-team-Swansea City,2013-14,6,-2
+2013-14-team-Swansea City,2013-14,7,-2
+2013-14-team-Swansea City,2013-14,10,-1
+2013-14-team-Swansea City,2013-14,11,-3
+2013-14-team-Swansea City,2013-14,12,-1
+2013-14-team-Swansea City,2013-14,13,-3
+2013-14-team-Swansea City,2013-14,15,-1
+2013-14-team-Swansea City,2013-14,16,-1
+2013-14-team-Swansea City,2013-14,17,-2
+2013-14-team-Swansea City,2013-14,18,-1
+2013-14-team-Swansea City,2013-14,19,-1
+2013-14-team-Swansea City,2013-14,20,-3
+2013-14-team-Swansea City,2013-14,21,-2
+2013-14-team-Swansea City,2013-14,22,-3
+2013-14-team-Swansea City,2013-14,24,-2
+2013-14-team-Swansea City,2013-14,26,-1
+2013-14-team-Swansea City,2013-14,27,-4
+2013-14-team-Swansea City,2013-14,28,-1
+2013-14-team-Swansea City,2013-14,29,-2
+2013-14-team-Swansea City,2013-14,30,-3
+2013-14-team-Swansea City,2013-14,31,-2
+2013-14-team-Swansea City,2013-14,33,-1
+2013-14-team-Swansea City,2013-14,34,-1
+2013-14-team-Swansea City,2013-14,35,-1
+2013-14-team-Swansea City,2013-14,36,-1
+2013-14-team-Swansea City,2013-14,37,-1
+2013-14-team-Swansea City,2013-14,38,-1
+2013-14-team-Sunderland,2013-14,1,-1
+2013-14-team-Sunderland,2013-14,2,-1
+2013-14-team-Sunderland,2013-14,3,-3
+2013-14-team-Sunderland,2013-14,4,-3
+2013-14-team-Sunderland,2013-14,5,-3
+2013-14-team-Sunderland,2013-14,6,-3
+2013-14-team-Sunderland,2013-14,7,-2
+2013-14-team-Sunderland,2013-14,8,-4
+2013-14-team-Sunderland,2013-14,9,-1
+2013-14-team-Sunderland,2013-14,10,-1
+2013-14-team-Sunderland,2013-14,12,-2
+2013-14-team-Sunderland,2013-14,14,-4
+2013-14-team-Sunderland,2013-14,15,-2
+2013-14-team-Sunderland,2013-14,19,-2
+2013-14-team-Sunderland,2013-14,20,-1
+2013-14-team-Sunderland,2013-14,21,-1
+2013-14-team-Sunderland,2013-14,22,-2
+2013-14-team-Sunderland,2013-14,25,-2
+2013-14-team-Sunderland,2013-14,26,-4
+2013-14-team-Sunderland,2013-14,28,-2
+2013-14-team-Sunderland,2013-14,29,-2
+2013-14-team-Sunderland,2013-14,30,-2
+2013-14-team-Sunderland,2013-14,31,-4
+2013-14-team-Sunderland,2013-14,32,-1
+2013-14-team-Sunderland,2013-14,33,-2
+2013-14-team-Sunderland,2013-14,34,-1
+2013-14-team-Sunderland,2013-14,38,-3
+2013-14-team-Norwich,2013-14,1,-2
+2013-14-team-Norwich,2013-14,2,-1
+2013-14-team-Norwich,2013-14,4,-2
+2013-14-team-Norwich,2013-14,5,-1
+2013-14-team-Norwich,2013-14,7,-3
+2013-14-team-Norwich,2013-14,8,-4
+2013-14-team-Norwich,2013-14,10,-7
+2013-14-team-Norwich,2013-14,11,-1
+2013-14-team-Norwich,2013-14,12,-2
+2013-14-team-Norwich,2013-14,14,-5
+2013-14-team-Norwich,2013-14,16,-1
+2013-14-team-Norwich,2013-14,18,-2
+2013-14-team-Norwich,2013-14,19,-1
+2013-14-team-Norwich,2013-14,20,-1
+2013-14-team-Norwich,2013-14,21,-2
+2013-14-team-Norwich,2013-14,24,-2
+2013-14-team-Norwich,2013-14,26,-2
+2013-14-team-Norwich,2013-14,28,-4
+2013-14-team-Norwich,2013-14,29,-1
+2013-14-team-Norwich,2013-14,30,-4
+2013-14-team-Norwich,2013-14,32,-3
+2013-14-team-Norwich,2013-14,33,-1
+2013-14-team-Norwich,2013-14,34,-1
+2013-14-team-Norwich,2013-14,35,-3
+2013-14-team-Norwich,2013-14,36,-4
+2013-14-team-Norwich,2013-14,38,-2
+2013-14-team-Man Utd,2013-14,1,-1
+2013-14-team-Man Utd,2013-14,3,-1
+2013-14-team-Man Utd,2013-14,5,-4
+2013-14-team-Man Utd,2013-14,6,-2
+2013-14-team-Man Utd,2013-14,7,-1
+2013-14-team-Man Utd,2013-14,8,-1
+2013-14-team-Man Utd,2013-14,9,-2
+2013-14-team-Man Utd,2013-14,10,-1
+2013-14-team-Man Utd,2013-14,12,-2
+2013-14-team-Man Utd,2013-14,13,-2
+2013-14-team-Man Utd,2013-14,14,-1
+2013-14-team-Man Utd,2013-14,15,-1
+2013-14-team-Man Utd,2013-14,17,-1
+2013-14-team-Man Utd,2013-14,18,-2
+2013-14-team-Man Utd,2013-14,20,-2
+2013-14-team-Man Utd,2013-14,22,-3
+2013-14-team-Man Utd,2013-14,24,-2
+2013-14-team-Man Utd,2013-14,25,-2
+2013-14-team-Man Utd,2013-14,29,-3
+2013-14-team-Man Utd,2013-14,31,-3
+2013-14-team-Man Utd,2013-14,32,-1
+2013-14-team-Man Utd,2013-14,34,-2
+2013-14-team-Man Utd,2013-14,36,-1
+2013-14-team-Man Utd,2013-14,37,-1
+2013-14-team-Man Utd,2013-14,38,-1
+2013-14-team-Liverpool,2013-14,4,-2
+2013-14-team-Liverpool,2013-14,5,-1
+2013-14-team-Liverpool,2013-14,6,-1
+2013-14-team-Liverpool,2013-14,7,-1
+2013-14-team-Liverpool,2013-14,8,-2
+2013-14-team-Liverpool,2013-14,9,-1
+2013-14-team-Liverpool,2013-14,10,-2
+2013-14-team-Liverpool,2013-14,12,-3
+2013-14-team-Liverpool,2013-14,13,-3
+2013-14-team-Liverpool,2013-14,14,-1
+2013-14-team-Liverpool,2013-14,15,-1
+2013-14-team-Liverpool,2013-14,17,-1
+2013-14-team-Liverpool,2013-14,18,-2
+2013-14-team-Liverpool,2013-14,19,-2
+2013-14-team-Liverpool,2013-14,21,-3
+2013-14-team-Liverpool,2013-14,22,-2
+2013-14-team-Liverpool,2013-14,24,-1
+2013-14-team-Liverpool,2013-14,25,-1
+2013-14-team-Liverpool,2013-14,26,-2
+2013-14-team-Liverpool,2013-14,27,-3
+2013-14-team-Liverpool,2013-14,30,-3
+2013-14-team-Liverpool,2013-14,31,-1
+2013-14-team-Liverpool,2013-14,33,-1
+2013-14-team-Liverpool,2013-14,34,-2
+2013-14-team-Liverpool,2013-14,35,-2
+2013-14-team-Liverpool,2013-14,36,-2
+2013-14-team-Liverpool,2013-14,37,-3
+2013-14-team-Liverpool,2013-14,38,-1
+2013-14-team-Chelsea,2013-14,2,-1
+2013-14-team-Chelsea,2013-14,4,-1
+2013-14-team-Chelsea,2013-14,6,-1
+2013-14-team-Chelsea,2013-14,7,-1
+2013-14-team-Chelsea,2013-14,8,-1
+2013-14-team-Chelsea,2013-14,9,-1
+2013-14-team-Chelsea,2013-14,10,-2
+2013-14-team-Chelsea,2013-14,11,-2
+2013-14-team-Chelsea,2013-14,13,-1
+2013-14-team-Chelsea,2013-14,14,-3
+2013-14-team-Chelsea,2013-14,15,-3
+2013-14-team-Chelsea,2013-14,16,-1
+2013-14-team-Chelsea,2013-14,19,-1
+2013-14-team-Chelsea,2013-14,22,-1
+2013-14-team-Chelsea,2013-14,26,-1
+2013-14-team-Chelsea,2013-14,28,-1
+2013-14-team-Chelsea,2013-14,30,-1
+2013-14-team-Chelsea,2013-14,32,-1
+2013-14-team-Chelsea,2013-14,35,-2
+2013-14-team-Chelsea,2013-14,38,-1
+2013-14-team-Man City,2013-14,2,-3
+2013-14-team-Man City,2013-14,5,-1
+2013-14-team-Man City,2013-14,6,-3
+2013-14-team-Man City,2013-14,7,-1
+2013-14-team-Man City,2013-14,8,-1
+2013-14-team-Man City,2013-14,9,-2
+2013-14-team-Man City,2013-14,11,-1
+2013-14-team-Man City,2013-14,14,-2
+2013-14-team-Man City,2013-14,15,-1
+2013-14-team-Man City,2013-14,16,-3
+2013-14-team-Man City,2013-14,17,-2
+2013-14-team-Man City,2013-14,18,-1
+2013-14-team-Man City,2013-14,20,-2
+2013-14-team-Man City,2013-14,22,-2
+2013-14-team-Man City,2013-14,23,-1
+2013-14-team-Man City,2013-14,24,-1
+2013-14-team-Man City,2013-14,30,-1
+2013-14-team-Man City,2013-14,31,-1
+2013-14-team-Man City,2013-14,32,-3
+2013-14-team-Man City,2013-14,33,-2
+2013-14-team-Man City,2013-14,34,-1
+2013-14-team-Man City,2013-14,36,-2
+2013-14-team-Everton,2013-14,1,-2
+2013-14-team-Everton,2013-14,5,-2
+2013-14-team-Everton,2013-14,6,-2
+2013-14-team-Everton,2013-14,7,-3
+2013-14-team-Everton,2013-14,8,-1
+2013-14-team-Everton,2013-14,12,-3
+2013-14-team-Everton,2013-14,15,-1
+2013-14-team-Everton,2013-14,16,-1
+2013-14-team-Everton,2013-14,17,-1
+2013-14-team-Everton,2013-14,18,-1
+2013-14-team-Everton,2013-14,19,-1
+2013-14-team-Everton,2013-14,20,-1
+2013-14-team-Everton,2013-14,22,-1
+2013-14-team-Everton,2013-14,23,-4
+2013-14-team-Everton,2013-14,24,-1
+2013-14-team-Everton,2013-14,25,-1
+2013-14-team-Everton,2013-14,26,-1
+2013-14-team-Everton,2013-14,28,-1
+2013-14-team-Everton,2013-14,29,-2
+2013-14-team-Everton,2013-14,31,-1
+2013-14-team-Everton,2013-14,34,-3
+2013-14-team-Everton,2013-14,36,-2
+2013-14-team-Everton,2013-14,37,-3
+2013-14-team-Aston Villa,2013-14,1,-1
+2013-14-team-Aston Villa,2013-14,2,-2
+2013-14-team-Aston Villa,2013-14,3,-1
+2013-14-team-Aston Villa,2013-14,4,-2
+2013-14-team-Aston Villa,2013-14,6,-2
+2013-14-team-Aston Villa,2013-14,8,-2
+2013-14-team-Aston Villa,2013-14,9,-2
+2013-14-team-Aston Villa,2013-14,12,-2
+2013-14-team-Aston Villa,2013-14,14,-2
+2013-14-team-Aston Villa,2013-14,15,-2
+2013-14-team-Aston Villa,2013-14,16,-3
+2013-14-team-Aston Villa,2013-14,17,-2
+2013-14-team-Aston Villa,2013-14,18,-1
+2013-14-team-Aston Villa,2013-14,19,-1
+2013-14-team-Aston Villa,2013-14,21,-2
+2013-14-team-Aston Villa,2013-14,22,-2
+2013-14-team-Aston Villa,2013-14,23,-3
+2013-14-team-Aston Villa,2013-14,24,-2
+2013-14-team-Aston Villa,2013-14,25,-2
+2013-14-team-Aston Villa,2013-14,27,-1
+2013-14-team-Aston Villa,2013-14,28,-1
+2013-14-team-Aston Villa,2013-14,30,-4
+2013-14-team-Aston Villa,2013-14,31,-4
+2013-14-team-Aston Villa,2013-14,32,-2
+2013-14-team-Aston Villa,2013-14,33,-1
+2013-14-team-Aston Villa,2013-14,35,-4
+2013-14-team-Aston Villa,2013-14,36,-1
+2013-14-team-Aston Villa,2013-14,37,-1
+2013-14-team-Aston Villa,2013-14,38,-3
+2013-14-team-Arsenal,2013-14,1,-3
+2013-14-team-Arsenal,2013-14,2,-1
+2013-14-team-Arsenal,2013-14,4,-1
+2013-14-team-Arsenal,2013-14,5,-1
+2013-14-team-Arsenal,2013-14,6,-1
+2013-14-team-Arsenal,2013-14,7,-1
+2013-14-team-Arsenal,2013-14,8,-1
+2013-14-team-Arsenal,2013-14,11,-1
+2013-14-team-Arsenal,2013-14,15,-1
+2013-14-team-Arsenal,2013-14,16,-6
+2013-14-team-Arsenal,2013-14,18,-1
+2013-14-team-Arsenal,2013-14,21,-1
+2013-14-team-Arsenal,2013-14,23,-2
+2013-14-team-Arsenal,2013-14,25,-5
+2013-14-team-Arsenal,2013-14,27,-1
+2013-14-team-Arsenal,2013-14,28,-1
+2013-14-team-Arsenal,2013-14,30,-6
+2013-14-team-Arsenal,2013-14,31,-2
+2013-14-team-Arsenal,2013-14,32,-1
+2013-14-team-Arsenal,2013-14,33,-3
+2013-14-team-Arsenal,2013-14,34,-1
+2013-14-team-Cardiff City,2013-14,1,-2
+2013-14-team-Cardiff City,2013-14,2,-2
+2013-14-team-Cardiff City,2013-14,4,-1
+2013-14-team-Cardiff City,2013-14,5,-1
+2013-14-team-Cardiff City,2013-14,6,-1
+2013-14-team-Cardiff City,2013-14,7,-2
+2013-14-team-Cardiff City,2013-14,8,-4
+2013-14-team-Cardiff City,2013-14,11,-2
+2013-14-team-Cardiff City,2013-14,12,-2
+2013-14-team-Cardiff City,2013-14,13,-3
+2013-14-team-Cardiff City,2013-14,15,-2
+2013-14-team-Cardiff City,2013-14,17,-3
+2013-14-team-Cardiff City,2013-14,18,-3
+2013-14-team-Cardiff City,2013-14,19,-2
+2013-14-team-Cardiff City,2013-14,20,-2
+2013-14-team-Cardiff City,2013-14,21,-2
+2013-14-team-Cardiff City,2013-14,22,-4
+2013-14-team-Cardiff City,2013-14,23,-2
+2013-14-team-Cardiff City,2013-14,24,-1
+2013-14-team-Cardiff City,2013-14,25,-3
+2013-14-team-Cardiff City,2013-14,27,-4
+2013-14-team-Cardiff City,2013-14,28,-1
+2013-14-team-Cardiff City,2013-14,29,-1
+2013-14-team-Cardiff City,2013-14,30,-2
+2013-14-team-Cardiff City,2013-14,31,-6
+2013-14-team-Cardiff City,2013-14,32,-3
+2013-14-team-Cardiff City,2013-14,33,-3
+2013-14-team-Cardiff City,2013-14,35,-1
+2013-14-team-Cardiff City,2013-14,36,-4
+2013-14-team-Cardiff City,2013-14,37,-3
+2013-14-team-Cardiff City,2013-14,38,-2
+2013-14-team-Spurs,2013-14,3,-1
+2013-14-team-Spurs,2013-14,6,-1
+2013-14-team-Spurs,2013-14,7,-3
+2013-14-team-Spurs,2013-14,11,-1
+2013-14-team-Spurs,2013-14,12,-6
+2013-14-team-Spurs,2013-14,13,-2
+2013-14-team-Spurs,2013-14,14,-1
+2013-14-team-Spurs,2013-14,15,-1
+2013-14-team-Spurs,2013-14,16,-5
+2013-14-team-Spurs,2013-14,17,-2
+2013-14-team-Spurs,2013-14,18,-1
+2013-14-team-Spurs,2013-14,20,-1
+2013-14-team-Spurs,2013-14,22,-1
+2013-14-team-Spurs,2013-14,23,-5
+2013-14-team-Spurs,2013-14,24,-1
+2013-14-team-Spurs,2013-14,27,-1
+2013-14-team-Spurs,2013-14,29,-4
+2013-14-team-Spurs,2013-14,30,-1
+2013-14-team-Spurs,2013-14,31,-2
+2013-14-team-Spurs,2013-14,32,-4
+2013-14-team-Spurs,2013-14,33,-1
+2013-14-team-Spurs,2013-14,34,-3
+2013-14-team-Spurs,2013-14,35,-1
+2013-14-team-Spurs,2013-14,37,-2
+2014-15-team-Newcastle,2014-15,1,-2
+2014-15-team-Newcastle,2014-15,3,-3
+2014-15-team-Newcastle,2014-15,4,-4
+2014-15-team-Newcastle,2014-15,5,-2
+2014-15-team-Newcastle,2014-15,6,-1
+2014-15-team-Newcastle,2014-15,7,-2
+2014-15-team-Newcastle,2014-15,9,-1
+2014-15-team-Newcastle,2014-15,13,-1
+2014-15-team-Newcastle,2014-15,14,-1
+2014-15-team-Newcastle,2014-15,15,-1
+2014-15-team-Newcastle,2014-15,16,-4
+2014-15-team-Newcastle,2014-15,17,-1
+2014-15-team-Newcastle,2014-15,18,-3
+2014-15-team-Newcastle,2014-15,19,-2
+2014-15-team-Newcastle,2014-15,20,-3
+2014-15-team-Newcastle,2014-15,21,-2
+2014-15-team-Newcastle,2014-15,22,-2
+2014-15-team-Newcastle,2014-15,24,-1
+2014-15-team-Newcastle,2014-15,25,-1
+2014-15-team-Newcastle,2014-15,26,-5
+2014-15-team-Newcastle,2014-15,28,-1
+2014-15-team-Newcastle,2014-15,29,-3
+2014-15-team-Newcastle,2014-15,30,-2
+2014-15-team-Newcastle,2014-15,31,-1
+2014-15-team-Newcastle,2014-15,32,-2
+2014-15-team-Newcastle,2014-15,33,-3
+2014-15-team-Newcastle,2014-15,34,-3
+2014-15-team-Newcastle,2014-15,35,-3
+2014-15-team-Newcastle,2014-15,36,-1
+2014-15-team-Newcastle,2014-15,37,-2
+2014-15-team-Swansea City,2014-15,1,-1
+2014-15-team-Swansea City,2014-15,4,-4
+2014-15-team-Swansea City,2014-15,5,-1
+2014-15-team-Swansea City,2014-15,7,-2
+2014-15-team-Swansea City,2014-15,8,-2
+2014-15-team-Swansea City,2014-15,11,-1
+2014-15-team-Swansea City,2014-15,12,-2
+2014-15-team-Swansea City,2014-15,13,-1
+2014-15-team-Swansea City,2014-15,15,-3
+2014-15-team-Swansea City,2014-15,16,-2
+2014-15-team-Swansea City,2014-15,19,-4
+2014-15-team-Swansea City,2014-15,20,-1
+2014-15-team-Swansea City,2014-15,21,-1
+2014-15-team-Swansea City,2014-15,22,-5
+2014-15-team-Swansea City,2014-15,24,-1
+2014-15-team-Swansea City,2014-15,25,-2
+2014-15-team-Swansea City,2014-15,26,-1
+2014-15-team-Swansea City,2014-15,28,-3
+2014-15-team-Swansea City,2014-15,29,-1
+2014-15-team-Swansea City,2014-15,31,-1
+2014-15-team-Swansea City,2014-15,32,-1
+2014-15-team-Swansea City,2014-15,33,-2
+2014-15-team-Swansea City,2014-15,34,-2
+2014-15-team-Swansea City,2014-15,37,-4
+2014-15-team-Swansea City,2014-15,38,-1
+2014-15-team-West Ham,2014-15,1,-1
+2014-15-team-West Ham,2014-15,2,-1
+2014-15-team-West Ham,2014-15,3,-3
+2014-15-team-West Ham,2014-15,4,-2
+2014-15-team-West Ham,2014-15,5,-1
+2014-15-team-West Ham,2014-15,6,-2
+2014-15-team-West Ham,2014-15,8,-1
+2014-15-team-West Ham,2014-15,9,-1
+2014-15-team-West Ham,2014-15,10,-2
+2014-15-team-West Ham,2014-15,12,-2
+2014-15-team-West Ham,2014-15,14,-1
+2014-15-team-West Ham,2014-15,15,-1
+2014-15-team-West Ham,2014-15,16,-1
+2014-15-team-West Ham,2014-15,18,-2
+2014-15-team-West Ham,2014-15,19,-2
+2014-15-team-West Ham,2014-15,20,-1
+2014-15-team-West Ham,2014-15,21,-1
+2014-15-team-West Ham,2014-15,23,-2
+2014-15-team-West Ham,2014-15,24,-1
+2014-15-team-West Ham,2014-15,26,-2
+2014-15-team-West Ham,2014-15,27,-3
+2014-15-team-West Ham,2014-15,28,-1
+2014-15-team-West Ham,2014-15,29,-3
+2014-15-team-West Ham,2014-15,31,-2
+2014-15-team-West Ham,2014-15,32,-1
+2014-15-team-West Ham,2014-15,33,-2
+2014-15-team-West Ham,2014-15,36,-1
+2014-15-team-West Ham,2014-15,37,-2
+2014-15-team-West Ham,2014-15,38,-2
+2014-15-team-West Brom,2014-15,1,-2
+2014-15-team-West Brom,2014-15,3,-3
+2014-15-team-West Brom,2014-15,4,-2
+2014-15-team-West Brom,2014-15,7,-2
+2014-15-team-West Brom,2014-15,8,-2
+2014-15-team-West Brom,2014-15,9,-2
+2014-15-team-West Brom,2014-15,11,-2
+2014-15-team-West Brom,2014-15,12,-2
+2014-15-team-West Brom,2014-15,13,-1
+2014-15-team-West Brom,2014-15,14,-2
+2014-15-team-West Brom,2014-15,17,-3
+2014-15-team-West Brom,2014-15,18,-3
+2014-15-team-West Brom,2014-15,19,-2
+2014-15-team-West Brom,2014-15,20,-1
+2014-15-team-West Brom,2014-15,23,-3
+2014-15-team-West Brom,2014-15,24,-2
+2014-15-team-West Brom,2014-15,28,-2
+2014-15-team-West Brom,2014-15,30,-3
+2014-15-team-West Brom,2014-15,31,-4
+2014-15-team-West Brom,2014-15,32,-3
+2014-15-team-West Brom,2014-15,36,-1
+2014-15-team-West Brom,2014-15,38,-4
+2014-15-team-Chelsea,2014-15,1,-1
+2014-15-team-Chelsea,2014-15,3,-3
+2014-15-team-Chelsea,2014-15,4,-2
+2014-15-team-Chelsea,2014-15,5,-1
+2014-15-team-Chelsea,2014-15,8,-1
+2014-15-team-Chelsea,2014-15,9,-1
+2014-15-team-Chelsea,2014-15,10,-1
+2014-15-team-Chelsea,2014-15,11,-1
+2014-15-team-Chelsea,2014-15,15,-2
+2014-15-team-Chelsea,2014-15,19,-1
+2014-15-team-Chelsea,2014-15,20,-5
+2014-15-team-Chelsea,2014-15,23,-1
+2014-15-team-Chelsea,2014-15,24,-1
+2014-15-team-Chelsea,2014-15,26,-1
+2014-15-team-Chelsea,2014-15,28,-1
+2014-15-team-Chelsea,2014-15,29,-2
+2014-15-team-Chelsea,2014-15,30,-1
+2014-15-team-Chelsea,2014-15,34,-1
+2014-15-team-Chelsea,2014-15,36,-1
+2014-15-team-Chelsea,2014-15,37,-3
+2014-15-team-Chelsea,2014-15,38,-1
+2014-15-team-Leicester,2014-15,1,-2
+2014-15-team-Leicester,2014-15,2,-2
+2014-15-team-Leicester,2014-15,3,-1
+2014-15-team-Leicester,2014-15,5,-3
+2014-15-team-Leicester,2014-15,6,-2
+2014-15-team-Leicester,2014-15,7,-2
+2014-15-team-Leicester,2014-15,8,-1
+2014-15-team-Leicester,2014-15,9,-2
+2014-15-team-Leicester,2014-15,10,-1
+2014-15-team-Leicester,2014-15,11,-2
+2014-15-team-Leicester,2014-15,13,-3
+2014-15-team-Leicester,2014-15,14,-3
+2014-15-team-Leicester,2014-15,15,-2
+2014-15-team-Leicester,2014-15,16,-1
+2014-15-team-Leicester,2014-15,17,-2
+2014-15-team-Leicester,2014-15,18,-2
+2014-15-team-Leicester,2014-15,20,-2
+2014-15-team-Leicester,2014-15,22,-1
+2014-15-team-Leicester,2014-15,23,-3
+2014-15-team-Leicester,2014-15,24,-1
+2014-15-team-Leicester,2014-15,25,-2
+2014-15-team-Leicester,2014-15,26,-2
+2014-15-team-Leicester,2014-15,27,-2
+2014-15-team-Leicester,2014-15,29,-4
+2014-15-team-Leicester,2014-15,30,-1
+2014-15-team-Leicester,2014-15,31,-2
+2014-15-team-Leicester,2014-15,34,-3
+2014-15-team-Leicester,2014-15,38,-1
+2014-15-team-QPR,2014-15,1,-1
+2014-15-team-QPR,2014-15,2,-4
+2014-15-team-QPR,2014-15,4,-4
+2014-15-team-QPR,2014-15,5,-2
+2014-15-team-QPR,2014-15,6,-2
+2014-15-team-QPR,2014-15,7,-2
+2014-15-team-QPR,2014-15,8,-3
+2014-15-team-QPR,2014-15,10,-2
+2014-15-team-QPR,2014-15,11,-2
+2014-15-team-QPR,2014-15,12,-1
+2014-15-team-QPR,2014-15,13,-2
+2014-15-team-QPR,2014-15,14,-2
+2014-15-team-QPR,2014-15,16,-3
+2014-15-team-QPR,2014-15,17,-2
+2014-15-team-QPR,2014-15,18,-2
+2014-15-team-QPR,2014-15,20,-1
+2014-15-team-QPR,2014-15,21,-2
+2014-15-team-QPR,2014-15,22,-2
+2014-15-team-QPR,2014-15,23,-3
+2014-15-team-QPR,2014-15,24,-1
+2014-15-team-QPR,2014-15,26,-2
+2014-15-team-QPR,2014-15,27,-2
+2014-15-team-QPR,2014-15,28,-2
+2014-15-team-QPR,2014-15,29,-3
+2014-15-team-QPR,2014-15,30,-2
+2014-15-team-QPR,2014-15,31,-1
+2014-15-team-QPR,2014-15,32,-3
+2014-15-team-QPR,2014-15,33,-1
+2014-15-team-QPR,2014-15,35,-2
+2014-15-team-QPR,2014-15,36,-6
+2014-15-team-QPR,2014-15,37,-1
+2014-15-team-QPR,2014-15,38,-5
+2014-15-team-Everton,2014-15,1,-2
+2014-15-team-Everton,2014-15,2,-2
+2014-15-team-Everton,2014-15,3,-6
+2014-15-team-Everton,2014-15,5,-3
+2014-15-team-Everton,2014-15,6,-1
+2014-15-team-Everton,2014-15,7,-2
+2014-15-team-Everton,2014-15,9,-1
+2014-15-team-Everton,2014-15,11,-1
+2014-15-team-Everton,2014-15,12,-1
+2014-15-team-Everton,2014-15,13,-2
+2014-15-team-Everton,2014-15,14,-1
+2014-15-team-Everton,2014-15,15,-1
+2014-15-team-Everton,2014-15,16,-1
+2014-15-team-Everton,2014-15,17,-3
+2014-15-team-Everton,2014-15,18,-1
+2014-15-team-Everton,2014-15,19,-3
+2014-15-team-Everton,2014-15,20,-2
+2014-15-team-Everton,2014-15,21,-1
+2014-15-team-Everton,2014-15,25,-1
+2014-15-team-Everton,2014-15,26,-2
+2014-15-team-Everton,2014-15,27,-2
+2014-15-team-Everton,2014-15,28,-2
+2014-15-team-Everton,2014-15,30,-1
+2014-15-team-Everton,2014-15,32,-1
+2014-15-team-Everton,2014-15,35,-3
+2014-15-team-Everton,2014-15,36,-2
+2014-15-team-Everton,2014-15,37,-1
+2014-15-team-Everton,2014-15,38,-1
+2014-15-team-Sunderland,2014-15,1,-2
+2014-15-team-Sunderland,2014-15,2,-1
+2014-15-team-Sunderland,2014-15,3,-1
+2014-15-team-Sunderland,2014-15,4,-2
+2014-15-team-Sunderland,2014-15,7,-1
+2014-15-team-Sunderland,2014-15,8,-8
+2014-15-team-Sunderland,2014-15,9,-2
+2014-15-team-Sunderland,2014-15,10,-1
+2014-15-team-Sunderland,2014-15,11,-1
+2014-15-team-Sunderland,2014-15,14,-4
+2014-15-team-Sunderland,2014-15,16,-1
+2014-15-team-Sunderland,2014-15,18,-3
+2014-15-team-Sunderland,2014-15,20,-3
+2014-15-team-Sunderland,2014-15,21,-1
+2014-15-team-Sunderland,2014-15,22,-2
+2014-15-team-Sunderland,2014-15,24,-1
+2014-15-team-Sunderland,2014-15,25,-2
+2014-15-team-Sunderland,2014-15,27,-2
+2014-15-team-Sunderland,2014-15,28,-1
+2014-15-team-Sunderland,2014-15,29,-4
+2014-15-team-Sunderland,2014-15,30,-1
+2014-15-team-Sunderland,2014-15,32,-4
+2014-15-team-Sunderland,2014-15,33,-1
+2014-15-team-Sunderland,2014-15,34,-1
+2014-15-team-Sunderland,2014-15,38,-3
+2014-15-team-Arsenal,2014-15,1,-1
+2014-15-team-Arsenal,2014-15,2,-2
+2014-15-team-Arsenal,2014-15,3,-1
+2014-15-team-Arsenal,2014-15,4,-2
+2014-15-team-Arsenal,2014-15,6,-1
+2014-15-team-Arsenal,2014-15,7,-2
+2014-15-team-Arsenal,2014-15,8,-2
+2014-15-team-Arsenal,2014-15,11,-2
+2014-15-team-Arsenal,2014-15,12,-2
+2014-15-team-Arsenal,2014-15,15,-3
+2014-15-team-Arsenal,2014-15,16,-1
+2014-15-team-Arsenal,2014-15,17,-2
+2014-15-team-Arsenal,2014-15,18,-1
+2014-15-team-Arsenal,2014-15,19,-1
+2014-15-team-Arsenal,2014-15,20,-2
+2014-15-team-Arsenal,2014-15,24,-2
+2014-15-team-Arsenal,2014-15,25,-1
+2014-15-team-Arsenal,2014-15,26,-1
+2014-15-team-Arsenal,2014-15,28,-1
+2014-15-team-Arsenal,2014-15,30,-1
+2014-15-team-Arsenal,2014-15,31,-1
+2014-15-team-Arsenal,2014-15,34,-1
+2014-15-team-Arsenal,2014-15,35,-1
+2014-15-team-Arsenal,2014-15,36,-1
+2014-15-team-Arsenal,2014-15,38,-1
+2014-15-team-Aston Villa,2014-15,3,-1
+2014-15-team-Aston Villa,2014-15,5,-3
+2014-15-team-Aston Villa,2014-15,6,-3
+2014-15-team-Aston Villa,2014-15,7,-2
+2014-15-team-Aston Villa,2014-15,8,-3
+2014-15-team-Aston Villa,2014-15,9,-2
+2014-15-team-Aston Villa,2014-15,10,-2
+2014-15-team-Aston Villa,2014-15,12,-1
+2014-15-team-Aston Villa,2014-15,13,-1
+2014-15-team-Aston Villa,2014-15,15,-1
+2014-15-team-Aston Villa,2014-15,16,-1
+2014-15-team-Aston Villa,2014-15,17,-1
+2014-15-team-Aston Villa,2014-15,18,-1
+2014-15-team-Aston Villa,2014-15,21,-1
+2014-15-team-Aston Villa,2014-15,22,-2
+2014-15-team-Aston Villa,2014-15,23,-5
+2014-15-team-Aston Villa,2014-15,24,-2
+2014-15-team-Aston Villa,2014-15,25,-2
+2014-15-team-Aston Villa,2014-15,26,-2
+2014-15-team-Aston Villa,2014-15,27,-1
+2014-15-team-Aston Villa,2014-15,28,-1
+2014-15-team-Aston Villa,2014-15,30,-1
+2014-15-team-Aston Villa,2014-15,31,-3
+2014-15-team-Aston Villa,2014-15,32,-3
+2014-15-team-Aston Villa,2014-15,34,-3
+2014-15-team-Aston Villa,2014-15,35,-2
+2014-15-team-Aston Villa,2014-15,37,-6
+2014-15-team-Aston Villa,2014-15,38,-1
+2014-15-team-Southampton,2014-15,1,-2
+2014-15-team-Southampton,2014-15,3,-1
+2014-15-team-Southampton,2014-15,6,-1
+2014-15-team-Southampton,2014-15,7,-1
+2014-15-team-Southampton,2014-15,12,-1
+2014-15-team-Southampton,2014-15,13,-3
+2014-15-team-Southampton,2014-15,14,-1
+2014-15-team-Southampton,2014-15,15,-2
+2014-15-team-Southampton,2014-15,16,-1
+2014-15-team-Southampton,2014-15,18,-1
+2014-15-team-Southampton,2014-15,19,-1
+2014-15-team-Southampton,2014-15,22,-1
+2014-15-team-Southampton,2014-15,23,-1
+2014-15-team-Southampton,2014-15,26,-2
+2014-15-team-Southampton,2014-15,27,-1
+2014-15-team-Southampton,2014-15,29,-1
+2014-15-team-Southampton,2014-15,31,-1
+2014-15-team-Southampton,2014-15,33,-2
+2014-15-team-Southampton,2014-15,34,-2
+2014-15-team-Southampton,2014-15,35,-2
+2014-15-team-Southampton,2014-15,36,-2
+2014-15-team-Southampton,2014-15,37,-1
+2014-15-team-Southampton,2014-15,38,-2
+2014-15-team-Spurs,2014-15,3,-3
+2014-15-team-Spurs,2014-15,4,-2
+2014-15-team-Spurs,2014-15,5,-1
+2014-15-team-Spurs,2014-15,6,-1
+2014-15-team-Spurs,2014-15,8,-4
+2014-15-team-Spurs,2014-15,9,-2
+2014-15-team-Spurs,2014-15,10,-1
+2014-15-team-Spurs,2014-15,11,-2
+2014-15-team-Spurs,2014-15,12,-1
+2014-15-team-Spurs,2014-15,13,-1
+2014-15-team-Spurs,2014-15,14,-3
+2014-15-team-Spurs,2014-15,16,-1
+2014-15-team-Spurs,2014-15,17,-1
+2014-15-team-Spurs,2014-15,18,-1
+2014-15-team-Spurs,2014-15,20,-3
+2014-15-team-Spurs,2014-15,21,-2
+2014-15-team-Spurs,2014-15,22,-1
+2014-15-team-Spurs,2014-15,24,-1
+2014-15-team-Spurs,2014-15,25,-3
+2014-15-team-Spurs,2014-15,26,-2
+2014-15-team-Spurs,2014-15,27,-2
+2014-15-team-Spurs,2014-15,28,-1
+2014-15-team-Spurs,2014-15,29,-3
+2014-15-team-Spurs,2014-15,30,-3
+2014-15-team-Spurs,2014-15,32,-1
+2014-15-team-Spurs,2014-15,33,-1
+2014-15-team-Spurs,2014-15,34,-2
+2014-15-team-Spurs,2014-15,35,-1
+2014-15-team-Spurs,2014-15,36,-3
+2014-15-team-Man Utd,2014-15,1,-2
+2014-15-team-Man Utd,2014-15,2,-1
+2014-15-team-Man Utd,2014-15,5,-5
+2014-15-team-Man Utd,2014-15,6,-1
+2014-15-team-Man Utd,2014-15,7,-1
+2014-15-team-Man Utd,2014-15,8,-2
+2014-15-team-Man Utd,2014-15,9,-1
+2014-15-team-Man Utd,2014-15,10,-1
+2014-15-team-Man Utd,2014-15,12,-1
+2014-15-team-Man Utd,2014-15,14,-1
+2014-15-team-Man Utd,2014-15,15,-1
+2014-15-team-Man Utd,2014-15,17,-1
+2014-15-team-Man Utd,2014-15,18,-1
+2014-15-team-Man Utd,2014-15,20,-1
+2014-15-team-Man Utd,2014-15,21,-1
+2014-15-team-Man Utd,2014-15,23,-1
+2014-15-team-Man Utd,2014-15,24,-1
+2014-15-team-Man Utd,2014-15,25,-1
+2014-15-team-Man Utd,2014-15,26,-2
+2014-15-team-Man Utd,2014-15,30,-1
+2014-15-team-Man Utd,2014-15,31,-1
+2014-15-team-Man Utd,2014-15,32,-2
+2014-15-team-Man Utd,2014-15,33,-1
+2014-15-team-Man Utd,2014-15,34,-3
+2014-15-team-Man Utd,2014-15,35,-1
+2014-15-team-Man Utd,2014-15,36,-1
+2014-15-team-Man Utd,2014-15,37,-1
+2014-15-team-Hull City,2014-15,2,-1
+2014-15-team-Hull City,2014-15,3,-2
+2014-15-team-Hull City,2014-15,4,-2
+2014-15-team-Hull City,2014-15,5,-2
+2014-15-team-Hull City,2014-15,6,-4
+2014-15-team-Hull City,2014-15,8,-2
+2014-15-team-Hull City,2014-15,10,-1
+2014-15-team-Hull City,2014-15,11,-1
+2014-15-team-Hull City,2014-15,12,-2
+2014-15-team-Hull City,2014-15,13,-3
+2014-15-team-Hull City,2014-15,14,-1
+2014-15-team-Hull City,2014-15,16,-2
+2014-15-team-Hull City,2014-15,17,-1
+2014-15-team-Hull City,2014-15,18,-1
+2014-15-team-Hull City,2014-15,19,-1
+2014-15-team-Hull City,2014-15,21,-1
+2014-15-team-Hull City,2014-15,22,-3
+2014-15-team-Hull City,2014-15,23,-3
+2014-15-team-Hull City,2014-15,24,-1
+2014-15-team-Hull City,2014-15,26,-1
+2014-15-team-Hull City,2014-15,27,-1
+2014-15-team-Hull City,2014-15,28,-1
+2014-15-team-Hull City,2014-15,30,-3
+2014-15-team-Hull City,2014-15,31,-3
+2014-15-team-Hull City,2014-15,32,-2
+2014-15-team-Hull City,2014-15,35,-3
+2014-15-team-Hull City,2014-15,36,-1
+2014-15-team-Hull City,2014-15,37,-2
+2014-15-team-Man City,2014-15,2,-1
+2014-15-team-Man City,2014-15,3,-1
+2014-15-team-Man City,2014-15,4,-2
+2014-15-team-Man City,2014-15,5,-1
+2014-15-team-Man City,2014-15,6,-2
+2014-15-team-Man City,2014-15,8,-1
+2014-15-team-Man City,2014-15,9,-2
+2014-15-team-Man City,2014-15,11,-2
+2014-15-team-Man City,2014-15,12,-1
+2014-15-team-Man City,2014-15,14,-1
+2014-15-team-Man City,2014-15,18,-1
+2014-15-team-Man City,2014-15,19,-2
+2014-15-team-Man City,2014-15,20,-2
+2014-15-team-Man City,2014-15,21,-1
+2014-15-team-Man City,2014-15,22,-2
+2014-15-team-Man City,2014-15,23,-1
+2014-15-team-Man City,2014-15,24,-1
+2014-15-team-Man City,2014-15,25,-1
+2014-15-team-Man City,2014-15,27,-2
+2014-15-team-Man City,2014-15,29,-1
+2014-15-team-Man City,2014-15,31,-2
+2014-15-team-Man City,2014-15,32,-4
+2014-15-team-Man City,2014-15,34,-2
+2014-15-team-Man City,2014-15,37,-2
+2014-15-team-Stoke City,2014-15,1,-1
+2014-15-team-Stoke City,2014-15,2,-1
+2014-15-team-Stoke City,2014-15,4,-1
+2014-15-team-Stoke City,2014-15,5,-2
+2014-15-team-Stoke City,2014-15,7,-3
+2014-15-team-Stoke City,2014-15,8,-1
+2014-15-team-Stoke City,2014-15,9,-1
+2014-15-team-Stoke City,2014-15,10,-2
+2014-15-team-Stoke City,2014-15,11,-1
+2014-15-team-Stoke City,2014-15,12,-2
+2014-15-team-Stoke City,2014-15,13,-1
+2014-15-team-Stoke City,2014-15,14,-2
+2014-15-team-Stoke City,2014-15,15,-2
+2014-15-team-Stoke City,2014-15,16,-1
+2014-15-team-Stoke City,2014-15,17,-2
+2014-15-team-Stoke City,2014-15,20,-1
+2014-15-team-Stoke City,2014-15,21,-3
+2014-15-team-Stoke City,2014-15,23,-1
+2014-15-team-Stoke City,2014-15,24,-1
+2014-15-team-Stoke City,2014-15,25,-4
+2014-15-team-Stoke City,2014-15,26,-1
+2014-15-team-Stoke City,2014-15,29,-1
+2014-15-team-Stoke City,2014-15,30,-2
+2014-15-team-Stoke City,2014-15,31,-2
+2014-15-team-Stoke City,2014-15,32,-1
+2014-15-team-Stoke City,2014-15,33,-1
+2014-15-team-Stoke City,2014-15,34,-1
+2014-15-team-Stoke City,2014-15,35,-2
+2014-15-team-Stoke City,2014-15,38,-1
+2014-15-team-Liverpool,2014-15,1,-1
+2014-15-team-Liverpool,2014-15,2,-3
+2014-15-team-Liverpool,2014-15,4,-1
+2014-15-team-Liverpool,2014-15,5,-3
+2014-15-team-Liverpool,2014-15,6,-1
+2014-15-team-Liverpool,2014-15,7,-1
+2014-15-team-Liverpool,2014-15,8,-2
+2014-15-team-Liverpool,2014-15,10,-1
+2014-15-team-Liverpool,2014-15,11,-2
+2014-15-team-Liverpool,2014-15,12,-3
+2014-15-team-Liverpool,2014-15,14,-1
+2014-15-team-Liverpool,2014-15,16,-3
+2014-15-team-Liverpool,2014-15,17,-2
+2014-15-team-Liverpool,2014-15,19,-1
+2014-15-team-Liverpool,2014-15,20,-2
+2014-15-team-Liverpool,2014-15,25,-2
+2014-15-team-Liverpool,2014-15,27,-1
+2014-15-team-Liverpool,2014-15,30,-2
+2014-15-team-Liverpool,2014-15,31,-4
+2014-15-team-Liverpool,2014-15,34,-1
+2014-15-team-Liverpool,2014-15,35,-1
+2014-15-team-Liverpool,2014-15,36,-1
+2014-15-team-Liverpool,2014-15,37,-3
+2014-15-team-Liverpool,2014-15,38,-6
+2015-16-team-Crystal Palace,2015-16,1,-1
+2015-16-team-Crystal Palace,2015-16,2,-2
+2015-16-team-Crystal Palace,2015-16,3,-1
+2015-16-team-Crystal Palace,2015-16,4,-1
+2015-16-team-Crystal Palace,2015-16,5,-1
+2015-16-team-Crystal Palace,2015-16,6,-1
+2015-16-team-Crystal Palace,2015-16,9,-3
+2015-16-team-Crystal Palace,2015-16,10,-1
+2015-16-team-Crystal Palace,2015-16,12,-1
+2015-16-team-Crystal Palace,2015-16,13,-1
+2015-16-team-Crystal Palace,2015-16,14,-1
+2015-16-team-Crystal Palace,2015-16,15,-1
+2015-16-team-Crystal Palace,2015-16,17,-1
+2015-16-team-Crystal Palace,2015-16,20,-3
+2015-16-team-Crystal Palace,2015-16,21,-1
+2015-16-team-Crystal Palace,2015-16,22,-4
+2015-16-team-Crystal Palace,2015-16,23,-3
+2015-16-team-Crystal Palace,2015-16,24,-2
+2015-16-team-Crystal Palace,2015-16,25,-1
+2015-16-team-Crystal Palace,2015-16,26,-2
+2015-16-team-Crystal Palace,2015-16,27,-3
+2015-16-team-Crystal Palace,2015-16,28,-2
+2015-16-team-Crystal Palace,2015-16,29,-2
+2015-16-team-Crystal Palace,2015-16,30,-1
+2015-16-team-Crystal Palace,2015-16,31,-2
+2015-16-team-Crystal Palace,2015-16,34,-1
+2015-16-team-Crystal Palace,2015-16,35,-2
+2015-16-team-Crystal Palace,2015-16,36,-1
+2015-16-team-Crystal Palace,2015-16,37,-1
+2015-16-team-Crystal Palace,2015-16,38,-4
+2015-16-team-Newcastle,2015-16,1,-2
+2015-16-team-Newcastle,2015-16,2,-2
+2015-16-team-Newcastle,2015-16,4,-1
+2015-16-team-Newcastle,2015-16,5,-2
+2015-16-team-Newcastle,2015-16,6,-2
+2015-16-team-Newcastle,2015-16,7,-2
+2015-16-team-Newcastle,2015-16,8,-6
+2015-16-team-Newcastle,2015-16,9,-2
+2015-16-team-Newcastle,2015-16,10,-3
+2015-16-team-Newcastle,2015-16,13,-3
+2015-16-team-Newcastle,2015-16,14,-5
+2015-16-team-Newcastle,2015-16,16,-1
+2015-16-team-Newcastle,2015-16,17,-1
+2015-16-team-Newcastle,2015-16,18,-1
+2015-16-team-Newcastle,2015-16,19,-1
+2015-16-team-Newcastle,2015-16,20,-1
+2015-16-team-Newcastle,2015-16,21,-3
+2015-16-team-Newcastle,2015-16,22,-1
+2015-16-team-Newcastle,2015-16,23,-2
+2015-16-team-Newcastle,2015-16,24,-3
+2015-16-team-Newcastle,2015-16,26,-5
+2015-16-team-Newcastle,2015-16,27,-1
+2015-16-team-Newcastle,2015-16,28,-3
+2015-16-team-Newcastle,2015-16,29,-1
+2015-16-team-Newcastle,2015-16,30,-1
+2015-16-team-Newcastle,2015-16,31,-3
+2015-16-team-Newcastle,2015-16,32,-3
+2015-16-team-Newcastle,2015-16,34,-1
+2015-16-team-Newcastle,2015-16,35,-2
+2015-16-team-Newcastle,2015-16,38,-1
+2015-16-team-Everton,2015-16,1,-2
+2015-16-team-Everton,2015-16,3,-2
+2015-16-team-Everton,2015-16,5,-1
+2015-16-team-Everton,2015-16,7,-2
+2015-16-team-Everton,2015-16,8,-1
+2015-16-team-Everton,2015-16,9,-3
+2015-16-team-Everton,2015-16,10,-2
+2015-16-team-Everton,2015-16,11,-2
+2015-16-team-Everton,2015-16,12,-1
+2015-16-team-Everton,2015-16,14,-3
+2015-16-team-Everton,2015-16,15,-1
+2015-16-team-Everton,2015-16,16,-1
+2015-16-team-Everton,2015-16,17,-3
+2015-16-team-Everton,2015-16,19,-4
+2015-16-team-Everton,2015-16,20,-1
+2015-16-team-Everton,2015-16,22,-3
+2015-16-team-Everton,2015-16,23,-2
+2015-16-team-Everton,2015-16,26,-1
+2015-16-team-Everton,2015-16,27,-1
+2015-16-team-Everton,2015-16,28,-3
+2015-16-team-Everton,2015-16,29,-2
+2015-16-team-Everton,2015-16,30,-1
+2015-16-team-Everton,2015-16,31,-1
+2015-16-team-Everton,2015-16,33,-1
+2015-16-team-Everton,2015-16,34,-4
+2015-16-team-Everton,2015-16,35,-1
+2015-16-team-Everton,2015-16,36,-3
+2015-16-team-Everton,2015-16,37,-3
+2015-16-team-West Ham,2015-16,2,-2
+2015-16-team-West Ham,2015-16,3,-4
+2015-16-team-West Ham,2015-16,6,-1
+2015-16-team-West Ham,2015-16,7,-2
+2015-16-team-West Ham,2015-16,8,-2
+2015-16-team-West Ham,2015-16,9,-1
+2015-16-team-West Ham,2015-16,10,-1
+2015-16-team-West Ham,2015-16,11,-2
+2015-16-team-West Ham,2015-16,12,-1
+2015-16-team-West Ham,2015-16,13,-4
+2015-16-team-West Ham,2015-16,14,-1
+2015-16-team-West Ham,2015-16,18,-1
+2015-16-team-West Ham,2015-16,19,-1
+2015-16-team-West Ham,2015-16,21,-1
+2015-16-team-West Ham,2015-16,22,-2
+2015-16-team-West Ham,2015-16,23,-2
+2015-16-team-West Ham,2015-16,25,-1
+2015-16-team-West Ham,2015-16,26,-2
+2015-16-team-West Ham,2015-16,29,-2
+2015-16-team-West Ham,2015-16,30,-2
+2015-16-team-West Ham,2015-16,31,-2
+2015-16-team-West Ham,2015-16,32,-3
+2015-16-team-West Ham,2015-16,33,-2
+2015-16-team-West Ham,2015-16,34,-1
+2015-16-team-West Ham,2015-16,36,-4
+2015-16-team-West Ham,2015-16,37,-2
+2015-16-team-West Ham,2015-16,38,-2
+2015-16-team-Leicester,2015-16,1,-2
+2015-16-team-Leicester,2015-16,2,-1
+2015-16-team-Leicester,2015-16,3,-1
+2015-16-team-Leicester,2015-16,4,-1
+2015-16-team-Leicester,2015-16,5,-2
+2015-16-team-Leicester,2015-16,6,-2
+2015-16-team-Leicester,2015-16,7,-5
+2015-16-team-Leicester,2015-16,8,-1
+2015-16-team-Leicester,2015-16,9,-2
+2015-16-team-Leicester,2015-16,11,-2
+2015-16-team-Leicester,2015-16,12,-1
+2015-16-team-Leicester,2015-16,14,-1
+2015-16-team-Leicester,2015-16,16,-1
+2015-16-team-Leicester,2015-16,17,-2
+2015-16-team-Leicester,2015-16,18,-1
+2015-16-team-Leicester,2015-16,22,-1
+2015-16-team-Leicester,2015-16,25,-1
+2015-16-team-Leicester,2015-16,26,-2
+2015-16-team-Leicester,2015-16,28,-2
+2015-16-team-Leicester,2015-16,34,-2
+2015-16-team-Leicester,2015-16,36,-1
+2015-16-team-Leicester,2015-16,37,-1
+2015-16-team-Leicester,2015-16,38,-1
+2015-16-team-Swansea City,2015-16,1,-2
+2015-16-team-Swansea City,2015-16,3,-1
+2015-16-team-Swansea City,2015-16,4,-1
+2015-16-team-Swansea City,2015-16,5,-1
+2015-16-team-Swansea City,2015-16,7,-3
+2015-16-team-Swansea City,2015-16,8,-2
+2015-16-team-Swansea City,2015-16,9,-1
+2015-16-team-Swansea City,2015-16,10,-1
+2015-16-team-Swansea City,2015-16,11,-3
+2015-16-team-Swansea City,2015-16,12,-1
+2015-16-team-Swansea City,2015-16,13,-2
+2015-16-team-Swansea City,2015-16,14,-1
+2015-16-team-Swansea City,2015-16,15,-3
+2015-16-team-Swansea City,2015-16,16,-2
+2015-16-team-Swansea City,2015-16,20,-2
+2015-16-team-Swansea City,2015-16,21,-4
+2015-16-team-Swansea City,2015-16,23,-1
+2015-16-team-Swansea City,2015-16,24,-1
+2015-16-team-Swansea City,2015-16,25,-1
+2015-16-team-Swansea City,2015-16,26,-1
+2015-16-team-Swansea City,2015-16,27,-2
+2015-16-team-Swansea City,2015-16,28,-1
+2015-16-team-Swansea City,2015-16,30,-3
+2015-16-team-Swansea City,2015-16,32,-2
+2015-16-team-Swansea City,2015-16,34,-3
+2015-16-team-Swansea City,2015-16,35,-4
+2015-16-team-Swansea City,2015-16,36,-1
+2015-16-team-Swansea City,2015-16,37,-1
+2015-16-team-Swansea City,2015-16,38,-1
+2015-16-team-Aston Villa,2015-16,2,-1
+2015-16-team-Aston Villa,2015-16,3,-2
+2015-16-team-Aston Villa,2015-16,4,-2
+2015-16-team-Aston Villa,2015-16,5,-3
+2015-16-team-Aston Villa,2015-16,6,-1
+2015-16-team-Aston Villa,2015-16,7,-3
+2015-16-team-Aston Villa,2015-16,8,-1
+2015-16-team-Aston Villa,2015-16,9,-2
+2015-16-team-Aston Villa,2015-16,10,-2
+2015-16-team-Aston Villa,2015-16,11,-3
+2015-16-team-Aston Villa,2015-16,13,-4
+2015-16-team-Aston Villa,2015-16,14,-3
+2015-16-team-Aston Villa,2015-16,15,-1
+2015-16-team-Aston Villa,2015-16,16,-2
+2015-16-team-Aston Villa,2015-16,17,-1
+2015-16-team-Aston Villa,2015-16,18,-1
+2015-16-team-Aston Villa,2015-16,19,-2
+2015-16-team-Aston Villa,2015-16,20,-3
+2015-16-team-Aston Villa,2015-16,22,-1
+2015-16-team-Aston Villa,2015-16,24,-2
+2015-16-team-Aston Villa,2015-16,26,-6
+2015-16-team-Aston Villa,2015-16,27,-2
+2015-16-team-Aston Villa,2015-16,28,-3
+2015-16-team-Aston Villa,2015-16,29,-4
+2015-16-team-Aston Villa,2015-16,30,-2
+2015-16-team-Aston Villa,2015-16,31,-1
+2015-16-team-Aston Villa,2015-16,32,-4
+2015-16-team-Aston Villa,2015-16,33,-2
+2015-16-team-Aston Villa,2015-16,34,-1
+2015-16-team-Aston Villa,2015-16,35,-4
+2015-16-team-Aston Villa,2015-16,36,-3
+2015-16-team-Aston Villa,2015-16,38,-4
+2015-16-team-Man Utd,2015-16,4,-2
+2015-16-team-Man Utd,2015-16,5,-1
+2015-16-team-Man Utd,2015-16,6,-2
+2015-16-team-Man Utd,2015-16,8,-3
+2015-16-team-Man Utd,2015-16,13,-1
+2015-16-team-Man Utd,2015-16,14,-1
+2015-16-team-Man Utd,2015-16,16,-2
+2015-16-team-Man Utd,2015-16,17,-2
+2015-16-team-Man Utd,2015-16,18,-2
+2015-16-team-Man Utd,2015-16,20,-1
+2015-16-team-Man Utd,2015-16,21,-3
+2015-16-team-Man Utd,2015-16,23,-1
+2015-16-team-Man Utd,2015-16,25,-1
+2015-16-team-Man Utd,2015-16,26,-2
+2015-16-team-Man Utd,2015-16,27,-2
+2015-16-team-Man Utd,2015-16,29,-1
+2015-16-team-Man Utd,2015-16,32,-3
+2015-16-team-Man Utd,2015-16,35,-1
+2015-16-team-Man Utd,2015-16,37,-3
+2015-16-team-Man Utd,2015-16,38,-1
+2015-16-team-Spurs,2015-16,1,-1
+2015-16-team-Spurs,2015-16,2,-2
+2015-16-team-Spurs,2015-16,3,-1
+2015-16-team-Spurs,2015-16,7,-1
+2015-16-team-Spurs,2015-16,8,-2
+2015-16-team-Spurs,2015-16,10,-1
+2015-16-team-Spurs,2015-16,11,-1
+2015-16-team-Spurs,2015-16,12,-1
+2015-16-team-Spurs,2015-16,13,-1
+2015-16-team-Spurs,2015-16,15,-1
+2015-16-team-Spurs,2015-16,16,-2
+2015-16-team-Spurs,2015-16,19,-1
+2015-16-team-Spurs,2015-16,20,-1
+2015-16-team-Spurs,2015-16,21,-1
+2015-16-team-Spurs,2015-16,22,-1
+2015-16-team-Spurs,2015-16,23,-1
+2015-16-team-Spurs,2015-16,26,-1
+2015-16-team-Spurs,2015-16,27,-1
+2015-16-team-Spurs,2015-16,28,-1
+2015-16-team-Spurs,2015-16,29,-2
+2015-16-team-Spurs,2015-16,32,-1
+2015-16-team-Spurs,2015-16,35,-1
+2015-16-team-Spurs,2015-16,36,-2
+2015-16-team-Spurs,2015-16,37,-2
+2015-16-team-Spurs,2015-16,38,-5
+2015-16-team-Stoke City,2015-16,1,-1
+2015-16-team-Stoke City,2015-16,2,-2
+2015-16-team-Stoke City,2015-16,3,-1
+2015-16-team-Stoke City,2015-16,4,-1
+2015-16-team-Stoke City,2015-16,5,-2
+2015-16-team-Stoke City,2015-16,6,-2
+2015-16-team-Stoke City,2015-16,7,-1
+2015-16-team-Stoke City,2015-16,10,-2
+2015-16-team-Stoke City,2015-16,14,-2
+2015-16-team-Stoke City,2015-16,17,-2
+2015-16-team-Stoke City,2015-16,19,-3
+2015-16-team-Stoke City,2015-16,20,-2
+2015-16-team-Stoke City,2015-16,21,-1
+2015-16-team-Stoke City,2015-16,23,-3
+2015-16-team-Stoke City,2015-16,24,-3
+2015-16-team-Stoke City,2015-16,25,-3
+2015-16-team-Stoke City,2015-16,26,-1
+2015-16-team-Stoke City,2015-16,27,-1
+2015-16-team-Stoke City,2015-16,29,-1
+2015-16-team-Stoke City,2015-16,30,-2
+2015-16-team-Stoke City,2015-16,31,-1
+2015-16-team-Stoke City,2015-16,32,-2
+2015-16-team-Stoke City,2015-16,33,-4
+2015-16-team-Stoke City,2015-16,34,-4
+2015-16-team-Stoke City,2015-16,35,-4
+2015-16-team-Stoke City,2015-16,36,-1
+2015-16-team-Stoke City,2015-16,37,-2
+2015-16-team-Stoke City,2015-16,38,-1
+2015-16-team-Arsenal,2015-16,1,-2
+2015-16-team-Arsenal,2015-16,2,-1
+2015-16-team-Arsenal,2015-16,6,-2
+2015-16-team-Arsenal,2015-16,7,-2
+2015-16-team-Arsenal,2015-16,10,-1
+2015-16-team-Arsenal,2015-16,12,-1
+2015-16-team-Arsenal,2015-16,13,-2
+2015-16-team-Arsenal,2015-16,14,-1
+2015-16-team-Arsenal,2015-16,15,-1
+2015-16-team-Arsenal,2015-16,17,-1
+2015-16-team-Arsenal,2015-16,18,-4
+2015-16-team-Arsenal,2015-16,21,-3
+2015-16-team-Arsenal,2015-16,23,-1
+2015-16-team-Arsenal,2015-16,26,-1
+2015-16-team-Arsenal,2015-16,27,-3
+2015-16-team-Arsenal,2015-16,28,-2
+2015-16-team-Arsenal,2015-16,29,-2
+2015-16-team-Arsenal,2015-16,32,-3
+2015-16-team-Arsenal,2015-16,33,-1
+2015-16-team-Arsenal,2015-16,37,-2
+2015-16-team-West Brom,2015-16,1,-3
+2015-16-team-West Brom,2015-16,3,-3
+2015-16-team-West Brom,2015-16,7,-3
+2015-16-team-West Brom,2015-16,8,-2
+2015-16-team-West Brom,2015-16,11,-3
+2015-16-team-West Brom,2015-16,12,-2
+2015-16-team-West Brom,2015-16,13,-1
+2015-16-team-West Brom,2015-16,14,-1
+2015-16-team-West Brom,2015-16,15,-1
+2015-16-team-West Brom,2015-16,16,-2
+2015-16-team-West Brom,2015-16,17,-2
+2015-16-team-West Brom,2015-16,18,-1
+2015-16-team-West Brom,2015-16,20,-1
+2015-16-team-West Brom,2015-16,21,-2
+2015-16-team-West Brom,2015-16,22,-3
+2015-16-team-West Brom,2015-16,24,-1
+2015-16-team-West Brom,2015-16,25,-1
+2015-16-team-West Brom,2015-16,27,-2
+2015-16-team-West Brom,2015-16,28,-2
+2015-16-team-West Brom,2015-16,30,-1
+2015-16-team-West Brom,2015-16,32,-2
+2015-16-team-West Brom,2015-16,33,-1
+2015-16-team-West Brom,2015-16,34,-2
+2015-16-team-West Brom,2015-16,35,-1
+2015-16-team-West Brom,2015-16,36,-3
+2015-16-team-West Brom,2015-16,38,-1
+2015-16-team-Man City,2015-16,6,-2
+2015-16-team-Man City,2015-16,7,-4
+2015-16-team-Man City,2015-16,8,-1
+2015-16-team-Man City,2015-16,9,-1
+2015-16-team-Man City,2015-16,11,-1
+2015-16-team-Man City,2015-16,13,-4
+2015-16-team-Man City,2015-16,14,-1
+2015-16-team-Man City,2015-16,15,-2
+2015-16-team-Man City,2015-16,16,-1
+2015-16-team-Man City,2015-16,17,-2
+2015-16-team-Man City,2015-16,18,-1
+2015-16-team-Man City,2015-16,20,-1
+2015-16-team-Man City,2015-16,23,-2
+2015-16-team-Man City,2015-16,25,-3
+2015-16-team-Man City,2015-16,26,-2
+2015-16-team-Man City,2015-16,27,-3
+2015-16-team-Man City,2015-16,30,-1
+2015-16-team-Man City,2015-16,32,-1
+2015-16-team-Man City,2015-16,34,-1
+2015-16-team-Man City,2015-16,36,-4
+2015-16-team-Man City,2015-16,37,-2
+2015-16-team-Man City,2015-16,38,-1
+2015-16-team-Chelsea,2015-16,1,-2
+2015-16-team-Chelsea,2015-16,2,-3
+2015-16-team-Chelsea,2015-16,3,-2
+2015-16-team-Chelsea,2015-16,4,-2
+2015-16-team-Chelsea,2015-16,5,-3
+2015-16-team-Chelsea,2015-16,7,-2
+2015-16-team-Chelsea,2015-16,8,-3
+2015-16-team-Chelsea,2015-16,10,-2
+2015-16-team-Chelsea,2015-16,11,-3
+2015-16-team-Chelsea,2015-16,12,-1
+2015-16-team-Chelsea,2015-16,15,-1
+2015-16-team-Chelsea,2015-16,16,-2
+2015-16-team-Chelsea,2015-16,17,-1
+2015-16-team-Chelsea,2015-16,18,-2
+2015-16-team-Chelsea,2015-16,21,-2
+2015-16-team-Chelsea,2015-16,22,-3
+2015-16-team-Chelsea,2015-16,25,-1
+2015-16-team-Chelsea,2015-16,26,-1
+2015-16-team-Chelsea,2015-16,27,-1
+2015-16-team-Chelsea,2015-16,28,-1
+2015-16-team-Chelsea,2015-16,29,-1
+2015-16-team-Chelsea,2015-16,30,-2
+2015-16-team-Chelsea,2015-16,32,-1
+2015-16-team-Chelsea,2015-16,33,-3
+2015-16-team-Chelsea,2015-16,34,-1
+2015-16-team-Chelsea,2015-16,35,-2
+2015-16-team-Chelsea,2015-16,36,-3
+2015-16-team-Chelsea,2015-16,37,-1
+2015-16-team-Chelsea,2015-16,38,-1
+2015-16-team-Southampton,2015-16,1,-2
+2015-16-team-Southampton,2015-16,2,-3
+2015-16-team-Southampton,2015-16,6,-3
+2015-16-team-Southampton,2015-16,7,-1
+2015-16-team-Southampton,2015-16,8,-1
+2015-16-team-Southampton,2015-16,9,-2
+2015-16-team-Southampton,2015-16,10,-1
+2015-16-team-Southampton,2015-16,13,-1
+2015-16-team-Southampton,2015-16,14,-3
+2015-16-team-Southampton,2015-16,15,-1
+2015-16-team-Southampton,2015-16,16,-1
+2015-16-team-Southampton,2015-16,17,-2
+2015-16-team-Southampton,2015-16,19,-2
+2015-16-team-Southampton,2015-16,20,-1
+2015-16-team-Southampton,2015-16,27,-2
+2015-16-team-Southampton,2015-16,28,-2
+2015-16-team-Southampton,2015-16,29,-1
+2015-16-team-Southampton,2015-16,30,-1
+2015-16-team-Southampton,2015-16,31,-2
+2015-16-team-Southampton,2015-16,32,-1
+2015-16-team-Southampton,2015-16,33,-1
+2015-16-team-Southampton,2015-16,34,-1
+2015-16-team-Southampton,2015-16,35,-2
+2015-16-team-Southampton,2015-16,36,-2
+2015-16-team-Southampton,2015-16,37,-1
+2015-16-team-Southampton,2015-16,38,-1
+2015-16-team-Liverpool,2015-16,4,-3
+2015-16-team-Liverpool,2015-16,5,-3
+2015-16-team-Liverpool,2015-16,6,-1
+2015-16-team-Liverpool,2015-16,7,-2
+2015-16-team-Liverpool,2015-16,8,-1
+2015-16-team-Liverpool,2015-16,10,-1
+2015-16-team-Liverpool,2015-16,11,-1
+2015-16-team-Liverpool,2015-16,12,-2
+2015-16-team-Liverpool,2015-16,13,-1
+2015-16-team-Liverpool,2015-16,15,-2
+2015-16-team-Liverpool,2015-16,16,-2
+2015-16-team-Liverpool,2015-16,17,-3
+2015-16-team-Liverpool,2015-16,20,-2
+2015-16-team-Liverpool,2015-16,21,-3
+2015-16-team-Liverpool,2015-16,22,-1
+2015-16-team-Liverpool,2015-16,23,-4
+2015-16-team-Liverpool,2015-16,24,-2
+2015-16-team-Liverpool,2015-16,25,-2
+2015-16-team-Liverpool,2015-16,28,-1
+2015-16-team-Liverpool,2015-16,29,-3
+2015-16-team-Liverpool,2015-16,30,-1
+2015-16-team-Liverpool,2015-16,31,-1
+2015-16-team-Liverpool,2015-16,32,-1
+2015-16-team-Liverpool,2015-16,34,-2
+2015-16-team-Liverpool,2015-16,35,-3
+2015-16-team-Liverpool,2015-16,37,-1
+2015-16-team-Liverpool,2015-16,38,-1
+2015-16-team-Sunderland,2015-16,1,-4
+2015-16-team-Sunderland,2015-16,2,-3
+2015-16-team-Sunderland,2015-16,3,-1
+2015-16-team-Sunderland,2015-16,4,-2
+2015-16-team-Sunderland,2015-16,5,-1
+2015-16-team-Sunderland,2015-16,6,-2
+2015-16-team-Sunderland,2015-16,7,-3
+2015-16-team-Sunderland,2015-16,8,-2
+2015-16-team-Sunderland,2015-16,9,-1
+2015-16-team-Sunderland,2015-16,11,-6
+2015-16-team-Sunderland,2015-16,12,-1
+2015-16-team-Sunderland,2015-16,15,-3
+2015-16-team-Sunderland,2015-16,16,-1
+2015-16-team-Sunderland,2015-16,17,-3
+2015-16-team-Sunderland,2015-16,18,-4
+2015-16-team-Sunderland,2015-16,19,-1
+2015-16-team-Sunderland,2015-16,20,-1
+2015-16-team-Sunderland,2015-16,21,-2
+2015-16-team-Sunderland,2015-16,22,-4
+2015-16-team-Sunderland,2015-16,23,-1
+2015-16-team-Sunderland,2015-16,24,-1
+2015-16-team-Sunderland,2015-16,25,-2
+2015-16-team-Sunderland,2015-16,26,-1
+2015-16-team-Sunderland,2015-16,27,-1
+2015-16-team-Sunderland,2015-16,28,-2
+2015-16-team-Sunderland,2015-16,29,-1
+2015-16-team-Sunderland,2015-16,30,-1
+2015-16-team-Sunderland,2015-16,32,-2
+2015-16-team-Sunderland,2015-16,35,-1
+2015-16-team-Sunderland,2015-16,36,-2
+2015-16-team-Sunderland,2015-16,38,-2
+2016-17-team-Crystal Palace,2016-17,1,-1
+2016-17-team-Crystal Palace,2016-17,2,-1
+2016-17-team-Crystal Palace,2016-17,3,-1
+2016-17-team-Crystal Palace,2016-17,4,-1
+2016-17-team-Crystal Palace,2016-17,5,-1
+2016-17-team-Crystal Palace,2016-17,6,-2
+2016-17-team-Crystal Palace,2016-17,7,-1
+2016-17-team-Crystal Palace,2016-17,8,-1
+2016-17-team-Crystal Palace,2016-17,9,-3
+2016-17-team-Crystal Palace,2016-17,10,-4
+2016-17-team-Crystal Palace,2016-17,11,-3
+2016-17-team-Crystal Palace,2016-17,12,-2
+2016-17-team-Crystal Palace,2016-17,13,-5
+2016-17-team-Crystal Palace,2016-17,15,-3
+2016-17-team-Crystal Palace,2016-17,16,-2
+2016-17-team-Crystal Palace,2016-17,17,-1
+2016-17-team-Crystal Palace,2016-17,18,-1
+2016-17-team-Crystal Palace,2016-17,19,-2
+2016-17-team-Crystal Palace,2016-17,20,-2
+2016-17-team-Crystal Palace,2016-17,21,-3
+2016-17-team-Crystal Palace,2016-17,22,-1
+2016-17-team-Crystal Palace,2016-17,24,-4
+2016-17-team-Crystal Palace,2016-17,25,-1
+2016-17-team-Crystal Palace,2016-17,29,-1
+2016-17-team-Crystal Palace,2016-17,30,-3
+2016-17-team-Crystal Palace,2016-17,32,-2
+2016-17-team-Crystal Palace,2016-17,33,-1
+2016-17-team-Crystal Palace,2016-17,34,-1
+2016-17-team-Crystal Palace,2016-17,35,-2
+2016-17-team-Crystal Palace,2016-17,36,-5
+2016-17-team-Crystal Palace,2016-17,38,-2
+2016-17-team-Stoke City,2016-17,1,-1
+2016-17-team-Stoke City,2016-17,2,-4
+2016-17-team-Stoke City,2016-17,3,-1
+2016-17-team-Stoke City,2016-17,4,-4
+2016-17-team-Stoke City,2016-17,5,-4
+2016-17-team-Stoke City,2016-17,6,-1
+2016-17-team-Stoke City,2016-17,7,-1
+2016-17-team-Stoke City,2016-17,10,-1
+2016-17-team-Stoke City,2016-17,11,-1
+2016-17-team-Stoke City,2016-17,12,-1
+2016-17-team-Stoke City,2016-17,15,-3
+2016-17-team-Stoke City,2016-17,17,-2
+2016-17-team-Stoke City,2016-17,18,-4
+2016-17-team-Stoke City,2016-17,19,-4
+2016-17-team-Stoke City,2016-17,21,-1
+2016-17-team-Stoke City,2016-17,22,-1
+2016-17-team-Stoke City,2016-17,23,-1
+2016-17-team-Stoke City,2016-17,24,-1
+2016-17-team-Stoke City,2016-17,26,-4
+2016-17-team-Stoke City,2016-17,29,-2
+2016-17-team-Stoke City,2016-17,30,-2
+2016-17-team-Stoke City,2016-17,31,-1
+2016-17-team-Stoke City,2016-17,32,-2
+2016-17-team-Stoke City,2016-17,33,-1
+2016-17-team-Stoke City,2016-17,34,-2
+2016-17-team-Stoke City,2016-17,36,-2
+2016-17-team-Stoke City,2016-17,37,-4
+2016-17-team-Watford,2016-17,1,-1
+2016-17-team-Watford,2016-17,2,-2
+2016-17-team-Watford,2016-17,3,-3
+2016-17-team-Watford,2016-17,4,-2
+2016-17-team-Watford,2016-17,5,-1
+2016-17-team-Watford,2016-17,6,-2
+2016-17-team-Watford,2016-17,7,-2
+2016-17-team-Watford,2016-17,11,-6
+2016-17-team-Watford,2016-17,12,-1
+2016-17-team-Watford,2016-17,13,-1
+2016-17-team-Watford,2016-17,14,-3
+2016-17-team-Watford,2016-17,15,-2
+2016-17-team-Watford,2016-17,16,-2
+2016-17-team-Watford,2016-17,17,-1
+2016-17-team-Watford,2016-17,18,-1
+2016-17-team-Watford,2016-17,19,-4
+2016-17-team-Watford,2016-17,20,-2
+2016-17-team-Watford,2016-17,22,-2
+2016-17-team-Watford,2016-17,23,-1
+2016-17-team-Watford,2016-17,24,-1
+2016-17-team-Watford,2016-17,25,-2
+2016-17-team-Watford,2016-17,26,-1
+2016-17-team-Watford,2016-17,27,-4
+2016-17-team-Watford,2016-17,28,-1
+2016-17-team-Watford,2016-17,31,-4
+2016-17-team-Watford,2016-17,33,-2
+2016-17-team-Watford,2016-17,34,-1
+2016-17-team-Watford,2016-17,35,-3
+2016-17-team-Watford,2016-17,36,-1
+2016-17-team-Watford,2016-17,37,-4
+2016-17-team-Watford,2016-17,38,-5
+2016-17-team-Spurs,2016-17,1,-1
+2016-17-team-Spurs,2016-17,3,-1
+2016-17-team-Spurs,2016-17,6,-1
+2016-17-team-Spurs,2016-17,8,-1
+2016-17-team-Spurs,2016-17,10,-1
+2016-17-team-Spurs,2016-17,11,-1
+2016-17-team-Spurs,2016-17,12,-2
+2016-17-team-Spurs,2016-17,13,-2
+2016-17-team-Spurs,2016-17,15,-1
+2016-17-team-Spurs,2016-17,17,-1
+2016-17-team-Spurs,2016-17,18,-1
+2016-17-team-Spurs,2016-17,19,-1
+2016-17-team-Spurs,2016-17,22,-2
+2016-17-team-Spurs,2016-17,25,-2
+2016-17-team-Spurs,2016-17,27,-2
+2016-17-team-Spurs,2016-17,28,-1
+2016-17-team-Spurs,2016-17,30,-1
+2016-17-team-Spurs,2016-17,35,-1
+2016-17-team-Spurs,2016-17,36,-1
+2016-17-team-Spurs,2016-17,37,-1
+2016-17-team-Spurs,2016-17,38,-1
+2016-17-team-Man City,2016-17,1,-1
+2016-17-team-Man City,2016-17,2,-1
+2016-17-team-Man City,2016-17,3,-1
+2016-17-team-Man City,2016-17,4,-1
+2016-17-team-Man City,2016-17,6,-1
+2016-17-team-Man City,2016-17,7,-2
+2016-17-team-Man City,2016-17,8,-1
+2016-17-team-Man City,2016-17,9,-1
+2016-17-team-Man City,2016-17,11,-1
+2016-17-team-Man City,2016-17,12,-1
+2016-17-team-Man City,2016-17,13,-1
+2016-17-team-Man City,2016-17,14,-3
+2016-17-team-Man City,2016-17,15,-4
+2016-17-team-Man City,2016-17,17,-1
+2016-17-team-Man City,2016-17,19,-1
+2016-17-team-Man City,2016-17,20,-1
+2016-17-team-Man City,2016-17,21,-4
+2016-17-team-Man City,2016-17,22,-2
+2016-17-team-Man City,2016-17,24,-1
+2016-17-team-Man City,2016-17,28,-1
+2016-17-team-Man City,2016-17,29,-2
+2016-17-team-Man City,2016-17,30,-2
+2016-17-team-Man City,2016-17,31,-1
+2016-17-team-Man City,2016-17,34,-2
+2016-17-team-Man City,2016-17,36,-1
+2016-17-team-Man City,2016-17,37,-1
+2016-17-team-Everton,2016-17,1,-1
+2016-17-team-Everton,2016-17,2,-1
+2016-17-team-Everton,2016-17,5,-1
+2016-17-team-Everton,2016-17,6,-1
+2016-17-team-Everton,2016-17,7,-1
+2016-17-team-Everton,2016-17,8,-1
+2016-17-team-Everton,2016-17,9,-2
+2016-17-team-Everton,2016-17,11,-5
+2016-17-team-Everton,2016-17,12,-1
+2016-17-team-Everton,2016-17,13,-1
+2016-17-team-Everton,2016-17,14,-1
+2016-17-team-Everton,2016-17,15,-3
+2016-17-team-Everton,2016-17,16,-1
+2016-17-team-Everton,2016-17,17,-1
+2016-17-team-Everton,2016-17,19,-2
+2016-17-team-Everton,2016-17,23,-1
+2016-17-team-Everton,2016-17,24,-3
+2016-17-team-Everton,2016-17,27,-3
+2016-17-team-Everton,2016-17,30,-3
+2016-17-team-Everton,2016-17,31,-1
+2016-17-team-Everton,2016-17,32,-2
+2016-17-team-Everton,2016-17,33,-1
+2016-17-team-Everton,2016-17,35,-3
+2016-17-team-Everton,2016-17,36,-1
+2016-17-team-Everton,2016-17,38,-3
+2016-17-team-Leicester,2016-17,1,-2
+2016-17-team-Leicester,2016-17,3,-1
+2016-17-team-Leicester,2016-17,4,-4
+2016-17-team-Leicester,2016-17,6,-4
+2016-17-team-Leicester,2016-17,8,-3
+2016-17-team-Leicester,2016-17,9,-1
+2016-17-team-Leicester,2016-17,10,-1
+2016-17-team-Leicester,2016-17,11,-2
+2016-17-team-Leicester,2016-17,12,-2
+2016-17-team-Leicester,2016-17,13,-2
+2016-17-team-Leicester,2016-17,14,-2
+2016-17-team-Leicester,2016-17,15,-2
+2016-17-team-Leicester,2016-17,16,-1
+2016-17-team-Leicester,2016-17,17,-2
+2016-17-team-Leicester,2016-17,18,-2
+2016-17-team-Leicester,2016-17,21,-3
+2016-17-team-Leicester,2016-17,22,-3
+2016-17-team-Leicester,2016-17,23,-1
+2016-17-team-Leicester,2016-17,24,-3
+2016-17-team-Leicester,2016-17,25,-2
+2016-17-team-Leicester,2016-17,26,-1
+2016-17-team-Leicester,2016-17,27,-1
+2016-17-team-Leicester,2016-17,28,-2
+2016-17-team-Leicester,2016-17,31,-4
+2016-17-team-Leicester,2016-17,32,-2
+2016-17-team-Leicester,2016-17,33,-1
+2016-17-team-Leicester,2016-17,36,-2
+2016-17-team-Leicester,2016-17,37,-6
+2016-17-team-Leicester,2016-17,38,-1
+2016-17-team-Arsenal,2016-17,1,-4
+2016-17-team-Arsenal,2016-17,3,-1
+2016-17-team-Arsenal,2016-17,4,-1
+2016-17-team-Arsenal,2016-17,5,-1
+2016-17-team-Arsenal,2016-17,8,-2
+2016-17-team-Arsenal,2016-17,10,-1
+2016-17-team-Arsenal,2016-17,11,-1
+2016-17-team-Arsenal,2016-17,12,-1
+2016-17-team-Arsenal,2016-17,13,-1
+2016-17-team-Arsenal,2016-17,14,-1
+2016-17-team-Arsenal,2016-17,15,-1
+2016-17-team-Arsenal,2016-17,16,-2
+2016-17-team-Arsenal,2016-17,17,-2
+2016-17-team-Arsenal,2016-17,20,-3
+2016-17-team-Arsenal,2016-17,22,-1
+2016-17-team-Arsenal,2016-17,23,-2
+2016-17-team-Arsenal,2016-17,24,-3
+2016-17-team-Arsenal,2016-17,26,-3
+2016-17-team-Arsenal,2016-17,27,-3
+2016-17-team-Arsenal,2016-17,28,-2
+2016-17-team-Arsenal,2016-17,30,-3
+2016-17-team-Arsenal,2016-17,31,-1
+2016-17-team-Arsenal,2016-17,33,-2
+2016-17-team-Arsenal,2016-17,36,-1
+2016-17-team-Arsenal,2016-17,38,-1
+2016-17-team-Sunderland,2016-17,1,-2
+2016-17-team-Sunderland,2016-17,2,-2
+2016-17-team-Sunderland,2016-17,3,-1
+2016-17-team-Sunderland,2016-17,4,-3
+2016-17-team-Sunderland,2016-17,5,-1
+2016-17-team-Sunderland,2016-17,6,-3
+2016-17-team-Sunderland,2016-17,7,-1
+2016-17-team-Sunderland,2016-17,8,-2
+2016-17-team-Sunderland,2016-17,9,-1
+2016-17-team-Sunderland,2016-17,10,-4
+2016-17-team-Sunderland,2016-17,11,-1
+2016-17-team-Sunderland,2016-17,13,-2
+2016-17-team-Sunderland,2016-17,14,-1
+2016-17-team-Sunderland,2016-17,15,-3
+2016-17-team-Sunderland,2016-17,16,-1
+2016-17-team-Sunderland,2016-17,18,-3
+2016-17-team-Sunderland,2016-17,19,-4
+2016-17-team-Sunderland,2016-17,20,-2
+2016-17-team-Sunderland,2016-17,21,-3
+2016-17-team-Sunderland,2016-17,22,-2
+2016-17-team-Sunderland,2016-17,25,-4
+2016-17-team-Sunderland,2016-17,26,-2
+2016-17-team-Sunderland,2016-17,27,-2
+2016-17-team-Sunderland,2016-17,29,-1
+2016-17-team-Sunderland,2016-17,30,-2
+2016-17-team-Sunderland,2016-17,31,-3
+2016-17-team-Sunderland,2016-17,32,-2
+2016-17-team-Sunderland,2016-17,33,-1
+2016-17-team-Sunderland,2016-17,34,-1
+2016-17-team-Sunderland,2016-17,36,-2
+2016-17-team-Sunderland,2016-17,37,-2
+2016-17-team-Sunderland,2016-17,38,-5
+2016-17-team-Middlesbrough,2016-17,1,-1
+2016-17-team-Middlesbrough,2016-17,2,-1
+2016-17-team-Middlesbrough,2016-17,4,-2
+2016-17-team-Middlesbrough,2016-17,5,-3
+2016-17-team-Middlesbrough,2016-17,6,-2
+2016-17-team-Middlesbrough,2016-17,7,-1
+2016-17-team-Middlesbrough,2016-17,8,-1
+2016-17-team-Middlesbrough,2016-17,11,-1
+2016-17-team-Middlesbrough,2016-17,12,-1
+2016-17-team-Middlesbrough,2016-17,13,-2
+2016-17-team-Middlesbrough,2016-17,15,-1
+2016-17-team-Middlesbrough,2016-17,16,-3
+2016-17-team-Middlesbrough,2016-17,18,-1
+2016-17-team-Middlesbrough,2016-17,19,-2
+2016-17-team-Middlesbrough,2016-17,22,-3
+2016-17-team-Middlesbrough,2016-17,23,-1
+2016-17-team-Middlesbrough,2016-17,24,-1
+2016-17-team-Middlesbrough,2016-17,26,-1
+2016-17-team-Middlesbrough,2016-17,27,-2
+2016-17-team-Middlesbrough,2016-17,28,-3
+2016-17-team-Middlesbrough,2016-17,30,-4
+2016-17-team-Middlesbrough,2016-17,32,-2
+2016-17-team-Middlesbrough,2016-17,33,-4
+2016-17-team-Middlesbrough,2016-17,35,-2
+2016-17-team-Middlesbrough,2016-17,36,-3
+2016-17-team-Middlesbrough,2016-17,37,-2
+2016-17-team-Middlesbrough,2016-17,38,-3
+2016-17-team-Southampton,2016-17,1,-1
+2016-17-team-Southampton,2016-17,2,-2
+2016-17-team-Southampton,2016-17,3,-1
+2016-17-team-Southampton,2016-17,4,-2
+2016-17-team-Southampton,2016-17,8,-1
+2016-17-team-Southampton,2016-17,9,-1
+2016-17-team-Southampton,2016-17,10,-2
+2016-17-team-Southampton,2016-17,11,-2
+2016-17-team-Southampton,2016-17,14,-3
+2016-17-team-Southampton,2016-17,17,-1
+2016-17-team-Southampton,2016-17,18,-4
+2016-17-team-Southampton,2016-17,19,-2
+2016-17-team-Southampton,2016-17,20,-3
+2016-17-team-Southampton,2016-17,21,-1
+2016-17-team-Southampton,2016-17,23,-2
+2016-17-team-Southampton,2016-17,24,-3
+2016-17-team-Southampton,2016-17,26,-3
+2016-17-team-Southampton,2016-17,27,-2
+2016-17-team-Southampton,2016-17,29,-1
+2016-17-team-Southampton,2016-17,31,-3
+2016-17-team-Southampton,2016-17,32,-4
+2016-17-team-Southampton,2016-17,35,-2
+2016-17-team-Southampton,2016-17,36,-1
+2016-17-team-Southampton,2016-17,38,-1
+2016-17-team-Man Utd,2016-17,1,-1
+2016-17-team-Man Utd,2016-17,4,-2
+2016-17-team-Man Utd,2016-17,5,-3
+2016-17-team-Man Utd,2016-17,6,-1
+2016-17-team-Man Utd,2016-17,7,-1
+2016-17-team-Man Utd,2016-17,9,-4
+2016-17-team-Man Utd,2016-17,11,-1
+2016-17-team-Man Utd,2016-17,12,-1
+2016-17-team-Man Utd,2016-17,13,-1
+2016-17-team-Man Utd,2016-17,14,-1
+2016-17-team-Man Utd,2016-17,16,-1
+2016-17-team-Man Utd,2016-17,18,-1
+2016-17-team-Man Utd,2016-17,19,-1
+2016-17-team-Man Utd,2016-17,21,-1
+2016-17-team-Man Utd,2016-17,22,-1
+2016-17-team-Man Utd,2016-17,26,-1
+2016-17-team-Man Utd,2016-17,27,-1
+2016-17-team-Man Utd,2016-17,29,-1
+2016-17-team-Man Utd,2016-17,34,-1
+2016-17-team-Man Utd,2016-17,35,-2
+2016-17-team-Man Utd,2016-17,36,-2
+2016-17-team-West Ham,2016-17,1,-2
+2016-17-team-West Ham,2016-17,3,-3
+2016-17-team-West Ham,2016-17,4,-4
+2016-17-team-West Ham,2016-17,5,-4
+2016-17-team-West Ham,2016-17,6,-3
+2016-17-team-West Ham,2016-17,7,-1
+2016-17-team-West Ham,2016-17,10,-2
+2016-17-team-West Ham,2016-17,11,-1
+2016-17-team-West Ham,2016-17,12,-3
+2016-17-team-West Ham,2016-17,13,-1
+2016-17-team-West Ham,2016-17,14,-5
+2016-17-team-West Ham,2016-17,15,-2
+2016-17-team-West Ham,2016-17,18,-1
+2016-17-team-West Ham,2016-17,19,-1
+2016-17-team-West Ham,2016-17,20,-2
+2016-17-team-West Ham,2016-17,22,-1
+2016-17-team-West Ham,2016-17,23,-4
+2016-17-team-West Ham,2016-17,24,-1
+2016-17-team-West Ham,2016-17,25,-2
+2016-17-team-West Ham,2016-17,26,-1
+2016-17-team-West Ham,2016-17,27,-2
+2016-17-team-West Ham,2016-17,28,-3
+2016-17-team-West Ham,2016-17,29,-3
+2016-17-team-West Ham,2016-17,30,-2
+2016-17-team-West Ham,2016-17,31,-3
+2016-17-team-West Ham,2016-17,33,-2
+2016-17-team-West Ham,2016-17,37,-4
+2016-17-team-West Ham,2016-17,38,-1
+2016-17-team-Chelsea,2016-17,1,-1
+2016-17-team-Chelsea,2016-17,2,-1
+2016-17-team-Chelsea,2016-17,4,-2
+2016-17-team-Chelsea,2016-17,5,-2
+2016-17-team-Chelsea,2016-17,6,-3
+2016-17-team-Chelsea,2016-17,13,-1
+2016-17-team-Chelsea,2016-17,14,-1
+2016-17-team-Chelsea,2016-17,19,-2
+2016-17-team-Chelsea,2016-17,20,-2
+2016-17-team-Chelsea,2016-17,23,-1
+2016-17-team-Chelsea,2016-17,24,-1
+2016-17-team-Chelsea,2016-17,25,-1
+2016-17-team-Chelsea,2016-17,26,-1
+2016-17-team-Chelsea,2016-17,27,-1
+2016-17-team-Chelsea,2016-17,28,-1
+2016-17-team-Chelsea,2016-17,29,-2
+2016-17-team-Chelsea,2016-17,30,-1
+2016-17-team-Chelsea,2016-17,31,-1
+2016-17-team-Chelsea,2016-17,32,-2
+2016-17-team-Chelsea,2016-17,33,-2
+2016-17-team-Chelsea,2016-17,37,-3
+2016-17-team-Chelsea,2016-17,38,-1
+2016-17-team-Liverpool,2016-17,1,-3
+2016-17-team-Liverpool,2016-17,2,-2
+2016-17-team-Liverpool,2016-17,3,-1
+2016-17-team-Liverpool,2016-17,4,-1
+2016-17-team-Liverpool,2016-17,5,-1
+2016-17-team-Liverpool,2016-17,6,-1
+2016-17-team-Liverpool,2016-17,7,-1
+2016-17-team-Liverpool,2016-17,9,-1
+2016-17-team-Liverpool,2016-17,10,-2
+2016-17-team-Liverpool,2016-17,11,-1
+2016-17-team-Liverpool,2016-17,14,-4
+2016-17-team-Liverpool,2016-17,15,-2
+2016-17-team-Liverpool,2016-17,18,-1
+2016-17-team-Liverpool,2016-17,20,-2
+2016-17-team-Liverpool,2016-17,21,-1
+2016-17-team-Liverpool,2016-17,22,-3
+2016-17-team-Liverpool,2016-17,23,-1
+2016-17-team-Liverpool,2016-17,24,-2
+2016-17-team-Liverpool,2016-17,26,-3
+2016-17-team-Liverpool,2016-17,27,-1
+2016-17-team-Liverpool,2016-17,28,-1
+2016-17-team-Liverpool,2016-17,29,-1
+2016-17-team-Liverpool,2016-17,30,-1
+2016-17-team-Liverpool,2016-17,31,-2
+2016-17-team-Liverpool,2016-17,32,-1
+2016-17-team-Liverpool,2016-17,34,-2
+2016-17-team-Swansea City,2016-17,2,-2
+2016-17-team-Swansea City,2016-17,3,-2
+2016-17-team-Swansea City,2016-17,4,-2
+2016-17-team-Swansea City,2016-17,5,-1
+2016-17-team-Swansea City,2016-17,6,-3
+2016-17-team-Swansea City,2016-17,7,-2
+2016-17-team-Swansea City,2016-17,8,-3
+2016-17-team-Swansea City,2016-17,10,-3
+2016-17-team-Swansea City,2016-17,11,-3
+2016-17-team-Swansea City,2016-17,12,-1
+2016-17-team-Swansea City,2016-17,13,-4
+2016-17-team-Swansea City,2016-17,14,-5
+2016-17-team-Swansea City,2016-17,16,-3
+2016-17-team-Swansea City,2016-17,17,-3
+2016-17-team-Swansea City,2016-17,18,-4
+2016-17-team-Swansea City,2016-17,19,-3
+2016-17-team-Swansea City,2016-17,20,-1
+2016-17-team-Swansea City,2016-17,21,-4
+2016-17-team-Swansea City,2016-17,22,-2
+2016-17-team-Swansea City,2016-17,23,-1
+2016-17-team-Swansea City,2016-17,24,-2
+2016-17-team-Swansea City,2016-17,26,-3
+2016-17-team-Swansea City,2016-17,27,-2
+2016-17-team-Swansea City,2016-17,28,-2
+2016-17-team-Swansea City,2016-17,29,-2
+2016-17-team-Swansea City,2016-17,31,-3
+2016-17-team-Swansea City,2016-17,32,-1
+2016-17-team-Swansea City,2016-17,33,-1
+2016-17-team-Swansea City,2016-17,35,-1
+2016-17-team-Swansea City,2016-17,38,-1
+2017-18-team-West Brom,2017-18,3,-1
+2017-18-team-West Brom,2017-18,4,-3
+2017-18-team-West Brom,2017-18,6,-2
+2017-18-team-West Brom,2017-18,7,-2
+2017-18-team-West Brom,2017-18,8,-1
+2017-18-team-West Brom,2017-18,9,-1
+2017-18-team-West Brom,2017-18,10,-3
+2017-18-team-West Brom,2017-18,11,-1
+2017-18-team-West Brom,2017-18,12,-4
+2017-18-team-West Brom,2017-18,13,-1
+2017-18-team-West Brom,2017-18,14,-2
+2017-18-team-West Brom,2017-18,16,-1
+2017-18-team-West Brom,2017-18,18,-2
+2017-18-team-West Brom,2017-18,19,-3
+2017-18-team-West Brom,2017-18,21,-1
+2017-18-team-West Brom,2017-18,22,-2
+2017-18-team-West Brom,2017-18,24,-1
+2017-18-team-West Brom,2017-18,25,-3
+2017-18-team-West Brom,2017-18,26,-3
+2017-18-team-West Brom,2017-18,27,-3
+2017-18-team-West Brom,2017-18,28,-2
+2017-18-team-West Brom,2017-18,29,-1
+2017-18-team-West Brom,2017-18,30,-4
+2017-18-team-West Brom,2017-18,31,-2
+2017-18-team-West Brom,2017-18,32,-2
+2017-18-team-West Brom,2017-18,33,-1
+2017-18-team-West Brom,2017-18,35,-2
+2017-18-team-West Brom,2017-18,38,-2
+2017-18-team-Watford,2017-18,1,-3
+2017-18-team-Watford,2017-18,5,-6
+2017-18-team-Watford,2017-18,6,-1
+2017-18-team-Watford,2017-18,7,-2
+2017-18-team-Watford,2017-18,8,-1
+2017-18-team-Watford,2017-18,9,-4
+2017-18-team-Watford,2017-18,10,-1
+2017-18-team-Watford,2017-18,11,-3
+2017-18-team-Watford,2017-18,14,-4
+2017-18-team-Watford,2017-18,15,-1
+2017-18-team-Watford,2017-18,16,-1
+2017-18-team-Watford,2017-18,17,-2
+2017-18-team-Watford,2017-18,18,-4
+2017-18-team-Watford,2017-18,19,-1
+2017-18-team-Watford,2017-18,20,-1
+2017-18-team-Watford,2017-18,21,-2
+2017-18-team-Watford,2017-18,22,-3
+2017-18-team-Watford,2017-18,23,-2
+2017-18-team-Watford,2017-18,24,-2
+2017-18-team-Watford,2017-18,26,-1
+2017-18-team-Watford,2017-18,27,-2
+2017-18-team-Watford,2017-18,30,-3
+2017-18-team-Watford,2017-18,31,-5
+2017-18-team-Watford,2017-18,32,-2
+2017-18-team-Watford,2017-18,33,-2
+2017-18-team-Watford,2017-18,34,-1
+2017-18-team-Watford,2017-18,36,-2
+2017-18-team-Watford,2017-18,37,-1
+2017-18-team-Watford,2017-18,38,-1
+2017-18-team-West Ham,2017-18,1,-4
+2017-18-team-West Ham,2017-18,2,-3
+2017-18-team-West Ham,2017-18,3,-3
+2017-18-team-West Ham,2017-18,6,-3
+2017-18-team-West Ham,2017-18,8,-1
+2017-18-team-West Ham,2017-18,9,-3
+2017-18-team-West Ham,2017-18,10,-2
+2017-18-team-West Ham,2017-18,11,-4
+2017-18-team-West Ham,2017-18,12,-2
+2017-18-team-West Ham,2017-18,13,-1
+2017-18-team-West Ham,2017-18,14,-4
+2017-18-team-West Ham,2017-18,15,-2
+2017-18-team-West Ham,2017-18,19,-3
+2017-18-team-West Ham,2017-18,20,-3
+2017-18-team-West Ham,2017-18,21,-1
+2017-18-team-West Ham,2017-18,22,-1
+2017-18-team-West Ham,2017-18,23,-1
+2017-18-team-West Ham,2017-18,24,-1
+2017-18-team-West Ham,2017-18,25,-1
+2017-18-team-West Ham,2017-18,26,-3
+2017-18-team-West Ham,2017-18,28,-4
+2017-18-team-West Ham,2017-18,29,-4
+2017-18-team-West Ham,2017-18,30,-3
+2017-18-team-West Ham,2017-18,32,-1
+2017-18-team-West Ham,2017-18,33,-1
+2017-18-team-West Ham,2017-18,34,-4
+2017-18-team-West Ham,2017-18,35,-4
+2017-18-team-West Ham,2017-18,38,-1
+2017-18-team-Southampton,2017-18,2,-2
+2017-18-team-Southampton,2017-18,4,-2
+2017-18-team-Southampton,2017-18,6,-1
+2017-18-team-Southampton,2017-18,7,-2
+2017-18-team-Southampton,2017-18,8,-2
+2017-18-team-Southampton,2017-18,10,-1
+2017-18-team-Southampton,2017-18,11,-1
+2017-18-team-Southampton,2017-18,12,-3
+2017-18-team-Southampton,2017-18,13,-1
+2017-18-team-Southampton,2017-18,14,-2
+2017-18-team-Southampton,2017-18,15,-1
+2017-18-team-Southampton,2017-18,16,-1
+2017-18-team-Southampton,2017-18,17,-4
+2017-18-team-Southampton,2017-18,18,-1
+2017-18-team-Southampton,2017-18,19,-1
+2017-18-team-Southampton,2017-18,20,-5
+2017-18-team-Southampton,2017-18,22,-2
+2017-18-team-Southampton,2017-18,23,-2
+2017-18-team-Southampton,2017-18,24,-1
+2017-18-team-Southampton,2017-18,25,-1
+2017-18-team-Southampton,2017-18,26,-2
+2017-18-team-Southampton,2017-18,27,-2
+2017-18-team-Southampton,2017-18,28,-1
+2017-18-team-Southampton,2017-18,30,-3
+2017-18-team-Southampton,2017-18,31,-3
+2017-18-team-Southampton,2017-18,32,-3
+2017-18-team-Southampton,2017-18,33,-3
+2017-18-team-Southampton,2017-18,35,-1
+2017-18-team-Southampton,2017-18,36,-1
+2017-18-team-Southampton,2017-18,38,-1
+2017-18-team-Stoke City,2017-18,1,-1
+2017-18-team-Stoke City,2017-18,3,-1
+2017-18-team-Stoke City,2017-18,4,-2
+2017-18-team-Stoke City,2017-18,5,-2
+2017-18-team-Stoke City,2017-18,6,-4
+2017-18-team-Stoke City,2017-18,7,-1
+2017-18-team-Stoke City,2017-18,8,-7
+2017-18-team-Stoke City,2017-18,9,-2
+2017-18-team-Stoke City,2017-18,11,-2
+2017-18-team-Stoke City,2017-18,12,-2
+2017-18-team-Stoke City,2017-18,13,-2
+2017-18-team-Stoke City,2017-18,14,-3
+2017-18-team-Stoke City,2017-18,15,-1
+2017-18-team-Stoke City,2017-18,16,-5
+2017-18-team-Stoke City,2017-18,17,-1
+2017-18-team-Stoke City,2017-18,18,-3
+2017-18-team-Stoke City,2017-18,19,-1
+2017-18-team-Stoke City,2017-18,20,-1
+2017-18-team-Stoke City,2017-18,21,-5
+2017-18-team-Stoke City,2017-18,22,-1
+2017-18-team-Stoke City,2017-18,23,-3
+2017-18-team-Stoke City,2017-18,26,-2
+2017-18-team-Stoke City,2017-18,27,-1
+2017-18-team-Stoke City,2017-18,28,-1
+2017-18-team-Stoke City,2017-18,30,-2
+2017-18-team-Stoke City,2017-18,31,-2
+2017-18-team-Stoke City,2017-18,32,-3
+2017-18-team-Stoke City,2017-18,33,-2
+2017-18-team-Stoke City,2017-18,34,-1
+2017-18-team-Stoke City,2017-18,35,-1
+2017-18-team-Stoke City,2017-18,37,-2
+2017-18-team-Stoke City,2017-18,38,-1
+2017-18-team-Bournemouth,2017-18,1,-1
+2017-18-team-Bournemouth,2017-18,2,-2
+2017-18-team-Bournemouth,2017-18,3,-2
+2017-18-team-Bournemouth,2017-18,4,-3
+2017-18-team-Bournemouth,2017-18,5,-1
+2017-18-team-Bournemouth,2017-18,6,-2
+2017-18-team-Bournemouth,2017-18,8,-1
+2017-18-team-Bournemouth,2017-18,9,-1
+2017-18-team-Bournemouth,2017-18,10,-1
+2017-18-team-Bournemouth,2017-18,14,-2
+2017-18-team-Bournemouth,2017-18,15,-1
+2017-18-team-Bournemouth,2017-18,16,-2
+2017-18-team-Bournemouth,2017-18,17,-1
+2017-18-team-Bournemouth,2017-18,18,-4
+2017-18-team-Bournemouth,2017-18,19,-4
+2017-18-team-Bournemouth,2017-18,20,-3
+2017-18-team-Bournemouth,2017-18,21,-1
+2017-18-team-Bournemouth,2017-18,22,-2
+2017-18-team-Bournemouth,2017-18,23,-1
+2017-18-team-Bournemouth,2017-18,24,-1
+2017-18-team-Bournemouth,2017-18,26,-1
+2017-18-team-Bournemouth,2017-18,27,-4
+2017-18-team-Bournemouth,2017-18,28,-2
+2017-18-team-Bournemouth,2017-18,29,-1
+2017-18-team-Bournemouth,2017-18,30,-4
+2017-18-team-Bournemouth,2017-18,31,-1
+2017-18-team-Bournemouth,2017-18,32,-2
+2017-18-team-Bournemouth,2017-18,33,-2
+2017-18-team-Bournemouth,2017-18,34,-3
+2017-18-team-Bournemouth,2017-18,35,-2
+2017-18-team-Bournemouth,2017-18,36,-2
+2017-18-team-Bournemouth,2017-18,38,-1
+2017-18-team-Man Utd,2017-18,4,-2
+2017-18-team-Man Utd,2017-18,9,-2
+2017-18-team-Man Utd,2017-18,11,-1
+2017-18-team-Man Utd,2017-18,12,-1
+2017-18-team-Man Utd,2017-18,14,-2
+2017-18-team-Man Utd,2017-18,15,-1
+2017-18-team-Man Utd,2017-18,16,-2
+2017-18-team-Man Utd,2017-18,18,-1
+2017-18-team-Man Utd,2017-18,19,-2
+2017-18-team-Man Utd,2017-18,20,-2
+2017-18-team-Man Utd,2017-18,25,-2
+2017-18-team-Man Utd,2017-18,27,-1
+2017-18-team-Man Utd,2017-18,28,-1
+2017-18-team-Man Utd,2017-18,29,-2
+2017-18-team-Man Utd,2017-18,30,-1
+2017-18-team-Man Utd,2017-18,32,-2
+2017-18-team-Man Utd,2017-18,33,-1
+2017-18-team-Man Utd,2017-18,35,-1
+2017-18-team-Man Utd,2017-18,36,-1
+2017-18-team-Spurs,2017-18,2,-2
+2017-18-team-Spurs,2017-18,3,-1
+2017-18-team-Spurs,2017-18,6,-2
+2017-18-team-Spurs,2017-18,9,-1
+2017-18-team-Spurs,2017-18,10,-1
+2017-18-team-Spurs,2017-18,12,-2
+2017-18-team-Spurs,2017-18,13,-1
+2017-18-team-Spurs,2017-18,14,-2
+2017-18-team-Spurs,2017-18,15,-1
+2017-18-team-Spurs,2017-18,16,-1
+2017-18-team-Spurs,2017-18,18,-4
+2017-18-team-Spurs,2017-18,20,-2
+2017-18-team-Spurs,2017-18,22,-1
+2017-18-team-Spurs,2017-18,24,-1
+2017-18-team-Spurs,2017-18,26,-2
+2017-18-team-Spurs,2017-18,30,-1
+2017-18-team-Spurs,2017-18,31,-1
+2017-18-team-Spurs,2017-18,32,-1
+2017-18-team-Spurs,2017-18,33,-3
+2017-18-team-Spurs,2017-18,34,-1
+2017-18-team-Spurs,2017-18,36,-1
+2017-18-team-Spurs,2017-18,38,-4
+2017-18-team-Everton,2017-18,2,-1
+2017-18-team-Everton,2017-18,3,-2
+2017-18-team-Everton,2017-18,4,-3
+2017-18-team-Everton,2017-18,5,-4
+2017-18-team-Everton,2017-18,6,-1
+2017-18-team-Everton,2017-18,7,-1
+2017-18-team-Everton,2017-18,8,-1
+2017-18-team-Everton,2017-18,9,-5
+2017-18-team-Everton,2017-18,10,-2
+2017-18-team-Everton,2017-18,11,-2
+2017-18-team-Everton,2017-18,12,-2
+2017-18-team-Everton,2017-18,13,-4
+2017-18-team-Everton,2017-18,16,-1
+2017-18-team-Everton,2017-18,18,-1
+2017-18-team-Everton,2017-18,21,-2
+2017-18-team-Everton,2017-18,22,-2
+2017-18-team-Everton,2017-18,23,-4
+2017-18-team-Everton,2017-18,24,-1
+2017-18-team-Everton,2017-18,25,-1
+2017-18-team-Everton,2017-18,26,-5
+2017-18-team-Everton,2017-18,27,-1
+2017-18-team-Everton,2017-18,28,-1
+2017-18-team-Everton,2017-18,29,-2
+2017-18-team-Everton,2017-18,31,-1
+2017-18-team-Everton,2017-18,32,-3
+2017-18-team-Everton,2017-18,34,-1
+2017-18-team-Everton,2017-18,37,-1
+2017-18-team-Everton,2017-18,38,-3
+2017-18-team-Crystal Palace,2017-18,1,-3
+2017-18-team-Crystal Palace,2017-18,2,-1
+2017-18-team-Crystal Palace,2017-18,3,-2
+2017-18-team-Crystal Palace,2017-18,4,-1
+2017-18-team-Crystal Palace,2017-18,5,-1
+2017-18-team-Crystal Palace,2017-18,6,-5
+2017-18-team-Crystal Palace,2017-18,7,-4
+2017-18-team-Crystal Palace,2017-18,8,-1
+2017-18-team-Crystal Palace,2017-18,9,-1
+2017-18-team-Crystal Palace,2017-18,10,-2
+2017-18-team-Crystal Palace,2017-18,11,-1
+2017-18-team-Crystal Palace,2017-18,12,-2
+2017-18-team-Crystal Palace,2017-18,13,-1
+2017-18-team-Crystal Palace,2017-18,16,-2
+2017-18-team-Crystal Palace,2017-18,17,-1
+2017-18-team-Crystal Palace,2017-18,19,-1
+2017-18-team-Crystal Palace,2017-18,20,-3
+2017-18-team-Crystal Palace,2017-18,22,-1
+2017-18-team-Crystal Palace,2017-18,24,-4
+2017-18-team-Crystal Palace,2017-18,25,-1
+2017-18-team-Crystal Palace,2017-18,26,-1
+2017-18-team-Crystal Palace,2017-18,27,-3
+2017-18-team-Crystal Palace,2017-18,28,-1
+2017-18-team-Crystal Palace,2017-18,29,-3
+2017-18-team-Crystal Palace,2017-18,30,-2
+2017-18-team-Crystal Palace,2017-18,32,-2
+2017-18-team-Crystal Palace,2017-18,33,-2
+2017-18-team-Crystal Palace,2017-18,34,-2
+2017-18-team-Crystal Palace,2017-18,37,-1
+2017-18-team-Liverpool,2017-18,1,-3
+2017-18-team-Liverpool,2017-18,4,-5
+2017-18-team-Liverpool,2017-18,5,-1
+2017-18-team-Liverpool,2017-18,6,-2
+2017-18-team-Liverpool,2017-18,7,-1
+2017-18-team-Liverpool,2017-18,9,-4
+2017-18-team-Liverpool,2017-18,11,-1
+2017-18-team-Liverpool,2017-18,13,-1
+2017-18-team-Liverpool,2017-18,15,-1
+2017-18-team-Liverpool,2017-18,16,-1
+2017-18-team-Liverpool,2017-18,19,-3
+2017-18-team-Liverpool,2017-18,21,-1
+2017-18-team-Liverpool,2017-18,22,-1
+2017-18-team-Liverpool,2017-18,23,-3
+2017-18-team-Liverpool,2017-18,24,-1
+2017-18-team-Liverpool,2017-18,26,-2
+2017-18-team-Liverpool,2017-18,28,-1
+2017-18-team-Liverpool,2017-18,30,-2
+2017-18-team-Liverpool,2017-18,32,-1
+2017-18-team-Liverpool,2017-18,35,-2
+2017-18-team-Liverpool,2017-18,37,-1
+2017-18-team-Man City,2017-18,2,-1
+2017-18-team-Man City,2017-18,3,-1
+2017-18-team-Man City,2017-18,8,-2
+2017-18-team-Man City,2017-18,10,-2
+2017-18-team-Man City,2017-18,11,-1
+2017-18-team-Man City,2017-18,13,-1
+2017-18-team-Man City,2017-18,14,-1
+2017-18-team-Man City,2017-18,15,-1
+2017-18-team-Man City,2017-18,16,-1
+2017-18-team-Man City,2017-18,18,-1
+2017-18-team-Man City,2017-18,22,-1
+2017-18-team-Man City,2017-18,23,-4
+2017-18-team-Man City,2017-18,24,-1
+2017-18-team-Man City,2017-18,26,-1
+2017-18-team-Man City,2017-18,27,-1
+2017-18-team-Man City,2017-18,31,-1
+2017-18-team-Man City,2017-18,32,-3
+2017-18-team-Man City,2017-18,33,-1
+2017-18-team-Man City,2017-18,35,-1
+2017-18-team-Man City,2017-18,37,-1
+2017-18-team-Swansea City,2017-18,2,-4
+2017-18-team-Swansea City,2017-18,4,-1
+2017-18-team-Swansea City,2017-18,6,-2
+2017-18-team-Swansea City,2017-18,7,-1
+2017-18-team-Swansea City,2017-18,9,-2
+2017-18-team-Swansea City,2017-18,10,-2
+2017-18-team-Swansea City,2017-18,11,-1
+2017-18-team-Swansea City,2017-18,12,-2
+2017-18-team-Swansea City,2017-18,14,-1
+2017-18-team-Swansea City,2017-18,15,-2
+2017-18-team-Swansea City,2017-18,17,-4
+2017-18-team-Swansea City,2017-18,18,-3
+2017-18-team-Swansea City,2017-18,19,-1
+2017-18-team-Swansea City,2017-18,20,-5
+2017-18-team-Swansea City,2017-18,21,-1
+2017-18-team-Swansea City,2017-18,22,-2
+2017-18-team-Swansea City,2017-18,23,-1
+2017-18-team-Swansea City,2017-18,25,-1
+2017-18-team-Swansea City,2017-18,26,-1
+2017-18-team-Swansea City,2017-18,28,-4
+2017-18-team-Swansea City,2017-18,29,-1
+2017-18-team-Swansea City,2017-18,31,-2
+2017-18-team-Swansea City,2017-18,32,-1
+2017-18-team-Swansea City,2017-18,33,-1
+2017-18-team-Swansea City,2017-18,34,-5
+2017-18-team-Swansea City,2017-18,35,-1
+2017-18-team-Swansea City,2017-18,36,-1
+2017-18-team-Swansea City,2017-18,37,-1
+2017-18-team-Swansea City,2017-18,38,-2
+2017-18-team-Chelsea,2017-18,1,-3
+2017-18-team-Chelsea,2017-18,2,-1
+2017-18-team-Chelsea,2017-18,4,-1
+2017-18-team-Chelsea,2017-18,7,-1
+2017-18-team-Chelsea,2017-18,8,-2
+2017-18-team-Chelsea,2017-18,9,-2
+2017-18-team-Chelsea,2017-18,13,-1
+2017-18-team-Chelsea,2017-18,15,-1
+2017-18-team-Chelsea,2017-18,16,-1
+2017-18-team-Chelsea,2017-18,17,-1
+2017-18-team-Chelsea,2017-18,22,-2
+2017-18-team-Chelsea,2017-18,25,-3
+2017-18-team-Chelsea,2017-18,26,-4
+2017-18-team-Chelsea,2017-18,28,-2
+2017-18-team-Chelsea,2017-18,29,-1
+2017-18-team-Chelsea,2017-18,30,-1
+2017-18-team-Chelsea,2017-18,31,-3
+2017-18-team-Chelsea,2017-18,32,-1
+2017-18-team-Chelsea,2017-18,33,-2
+2017-18-team-Chelsea,2017-18,34,-1
+2017-18-team-Chelsea,2017-18,37,-1
+2017-18-team-Chelsea,2017-18,38,-3
+2017-18-team-Leicester,2017-18,1,-4
+2017-18-team-Leicester,2017-18,3,-2
+2017-18-team-Leicester,2017-18,4,-2
+2017-18-team-Leicester,2017-18,5,-1
+2017-18-team-Leicester,2017-18,6,-3
+2017-18-team-Leicester,2017-18,8,-1
+2017-18-team-Leicester,2017-18,9,-1
+2017-18-team-Leicester,2017-18,11,-2
+2017-18-team-Leicester,2017-18,12,-2
+2017-18-team-Leicester,2017-18,13,-1
+2017-18-team-Leicester,2017-18,14,-1
+2017-18-team-Leicester,2017-18,16,-2
+2017-18-team-Leicester,2017-18,17,-1
+2017-18-team-Leicester,2017-18,18,-3
+2017-18-team-Leicester,2017-18,19,-2
+2017-18-team-Leicester,2017-18,20,-2
+2017-18-team-Leicester,2017-18,21,-2
+2017-18-team-Leicester,2017-18,25,-2
+2017-18-team-Leicester,2017-18,26,-1
+2017-18-team-Leicester,2017-18,27,-5
+2017-18-team-Leicester,2017-18,28,-1
+2017-18-team-Leicester,2017-18,29,-1
+2017-18-team-Leicester,2017-18,30,-1
+2017-18-team-Leicester,2017-18,32,-2
+2017-18-team-Leicester,2017-18,33,-2
+2017-18-team-Leicester,2017-18,35,-5
+2017-18-team-Leicester,2017-18,36,-2
+2017-18-team-Leicester,2017-18,37,-1
+2017-18-team-Leicester,2017-18,38,-5
+2017-18-team-Newcastle,2017-18,1,-2
+2017-18-team-Newcastle,2017-18,2,-1
+2017-18-team-Newcastle,2017-18,5,-1
+2017-18-team-Newcastle,2017-18,6,-1
+2017-18-team-Newcastle,2017-18,7,-1
+2017-18-team-Newcastle,2017-18,8,-2
+2017-18-team-Newcastle,2017-18,10,-1
+2017-18-team-Newcastle,2017-18,11,-1
+2017-18-team-Newcastle,2017-18,12,-4
+2017-18-team-Newcastle,2017-18,13,-3
+2017-18-team-Newcastle,2017-18,14,-2
+2017-18-team-Newcastle,2017-18,15,-3
+2017-18-team-Newcastle,2017-18,16,-3
+2017-18-team-Newcastle,2017-18,17,-1
+2017-18-team-Newcastle,2017-18,18,-1
+2017-18-team-Newcastle,2017-18,19,-2
+2017-18-team-Newcastle,2017-18,20,-1
+2017-18-team-Newcastle,2017-18,23,-1
+2017-18-team-Newcastle,2017-18,24,-3
+2017-18-team-Newcastle,2017-18,25,-1
+2017-18-team-Newcastle,2017-18,26,-1
+2017-18-team-Newcastle,2017-18,28,-2
+2017-18-team-Newcastle,2017-18,29,-2
+2017-18-team-Newcastle,2017-18,32,-1
+2017-18-team-Newcastle,2017-18,33,-1
+2017-18-team-Newcastle,2017-18,34,-1
+2017-18-team-Newcastle,2017-18,35,-1
+2017-18-team-Newcastle,2017-18,36,-2
+2017-18-team-Newcastle,2017-18,37,-1
+2017-18-team-Arsenal,2017-18,1,-3
+2017-18-team-Arsenal,2017-18,2,-1
+2017-18-team-Arsenal,2017-18,3,-4
+2017-18-team-Arsenal,2017-18,8,-2
+2017-18-team-Arsenal,2017-18,9,-2
+2017-18-team-Arsenal,2017-18,10,-1
+2017-18-team-Arsenal,2017-18,11,-3
+2017-18-team-Arsenal,2017-18,15,-3
+2017-18-team-Arsenal,2017-18,16,-1
+2017-18-team-Arsenal,2017-18,19,-3
+2017-18-team-Arsenal,2017-18,20,-2
+2017-18-team-Arsenal,2017-18,21,-1
+2017-18-team-Arsenal,2017-18,22,-2
+2017-18-team-Arsenal,2017-18,23,-2
+2017-18-team-Arsenal,2017-18,24,-1
+2017-18-team-Arsenal,2017-18,25,-3
+2017-18-team-Arsenal,2017-18,26,-1
+2017-18-team-Arsenal,2017-18,27,-1
+2017-18-team-Arsenal,2017-18,28,-3
+2017-18-team-Arsenal,2017-18,29,-2
+2017-18-team-Arsenal,2017-18,32,-2
+2017-18-team-Arsenal,2017-18,33,-2
+2017-18-team-Arsenal,2017-18,34,-1
+2017-18-team-Arsenal,2017-18,35,-2
+2017-18-team-Arsenal,2017-18,37,-3

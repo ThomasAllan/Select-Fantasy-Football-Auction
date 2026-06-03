@@ -1,0 +1,1654 @@
+# player_aliases.yaml
+# Maps synthetic historical player codes -> fpl_permanent_code.
+# Edit this file to correct or add entries.
+# The dashboard uses this to link historical players to their profiles.
+
+# --- AUTO-MATCHED (review for errors) ---
+
+# 2009-10
+"2009-10-player-A.Lennon - Spurs": "17349"  # Lennon
+"2009-10-player-A.Surman - Wolves": "15237"  # Surman
+"2009-10-player-A.Valencia - Man Utd": "20695"  # Valencia
+"2009-10-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2009-10-player-C.Benitez - Birmingham": "121709"  # Benitez
+"2009-10-player-C.Fabregas - Arsenal": "17878"  # Fàbregas
+"2009-10-player-C.Samba - Blackburn": "102836"  # Samba
+"2009-10-player-D.Bentley - Spurs": "79602"  # Bentley
+"2009-10-player-D.Fletcher - Man Utd": "547037"  # Fletcher
+"2009-10-player-D.Kamara - Fulham": "197030"  # Kamara
+"2009-10-player-E.Heskey - A.Villa": "580921"  # Heskey
+"2009-10-player-F.Delph - A.Villa": "41823"  # Delph
+"2009-10-player-F.Torres - Liverpool": "224444"  # Torres
+"2009-10-player-G.Bale - Spurs": "36903"  # Bale
+"2009-10-player-G.Barry - Man City": "586309"  # Barry
+"2009-10-player-G.Halford - Wolves": "14927"  # Halford
+"2009-10-player-J.Defoe - Spurs": "7958"  # Defoe
+"2009-10-player-J.Evans - Man Utd": "37642"  # Evans
+"2009-10-player-J.Milner - A.Villa": "15157"  # Milner
+"2009-10-player-J.O'Shea - Man Utd": "216616"  # O'Shea
+"2009-10-player-K.Doyle - Wolves": "220394"  # Doyle
+"2009-10-player-K.Dyer - West Ham": "559963"  # Dyer
+"2009-10-player-K.Jones - Sunderland": "571087"  # Jones
+"2009-10-player-K.Richardson - Sunderland": "461096"  # Richardson
+"2009-10-player-L.Baines - Everton": "12745"  # Baines
+"2009-10-player-M.Arteta - Everton": "100051017"  # Arteta
+"2009-10-player-M.Dawson - Spurs": "60232"  # Dawson
+"2009-10-player-M.Noble - West Ham": "18073"  # Noble
+"2009-10-player-M.Owen - Man Utd": "547671"  # Owen
+"2009-10-player-M.Paterson - Burnley": "122797"  # Paterson
+"2009-10-player-M.Turner - Sunderland": "224068"  # Turner
+"2009-10-player-N.Collins - Wolves": "432830"  # Collins
+"2009-10-player-P.Crouch - Spurs": "3773"  # Crouch
+"2009-10-player-P.Da Silva - Sunderland": "183656"  # Dasilva
+"2009-10-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2009-10-player-R.Babel - Liverpool": "19520"  # Babel
+"2009-10-player-R.Blake - Burnley": "533719"  # Blake
+"2009-10-player-R.Carvalho - Chelsea": "244858"  # Carvalho
+"2009-10-player-R.Dunne - A.Villa": "218023"  # Dunne
+"2009-10-player-R.Keane - Spurs": "106611"  # Keane
+"2009-10-player-S.Hunt - Hull City": "447261"  # Hunt
+"2009-10-player-S.Nasri - Arsenal": "28554"  # Nasri
+"2009-10-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2009-10-player-W.Brown - Man Utd": "242453"  # Brown
+
+# 2010-11
+"2010-11-player-A.Alcaraz - Wigan": "502697"  # Alcaraz
+"2010-11-player-A.Lennon - Spurs": "17349"  # Lennon
+"2010-11-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2010-11-player-A.Valencia - Man Utd": "20695"  # Valencia
+"2010-11-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2010-11-player-C.Fabregas - Arsenal": "17878"  # Fàbregas
+"2010-11-player-C.Samba - Blackburn": "102836"  # Samba
+"2010-11-player-D.Bentley - Birmingham": "79602"  # Bentley
+"2010-11-player-D.Fletcher - Man Utd": "547037"  # Fletcher
+"2010-11-player-D.Gosling - Newcastle": "40387"  # Gosling
+"2010-11-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2010-11-player-D.Sturridge - Bolton": "40755"  # Sturridge
+"2010-11-player-D.Welbeck - Sunderland": "50175"  # Welbeck
+"2010-11-player-E.Heskey - A.Villa": "580921"  # Heskey
+"2010-11-player-F.Torres - Chelsea": "224444"  # Torres
+"2010-11-player-G.Bale - Spurs": "36903"  # Bale
+"2010-11-player-G.Barry - Man City": "586309"  # Barry
+"2010-11-player-G.Halford - Wolves": "14927"  # Halford
+"2010-11-player-J.Boateng - Man City": "578614"  # Boateng
+"2010-11-player-J.Collins - A.Villa": "432830"  # Collins
+"2010-11-player-J.Defoe - Spurs": "7958"  # Defoe
+"2010-11-player-J.Evans - Man Utd": "37642"  # Evans
+"2010-11-player-J.Milner - Man City": "15157"  # Milner
+"2010-11-player-J.O'Shea - Man Utd": "216616"  # O'Shea
+"2010-11-player-K.Doyle - Wolves": "220394"  # Doyle
+"2010-11-player-K.Dyer - West Ham": "559963"  # Dyer
+"2010-11-player-K.Richardson - Sunderland": "461096"  # Richardson
+"2010-11-player-L.Baines - Everton": "12745"  # Baines
+"2010-11-player-L.King - Spurs": "592736"  # King
+"2010-11-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2010-11-player-M.Arteta - Everton": "100051017"  # Arteta
+"2010-11-player-M.Dawson - Spurs": "60232"  # Dawson
+"2010-11-player-M.Fellaini - Everton": "41184"  # Fellaini
+"2010-11-player-M.Noble - West Ham": "18073"  # Noble
+"2010-11-player-M.Owen - Man Utd": "547671"  # Owen
+"2010-11-player-M.Turner - Sunderland": "224068"  # Turner
+"2010-11-player-P.Crouch - Spurs": "3773"  # Crouch
+"2010-11-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2010-11-player-R.Da Silva - Man Utd": "183656"  # Dasilva
+"2010-11-player-R.Dunne - A.Villa": "218023"  # Dunne
+"2010-11-player-R.Keane - West Ham": "106611"  # Keane
+"2010-11-player-S.Hunt - Wolves": "447261"  # Hunt
+"2010-11-player-S.Nasri - Arsenal": "28554"  # Nasri
+"2010-11-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2010-11-player-Y.Kaboul - Spurs": "37742"  # Kaboul
+
+# 2011-12
+"2011-12-player-A.Lennon - Spurs": "17349"  # Lennon
+"2011-12-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2011-12-player-A.Valencia - Man Utd": "20695"  # Valencia
+"2011-12-player-A.Young - Man Utd.": "18892"  # Young
+"2011-12-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2011-12-player-C.Gardner - Sunderland": "536681"  # Gardner
+"2011-12-player-C.Samba - Blackburn": "102836"  # Samba
+"2011-12-player-D.Ba - Newcastle": "477851"  # Ba
+"2011-12-player-D.Fletcher - Man Utd.": "547037"  # Fletcher
+"2011-12-player-D.Gosling - Newcastle": "40387"  # Gosling
+"2011-12-player-D.Graham - Swansea": "629068"  # Graham
+"2011-12-player-D.Hoilett - Blackburn": "49806"  # Hoilett
+"2011-12-player-D.Luiz - Chelsea": "41270"  # David Luiz
+"2011-12-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2011-12-player-D.Sturridge - Chelsea": "40755"  # Sturridge
+"2011-12-player-E.Heskey - A.Villa": "580921"  # Heskey
+"2011-12-player-F.Torres - Chelsea": "224444"  # Torres
+"2011-12-player-G.Bale - Spurs": "36903"  # Bale
+"2011-12-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2011-12-player-J.Collins - A.Villa": "432830"  # Collins
+"2011-12-player-J.Defoe - Spurs": "7958"  # Defoe
+"2011-12-player-J.Henderson - Liverpool": "56979"  # Henderson
+"2011-12-player-J.Mata - Chelsea": "43670"  # Mata
+"2011-12-player-J.O'Shea - Sunderland": "216616"  # O'Shea
+"2011-12-player-K.Doyle - Wolves": "220394"  # Doyle
+"2011-12-player-K.Walker - Spurs": "58621"  # Walker
+"2011-12-player-L.Baines - Everton": "12745"  # Baines
+"2011-12-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2011-12-player-L.Lucas - Liverpool": "155851"  # Lucas
+"2011-12-player-L.Suarez - Liverpool": "89572"  # Suárez
+"2011-12-player-M.Albrighton - A.Villa": "51938"  # Albrighton
+"2011-12-player-M.Arteta - Arsenal": "100051017"  # Arteta
+"2011-12-player-M.Dawson - Spurs": "60232"  # Dawson
+"2011-12-player-M.Fellaini - Everton": "41184"  # Fellaini
+"2011-12-player-M.Gueye - Everton": "80801"  # Gueye
+"2011-12-player-M.Owen - Man Utd.": "547671"  # Owen
+"2011-12-player-M.Turner - Sunderland": "224068"  # Turner
+"2011-12-player-P.Bardsley - Sunderland": "17997"  # Bardsley
+"2011-12-player-P.Crouch - Stoke": "3773"  # Crouch
+"2011-12-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2011-12-player-P.Jones - Man Utd.": "76359"  # Jones
+"2011-12-player-P.Zabaleta - Man City": "20658"  # Zabaleta
+"2011-12-player-PD.Cisse - Newcastle": "109999"  # Cissé
+"2011-12-player-R.Dunne - A.Villa": "218023"  # Dunne
+"2011-12-player-R.Martin - Norwich": "439485"  # Martin
+"2011-12-player-S.Aguero - Man City": "37572"  # Agüero
+"2011-12-player-S.Coleman - Everton": "59949"  # Coleman
+"2011-12-player-S.Hunt - Wolves": "447261"  # Hunt
+"2011-12-player-S.Nasri - Man City": "28554"  # Nasri
+"2011-12-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2011-12-player-V.Kompany - Man City": "17476"  # Kompany
+"2011-12-player-V.Moses - Wigan": "49013"  # Moses
+
+# 2012-13
+"2012-13-player-A.Carroll - West Ham": "40142"  # Carroll
+"2012-13-player-A.Diarra - West Ham": "547027"  # Diarra
+"2012-13-player-A.Johnson - Sunderland": "514613"  # Johnson
+"2012-13-player-A.Kone - Wigan": "618873"  # Kone
+"2012-13-player-A.Lallana - Southampton": "39155"  # Lallana
+"2012-13-player-A.Lennon - Spurs": "17349"  # Lennon
+"2012-13-player-A.Pilkington - Norwich": "40451"  # Pilkington
+"2012-13-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2012-13-player-A.Santos - Arsenal": "532605"  # Andrey Santos
+"2012-13-player-A.Valencia - Man Utd": "20695"  # Valencia
+"2012-13-player-A.Young - Man Utd": "18892"  # Young
+"2012-13-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2012-13-player-C.Benteke - A.Villa": "54861"  # Benteke
+"2012-13-player-C.Samba - QPR": "102836"  # Samba
+"2012-13-player-C.Wickham - Sunderland": "59125"  # Wickham
+"2012-13-player-D.Ba - Chelsea": "477851"  # Ba
+"2012-13-player-D.Cisse - QPR": "109999"  # Cissé
+"2012-13-player-D.Graham - Sunderland": "629068"  # Graham
+"2012-13-player-D.Luiz - Chelsea": "41270"  # David Luiz
+"2012-13-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2012-13-player-D.Sturridge - Liverpool": "40755"  # Sturridge
+"2012-13-player-D.Welbeck - Man Utd": "50175"  # Welbeck
+"2012-13-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2012-13-player-F.Da Silva - QPR": "183656"  # Dasilva
+"2012-13-player-F.Torres - Chelsea": "224444"  # Torres
+"2012-13-player-F.Zabaleta - Man City": "20658"  # Zabaleta
+"2012-13-player-G.Bale - Spurs": "36903"  # Bale
+"2012-13-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2012-13-player-G.Sigurdsson - Spurs": "55422"  # Sigurdsson
+"2012-13-player-J.Defoe - Spurs": "7958"  # Defoe
+"2012-13-player-J.Hoilett - QPR": "49806"  # Hoilett
+"2012-13-player-J.Mata - Chelsea": "43670"  # Mata
+"2012-13-player-J.Milner - Man City": "15157"  # Milner
+"2012-13-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2012-13-player-J.Wilshere - Arsenal": "54102"  # Wilshere
+"2012-13-player-K.Richardson - Fulham": "461096"  # Richardson
+"2012-13-player-K.Walker - Spurs": "58621"  # Walker
+"2012-13-player-L.Baines - Everton": "12745"  # Baines
+"2012-13-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2012-13-player-L.Suarez - Liverpool": "89572"  # Suárez
+"2012-13-player-M.Arteta - Arsenal": "100051017"  # Arteta
+"2012-13-player-M.Dawson - Spurs": "60232"  # Dawson
+"2012-13-player-M.Dembele - Spurs": "39104"  # Dembélé
+"2012-13-player-M.Fellaini - Everton": "41184"  # Fellaini
+"2012-13-player-M.Lowton - A.Villa": "68983"  # Lowton
+"2012-13-player-M.Noble - West Ham": "18073"  # Noble
+"2012-13-player-M.Turner - Norwich": "224068"  # Turner
+"2012-13-player-N.Dyer - Swansea": "559963"  # Dyer
+"2012-13-player-O.Giroud - Arsenal": "44346"  # Giroud
+"2012-13-player-P.Bardsley - Sunderland": "17997"  # Bardsley
+"2012-13-player-P.Crouch - Stoke": "3773"  # Crouch
+"2012-13-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2012-13-player-P.Jones - Man Utd": "76359"  # Jones
+"2012-13-player-PB.Cisse - Newcastle": "109999"  # Cissé
+"2012-13-player-R.Lukaku - West Brom": "66749"  # Lukaku
+"2012-13-player-R.Snodgrass - Norwich": "18987"  # Snodgrass
+"2012-13-player-S.Aguero - Man City": "37572"  # Agüero
+"2012-13-player-S.Nasri - Man City": "28554"  # Nasri
+"2012-13-player-T.Cleverley - Man Utd": "43250"  # Cleverley
+"2012-13-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2012-13-player-V.Kaboul - Spurs": "37742"  # Kaboul
+"2012-13-player-V.Kompany - Man City": "17476"  # Kompany
+"2012-13-player-V.Moses - Chelsea": "49013"  # Moses
+
+# 2013-14
+"2013-14-player-A.Carroll - West Ham": "40142"  # Carroll
+"2013-14-player-A.Johnson - Sunderland": "514613"  # Johnson
+"2013-14-player-A.Kone - Everton": "618873"  # Kone
+"2013-14-player-A.Lallana - Southampton": "39155"  # Lallana
+"2013-14-player-A.Lennon - Spurs": "17349"  # Lennon
+"2013-14-player-A.Pilkington - Norwich City": "40451"  # Pilkington
+"2013-14-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2013-14-player-A.Schurrle - Chelsea": "66842"  # Schürrle
+"2013-14-player-A.Young - Man Utd": "18892"  # Young
+"2013-14-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2013-14-player-C.Benteke - Aston Villa": "54861"  # Benteke
+"2013-14-player-D.Ba - Chelsea": "477851"  # Ba
+"2013-14-player-D.Gayle - Crystal Palace": "104547"  # Gayle
+"2013-14-player-D.Graham - Hull City": "629068"  # Graham
+"2013-14-player-D.Luiz - Chelsea": "41270"  # David Luiz
+"2013-14-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2013-14-player-D.Sturridge - Liverpool": "40755"  # Sturridge
+"2013-14-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2013-14-player-EH.Ba - Sunderland": "477851"  # Ba
+"2013-14-player-F.Torres - Chelsea": "224444"  # Torres
+"2013-14-player-Fernandinho - Man City": "27789"  # Fernandinho
+"2013-14-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2013-14-player-G.Murray - Crystal Palace": "20529"  # Murray
+"2013-14-player-J.Evans - Man Utd": "37642"  # Evans
+"2013-14-player-J.Fonte - Southampton": "58476"  # Fonte
+"2013-14-player-J.Henderson - Liverpool": "56979"  # Henderson
+"2013-14-player-J.Mata - Man Utd": "43670"  # Mata
+"2013-14-player-J.Navas - Man City": "28411"  # Navas
+"2013-14-player-J.Puncheon - Crystal Palace": "19197"  # Puncheon
+"2013-14-player-J.Shelvey - Swansea City": "50232"  # Shelvey
+"2013-14-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2013-14-player-K.Mirallas - Everton": "26901"  # Mirallas
+"2013-14-player-L.Baines - Everton": "12745"  # Baines
+"2013-14-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2013-14-player-L.Suarez - Liverpool": "89572"  # Suárez
+"2013-14-player-M.Arteta - Arsenal": "100051017"  # Arteta
+"2013-14-player-M.Dawson - Spurs": "60232"  # Dawson
+"2013-14-player-M.Dembele - Spurs": "39104"  # Dembélé
+"2013-14-player-M.Fellaini - Man Utd": "41184"  # Fellaini
+"2013-14-player-M.Noble - West Ham": "18073"  # Noble
+"2013-14-player-M.Schneiderlin - Southampton": "42774"  # Schneiderlin
+"2013-14-player-M.Sissoko - Newcastle": "45268"  # Sissoko
+"2013-14-player-M.Turner - Norwich City": "224068"  # Turner
+"2013-14-player-M.Vydra - West Brom": "81183"  # Vydra
+"2013-14-player-N.Clyne - Southampton": "57328"  # Clyne
+"2013-14-player-N.Dyer - Swansea City": "559963"  # Dyer
+"2013-14-player-O.Giroud - Arsenal": "44346"  # Giroud
+"2013-14-player-P.Coutinho - Liverpool": "84583"  # Coutinho
+"2013-14-player-P.Crouch - Stoke City": "3773"  # Crouch
+"2013-14-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2013-14-player-P.Jones - Man Utd": "76359"  # Jones
+"2013-14-player-P.Zabaleta - Man City": "20658"  # Zabaleta
+"2013-14-player-PD.Cisse - Newcastle": "109999"  # Cissé
+"2013-14-player-R.Da Silva - Man Utd": "183656"  # Dasilva
+"2013-14-player-R.Lukaku - Everton": "66749"  # Lukaku
+"2013-14-player-R.Martin - Norwich City": "439485"  # Martin
+"2013-14-player-R.Snodgrass - Norwich City": "18987"  # Snodgrass
+"2013-14-player-S.Aguero - Man City": "37572"  # Agüero
+"2013-14-player-S.Coleman - Everton": "59949"  # Coleman
+"2013-14-player-S.Nasri - Man City": "28554"  # Nasri
+"2013-14-player-T.Cleverley - Man Utd": "43250"  # Cleverley
+"2013-14-player-T.Ince - Crystal Palace": "86176"  # Ince
+"2013-14-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2013-14-player-V.Kompany - Man City": "17476"  # Kompany
+"2013-14-player-V.Wanyama - Southampton": "54756"  # Wanyama
+"2013-14-player-W.Zaha - Cardiff City": "82403"  # Zaha
+"2013-14-player-Y.Kaboul - Spurs": "37742"  # Kaboul
+
+# 2014-15
+"2014-15-player-A.Johnson - Sunderland": "514613"  # Johnson
+"2014-15-player-A.Lallana - Liverpool": "39155"  # Lallana
+"2014-15-player-A.Lennon - Everton": "17349"  # Lennon
+"2014-15-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2014-15-player-A.Schurrle - Chelsea": "66842"  # Schürrle
+"2014-15-player-A.Valencia - Man Utd": "20695"  # Valencia
+"2014-15-player-A.Young - Man Utd": "18892"  # Young
+"2014-15-player-B.Davies - Spurs": "115556"  # Davies
+"2014-15-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2014-15-player-C.Atsu - Everton": "104953"  # Atsu
+"2014-15-player-C.Benteke - A.Villa": "54861"  # Benteke
+"2014-15-player-C.Chambers - Arsenal": "101184"  # Chambers
+"2014-15-player-C.Eriksen - Spurs": "80607"  # Eriksen
+"2014-15-player-C.Fabregas - Chelsea": "17878"  # Fàbregas
+"2014-15-player-C.Smalling - Man Utd": "55909"  # Smalling
+"2014-15-player-D.Blind - Man Utd": "58877"  # Blind
+"2014-15-player-D.Drinkwater - Leicester": "61603"  # Drinkwater
+"2014-15-player-D.Ings - Burnley": "84939"  # Ings
+"2014-15-player-D.Janmaat - Newcastle": "52940"  # Janmaat
+"2014-15-player-D.Lovren - Liverpool": "38454"  # Lovren
+"2014-15-player-D.Rose - Spurs": "38290"  # Rose
+"2014-15-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2014-15-player-D.Sturridge - Liverpool": "40755"  # Sturridge
+"2014-15-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2014-15-player-E.Mangala - Man City": "179519"  # Mangala
+"2014-15-player-E.Valencia - West Ham": "20695"  # Valencia
+"2014-15-player-F.Torres - Chelsea": "224444"  # Torres
+"2014-15-player-Fernandinho - Man City": "27789"  # Fernandinho
+"2014-15-player-G.Barry - Everton": "586309"  # Barry
+"2014-15-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2014-15-player-G.Murray - C.Palace": "20529"  # Murray
+"2014-15-player-G.Sigurdsson - Swansea": "55422"  # Sigurdsson
+"2014-15-player-H.Kaboul - Spurs": "37742"  # Kaboul
+"2014-15-player-J.Evans - Man Utd": "37642"  # Evans
+"2014-15-player-J.Fonte - Southampton": "58476"  # Fonte
+"2014-15-player-J.Henderson - Liverpool": "56979"  # Henderson
+"2014-15-player-J.Mata - Man Utd": "43670"  # Mata
+"2014-15-player-J.McCarthy - Everton": "50472"  # McCarthy
+"2014-15-player-J.Navas - Man City": "28411"  # Navas
+"2014-15-player-J.O'Shea - Sunderland": "216616"  # O'Shea
+"2014-15-player-J.Puncheon - C.Palace": "19197"  # Puncheon
+"2014-15-player-J.Rodwell - Sunderland": "49384"  # Rodwell
+"2014-15-player-J.Schlupp - Leicester": "86417"  # Schlupp
+"2014-15-player-J.Shelvey - Swansea": "50232"  # Shelvey
+"2014-15-player-J.Stones - Everton": "97299"  # Stones
+"2014-15-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2014-15-player-K.Mirallas - Everton": "26901"  # Mirallas
+"2014-15-player-K.Richardson - A.Villa": "461096"  # Richardson
+"2014-15-player-K.Trippier - Burnley": "77794"  # Trippier
+"2014-15-player-L.Baines - Everton": "12745"  # Baines
+"2014-15-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2014-15-player-L.Markovic - Liverpool": "99323"  # Markovic
+"2014-15-player-L.Shaw - Man Utd": "106760"  # Shaw
+"2014-15-player-M.Arnautovic - Stoke City": "41464"  # Arnautovic
+"2014-15-player-M.Arteta - Arsenal": "100051017"  # Arteta
+"2014-15-player-M.Fellaini - Man Utd": "41184"  # Fellaini
+"2014-15-player-M.Gayle - C.Palace": "104547"  # Gayle
+"2014-15-player-M.Lowton - A.Villa": "68983"  # Lowton
+"2014-15-player-M.Noble - West Ham": "18073"  # Noble
+"2014-15-player-M.Ozil - Arsenal": "37605"  # Özil
+"2014-15-player-M.Schneiderlin - Southampton": "42774"  # Schneiderlin
+"2014-15-player-M.Sissoko - Newcastle": "45268"  # Sissoko
+"2014-15-player-M.Taylor - Burnley": "103914"  # Taylor
+"2014-15-player-N.Dyer - Swansea": "559963"  # Dyer
+"2014-15-player-O.Giroud - Arsenal": "44346"  # Giroud
+"2014-15-player-P.Coutinho - Liverpool": "84583"  # Coutinho
+"2014-15-player-P.Crouch - Stoke City": "3773"  # Crouch
+"2014-15-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2014-15-player-P.Jones - Man Utd": "76359"  # Jones
+"2014-15-player-P.Zabaleta - Man City": "20658"  # Zabaleta
+"2014-15-player-PD.Cisse - Newcastle": "109999"  # Cissé
+"2014-15-player-PV.Aanholt - Sunderland": "74230"  # van Aanholt
+"2014-15-player-R.Barkley - Everton": "88894"  # Barkley
+"2014-15-player-R.Lamela - Spurs": "62974"  # Lamela
+"2014-15-player-R.Lukaku - Everton": "66749"  # Lukaku
+"2014-15-player-R.Snodgrass - Hull City": "18987"  # Snodgrass
+"2014-15-player-S.Aluko - Hull City": "619146"  # Olabade Aluko
+"2014-15-player-S.Coleman - Everton": "59949"  # Coleman
+"2014-15-player-S.Long - Southampton": "20452"  # Long
+"2014-15-player-S.Nasri - Man City": "28554"  # Nasri
+"2014-15-player-S.Vokes - Burnley": "40399"  # Vokes
+"2014-15-player-T.Ince - Hull City": "86176"  # Ince
+"2014-15-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2014-15-player-V.Kompany - Man City": "17476"  # Kompany
+"2014-15-player-W.Morgan - Leicester": "15033"  # Morgan
+"2014-15-player-W.Zaha - Crystal Palace": "82403"  # Zaha
+"2014-15-player-Willian - Chelsea": "47431"  # Willian
+
+# 2015-16
+"2015-16-player-A.Ayew - Swansea City": "80146"  # Ayew
+"2015-16-player-A.Herrera - Man Utd": "59846"  # Herrera
+"2015-16-player-A.Johnson - Sunderland": "514613"  # Johnson
+"2015-16-player-A.Lallana - Liverpool": "39155"  # Lallana
+"2015-16-player-A.Mitrovic - Newcastle Utd": "128389"  # Mitrovic
+"2015-16-player-A.Perez - Newcastle Utd": "168580"  # Pérez
+"2015-16-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2015-16-player-A.Young - Man Utd": "18892"  # Young
+"2015-16-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2015-16-player-B.Sako - C.Palace": "44343"  # Sako
+"2015-16-player-C.Azpilicueta - Chelsea": "41328"  # Azpilicueta
+"2015-16-player-C.Benteke - Liverpool": "54861"  # Benteke
+"2015-16-player-C.Dawson - WBA": "60232"  # Dawson
+"2015-16-player-C.Eriksen - Spurs": "80607"  # Eriksen
+"2015-16-player-C.Fabregas - Chelsea": "17878"  # Fàbregas
+"2015-16-player-C.Kouyate - West Ham": "55037"  # Kouyaté
+"2015-16-player-C.Mbemba - Newcastle Utd": "149736"  # Mbemba
+"2015-16-player-C.Smalling - Man Utd": "55909"  # Smalling
+"2015-16-player-C.Wickham - C.Palace": "59125"  # Wickham
+"2015-16-player-C.Wilson - Bournemouth": "153682"  # Harry Wilson
+"2015-16-player-D.Blind - Man Utd": "58877"  # Blind
+"2015-16-player-D.Gayle - C.Palace": "104547"  # Gayle
+"2015-16-player-D.Ings - Liverpool": "84939"  # Ings
+"2015-16-player-D.Janmaat - Newcastle Utd": "52940"  # Janmaat
+"2015-16-player-D.Lovren - Liverpool": "38454"  # Lovren
+"2015-16-player-D.Rose - Spurs": "38290"  # Rose
+"2015-16-player-D.Sakho - West Ham Utd": "40784"  # Sakho
+"2015-16-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2015-16-player-D.Sturridge - Liverpool": "40755"  # Sturridge
+"2015-16-player-D.Welbeck - Arsenal": "50175"  # Welbeck
+"2015-16-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2015-16-player-E.Mangala - Man City": "179519"  # Mangala
+"2015-16-player-Fernandinho - Man City": "27789"  # Fernandinho
+"2015-16-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2015-16-player-G.Deulofeu - Everton": "94924"  # Deulofeu
+"2015-16-player-G.Murray - Bournemouth": "20529"  # Murray
+"2015-16-player-G.Sigurdsson - Swansea City": "55422"  # Sigurdsson
+"2015-16-player-G.Wijnaldum - Newcastle Utd": "41733"  # Wijnaldum
+"2015-16-player-H.Bellerin - Arsenal": "98745"  # Bellerín
+"2015-16-player-H.Kane - Spurs": "78830"  # Kane
+"2015-16-player-J.Chester - WBA": "43252"  # Chester
+"2015-16-player-J.Defoe - Sunderland": "7958"  # Defoe
+"2015-16-player-J.Henderson - Liverpool": "56979"  # Henderson
+"2015-16-player-J.Ibe - Liverpool": "103912"  # Ibe
+"2015-16-player-J.Mata - Man Utd": "43670"  # Mata
+"2015-16-player-J.Milner - Liverpool": "15157"  # Milner
+"2015-16-player-J.Navas - Man City": "28411"  # Navas
+"2015-16-player-J.Puncheon - C.Palace": "19197"  # Puncheon
+"2015-16-player-J.Schlupp - Leicester City": "86417"  # Schlupp
+"2015-16-player-J.Shelvey - Newcastle Utd": "50232"  # Shelvey
+"2015-16-player-J.Stones - Everton": "97299"  # Stones
+"2015-16-player-J.Vardy - Leicester City": "101668"  # Vardy
+"2015-16-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2015-16-player-K.De Bruyne - Man City": "61366"  # De Bruyne
+"2015-16-player-K.Mirallas - Everton": "26901"  # Mirallas
+"2015-16-player-K.Richardson - A.Villa": "461096"  # Richardson
+"2015-16-player-K.Walker - Spurs": "58621"  # Walker
+"2015-16-player-L.Baines - Everton": "12745"  # Baines
+"2015-16-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2015-16-player-L.Shaw - Man Utd": "106760"  # Shaw
+"2015-16-player-M.Albrighton - Leicester City": "51938"  # Albrighton
+"2015-16-player-M.Darmian - Man Utd": "40002"  # Darmian
+"2015-16-player-M.Dembele - Spurs": "39104"  # Dembélé
+"2015-16-player-M.Fellaini - Man Utd": "41184"  # Fellaini
+"2015-16-player-M.Noble - West Ham Utd": "18073"  # Noble
+"2015-16-player-M.Ozil - Arsenal": "37605"  # Özil
+"2015-16-player-M.Ritchie - Bournemouth": "56983"  # Ritchie
+"2015-16-player-M.Rojo - Man Utd": "58893"  # Rojo
+"2015-16-player-M.Sissoko - Newcastle": "45268"  # Sissoko
+"2015-16-player-N.Clyne - Liverpool": "57328"  # Clyne
+"2015-16-player-O.Giroud - Arsenal": "44346"  # Giroud
+"2015-16-player-O.Ighalo - Watford": "58498"  # Ighalo
+"2015-16-player-P.Bamford - C.Palace": "106617"  # Bamford
+"2015-16-player-P.Cisse - Newcastle Utd": "109999"  # Cissé
+"2015-16-player-P.Coutinho - Liverpool": "84583"  # Coutinho
+"2015-16-player-P.Crouch - Stoke City": "3773"  # Crouch
+"2015-16-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2015-16-player-P.Zabaleta - Man City": "20658"  # Zabaleta
+"2015-16-player-Pedro - Chelsea": "49579"  # Pedro
+"2015-16-player-R.Barkley - Everton": "88894"  # Barkley
+"2015-16-player-R.Bertrand - Southampton": "40146"  # Bertrand
+"2015-16-player-R.Firmino - Liverpool": "92217"  # Firmino
+"2015-16-player-R.Lukaku - Everton": "66749"  # Lukaku
+"2015-16-player-R.Mahrez - Leicester City": "103025"  # Mahrez
+"2015-16-player-R.Martin - Norwich City": "439485"  # Martin
+"2015-16-player-R.Sterling - Man City": "103955"  # Sterling
+"2015-16-player-S.Aguero - Man City": "37572"  # Agüero
+"2015-16-player-S.Coleman - Everton": "59949"  # Coleman
+"2015-16-player-S.Dann - C.Palace": "19188"  # Dann
+"2015-16-player-S.Okazaki - Leicester City": "78412"  # Okazaki
+"2015-16-player-S.Rondon - WBA": "57134"  # Rondón
+"2015-16-player-T.Alderweireld - Spurs": "55605"  # Alderweireld
+"2015-16-player-T.Deeney - Watford": "41725"  # Deeney
+"2015-16-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2015-16-player-V.Kompany - Man City": "17476"  # Kompany
+"2015-16-player-W.Morgan - Leicester City": "15033"  # Morgan
+"2015-16-player-W.Zaha - C.Palace": "82403"  # Zaha
+"2015-16-player-Willian - Chelsea": "47431"  # Willian
+"2015-16-player-Y.Bolasie - C.Palace": "55452"  # Bolasie
+"2015-16-player-Y.Kaboul - Sunderland": "37742"  # Kaboul
+
+# 2016-17
+"2016-17-player-A.Ayew - West Ham": "80146"  # Ayew
+"2016-17-player-A.Carroll - West Ham": "40142"  # Carroll
+"2016-17-player-A.Cresswell - West Ham": "55459"  # Cresswell
+"2016-17-player-A.Lallana - Liverpool": "39155"  # Lallana
+"2016-17-player-A.Lennon - Everton": "17349"  # Lennon
+"2016-17-player-A.Martial - Man Utd": "148225"  # Martial
+"2016-17-player-A.Moreno - Liverpool": "100059"  # Moreno
+"2016-17-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2016-17-player-A.Townsend - C.Palace": "60252"  # Townsend
+"2016-17-player-A.Williams - Everton": "19159"  # Williams
+"2016-17-player-B.Baston - Swansea City": "83091"  # Bastón
+"2016-17-player-B.Ivanovic - Chelsea": "41135"  # Ivanovic
+"2016-17-player-B.Mee - Burnley": "51927"  # Mee
+"2016-17-player-C.Austin - Southampton": "78356"  # Austin
+"2016-17-player-C.Azpilicueta - Chelsea": "41328"  # Azpilicueta
+"2016-17-player-C.Benteke - C.Palace": "54861"  # Benteke
+"2016-17-player-C.Eriksen - Spurs": "80607"  # Eriksen
+"2016-17-player-C.Fabregas - Chelsea": "17878"  # Fàbregas
+"2016-17-player-C.Kouyate - West Ham": "55037"  # Kouyaté
+"2016-17-player-C.Smalling - Man Utd": "55909"  # Smalling
+"2016-17-player-C.Wilson - Bournemouth": "153682"  # Harry Wilson
+"2016-17-player-D.Alli - Spurs": "108823"  # Alli
+"2016-17-player-D.Drinkwater - Leicester City": "61603"  # Drinkwater
+"2016-17-player-D.Lovren - Liverpool": "38454"  # Lovren
+"2016-17-player-D.Origi - Liverpool": "152760"  # Origi
+"2016-17-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2016-17-player-D.Sturridge - Liverpool": "40755"  # Sturridge
+"2016-17-player-D.Welbeck - Arsenal": "50175"  # Welbeck
+"2016-17-player-E.Bailly - Man Utd": "197365"  # Bailly
+"2016-17-player-E.Capoue - Watford": "38439"  # Capoue
+"2016-17-player-E.Dier - Spurs": "93264"  # Dier
+"2016-17-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2016-17-player-E.Lamela - Spurs": "62974"  # Lamela
+"2016-17-player-E.Valencia - Everton": "20695"  # Valencia
+"2016-17-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2016-17-player-G.Deulofeu - Everton": "94924"  # Deulofeu
+"2016-17-player-G.Jesus - Man City": "205651"  # Jesus
+"2016-17-player-G.Sigurdsson - Swansea City": "55422"  # Sigurdsson
+"2016-17-player-H.Bellerin - Arsenal": "98745"  # Bellerín
+"2016-17-player-H.Kane - Spurs": "78830"  # Kane
+"2016-17-player-H.Mkhitaryan - Man Utd": "57249"  # Mkhitaryan
+"2016-17-player-I.Gundogan - Man City": "59859"  # Gündogan
+"2016-17-player-J.Defoe - Sunderland": "7958"  # Defoe
+"2016-17-player-J.Fonte - West Ham": "58476"  # Fonte
+"2016-17-player-J.Ibe - Bournemouth": "103912"  # Ibe
+"2016-17-player-J.Lingard - Man Utd": "109322"  # Lingard
+"2016-17-player-J.Mata - Man Utd": "43670"  # Mata
+"2016-17-player-J.Matip - Liverpool": "60914"  # Matip
+"2016-17-player-J.Milner - Liverpool": "15157"  # Milner
+"2016-17-player-J.Puncheon - C.Palace": "19197"  # Puncheon
+"2016-17-player-J.Schlupp - C.Palace": "86417"  # Schlupp
+"2016-17-player-J.Vardy - Leicester City": "101668"  # Vardy
+"2016-17-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2016-17-player-J.Ward-Prowse - Southampton": "101178"  # Ward-Prowse
+"2016-17-player-K.De Bruyne - Man City": "61366"  # De Bruyne
+"2016-17-player-K.Iheanacho - Man City": "173515"  # Iheanacho
+"2016-17-player-K.Mirallas - Everton": "26901"  # Mirallas
+"2016-17-player-K.Walker - Spurs": "58621"  # Walker
+"2016-17-player-K.Zouma - Chelsea": "103192"  # Zouma
+"2016-17-player-L.Baines - Everton": "12745"  # Baines
+"2016-17-player-L.Kone - Sunderland": "618873"  # Kone
+"2016-17-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2016-17-player-L.Sane - Man City": "182156"  # Sané
+"2016-17-player-L.Shaw - Man Utd": "106760"  # Shaw
+"2016-17-player-M.Antonio - West Ham": "57531"  # Antonio
+"2016-17-player-M.Arnautovic - Stoke City": "41464"  # Arnautovic
+"2016-17-player-M.Batshuayi - Chelsea": "94245"  # Batshuayi
+"2016-17-player-M.Dawson - Hull City": "60232"  # Dawson
+"2016-17-player-M.Fellaini - Man Utd": "41184"  # Fellaini
+"2016-17-player-M.Gabbiadini - Southampton": "61548"  # Gabbiadini
+"2016-17-player-M.Keane - Burnley": "106611"  # Keane
+"2016-17-player-M.Noble - West Ham": "18073"  # Noble
+"2016-17-player-M.Ozil - Arsenal": "37605"  # Özil
+"2016-17-player-M.Rashford - Man Utd": "176297"  # Rashford
+"2016-17-player-M.Yoshida - Southampton": "80447"  # Yoshida
+"2016-17-player-N.Clyne - Liverpool": "57328"  # Clyne
+"2016-17-player-N.Otamendi - Man City": "57410"  # Otamendi
+"2016-17-player-N.Redmond - Southampton": "83283"  # Redmond
+"2016-17-player-O.Giroud - Arsenal": "44346"  # Giroud
+"2016-17-player-P.Coutinho - Liverpool": "84583"  # Coutinho
+"2016-17-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2016-17-player-P.Pogba - Man Utd": "74208"  # Pogba
+"2016-17-player-R.Barkley - Everton": "88894"  # Barkley
+"2016-17-player-R.Firmino - Liverpool": "92217"  # Firmino
+"2016-17-player-R.Klavan - Liverpool": "33871"  # Klavan
+"2016-17-player-R.Lukaku - Everton": "66749"  # Lukaku
+"2016-17-player-R.Mahrez - Leicester City": "103025"  # Mahrez
+"2016-17-player-R.Snodgrass - West Ham": "18987"  # Snodgrass
+"2016-17-player-R.Sterling - Man City": "103955"  # Sterling
+"2016-17-player-S.Aguero - Man City": "37572"  # Agüero
+"2016-17-player-S.Coleman - Everton": "59949"  # Coleman
+"2016-17-player-S.Cook - Bournemouth": "155408"  # Cook
+"2016-17-player-S.Dann - C.Palace": "19188"  # Dann
+"2016-17-player-S.Long - Southampton": "20452"  # Long
+"2016-17-player-S.Mane - Liverpool": "110979"  # Mané
+"2016-17-player-S.Rondon - West Brom": "57134"  # Rondón
+"2016-17-player-S.Vokes - Burnley": "40399"  # Vokes
+"2016-17-player-T.Deeney - Watford": "41725"  # Deeney
+"2016-17-player-T.Mings - Bournemouth": "149484"  # Mings
+"2016-17-player-T.Walcott - Arsenal": "20467"  # Walcott
+"2016-17-player-V.Janssen - Spurs": "165990"  # Janssen
+"2016-17-player-V.Kompany - Man City": "17476"  # Kompany
+"2016-17-player-W.Morgan - Leicester City": "15033"  # Morgan
+"2016-17-player-W.Reid - West Ham": "48717"  # Reid
+"2016-17-player-Willian - Chelsea": "47431"  # Willian
+"2016-17-player-Y.Kaboul - Watford": "37742"  # Kaboul
+
+# 2017-18
+"2017-18-player-A.Carroll - West Ham": "40142"  # Carroll
+"2017-18-player-A.Gray - Watford": "73426"  # Gray
+"2017-18-player-A.Lacazette - Arsenal": "59966"  # Lacazette
+"2017-18-player-A.Lallana - Liverpool": "39155"  # Lallana
+"2017-18-player-A.Martial - Man Utd": "148225"  # Martial
+"2017-18-player-A.Mawson - Swansea": "149266"  # Mawson
+"2017-18-player-A.Mitrovic - Newcastle": "128389"  # Mitrovic
+"2017-18-player-A.Morata - Chelsea": "88482"  # Morata
+"2017-18-player-A.Perez - Newcastle": "168580"  # Pérez
+"2017-18-player-A.Ramsey - Arsenal": "41792"  # Ramsey
+"2017-18-player-A.Sanchez - Man Utd": "37265"  # Sánchez
+"2017-18-player-A.Townsend - C.Palace": "60252"  # Townsend
+"2017-18-player-A.Williams - Everton": "19159"  # Williams
+"2017-18-player-B.Mendy - Man City": "102826"  # Mendy
+"2017-18-player-B.Silva - Man City": "165809"  # Bernardo Silva
+"2017-18-player-C.Atsu - Newcastle": "104953"  # Atsu
+"2017-18-player-C.Austin - Southampton": "78356"  # Austin
+"2017-18-player-C.Azpilicueta - Chelsea": "41328"  # Azpilicueta
+"2017-18-player-C.Benteke - C.Palace": "54861"  # Benteke
+"2017-18-player-C.Clark - Newcastle": "58845"  # Clark
+"2017-18-player-C.Daniels - Bournemouth": "41320"  # Daniels
+"2017-18-player-C.Dawson - West Brom": "60232"  # Dawson
+"2017-18-player-C.Eriksen - Spurs": "80607"  # Eriksen
+"2017-18-player-C.Fabregas - Chelsea": "17878"  # Fàbregas
+"2017-18-player-C.Lowe - Huddersfield Town": "54284"  # Löwe
+"2017-18-player-C.Smalling - Man Utd": "55909"  # Smalling
+"2017-18-player-C.Wickham - C.Palace": "59125"  # Wickham
+"2017-18-player-D.Alli - Spurs": "108823"  # Alli
+"2017-18-player-D.Lovren - Liverpool": "38454"  # Lovren
+"2017-18-player-D.Luiz - Chelsea": "41270"  # David Luiz
+"2017-18-player-D.Origi - Liverpool": "152760"  # Origi
+"2017-18-player-D.Propper - Brighton HA": "66242"  # Pröpper
+"2017-18-player-D.Rose - Spurs": "38290"  # Rose
+"2017-18-player-D.Silva - Man City": "165809"  # Bernardo Silva
+"2017-18-player-D.Solanke - Liverpool": "154566"  # Solanke
+"2017-18-player-D.Sturridge - West Brom": "40755"  # Sturridge
+"2017-18-player-D.Welbeck - Arsenal": "50175"  # Welbeck
+"2017-18-player-Danilo - Man City": "100180"  # Danilo
+"2017-18-player-E.Capoue - Watford": "38439"  # Capoue
+"2017-18-player-E.Dier - Spurs": "93264"  # Dier
+"2017-18-player-E.Hazard - Chelsea": "42786"  # Hazard
+"2017-18-player-E.Kachunga - Huddersfield Town": "87428"  # Kachunga
+"2017-18-player-F.Llorente - Spurs": "19760"  # Llorente
+"2017-18-player-G.Cahill - Chelsea": "19419"  # Cahill
+"2017-18-player-G.Jesus - Man City": "205651"  # Jesus
+"2017-18-player-G.Murray - Brighton": "20529"  # Murray
+"2017-18-player-G.Sigurdsson - Everton": "55422"  # Sigurdsson
+"2017-18-player-G.Wijnaldum - Liverpool": "41733"  # Wijnaldum
+"2017-18-player-H.Arter - Bournemouth": "48615"  # Arter
+"2017-18-player-H.Bellerin - Arsenal": "98745"  # Bellerín
+"2017-18-player-H.Kane - Spurs": "78830"  # Kane
+"2017-18-player-H.Mkhitaryan - Arsenal": "57249"  # Mkhitaryan
+"2017-18-player-I.Slimani - Newcastle": "149828"  # Slimani
+"2017-18-player-J.Ayew - Swansea City": "80146"  # Ayew
+"2017-18-player-J.Defoe - Bournemouth": "7958"  # Defoe
+"2017-18-player-J.Fonte - West Ham": "58476"  # Fonte
+"2017-18-player-J.Henderson - Liverpool": "56979"  # Henderson
+"2017-18-player-J.Holebas - Watford": "40868"  # Holebas
+"2017-18-player-J.King - Bournemouth": "78007"  # King
+"2017-18-player-J.Lascelles - Newcastle": "101148"  # Lascelles
+"2017-18-player-J.Lingard - Man Utd": "109322"  # Lingard
+"2017-18-player-J.Mata - Man Utd": "43670"  # Mata
+"2017-18-player-J.Matip - Liverpool": "60914"  # Matip
+"2017-18-player-J.Milner - Liverpool": "15157"  # Milner
+"2017-18-player-J.Murphy - Newcastle": "114243"  # Murphy
+"2017-18-player-J.Puncheon - C.Palace": "19197"  # Puncheon
+"2017-18-player-J.Schlupp - C.Palace": "86417"  # Schlupp
+"2017-18-player-J.Stanislas - Bournemouth": "56872"  # Stanislas
+"2017-18-player-J.Stones - Man City": "97299"  # Stones
+"2017-18-player-J.Tomkins - C.Palace": "49413"  # Tomkins
+"2017-18-player-J.Vardy - Leicester City": "101668"  # Vardy
+"2017-18-player-J.Vertonghen - Spurs": "39194"  # Vertonghen
+"2017-18-player-J.Walters - Burnley": "12813"  # Walters
+"2017-18-player-J.Ward-Prowse - Southampton": "101178"  # Ward-Prowse
+"2017-18-player-K.Mirallas - Everton": "26901"  # Mirallas
+"2017-18-player-K.Trippier - Spurs": "77794"  # Trippier
+"2017-18-player-K.de Bruyne - Man City": "61366"  # De Bruyne
+"2017-18-player-L.Baines - Everton": "12745"  # Baines
+"2017-18-player-L.Koscielny - Arsenal": "51507"  # Koscielny
+"2017-18-player-L.Milivojevic - C.Palace": "66975"  # Milivojevic
+"2017-18-player-L.Moura - Spurs": "95715"  # Lucas Moura
+"2017-18-player-L.Sane - Man City": "182156"  # Sané
+"2017-18-player-M.Alonso - Chelsea": "82263"  # Alonso
+"2017-18-player-M.Antonio - West Ham": "57531"  # Antonio
+"2017-18-player-M.Arnautovic - West Ham": "41464"  # Arnautovic
+"2017-18-player-M.Batshuayi - Chelsea": "94245"  # Batshuayi
+"2017-18-player-M.Fellaini - Man Utd": "41184"  # Fellaini
+"2017-18-player-M.Gabbiadini - Southampton": "61548"  # Gabbiadini
+"2017-18-player-M.Gayle - Newcastle": "104547"  # Gayle
+"2017-18-player-M.Keane - Everton": "106611"  # Keane
+"2017-18-player-M.Lanzini - West Ham": "86934"  # Lanzini
+"2017-18-player-M.Noble - West Ham": "18073"  # Noble
+"2017-18-player-M.Ozil - Arsenal": "37605"  # Özil
+"2017-18-player-M.Rashford - Man Utd": "176297"  # Rashford
+"2017-18-player-M.Ritchie - Newcastle": "56983"  # Ritchie
+"2017-18-player-M.Salah - Liverpool": "118748"  # Salah
+"2017-18-player-M.Schneiderlin - Everton": "42774"  # Schneiderlin
+"2017-18-player-N.Ake - Bournemouth": "126184"  # Aké
+"2017-18-player-N.Clyne - Liverpool": "57328"  # Clyne
+"2017-18-player-N.Redmond - Southampton": "83283"  # Redmond
+"2017-18-player-O.Giroud - Chelsea": "44346"  # Giroud
+"2017-18-player-P.Crouch - Stoke City": "3773"  # Crouch
+"2017-18-player-P.Dummett - Newcastle": "106618"  # Dummett
+"2017-18-player-P.Jagielka - Everton": "7645"  # Jagielka
+"2017-18-player-P.Pogba - Man Utd": "74208"  # Pogba
+"2017-18-player-P.Van Aanholt - C.Palace": "74230"  # van Aanholt
+"2017-18-player-P.Zabaleta - West Ham": "20658"  # Zabaleta
+"2017-18-player-PE.Aubameyang - Arsenal": "54694"  # Aubameyang
+"2017-18-player-Pedro - Chelsea": "49579"  # Pedro
+"2017-18-player-R.Barkley - Chelsea": "88894"  # Barkley
+"2017-18-player-R.Bertrand - Southampton": "40146"  # Bertrand
+"2017-18-player-R.Firmino - Liverpool": "92217"  # Firmino
+"2017-18-player-R.Lamela - Spurs": "62974"  # Lamela
+"2017-18-player-R.Lukaku - Man Utd": "66749"  # Lukaku
+"2017-18-player-R.Mahrez - Leicester City": "103025"  # Mahrez
+"2017-18-player-R.Snodgrass - West Ham": "18987"  # Snodgrass
+"2017-18-player-R.Sterling - Man City": "103955"  # Sterling
+"2017-18-player-S.Aguero - Man City": "37572"  # Agüero
+"2017-18-player-S.Coleman - Everton": "59949"  # Coleman
+"2017-18-player-S.Cook - Bournemouth": "155408"  # Cook
+"2017-18-player-S.Dann - C.Palace": "19188"  # Dann
+"2017-18-player-S.Mane - Liverpool": "110979"  # Mané
+"2017-18-player-S.Mustafi - Arsenal": "69140"  # Mustafi
+"2017-18-player-S.Okazaki - Leicester": "78412"  # Okazaki
+"2017-18-player-S.Rondon - West Brom": "57134"  # Rondón
+"2017-18-player-S.Vokes - Burnley": "40399"  # Vokes
+"2017-18-player-T.Abraham - Swansea": "173879"  # Abraham
+"2017-18-player-T.Deeney - Watford": "41725"  # Deeney
+"2017-18-player-T.Ince - Huddersfield Town": "86176"  # Ince
+"2017-18-player-T.Smith - Huddersfield Town": "104545"  # Smith
+"2017-18-player-T.Walcott - Everton": "20467"  # Walcott
+"2017-18-player-V.Janssen - Spurs": "165990"  # Janssen
+"2017-18-player-V.Kompany - Man City": "17476"  # Kompany
+"2017-18-player-V.Moses - Chelsea": "49013"  # Moses
+"2017-18-player-V.Van Dijk - Liverpool": "97032"  # Van Dijk
+"2017-18-player-W.Hughes - Watford": "108413"  # Hughes
+"2017-18-player-W.Morgan - Leicester City": "15033"  # Morgan
+"2017-18-player-W.Zaha - C.Palace": "82403"  # Zaha
+"2017-18-player-Willian - Chelsea": "47431"  # Willian
+"2017-18-player-Y.Kaboul - Watford": "37742"  # Kaboul
+
+# --- UNMATCHED (player retired before 2018-19, add perm code manually if needed) ---
+
+# 2009-10
+# "2009-10-player-A.Aquilani - Liverpool": ""
+# "2009-10-player-A.Arshavin - Arsenal": ""
+# "2009-10-player-A.Cole - Chelsea": ""
+# "2009-10-player-A.Faye - Stoke City": ""
+# "2009-10-player-A.Ferdinand - Sunderland": ""
+# "2009-10-player-A.Johnson - Fulham": ""
+# "2009-10-player-A.Keogh - Wolves": ""
+# "2009-10-player-A.Riera - Liverpool": ""
+# "2009-10-player-A.Young - A.Villa": ""
+# "2009-10-player-Alex - Chelsea": ""
+# "2009-10-player-B.Hangeland - Fulham": ""
+# "2009-10-player-B.McCarthy - West Ham": ""
+# "2009-10-player-B.Mendy - Hull City": ""
+# "2009-10-player-B.N'Zogbia - Wigan": ""
+# "2009-10-player-B.Riise - Fulham": ""
+# "2009-10-player-B.Sagna - Arsenal": ""
+# "2009-10-player-B.Zamora - Fulham": ""
+# "2009-10-player-Benjani - Sunderland": ""
+# "2009-10-player-C.Bellamy - Man City": ""
+# "2009-10-player-C.Carlisle - Burnley": ""
+# "2009-10-player-C.Cole - West Ham": ""
+# "2009-10-player-C.Dempsey - Fulham": ""
+# "2009-10-player-C.Eagles - Burnley": ""
+# "2009-10-player-C.Iwelumo - Wolves": ""
+# "2009-10-player-C.Tevez - Man City": ""
+# "2009-10-player-D.Agger - Liverpool": ""
+# "2009-10-player-D.Bent - Sunderland": ""
+# "2009-10-player-D.Berbatov - Man Utd": ""
+# "2009-10-player-D.Drogba - Chelsea": ""
+# "2009-10-player-D.Geovanni - Hull City": ""
+# "2009-10-player-D.Higgenbotham - Stoke City": ""
+# "2009-10-player-D.Kitson - Stoke City": ""
+# "2009-10-player-D.Kuyt - Liverpool": ""
+# "2009-10-player-D.Murphy - Fulham": ""
+# "2009-10-player-D.Nugent - Burnley": ""
+# "2009-10-player-E.Adebayor - Man City": ""
+# "2009-10-player-E.Diouff - Blackburn": ""
+# "2009-10-player-Eduardo Silva - Arsenal": ""
+# "2009-10-player-F.Campbell - Sunderland": ""
+# "2009-10-player-F.Lampard - Chelsea": ""
+# "2009-10-player-F.Macheda - Man Utd": ""
+# "2009-10-player-F.Malouda - Chelsea": ""
+# "2009-10-player-F.Piquionne - Portsmouth": ""
+# "2009-10-player-F.Quedrue - Birmingham": ""
+# "2009-10-player-G.Agbonlahor - A.Villa": ""
+# "2009-10-player-G.Alexander - Burnley": ""
+# "2009-10-player-G.Cahill - Bolton": ""
+# "2009-10-player-G.Franco - West Ham": ""
+# "2009-10-player-G.Johnson - Liverpool": ""
+# "2009-10-player-G.McCann - Bolton": ""
+# "2009-10-player-G.Steinsson - Bolton": ""
+# "2009-10-player-H.Hreidarsson - Portsmouth": ""
+# "2009-10-player-J.Beattie - Stoke City": ""
+# "2009-10-player-J.Bosingwa - Chelsea": ""
+# "2009-10-player-J.Bullard - Hull City": ""
+# "2009-10-player-J.Carew - A.Villa": ""
+# "2009-10-player-J.Cole - Chelsea": ""
+# "2009-10-player-J.Collison - West Ham": ""
+# "2009-10-player-J.Elmander - Bolton": ""
+# "2009-10-player-J.Jenas - Spurs": ""
+# "2009-10-player-J.Lescott - Man City": ""
+# "2009-10-player-J.Mascherano - Liverpool": ""
+# "2009-10-player-J.McFadden - Birmingham": ""
+# "2009-10-player-J.Roberts - Blackburn": ""
+# "2009-10-player-J.Scotland - Wigan": ""
+# "2009-10-player-J.Terry - Chelsea": ""
+# "2009-10-player-J.Wilshire - Bolton": ""
+# "2009-10-player-J.Woodgate - Spurs": ""
+# "2009-10-player-J.Yobo - Everton": ""
+# "2009-10-player-Jo - Everton": ""
+# "2009-10-player-K.Davies - Bolton": ""
+# "2009-10-player-K.Phillips - Birmingham": ""
+# "2009-10-player-K.Toure - Man City": ""
+# "2009-10-player-L.Bowyer - Birmingham": ""
+# "2009-10-player-L.Cattermole - Sunderland": ""
+# "2009-10-player-L.Chung Yong - Bolton": ""
+# "2009-10-player-L.Lawrence - Stoke City": ""
+# "2009-10-player-L.Modric - Spurs": ""
+# "2009-10-player-L.Osman - Everton": ""
+# "2009-10-player-L.Ridgewell - Birmingham": ""
+# "2009-10-player-L.Saha - Everton": ""
+# "2009-10-player-M.Ballack - Chelsea": ""
+# "2009-10-player-M.Carrick - Man Utd": ""
+# "2009-10-player-M.Essien - Chelsea": ""
+# "2009-10-player-M.Etherington - Stoke City": ""
+# "2009-10-player-M.Fellani - Everton": ""
+# "2009-10-player-M.Kightly - Wolves": ""
+# "2009-10-player-M.Melchiot - Wigan": ""
+# "2009-10-player-M.Pedersen - Blackburn": ""
+# "2009-10-player-M.Petrov - Man City": ""
+# "2009-10-player-M.Richards - Man City": ""
+# "2009-10-player-M.Skrtel - Liverpool": ""
+# "2009-10-player-M.Taylor - Bolton": ""
+# "2009-10-player-M.Upson - West Ham": ""
+# "2009-10-player-N.Anelka - Chelsea": ""
+# "2009-10-player-N.Bendtner - Arsenal": ""
+# "2009-10-player-N.Kanu - Portsmouth": ""
+# "2009-10-player-N.Krancjar - Spurs": ""
+# "2009-10-player-N.Milijas - Wolves": ""
+# "2009-10-player-N.Reo-Coker - A.Villa": ""
+# "2009-10-player-N.Vidic - Man Utd": ""
+# "2009-10-player-Nani - Man Utd": ""
+# "2009-10-player-O.Kapo - Wigan": ""
+# "2009-10-player-P.Konchesky - Fulham": ""
+# "2009-10-player-P.Neville - Everton": ""
+# "2009-10-player-P.Scharner - Wigan": ""
+# "2009-10-player-P.Scholes - Man Utd": ""
+# "2009-10-player-PB.Dioup - Portsmouth": ""
+# "2009-10-player-R.Ferdinand - Man Utd": ""
+# "2009-10-player-R.Fuller - Stoke City": ""
+# "2009-10-player-R.Giggs - Man Utd": ""
+# "2009-10-player-R.Nelsen - Blackburn": ""
+# "2009-10-player-R.Pavlyuchenko - Spurs": ""
+# "2009-10-player-R.Santa Cruz - Man City": ""
+# "2009-10-player-R.Shawcross - Stoke City": ""
+# "2009-10-player-R.Van Persie - Arsenal": ""
+# "2009-10-player-Rafael Da Silva - Man Utd": ""
+# "2009-10-player-Robinho - Man City": ""
+# "2009-10-player-S.Davies - Fulham": ""
+# "2009-10-player-S.Deco - Chelsea": ""
+# "2009-10-player-S.Downing - A.Villa": ""
+# "2009-10-player-S.Ebanks-Blake - Wolves": ""
+# "2009-10-player-S.Fletcher - Burnley": ""
+# "2009-10-player-S.Gerrard - Liverpool": ""
+# "2009-10-player-S.Ireland - Man City": ""
+# "2009-10-player-S.Kalou - Chelsea": ""
+# "2009-10-player-S.Larsson - Birmingham": ""
+# "2009-10-player-S.Malbranque - Sunderland": ""
+# "2009-10-player-S.Pienarr - Everton": ""
+# "2009-10-player-S.Sidwell - A.Villa": ""
+# "2009-10-player-S.Warnock - A.Villa": ""
+# "2009-10-player-S.Wright-Phillips - Man City": ""
+# "2009-10-player-T.Bramble - Wigan": ""
+# "2009-10-player-T.Cahill - Everton": ""
+# "2009-10-player-T.Rosicky - Arsenal": ""
+# "2009-10-player-T.Vermalean - Arsenal": ""
+# "2009-10-player-V.Corluka - Spurs": ""
+# "2009-10-player-W.Bridge - Man City": ""
+# "2009-10-player-W.Gallas - Arsenal": ""
+# "2009-10-player-W.Palacios - Spurs": ""
+# "2009-10-player-W.Rooney - Man Utd": ""
+# "2009-10-player-Y.Benayouan - Liverpool": ""
+# "2009-10-player-Y.Zhirkov - Chelsea": ""
+# "2009-10-player-Yakubu - Everton": ""
+# "2009-10-player-Z.Gera - Fulham": ""
+# "2009-10-player-Z.Knight - Bolton": ""
+
+# 2010-11
+# "2010-11-player-A.Arshavin - Arsenal": ""
+# "2010-11-player-A.Carroll - Liverpool": ""
+# "2010-11-player-A.Cole - Chelsea": ""
+# "2010-11-player-A.Gyan - Sunderland": ""
+# "2010-11-player-A.Hleb - Birmingham": ""
+# "2010-11-player-A.Hughes - Fulham": ""
+# "2010-11-player-A.Johnson - Fulham": ""
+# "2010-11-player-A.Johnson - Man City": ""
+# "2010-11-player-A.Kolarov - Man City": ""
+# "2010-11-player-A.Young - A.Villa": ""
+# "2010-11-player-B.Hangeland - Fulham": ""
+# "2010-11-player-B.Sagna - Arsenal": ""
+# "2010-11-player-B.Zamora - Fulham": ""
+# "2010-11-player-Bebe - Man Utd": ""
+# "2010-11-player-C.Adam - Blackpool": ""
+# "2010-11-player-C.Bellamy - Man City": ""
+# "2010-11-player-C.Brunt - West Brom": ""
+# "2010-11-player-C.Cole - West Ham": ""
+# "2010-11-player-C.Cueller - A.Villa": ""
+# "2010-11-player-C.Dempsey - Fulham": ""
+# "2010-11-player-C.Jerome - Birmingham": ""
+# "2010-11-player-C.N'Zogbia - Wigan": ""
+# "2010-11-player-C.Poulsen - Liverpool": ""
+# "2010-11-player-C.Riveros - Sunderland": ""
+# "2010-11-player-C.Tevez - Man City": ""
+# "2010-11-player-D.Agger - Liverpool": ""
+# "2010-11-player-D.Bent - A.Villa": ""
+# "2010-11-player-D.Berbatov - Man Utd": ""
+# "2010-11-player-D.Bilyaletdinov - Everton": ""
+# "2010-11-player-D.Drogba - Chelsea": ""
+# "2010-11-player-D.Duff - Fulham": ""
+# "2010-11-player-D.Dunn - Blackburn": ""
+# "2010-11-player-D.Kuyt - Liverpool": ""
+# "2010-11-player-D.Murphy - Fulham": ""
+# "2010-11-player-E.Adebayor - Man City": ""
+# "2010-11-player-E.Boyce - Wigan": ""
+# "2010-11-player-F.Campbell - Sunderland": ""
+# "2010-11-player-F.Coloccini - Newcastle": ""
+# "2010-11-player-F.Lampard - Chelsea": ""
+# "2010-11-player-F.Malouda - Chelsea": ""
+# "2010-11-player-F.Piquionne - West Ham": ""
+# "2010-11-player-G.Agbonlahor - A.Villa": ""
+# "2010-11-player-G.Cahill - Bolton": ""
+# "2010-11-player-G.Dorrans - West Brom": ""
+# "2010-11-player-G.Johnson - Liverpool": ""
+# "2010-11-player-G.Zuiverloon - West Brom": ""
+# "2010-11-player-H.Rodallega - Wigan": ""
+# "2010-11-player-I.Evatt - Blackpool": ""
+# "2010-11-player-I.Klasnic - Bolton": ""
+# "2010-11-player-J.Beckford - Everton": ""
+# "2010-11-player-J.Carew - Stoke": ""
+# "2010-11-player-J.Carragher - Liverpool": ""
+# "2010-11-player-J.Cole - Liverpool": ""
+# "2010-11-player-J.Craddock - Wolves": ""
+# "2010-11-player-J.Elmander - Bolton": ""
+# "2010-11-player-J.Gutierrez - Newcastle": ""
+# "2010-11-player-J.Hernandez - Man Utd": ""
+# "2010-11-player-J.Jenas - Spurs": ""
+# "2010-11-player-J.Lescott - Man City": ""
+# "2010-11-player-J.McFadden - Birmingham": ""
+# "2010-11-player-J.Mensah - Sunderland": ""
+# "2010-11-player-J.Paintsil - Fulham": ""
+# "2010-11-player-J.Roberts - Blackburn": ""
+# "2010-11-player-J.Terry - Chelsea": ""
+# "2010-11-player-J.Wiltshire - Arsenal": ""
+# "2010-11-player-Jo - Man City": ""
+# "2010-11-player-K.Davies - Bolton": ""
+# "2010-11-player-K.Jones - Stoke": ""
+# "2010-11-player-K.Nolan - Newcastle": ""
+# "2010-11-player-K.Phillips - Birmingham": ""
+# "2010-11-player-L.Boamorte - West Ham": ""
+# "2010-11-player-L.Bowyer - Birmingham": ""
+# "2010-11-player-L.Cattermole - Sunderland": ""
+# "2010-11-player-L.Chung-Yung - Bolton": ""
+# "2010-11-player-L.Modric - Spurs": ""
+# "2010-11-player-L.Ridgewell - Birmingham": ""
+# "2010-11-player-L.Saha - Everton": ""
+# "2010-11-player-M.Balotelli - Man City": ""
+# "2010-11-player-M.Boselli - Wigan": ""
+# "2010-11-player-M.Carrick - Man Utd": ""
+# "2010-11-player-M.Chamakh - Arsenal": ""
+# "2010-11-player-M.Essien - Chelsea": ""
+# "2010-11-player-M.Etherington - Stoke": ""
+# "2010-11-player-M.Figueroa - Wigan": ""
+# "2010-11-player-M.Jovanovic - Liverpool": ""
+# "2010-11-player-M.Olsson - Blackburn": ""
+# "2010-11-player-M.Pedersen - Blackburn": ""
+# "2010-11-player-M.Petrov - Bolton": ""
+# "2010-11-player-M.Richards - Man City": ""
+# "2010-11-player-M.Rodriguez - Liverpool": ""
+# "2010-11-player-M.Taylor - Bolton": ""
+# "2010-11-player-M.Upson - West Ham": ""
+# "2010-11-player-N.Anelka - Chelsea": ""
+# "2010-11-player-N.Bendtner - Arsenal": ""
+# "2010-11-player-N.Krancjar - Spurs": ""
+# "2010-11-player-N.Milijas - Wolves": ""
+# "2010-11-player-N.Reo-Coker - A.Villa": ""
+# "2010-11-player-N.Shorey - West Brom": ""
+# "2010-11-player-N.Vidic - Man Utd": ""
+# "2010-11-player-N.Zigic - Birmingham": ""
+# "2010-11-player-Nani - Man Utd": ""
+# "2010-11-player-P.Barrera - West Ham": ""
+# "2010-11-player-P.Evra - Man Utd": ""
+# "2010-11-player-P.Konchesky - Liverpool": ""
+# "2010-11-player-P.Lovenkrands - Newcastle": ""
+# "2010-11-player-P.Scholes - Man Utd": ""
+# "2010-11-player-Park Ji Sung - Man Utd": ""
+# "2010-11-player-R.Alex - Chelsea": ""
+# "2010-11-player-R.Ferdinand - Man Utd": ""
+# "2010-11-player-R.Fuller - Stoke": ""
+# "2010-11-player-R.Giggs - Man Utd": ""
+# "2010-11-player-R.Huth - Stoke": ""
+# "2010-11-player-R.Nelson - Blackburn": ""
+# "2010-11-player-R.Pavlyuchenko - Spurs": ""
+# "2010-11-player-R.Santa-Cruz - Blackburn": ""
+# "2010-11-player-R.Shawcross - Stoke": ""
+# "2010-11-player-R.Van Der Vaart - Spurs": ""
+# "2010-11-player-R.Van Persie - Arsenal": ""
+# "2010-11-player-S.Campbell - Newcastle": ""
+# "2010-11-player-S.Downing - A.Villa": ""
+# "2010-11-player-S.Ebanks-Blake - Wolves": ""
+# "2010-11-player-S.Fletcher - Wolves": ""
+# "2010-11-player-S.Gerrard - Liverpool": ""
+# "2010-11-player-S.Ireland - Newcastle": ""
+# "2010-11-player-S.Kalou - Chelsea": ""
+# "2010-11-player-S.Larsson - Birmingham": ""
+# "2010-11-player-S.Malbranque - Sunderland": ""
+# "2010-11-player-S.Petrov - A.Villa": ""
+# "2010-11-player-S.Pienaar - Spurs": ""
+# "2010-11-player-S.Taylor - Newcastle": ""
+# "2010-11-player-S.Wright-Phillips - Man City": ""
+# "2010-11-player-T.Bramble - Sunderland": ""
+# "2010-11-player-T.Cahill - Everton": ""
+# "2010-11-player-T.Hitzlsperger - West Ham": ""
+# "2010-11-player-T.Huddlestone - Spurs": ""
+# "2010-11-player-T.Rosicky - Arsenal": ""
+# "2010-11-player-T.Vermalean - Arsenal": ""
+# "2010-11-player-V.Diaby - Arsenal": ""
+# "2010-11-player-W.Rooney - Man Utd": ""
+# "2010-11-player-Y.Benayouan - Chelsea": ""
+# "2010-11-player-Y.Toure - Man City": ""
+# "2010-11-player-Y.Zhirkov - Chelsea": ""
+# "2010-11-player-Yakubu - Everton": ""
+# "2010-11-player-Z.Gera - Fulham": ""
+# "2010-11-player-Z.Knight - Fulham": ""
+
+# 2011-12
+# "2011-12-player-A.Arshavin - Arsenal": ""
+# "2011-12-player-A.Cabaye - Newcastle": ""
+# "2011-12-player-A.Carroll - Liverpool": ""
+# "2011-12-player-A.Cole - Chelsea": ""
+# "2011-12-player-A.Faurlin - QPR": ""
+# "2011-12-player-A.Gyan - Sunderland": ""
+# "2011-12-player-A.Hughes - Fulham": ""
+# "2011-12-player-A.Johnson - Fulham": ""
+# "2011-12-player-A.Johnson - Man City": ""
+# "2011-12-player-A.Kolarov - Man City": ""
+# "2011-12-player-A.Song - Arsenal": ""
+# "2011-12-player-A.Taarabt - QPR": ""
+# "2011-12-player-A.Tate - Swansea": ""
+# "2011-12-player-B.Assou-Ekotto - Spurs": ""
+# "2011-12-player-B.Emerton - Blackburn": ""
+# "2011-12-player-B.Hangeland - Fulham": ""
+# "2011-12-player-B.Jones - West Brom": ""
+# "2011-12-player-B.Sagna - Arsenal": ""
+# "2011-12-player-B.Zamora - QPR": ""
+# "2011-12-player-C.Adam - Liverpool": ""
+# "2011-12-player-C.Brunt - West Brom": ""
+# "2011-12-player-C.Dempsey - Fulham": ""
+# "2011-12-player-C.Eagles - Bolton": ""
+# "2011-12-player-C.Hernandez - Man Utd.": ""
+# "2011-12-player-C.N'Zogbia - A.Villa": ""
+# "2011-12-player-C.Tevez - Man City": ""
+# "2011-12-player-D.Agger - Liverpool": ""
+# "2011-12-player-D.Bent - A.Villa": ""
+# "2011-12-player-D.Berbatov - Man Utd.": ""
+# "2011-12-player-D.Drogba - Chelsea": ""
+# "2011-12-player-D.Duff - Fulham": ""
+# "2011-12-player-D.Etuhu - Fulham": ""
+# "2011-12-player-D.Goodwillie - Blackburn": ""
+# "2011-12-player-D.Kuyt - Liverpool": ""
+# "2011-12-player-D.Murphy - Fulham": ""
+# "2011-12-player-D.Pratley - Bolton": ""
+# "2011-12-player-D.Wheater - Bolton": ""
+# "2011-12-player-DJ.Campbell - QPR": ""
+# "2011-12-player-E.Adebayor - Spurs": ""
+# "2011-12-player-E.Boyce - Wigan": ""
+# "2011-12-player-E.Diouff - Blackburn": ""
+# "2011-12-player-E.Dzeko - Man City": ""
+# "2011-12-player-F.Campbell - Sunderland": ""
+# "2011-12-player-F.Chamakh - Arsenal": ""
+# "2011-12-player-F.Coloccini - Newcastle": ""
+# "2011-12-player-F.Lampard - Chelsea": ""
+# "2011-12-player-F.Malouda - Chelsea": ""
+# "2011-12-player-G.Agbonlahor - A.Villa": ""
+# "2011-12-player-G.Caldwell - Wigan": ""
+# "2011-12-player-G.Clichy - Man City": ""
+# "2011-12-player-G.Dorrans - West Brom": ""
+# "2011-12-player-G.Holt - Norwich": ""
+# "2011-12-player-G.Johnson - Liverpool": ""
+# "2011-12-player-Gervinho - Arsenal": ""
+# "2011-12-player-H.Helguson - QPR": ""
+# "2011-12-player-H.Rodallega - Wigan": ""
+# "2011-12-player-HB.Arfa - Newcastle": ""
+# "2011-12-player-I.Klasnic - Bolton": ""
+# "2011-12-player-J.Barton - QPR": ""
+# "2011-12-player-J.Beckford - Everton": ""
+# "2011-12-player-J.Bothoyd - QPR": ""
+# "2011-12-player-J.Cole - Liverpool": ""
+# "2011-12-player-J.Gomez - Wigan": ""
+# "2011-12-player-J.Gutierrez - Newcastle": ""
+# "2011-12-player-J.Lescott - Man City": ""
+# "2011-12-player-J.Mulumbu - West Brom": ""
+# "2011-12-player-J.O'Hara - Wolves": ""
+# "2011-12-player-J.Pennant - Stoke": ""
+# "2011-12-player-J.Terry - Chelsea": ""
+# "2011-12-player-J.Vaughan - Norwich": ""
+# "2011-12-player-J.Walters - Stoke": ""
+# "2011-12-player-J.Wilshire - Arsenal": ""
+# "2011-12-player-JA.Risse - Fulham": ""
+# "2011-12-player-JS.Park - Man Utd.": ""
+# "2011-12-player-K.Davies - Bolton": ""
+# "2011-12-player-K.Foley - Wolves": ""
+# "2011-12-player-K.Jones - Stoke": ""
+# "2011-12-player-L.Cattermole - Sunderland": ""
+# "2011-12-player-L.Lita - Swansea": ""
+# "2011-12-player-L.Modric - Spurs": ""
+# "2011-12-player-L.Nani - Man Utd.": ""
+# "2011-12-player-L.Osman - Everton": ""
+# "2011-12-player-L.Saha - Spurs": ""
+# "2011-12-player-M.Balotelli - Man City": ""
+# "2011-12-player-M.Carrick - Man Utd": ""
+# "2011-12-player-M.Etherington - Stoke": ""
+# "2011-12-player-M.Figueroa - Wigan": ""
+# "2011-12-player-M.Formica - Blackburn": ""
+# "2011-12-player-M.Mouyokolo - Wolves": ""
+# "2011-12-player-M.Pederson - Blackburn": ""
+# "2011-12-player-M.Petrov - Bolton": ""
+# "2011-12-player-M.Richards - Man City": ""
+# "2011-12-player-M.Rodriguez - Liverpool": ""
+# "2011-12-player-M.Skrtel - Liverpool": ""
+# "2011-12-player-N.Bendtner - Sunderland": ""
+# "2011-12-player-N.Reo-Coker - Bolton": ""
+# "2011-12-player-N.Vidic - Man Utd.": ""
+# "2011-12-player-O.Anderson - Man Utd.": ""
+# "2011-12-player-P.Lovenkrands - Newcastle": ""
+# "2011-12-player-P.Neville - Everton": ""
+# "2011-12-player-P.Odemwingie - West Brom": ""
+# "2011-12-player-P.Scharner - West Brom": ""
+# "2011-12-player-R.De Silva - Man Utd.": ""
+# "2011-12-player-R.Ferdinand - Man Utd.": ""
+# "2011-12-player-R.Fuller - Stoke": ""
+# "2011-12-player-R.Huth - Stoke": ""
+# "2011-12-player-R.Johnson - Wolves": ""
+# "2011-12-player-R.Merieles - Chelsea": ""
+# "2011-12-player-R.Nelson - Spurs": ""
+# "2011-12-player-R.Pavlyuchenko - Spurs": ""
+# "2011-12-player-R.Shawcross - Stoke": ""
+# "2011-12-player-R.Van Der Vaart - Spurs": ""
+# "2011-12-player-R.Van Persie - Arsenal": ""
+# "2011-12-player-S.Ameobi - Newcastle": ""
+# "2011-12-player-S.Distin - Everton": ""
+# "2011-12-player-S.Dobbie - Swansea": ""
+# "2011-12-player-S.Downing - Liverpool": ""
+# "2011-12-player-S.Ebanks-Blake - Wolves": ""
+# "2011-12-player-S.Fletcher - Wolves": ""
+# "2011-12-player-S.Gerrard - Liverpool": ""
+# "2011-12-player-S.Ireland - A.Villa": ""
+# "2011-12-player-S.Jackson - Norwich": ""
+# "2011-12-player-S.Kalou - Chelsea": ""
+# "2011-12-player-S.Larsson - Sunderland": ""
+# "2011-12-player-S.Marveaux - Newcastle": ""
+# "2011-12-player-S.Morrison - Norwich": ""
+# "2011-12-player-S.Parker - Spurs": ""
+# "2011-12-player-S.Pienarr - Everton": ""
+# "2011-12-player-S.Savic - Man City": ""
+# "2011-12-player-S.Sessegnon - Sunderland": ""
+# "2011-12-player-S.Sinclair - Swansea": ""
+# "2011-12-player-S.Taylor - Newcastle": ""
+# "2011-12-player-S.Tchoyi - West Brom": ""
+# "2011-12-player-S.Ward - Wolves": ""
+# "2011-12-player-S.Wright-Phillips - QPR": ""
+# "2011-12-player-SJ.Enrique - Liverpool": ""
+# "2011-12-player-T.Cahill - Everton": ""
+# "2011-12-player-T.Huddlestone - Spurs": ""
+# "2011-12-player-T.Vermaelen - Arsenal": ""
+# "2011-12-player-V.Corluka - Spurs": ""
+# "2011-12-player-W.Gallas - Spurs": ""
+# "2011-12-player-W.Hoolahan - Norwich": ""
+# "2011-12-player-W.Palacios - Stoke": ""
+# "2011-12-player-W.Rooney - Man Utd.": ""
+# "2011-12-player-Y.Benayouan - Arsenal": ""
+# "2011-12-player-YY.Toure - Man City": ""
+# "2011-12-player-Yakubu - Blackburn": ""
+# "2011-12-player-Z.Gera - West Brom": ""
+
+# 2012-13
+# "2012-13-player-A.Arshavin - Arsenal": ""
+# "2012-13-player-A.Assaidi - Liverpool": ""
+# "2012-13-player-A.Cole - Chelsea": ""
+# "2012-13-player-A.Ferdinand - QPR": ""
+# "2012-13-player-A.Johnson - QPR": ""
+# "2012-13-player-A.Kolorov - Man City": ""
+# "2012-13-player-A.Le Fondre - Reading": ""
+# "2012-13-player-A.Oxlaide-Chamberlain - Arsenal": ""
+# "2012-13-player-A.Pearce - Reading": ""
+# "2012-13-player-A.Taarabt - QPR": ""
+# "2012-13-player-B.Gunnarson - Reading": ""
+# "2012-13-player-B.Hangeland - Fulham": ""
+# "2012-13-player-B.Zamora - QPR": ""
+# "2012-13-player-C.Adam - Stoke": ""
+# "2012-13-player-C.Caldwell - Wigan": ""
+# "2012-13-player-C.Cole - West Ham": ""
+# "2012-13-player-C.Dempsey - Spurs": ""
+# "2012-13-player-C.Nzogbia - A.Villa": ""
+# "2012-13-player-C.Tevez - Man City": ""
+# "2012-13-player-D.Agger - Liverpool": ""
+# "2012-13-player-D.Bent - A.Villa": ""
+# "2012-13-player-D.Berbatov - Fulham": ""
+# "2012-13-player-E.Adebayor - Spurs": ""
+# "2012-13-player-E.Dzeko - Man City": ""
+# "2012-13-player-F.Borini - Liverpool": ""
+# "2012-13-player-F.Campbell - Sunderland": ""
+# "2012-13-player-F.Collocini - Newcastle": ""
+# "2012-13-player-F.Di Santo - Wigan": ""
+# "2012-13-player-F.Lampard - Chelsea": ""
+# "2012-13-player-F.Malouda - Chelsea": ""
+# "2012-13-player-F.Pienaar - Everton": ""
+# "2012-13-player-G.Agbonlahor - A.Villa": ""
+# "2012-13-player-G.Cameron - Stoke": ""
+# "2012-13-player-G.Holt - Norwich": ""
+# "2012-13-player-G.Johnson - Liverpool": ""
+# "2012-13-player-G.McAuley - West Brom": ""
+# "2012-13-player-G.Ramirez - Southampton": ""
+# "2012-13-player-Gervinho - Arsenal": ""
+# "2012-13-player-Guly - Southampton": ""
+# "2012-13-player-H.Rodallega - Fulham": ""
+# "2012-13-player-HB.Arfa - Newcastle": ""
+# "2012-13-player-I.Bannan - A.Villa": ""
+# "2012-13-player-I.Harte - Reading": ""
+# "2012-13-player-J.Allen - Liverpool": ""
+# "2012-13-player-J.Gomez - Wigan": ""
+# "2012-13-player-J.Guzman - Swansea": ""
+# "2012-13-player-J.Hernandez - Man Utd": ""
+# "2012-13-player-J.Hooiveld - Southampton": ""
+# "2012-13-player-J.Lescott - Man City": ""
+# "2012-13-player-J.McAnuff - Reading": ""
+# "2012-13-player-J.McClean - Sunderland": ""
+# "2012-13-player-J.Miyachi - Wigan": ""
+# "2012-13-player-J.Rodriguez - Southampton": ""
+# "2012-13-player-J.Terry - Chelsea": ""
+# "2012-13-player-J.Walters - Stoke": ""
+# "2012-13-player-JA.Riise - Fulham": ""
+# "2012-13-player-JS.Park - QPR": ""
+# "2012-13-player-K.Gibbs - Arsenal": ""
+# "2012-13-player-K.Jones - Stoke": ""
+# "2012-13-player-K.Nolan - West Ham": ""
+# "2012-13-player-L.Enrique - Liverpool": ""
+# "2012-13-player-L.Nani - Man Utd": ""
+# "2012-13-player-L.Osman - Everton": ""
+# "2012-13-player-L.Podolski - Arsenal": ""
+# "2012-13-player-L.Ridgewell - West Brom": ""
+# "2012-13-player-M.Marin - Chelsea": ""
+# "2012-13-player-M.Petric - Fulham": ""
+# "2012-13-player-M.Shawcross - Stoke": ""
+# "2012-13-player-M.Skrtl - Liverpool": ""
+# "2012-13-player-M.Taylor - West Ham": ""
+# "2012-13-player-Michu - Swansea": ""
+# "2012-13-player-N.Bendtner - Arsenal": ""
+# "2012-13-player-N.Jelavic - Everton": ""
+# "2012-13-player-N.Vidic - Man Utd": ""
+# "2012-13-player-Oscar - Chelsea": ""
+# "2012-13-player-P.Odemwingie - West Brom": ""
+# "2012-13-player-P.Pogrebnyak - Reading": ""
+# "2012-13-player-P.Senderos - Fulham": ""
+# "2012-13-player-R.Bennett - Norwich": ""
+# "2012-13-player-R.Huth - Stoke": ""
+# "2012-13-player-R.Lambert - Southampton": ""
+# "2012-13-player-R.Taylor - Newcastle": ""
+# "2012-13-player-R.Van Persie - Man Utd": ""
+# "2012-13-player-R.Vaz Te - West Ham": ""
+# "2012-13-player-Ramires - Chelsea": ""
+# "2012-13-player-S.Ameobi - Newcastle": ""
+# "2012-13-player-S.Cazorla - Arsenal": ""
+# "2012-13-player-S.Diakita - QPR": ""
+# "2012-13-player-S.Distin - Everton": ""
+# "2012-13-player-S.Downing - Liverpool": ""
+# "2012-13-player-S.Gerard - Liverpool": ""
+# "2012-13-player-S.Ireland - A.Villa": ""
+# "2012-13-player-S.Kagawa - Man Utd": ""
+# "2012-13-player-S.Larsson - Sunderland": ""
+# "2012-13-player-S.Long - West Brom": ""
+# "2012-13-player-S.Naismith - Everton": ""
+# "2012-13-player-S.Sessegnon - Sunderland": ""
+# "2012-13-player-S.Sinclair - Man City": ""
+# "2012-13-player-S.Taylor - Newcastle": ""
+# "2012-13-player-S.Warnock - A.Villa": ""
+# "2012-13-player-S.Wright-Phillips - QPR": ""
+# "2012-13-player-T.Vermaelen - Arsenal": ""
+# "2012-13-player-V.Anichebe - Everton": ""
+# "2012-13-player-V.Cabaye - Newcastle": ""
+# "2012-13-player-W.Hoolahon - Norwich": ""
+# "2012-13-player-W.Rooney - Man Utd": ""
+# "2012-13-player-Y.Toure - Man City": ""
+
+# 2013-14
+# "2013-14-player-A.Cissokho - Liverpool": ""
+# "2013-14-player-A.Cole - Chelsea": ""
+# "2013-14-player-A.Kolorov - Man City": ""
+# "2013-14-player-A.Luna - Aston Villa": ""
+# "2013-14-player-A.Negredo - Man City": ""
+# "2013-14-player-A.Oxlade-Chamberlain - Arsenal": ""
+# "2013-14-player-A.Taarabt - Fulham": ""
+# "2013-14-player-A.Tonev - Aston Villa": ""
+# "2013-14-player-A.Weimans - Aston Villa": ""
+# "2013-14-player-A.Williams - Swansea City": ""
+# "2013-14-player-B.Hangeland - Fulham": ""
+# "2013-14-player-B.Ruiz - Fulham": ""
+# "2013-14-player-BK.Kim - Cardiff City": ""
+# "2013-14-player-C.Adam - Stoke City": ""
+# "2013-14-player-C.Bellamy - Cardiff City": ""
+# "2013-14-player-C.Clark - Aston Villa": ""
+# "2013-14-player-C.N'Zogbia - Aston Villa": ""
+# "2013-14-player-Chico - Swansea City": ""
+# "2013-14-player-D.Agger - Liverpool": ""
+# "2013-14-player-D.Bent - Fulham": ""
+# "2013-14-player-D.Berbatov - Fulham": ""
+# "2013-14-player-D.Fox - Southampton": ""
+# "2013-14-player-D.Lugano - West Brom": ""
+# "2013-14-player-D.Wellbeck - Man Utd": ""
+# "2013-14-player-E.Adebayor - Spurs": ""
+# "2013-14-player-E.Dzeko - Man City": ""
+# "2013-14-player-E.Giaccherini - Sunderland": ""
+# "2013-14-player-F.Amorebieta - Fulham": ""
+# "2013-14-player-F.Campbell - Cardiff City": ""
+# "2013-14-player-F.Coloccini - Newcastle": ""
+# "2013-14-player-F.Lampard - Chelsea": ""
+# "2013-14-player-G.Agbonlahor - Aston Villa": ""
+# "2013-14-player-G.Boyd - Hull City": ""
+# "2013-14-player-G.Dorrans - West Brom": ""
+# "2013-14-player-G.Hooper - Norwich City": ""
+# "2013-14-player-G.Johnson - Liverpool": ""
+# "2013-14-player-G.Karagounis - Fulham": ""
+# "2013-14-player-G.McAuley - West Brom": ""
+# "2013-14-player-G.Ramirez - Southampton": ""
+# "2013-14-player-H.Ben Arfa - Newcastle": ""
+# "2013-14-player-H.Rodallega - Fulham": ""
+# "2013-14-player-I.Aspas - Liverpool": ""
+# "2013-14-player-J.Altidore - Sunderland": ""
+# "2013-14-player-J.De Guzman - Swansea City": ""
+# "2013-14-player-J.Dong-Won - Sunderland": ""
+# "2013-14-player-J.Hernandez - Man Utd": ""
+# "2013-14-player-J.Hooiveld - Southampton": ""
+# "2013-14-player-J.Morrison - West Brom": ""
+# "2013-14-player-J.Okore - Aston Villa": ""
+# "2013-14-player-J.Terry - Chelsea": ""
+# "2013-14-player-J.Wilshire - Arsenal": ""
+# "2013-14-player-K.Lescott - Man City": ""
+# "2013-14-player-K.Nolan - West Ham": ""
+# "2013-14-player-K.Toure - Liverpool": ""
+# "2013-14-player-L.Fer - Norwich City": ""
+# "2013-14-player-L.Holtby - Fulham": ""
+# "2013-14-player-L.Nani - Man Utd": ""
+# "2013-14-player-L.Podolski - Arsenal": ""
+# "2013-14-player-L.Remy - Newcastle": ""
+# "2013-14-player-L.Ridgewell - West Brom": ""
+# "2013-14-player-M.Chamakh - Crystal Palace": ""
+# "2013-14-player-M.Figueroa - Hull City": ""
+# "2013-14-player-M.Jarvis - West Ham": ""
+# "2013-14-player-M.Ozul - Arsenal": ""
+# "2013-14-player-M.Richards - Man City": ""
+# "2013-14-player-M.Skrtl - Liverpool": ""
+# "2013-14-player-M.Walters - Stoke City": ""
+# "2013-14-player-MV.Ginkel - Chelsea": ""
+# "2013-14-player-Michu - Swansea City": ""
+# "2013-14-player-N.Anelka - West Brom": ""
+# "2013-14-player-N.Chadli - Spurs": ""
+# "2013-14-player-N.Jelavic - Hull City": ""
+# "2013-14-player-N.Vidic - Man Utd": ""
+# "2013-14-player-Oscar - Chelsea": ""
+# "2013-14-player-P.Evra - Man Utd": ""
+# "2013-14-player-P.Mertesacker - Arsenal": ""
+# "2013-14-player-Paulinho - Spurs": ""
+# "2013-14-player-R.Ferdinand - Man Utd": ""
+# "2013-14-player-R.Huth - Stoke City": ""
+# "2013-14-player-R.Koren - Hull City": ""
+# "2013-14-player-R.Lambert - Southampton": ""
+# "2013-14-player-R.Shawcross - Stoke City": ""
+# "2013-14-player-R.Soldado - Spurs": ""
+# "2013-14-player-R.Sterling - Liverpool": ""
+# "2013-14-player-R.Vlaar - Aston Villa": ""
+# "2013-14-player-RV.Persie - Man Utd": ""
+# "2013-14-player-RV.Wolfswinkel - Norwich City": ""
+# "2013-14-player-Ramires - Chelsea": ""
+# "2013-14-player-S.Bassong - Norwich City": ""
+# "2013-14-player-S.Caulker - Cardiff City": ""
+# "2013-14-player-S.Cazorla - Arsenal": ""
+# "2013-14-player-S.Downing - West Ham": ""
+# "2013-14-player-S.Eto'o - Chelsea": ""
+# "2013-14-player-S.Fletcher - Sunderland": ""
+# "2013-14-player-S.Gerard - Liverpool": ""
+# "2013-14-player-S.Jovetic - Man City": ""
+# "2013-14-player-S.Kagawa - Man Utd": ""
+# "2013-14-player-S.Larsson - Sunderland": ""
+# "2013-14-player-S.Naismith - Everton": ""
+# "2013-14-player-S.Pienarr - Everton": ""
+# "2013-14-player-S.Sessegnon - West Brom": ""
+# "2013-14-player-S.Sidwell - Fulham": ""
+# "2013-14-player-S.Sinclair - West Brom": ""
+# "2013-14-player-S.Taylor - Newcastle": ""
+# "2013-14-player-T.Rosicky - Arsenal": ""
+# "2013-14-player-T.Vermaelen - Arsenal": ""
+# "2013-14-player-V.Anichebe - West Brom": ""
+# "2013-14-player-W.Bony - Swansea City": ""
+# "2013-14-player-W.Hoolahan - Norwich City": ""
+# "2013-14-player-W.Rooney - Man Utd": ""
+# "2013-14-player-Y.Gouffran - Newcastle": ""
+# "2013-14-player-Y.Sagbo - Hull City": ""
+# "2013-14-player-Y.Toure - Man City": ""
+
+# 2014-15
+# "2014-15-player-A.Di Maria - Man Utd": ""
+# "2014-15-player-A.Hererra - Man Utd": ""
+# "2014-15-player-A.Knockeart - Leicester": ""
+# "2014-15-player-A.Kolarov - Man City": ""
+# "2014-15-player-A.Negredo - Man City": ""
+# "2014-15-player-A.Oxlade-Chamberlain - Arsenal": ""
+# "2014-15-player-A.Sanchez - Arsenal": ""
+# "2014-15-player-A.Williams - Swansea": ""
+# "2014-15-player-B.Gomis - Swansea": ""
+# "2014-15-player-B.Hangeland - C.Palace": ""
+# "2014-15-player-B.Ideye - West Brom": ""
+# "2014-15-player-B.Krkic - Stoke City": ""
+# "2014-15-player-C.'Zogbia - A.Villa": ""
+# "2014-15-player-C.Adam - Stoke City": ""
+# "2014-15-player-C.Austin - QPR": ""
+# "2014-15-player-C.Davies - Hull City": ""
+# "2014-15-player-D.Bent - A.Villa": ""
+# "2014-15-player-D.Drogba - Chelsea": ""
+# "2014-15-player-D.Nugent - Leicester": ""
+# "2014-15-player-D.Tadic - Southampton": ""
+# "2014-15-player-D.Wellbeck - Arsenal": ""
+# "2014-15-player-E.Adebayor - Spurs": ""
+# "2014-15-player-E.Dzeko - Man City": ""
+# "2014-15-player-E.Riviere - Newcastle": ""
+# "2014-15-player-F.Campbell - C.Palace": ""
+# "2014-15-player-F.Coloccini - Newcastle": ""
+# "2014-15-player-F.Lampard - Man City": ""
+# "2014-15-player-F.Luis - Chelsea": ""
+# "2014-15-player-F.Pienaar - Everton": ""
+# "2014-15-player-G.Agbonlahor - A.Villa": ""
+# "2014-15-player-G.Boyd - Burnley": ""
+# "2014-15-player-G.Johnson - Liverpool": ""
+# "2014-15-player-G.McAuley - West Brom": ""
+# "2014-15-player-G.Pelle - Southampton": ""
+# "2014-15-player-G.Taylor-Fletcher - Leicester": ""
+# "2014-15-player-H.Ben Arfa - Hull City": ""
+# "2014-15-player-H.Maguire - Hull City": ""
+# "2014-15-player-J.Allen - Liverpool": ""
+# "2014-15-player-J.Enrique - Liverpool": ""
+# "2014-15-player-J.Hernandez - Man Utd": ""
+# "2014-15-player-J.Lescott - West Brom": ""
+# "2014-15-player-J.Manquilo - Liverpool": ""
+# "2014-15-player-J.Mutch - C.Palace": ""
+# "2014-15-player-J.Paulinho - Spurs": ""
+# "2014-15-player-J.Rodriguez - Southampton": ""
+# "2014-15-player-J.Terry - Chelsea": ""
+# "2014-15-player-J.Walters - Stoke City": ""
+# "2014-15-player-J.Wilshire - Arsenal": ""
+# "2014-15-player-K.Nolan - West Ham": ""
+# "2014-15-player-L.Costa - Chelsea": ""
+# "2014-15-player-L.Podolski - Arsenal": ""
+# "2014-15-player-L.Remy - Chelsea": ""
+# "2014-15-player-L.Ulloa - Leicester": ""
+# "2014-15-player-M.Chamakh - C.Palace": ""
+# "2014-15-player-M.Debuchy - Arsenal": ""
+# "2014-15-player-M.Demichellis - Man City": ""
+# "2014-15-player-M.Jedinak - C.Palace": ""
+# "2014-15-player-M.Kightley - Burnley": ""
+# "2014-15-player-M.Skrtl - Liverpool": ""
+# "2014-15-player-M.Upson - Leicester": ""
+# "2014-15-player-N.Chadli - Spurs": ""
+# "2014-15-player-N.Jelavic - Hull City": ""
+# "2014-15-player-Oscar - Chelsea": ""
+# "2014-15-player-P.Mertesacker - Arsenal": ""
+# "2014-15-player-P.Odemwingie - Stoke City": ""
+# "2014-15-player-R.Cabella - Newcastle": ""
+# "2014-15-player-R.Huth - Leicester": ""
+# "2014-15-player-R.Lambert - Liverpool": ""
+# "2014-15-player-R.Shawcross - Stoke City": ""
+# "2014-15-player-R.Soldado - Spurs": ""
+# "2014-15-player-R.Sterling - Liverpool": ""
+# "2014-15-player-R.Van Persie - Man Utd": ""
+# "2014-15-player-R.Vlaar - A.Villa": ""
+# "2014-15-player-Ramires - Chelsea": ""
+# "2014-15-player-S.Ageuro - Man City": ""
+# "2014-15-player-S.Berahino - West Brom": ""
+# "2014-15-player-S.Caulker - QPR": ""
+# "2014-15-player-S.Cazorla - Arsenal": ""
+# "2014-15-player-S.Fletcher - Sunderland": ""
+# "2014-15-player-S.Gerrard - Liverpool": ""
+# "2014-15-player-S.Jovetic - Man City": ""
+# "2014-15-player-S.Naismith - Everton": ""
+# "2014-15-player-S.Sessegnon - West Brom": ""
+# "2014-15-player-S.Sidwell - Stoke City": ""
+# "2014-15-player-S.Taylor - Newcastle": ""
+# "2014-15-player-S.de Jong - Newcastle": ""
+# "2014-15-player-T.Huddlestone - Hull City": ""
+# "2014-15-player-V.Anichebe - West Brom": ""
+# "2014-15-player-W.Bony - Man City": ""
+# "2014-15-player-W.Rooney - Man Utd": ""
+# "2014-15-player-Y.Gouffran - Newcastle": ""
+# "2014-15-player-Y.Sanogo - C.Palace": ""
+# "2014-15-player-YY.Toure - Man City": ""
+
+# 2015-16
+# "2015-16-player-A.Carroll - West Ham Utd": ""
+# "2015-16-player-A.Cresswell - West Ham Utd": ""
+# "2015-16-player-A.Januzaj - Man Utd": ""
+# "2015-16-player-A.Kolarov - Man City": ""
+# "2015-16-player-A.Oxlaide-Chamberlain - Arsenal": ""
+# "2015-16-player-A.Sanchez - Arsenal": ""
+# "2015-16-player-A.Townsend - Newcastle": ""
+# "2015-16-player-B.Gomis - Swansea City": ""
+# "2015-16-player-B.Hangeland - C.Palace": ""
+# "2015-16-player-B.Krkic - Stoke City": ""
+# "2015-16-player-B.Schweinsteiger - Man Utd": ""
+# "2015-16-player-C.Adam - Stoke City": ""
+# "2015-16-player-C.Brunt - WBA": ""
+# "2015-16-player-C.Jerome - Norwich City": ""
+# "2015-16-player-D.Costa - Chelsea": ""
+# "2015-16-player-D.Delaney - C.Palace": ""
+# "2015-16-player-D.Payet - West Ham Utd": ""
+# "2015-16-player-D.Tadic - Southampton": ""
+# "2015-16-player-E.Giacherrini  - Sunderland": ""
+# "2015-16-player-Eder - Swansea City": ""
+# "2015-16-player-F.Coloccini - Newcastle Utd": ""
+# "2015-16-player-G.Agbonlahor - A.Villa": ""
+# "2015-16-player-G.Johnson - Stoke City": ""
+# "2015-16-player-G.Pelle - Southampton": ""
+# "2015-16-player-I.Affelay - Stoke City": ""
+# "2015-16-player-J.Clasie - Southampton": ""
+# "2015-16-player-J.Lescott - A.Villa": ""
+# "2015-16-player-J.Montero - Swansea City": ""
+# "2015-16-player-J.Okore - A.Villa": ""
+# "2015-16-player-J.Rodriguez - Southampton": ""
+# "2015-16-player-J.Terry - Chelsea": ""
+# "2015-16-player-J.Walters - Stoke City": ""
+# "2015-16-player-J.Wilshire - Arsenal": ""
+# "2015-16-player-K.Naughton - Swansea": ""
+# "2015-16-player-Ki.Seung-Yeung - Swansea City": ""
+# "2015-16-player-L.Bacuna - A.Villa": ""
+# "2015-16-player-L.Remy - Chelsea": ""
+# "2015-16-player-L.Ulloa - Leicester City": ""
+# "2015-16-player-M.Depay - Man Utd": ""
+# "2015-16-player-M.Gradel - Bournemouth": ""
+# "2015-16-player-M.Jedinak - C.Palace": ""
+# "2015-16-player-M.Layun - Watford": ""
+# "2015-16-player-M.Richards - A.Villa": ""
+# "2015-16-player-M.Skrtl - Liverpool": ""
+# "2015-16-player-M.Zarate - West Ham Utd": ""
+# "2015-16-player-MB.Diouff - Stoke City": ""
+# "2015-16-player-N.Chadli - Spurs": ""
+# "2015-16-player-N.Redmond - Norwich City": ""
+# "2015-16-player-Oscar - Chelsea": ""
+# "2015-16-player-P.Mertesacker - Arsenal": ""
+# "2015-16-player-R.Falcao - Chelsea": ""
+# "2015-16-player-R.Gestede - A.Villa": ""
+# "2015-16-player-R.Huth - Leicester": ""
+# "2015-16-player-R.Lambert - WBA": ""
+# "2015-16-player-R.Shawcross - Stoke City": ""
+# "2015-16-player-Ramires - Chelsea": ""
+# "2015-16-player-S.Berahino - WBA": ""
+# "2015-16-player-S.Caulker - Liverpool": ""
+# "2015-16-player-S.Cazorla - Arsenal": ""
+# "2015-16-player-S.Fletcher - Sunderland": ""
+# "2015-16-player-S.Larsson - Sunderland": ""
+# "2015-16-player-S.Mane - Southampton": ""
+# "2015-16-player-S.Naismith - Norwich City": ""
+# "2015-16-player-S.Sinclair - A.Villa": ""
+# "2015-16-player-W.Bony - Man City": ""
+# "2015-16-player-W.Hoolahan - Norwich City": ""
+# "2015-16-player-W.Rooney - Man Utd": ""
+# "2015-16-player-X.Shaquiri - Stoke City": ""
+# "2015-16-player-Y.Cabaye - C.Palace": ""
+# "2015-16-player-Y.Toure - Man City": ""
+
+# 2016-17
+# "2016-17-player-A.Elmohamady - Hull City": ""
+# "2016-17-player-A.Gray - Burnley": ""
+# "2016-17-player-A.Hernandez - Hull City": ""
+# "2016-17-player-A.Januzaj - Sunderland": ""
+# "2016-17-player-A.Kolarov - Man City": ""
+# "2016-17-player-A.Musa - Leicester": ""
+# "2016-17-player-A.Negredo - Middlesbrough": ""
+# "2016-17-player-A.Oxlaide-Chamberlain - Arsenal": ""
+# "2016-17-player-A.Robertson - Hull City": ""
+# "2016-17-player-A.Sanchez - Arsenal": ""
+# "2016-17-player-B.Afobe - Bournemouth": ""
+# "2016-17-player-B.Krkic - Stoke City": ""
+# "2016-17-player-D.Ayala - Middlesbrough": ""
+# "2016-17-player-D.Costa - Chelsea": ""
+# "2016-17-player-D.Fletcher - West Brom": ""
+# "2016-17-player-D.Payet - West Ham": ""
+# "2016-17-player-D.Tadic - Southampton": ""
+# "2016-17-player-F.Borini - Sunderland": ""
+# "2016-17-player-F.Llorente - Swansea City": ""
+# "2016-17-player-G.Boyd - Burnley": ""
+# "2016-17-player-G.Ramirez - Middlesbrough": ""
+# "2016-17-player-G.Wijnadum - Liverpool": ""
+# "2016-17-player-J.Allen - Stoke City": ""
+# "2016-17-player-J.Cuadrado - Chelsea": ""
+# "2016-17-player-J.Evans - West Brom": ""
+# "2016-17-player-J.Lens - Sunderland": ""
+# "2016-17-player-J.Rhodes - Middlesbrough": ""
+# "2016-17-player-J.Rodriguez - Southampton": ""
+# "2016-17-player-J.Terry - Chelsea": ""
+# "2016-17-player-M.Van Der Hoorn - Swansea City": ""
+# "2016-17-player-MB.Diouff - Stoke City": ""
+# "2016-17-player-N.Chadli - West Brom": ""
+# "2016-17-player-Nolito - Man City": ""
+# "2016-17-player-Oscar - Chelsea": ""
+# "2016-17-player-PE.Hojbjerg - Southampton": ""
+# "2016-17-player-PV Aaanholt - C.Palace": ""
+# "2016-17-player-R.Huth - Leicester City": ""
+# "2016-17-player-R.Shawcross - Stoke City": ""
+# "2016-17-player-S.Arfield - Burnley": ""
+# "2016-17-player-S.Berahino - Stoke City": ""
+# "2016-17-player-S.Cazorla - Arsenal": ""
+# "2016-17-player-S.Feghouli - West Ham": ""
+# "2016-17-player-T.Alderweild - Spurs": ""
+# "2016-17-player-T.Martinez - West Ham": ""
+# "2016-17-player-V.Fischer - Middlesbrough": ""
+# "2016-17-player-V.Van Dijk - Southampton": ""
+# "2016-17-player-W.Bony - Stoke City": ""
+# "2016-17-player-W.Rooney - Man Utd": ""
+# "2016-17-player-W.Routledge - Swansea City": ""
+# "2016-17-player-X.Shaquiri - Stoke City": ""
+# "2016-17-player-Y.Bolassie - Everton": ""
+# "2016-17-player-Y.Cabaye - C.Palace": ""
+# "2016-17-player-YY.Toure - Man City": ""
+# "2016-17-player-Z.Ibrahimovic - Man Utd": ""
+
+# 2017-18
+# "2017-18-player-A.Herrara - Man Utd": ""
+# "2017-18-player-A.Knockheart - Brighton HA": ""
+# "2017-18-player-A.Oxlaide-Chamberlain - Liverpool": ""
+# "2017-18-player-B.Afobe - Bournemouth": ""
+# "2017-18-player-D.Fletcher - Stoke City": ""
+# "2017-18-player-D.Klassen - Everton": ""
+# "2017-18-player-D.Tadic - Southampton": ""
+# "2017-18-player-EM.Choupo-Mouting - Stoke City": ""
+# "2017-18-player-G.McAuley - West Brom": ""
+# "2017-18-player-H.McGuire - Leicester City": ""
+# "2017-18-player-J.Allen - Stoke City": ""
+# "2017-18-player-J.Hernandez - West Ham": ""
+# "2017-18-player-J.Rodriguez - West Brom": ""
+# "2017-18-player-K.Ihenachio - Leicester City": ""
+# "2017-18-player-L.Fer - Swansea City": ""
+# "2017-18-player-MB.Diouff - Stoke City": ""
+# "2017-18-player-N.Chadli - West Brom": ""
+# "2017-18-player-P.Mertesacker - Arsenal": ""
+# "2017-18-player-R.Shawcross - Stoke City": ""
+# "2017-18-player-S.Berahino - West Brom": ""
+# "2017-18-player-S.Kolasnic - Arsenal": ""
+# "2017-18-player-S.Ramirez - Everton": ""
+# "2017-18-player-Son.Heung-Min - Spurs": ""
+# "2017-18-player-T.Alderweild - Spurs": ""
+# "2017-18-player-W.Rooney - Everton": ""
+# "2017-18-player-W.Routledge - C.Palace": ""
+# "2017-18-player-X.Shaquiri - Stoke City": ""
+# "2017-18-player-Y.Bolassie - Everton": ""
+# "2017-18-player-Y.Cabaye - C.Palace": ""
+# "2017-18-player-Y.Toure - Man City": ""

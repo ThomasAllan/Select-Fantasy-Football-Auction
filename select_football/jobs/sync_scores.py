@@ -32,9 +32,21 @@ from select_football.fpl.sync import (
 log = get_logger(__name__)
 
 
+def _override_pts(overrides_df: pd.DataFrame, code: str, season_id: str, gw: int) -> int | None:
+    if overrides_df.empty:
+        return None
+    ov = overrides_df[
+        (overrides_df["player_code"] == code)
+        & (overrides_df["season_id"] == season_id)
+        & (overrides_df["game_week"].astype(int) == gw)
+    ]
+    return int(ov.iloc[0]["override_points"]) if not ov.empty else None
+
+
 def _compute_best_gameweeks(store: CsvStore) -> pd.DataFrame:
     selections_df = store.read("manager_selections")
     goals_df = store.read("goals")
+    overrides_df = store.read("overrides")
     players_df = store.read_all_players()
     seasons_df = store.read("seasons")
 
@@ -60,7 +72,10 @@ def _compute_best_gameweeks(store: CsvStore) -> pd.DataFrame:
                         continue
                     code = s["player_code"]
                     pos = s["position"].upper()
-                    if pos == "GK":
+                    ov = _override_pts(overrides_df, code, season_id, gw)
+                    if ov is not None:
+                        gw_pts += ov
+                    elif pos == "GK":
                         conceded = _goals_for(goals_df, code, season_id, gw, "goals_conceded")
                         team_id = _int(code.split("-")[-1])
                         gk_codes = _gk_player_codes_for_team(players_df, team_id, season_id)
@@ -161,12 +176,6 @@ def main(dry_run: bool, force: bool) -> None:
             ]
             store.upsert("standings", pd.DataFrame(standings_rows), key_cols=["season_id", "manager_name"])
 
-            gw_rows = [
-                {"season_id": season_id, "manager_name": s.manager_name, "game_week": str(gw_num), "points": pts}
-                for s in standings
-                for gw_num, pts in s.gw_breakdown.items()
-            ]
-            store.upsert("manager_gw_points", pd.DataFrame(gw_rows), key_cols=["season_id", "manager_name", "game_week"])
             log.info("standings_precomputed", managers=len(standings), up_to_gw=gw)
 
             best_gw_df = _compute_best_gameweeks(store)
