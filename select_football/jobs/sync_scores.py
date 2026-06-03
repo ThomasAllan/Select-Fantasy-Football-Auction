@@ -11,7 +11,13 @@ from select_football.common.csv_store import CsvStore
 from select_football.common.logging import configure_logging, get_logger
 from select_football.common.models import Prize
 from select_football.config import get_settings
-from select_football.core.standings import compute_standings
+from select_football.core.scoring import score_gk_team, score_outfield_player
+from select_football.core.standings import (
+    _goals_for,
+    _gk_player_codes_for_team,
+    _int,
+    compute_standings,
+)
 from select_football.fpl.client import FplClient
 from select_football.fpl.sync import (
     is_gw_in_progress,
@@ -24,6 +30,50 @@ from select_football.fpl.sync import (
 )
 
 log = get_logger(__name__)
+
+
+def _compute_best_gameweeks(store: CsvStore) -> pd.DataFrame:
+    selections_df = store.read("manager_selections")
+    goals_df = store.read("goals")
+    players_df = store.read_all_players()
+    seasons_df = store.read("seasons")
+
+    last_gw_map = {
+        r["season_id"]: int(r["last_gw_synced"]) if str(r.get("last_gw_synced", "")) not in ("", "nan") else 38
+        for _, r in seasons_df.iterrows()
+    }
+
+    rows = []
+    for manager_name in selections_df["manager_name"].unique():
+        mgr_sels = selections_df[selections_df["manager_name"] == manager_name]
+        best_pts, best_label = 0, "—"
+        for season_id in mgr_sels["season_id"].unique():
+            last_gw = last_gw_map.get(season_id, 38)
+            season_sels = mgr_sels[mgr_sels["season_id"] == season_id]
+            for gw in range(1, last_gw + 1):
+                gw_pts = 0
+                for _, s in season_sels.iterrows():
+                    gw_from = _int(s["gw_from"])
+                    gw_to_raw = s.get("gw_to", "")
+                    gw_to = last_gw if str(gw_to_raw) in ("", "nan") or pd.isna(gw_to_raw) else min(_int(gw_to_raw), last_gw)
+                    if not (gw_from <= gw <= gw_to):
+                        continue
+                    code = s["player_code"]
+                    pos = s["position"].upper()
+                    if pos == "GK":
+                        conceded = _goals_for(goals_df, code, season_id, gw, "goals_conceded")
+                        team_id = _int(code.split("-")[-1])
+                        gk_codes = _gk_player_codes_for_team(players_df, team_id, season_id)
+                        gk_goals = sum(_goals_for(goals_df, c, season_id, gw, "goals_scored") for c in gk_codes)
+                        gw_pts += score_gk_team(conceded, gk_goals)
+                    else:
+                        goals = _goals_for(goals_df, code, season_id, gw, "goals_scored")
+                        gw_pts += int(score_outfield_player(pos, goals))
+                if gw_pts > best_pts:
+                    best_pts = gw_pts
+                    best_label = f"GW{gw} {season_id}"
+        rows.append({"manager_name": manager_name, "label": best_label, "pts": str(int(best_pts))})
+    return pd.DataFrame(rows)
 
 
 @click.command()
@@ -118,5 +168,9 @@ def main(dry_run: bool, force: bool) -> None:
             ]
             store.upsert("manager_gw_points", pd.DataFrame(gw_rows), key_cols=["season_id", "manager_name", "game_week"])
             log.info("standings_precomputed", managers=len(standings), up_to_gw=gw)
+
+            best_gw_df = _compute_best_gameweeks(store)
+            store.write("best_gameweeks", best_gw_df)
+            log.info("best_gameweeks_precomputed", managers=len(best_gw_df))
 
     log.info("sync_scores_complete", season=season_id, dry_run=dry_run)

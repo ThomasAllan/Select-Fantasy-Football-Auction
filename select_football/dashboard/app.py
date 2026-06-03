@@ -22,7 +22,11 @@ st.set_page_config(
 )
 
 st.markdown(
-    "<style>[data-testid='stDataFrame'] [class*='resizer'], .ag-header-cell-resize { display: none !important; }</style>",
+    "<style>"
+    "[data-testid='stDataFrame'] [class*='resizer'], .ag-header-cell-resize { display: none !important; }"
+    "[data-testid='stMetricValue'] { font-size: 1.35rem !important; }"
+    "[data-testid='stMetricLabel'] { font-size: 0.8rem !important; }"
+    "</style>",
     unsafe_allow_html=True,
 )
 
@@ -46,6 +50,7 @@ def load_data() -> dict:
         "players": store.read_all_players(),
         "prizes": store.read("prizes"),
         "standings": store.read("standings"),
+        "best_gameweeks": store.read("best_gameweeks"),
         "last_updated": last_updated,
     }
 
@@ -65,6 +70,7 @@ def _photo_exists(url: str) -> bool:
 def _ordinal(n: int) -> str:
     suffix = {1: "st", 2: "nd", 3: "rd"}.get(n if n < 20 else n % 10, "th")
     return f"{n}{suffix}"
+
 
 
 def _pos_colour(pos: int, prize_positions: set) -> str:
@@ -294,8 +300,8 @@ def get_top_player_per_season(
     goals_df: pd.DataFrame,
     players_df: pd.DataFrame,
     seasons_df: pd.DataFrame,
-) -> dict[str, tuple[str, int]]:
-    """Returns {season_id: (player_name, pts)} for the top outfield player each season."""
+) -> dict[str, tuple[str, int, str]]:
+    """Returns {season_id: (player_name, pts, player_code)} for the top outfield player each season."""
     mgr_sels = selections_df[
         (selections_df["manager_name"] == manager_name) &
         (selections_df["position"].str.upper() != "GK")
@@ -308,7 +314,7 @@ def get_top_player_per_season(
         r["season_id"]: int(r["last_gw_synced"]) if str(r.get("last_gw_synced", "")) not in ("", "nan") else 38
         for _, r in seasons_df.iterrows()
     }
-    season_bests: dict[str, tuple[str, int]] = {}
+    season_bests: dict[str, tuple[str, int, str]] = {}
 
     for _, s in mgr_sels.iterrows():
         code = s["player_code"]
@@ -332,11 +338,119 @@ def get_top_player_per_season(
         ]
         total_goals = int(g_rows["goals_scored"].astype(int).sum()) if not g_rows.empty else 0
         pts = int(score_outfield_player(pos, total_goals))
-        cur = season_bests.get(season_id, ("—", 0))
+        cur = season_bests.get(season_id, ("—", 0, ""))
         if pts > cur[1]:
-            season_bests[season_id] = (name, pts)
+            season_bests[season_id] = (name, pts, code)
 
     return season_bests
+
+
+@st.cache_data(ttl=300)
+def get_most_loyal_player(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+) -> tuple[str, int]:
+    """Returns (player_name, n_seasons) for the outfield player selected in the most seasons."""
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty:
+        return ("—", 0)
+    code_to_fpl = players_df.set_index("code")["_fpl_code"].to_dict()
+    player_names = players_df.set_index("code")["friendly_name"].to_dict()
+    fpl_seasons: dict[str, set] = {}
+    fpl_name: dict[str, str] = {}
+    for _, s in mgr_sels.iterrows():
+        code = s["player_code"]
+        fpl = code_to_fpl.get(code, "") or code
+        fpl_seasons.setdefault(fpl, set()).add(s["season_id"])
+        if fpl not in fpl_name:
+            name = player_names.get(code, "")
+            if not name:
+                parts = code.split("-player-")
+                name = parts[1] if len(parts) > 1 else code
+            fpl_name[fpl] = name
+    if not fpl_seasons:
+        return ("—", 0)
+    best = max(fpl_seasons, key=lambda f: len(fpl_seasons[f]))
+    return (fpl_name.get(best, "—"), len(fpl_seasons[best]))
+
+
+def get_best_gameweek(manager_name: str, best_gameweeks_df: pd.DataFrame) -> tuple[str, int]:
+    """Returns (label, pts) from the pre-computed best_gameweeks.csv."""
+    if best_gameweeks_df.empty or "manager_name" not in best_gameweeks_df.columns:
+        return ("—", 0)
+    row = best_gameweeks_df[best_gameweeks_df["manager_name"] == manager_name]
+    if row.empty:
+        return ("—", 0)
+    return (str(row.iloc[0]["label"]), int(row.iloc[0]["pts"]))
+
+
+@st.cache_data(ttl=300)
+def get_biggest_buy(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+) -> tuple[str, int]:
+    """Returns (player_name, cost) for the most expensive outfield player ever bought."""
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty:
+        return ("—", 0)
+    player_names = players_df.set_index("code")["friendly_name"].to_dict()
+    best_cost, best_name = 0, "—"
+    for _, s in mgr_sels.iterrows():
+        cost_raw = s.get("cost", "")
+        if not cost_raw or str(cost_raw) in ("", "nan"):
+            continue
+        try:
+            cost = float(cost_raw)
+        except ValueError:
+            continue
+        if cost > best_cost:
+            best_cost = cost
+            code = s["player_code"]
+            name = player_names.get(code, "")
+            if not name:
+                parts = code.split("-player-")
+                name = parts[1] if len(parts) > 1 else code
+            best_name = name
+    return (best_name, int(best_cost)) if best_cost else ("—", 0)
+
+
+@st.cache_data(ttl=300)
+def get_total_goals(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    goals_df: pd.DataFrame,
+) -> int:
+    """Returns total outfield goals scored by this manager's players across all seasons."""
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty or goals_df.empty:
+        return 0
+    total = 0
+    for _, s in mgr_sels.iterrows():
+        code = s["player_code"]
+        season_id = s["season_id"]
+        gw_from = _int(s["gw_from"])
+        gw_to_raw = s.get("gw_to", "")
+        g_rows = goals_df[
+            (goals_df["player_code"] == code) &
+            (goals_df["season_id"] == season_id) &
+            (goals_df["game_week"].astype(str) != "0") &
+            (goals_df["game_week"].astype(int) >= gw_from)
+        ]
+        if str(gw_to_raw) not in ("", "nan") and not pd.isna(gw_to_raw):
+            g_rows = g_rows[g_rows["game_week"].astype(int) <= _int(gw_to_raw)]
+        total += int(g_rows["goals_scored"].astype(int).sum()) if not g_rows.empty else 0
+    return total
 
 
 @st.cache_data(ttl=300)
@@ -738,8 +852,10 @@ with tab_managers:
                     cells.append(f'<td style="{td}text-align:right">{row["Points"]}</td>')
                 status_display = str(row.get("Status", ""))
                 status_text = status_display if status_display not in ("", "nan") else ""
-                status_cell_style = f"{td}color:#fca5a5;background:#7f1d1d;" if status_text else td
-                cells.append(f'<td style="{status_cell_style}">{status_text}</td>')
+                if status_text:
+                    cells.append(f'<td class="sq-alert" style="{td}color:#fca5a5;">{status_text}</td>')
+                else:
+                    cells.append(f'<td style="{td}"></td>')
                 sq_rows_html.append(f'<tr style="{row_style}">{"".join(cells)}</tr>')
             goals_th = '<th style="text-align:right">Goals</th>' if has_goals else ''
             pts_th = '<th style="text-align:right">Points</th>' if has_pts else ''
@@ -749,6 +865,8 @@ with tab_managers:
                 'table.sq th{padding:6px 12px;text-align:left;border-bottom:2px solid #e5e7eb;'
                 'color:#6b7280;font-weight:600;font-size:0.75em;text-transform:uppercase;letter-spacing:0.04em}'
                 'table.sq tr:hover td{background:rgba(128,128,128,0.1)!important}'
+                'table.sq td.sq-alert{background:#7f1d1d!important}'
+                'table.sq tr:hover td.sq-alert{background:#991b1b!important}'
                 '</style>'
                 '<table class="sq"><thead><tr>'
                 f'<th>Player</th><th>Pos</th><th>Team</th><th>Cost</th><th>GWs</th>{goals_th}{pts_th}<th>Status</th>'
@@ -782,17 +900,31 @@ with tab_managers:
             h1.metric("Seasons Managed", len(history_df))
             h2.metric("Best Finish", _ordinal(int(history_df['Position'].min())))
             h3.metric("Avg Position", _ordinal(round(history_df['Position'].mean())))
-            h4.metric("Total Winnings", f"£{history_df['Prize'].sum():.0f}")
+            _total_winnings = history_df['Prize'].sum()
+            h4.metric("Total Winnings", f"£{_total_winnings:.0f}" if _total_winnings else "—")
+
+            _loyal_name, _loyal_seasons = get_most_loyal_player(selected_manager, data["selections"], players_df)
+            _loyal_label = f"{_loyal_name} — {_loyal_seasons} {'season' if _loyal_seasons == 1 else 'seasons'}" if _loyal_name != "—" else "—"
+            _best_gw_label, _best_gw_pts = get_best_gameweek(selected_manager, data["best_gameweeks"])
+            _best_gw_display = f"{_best_gw_label} — {_best_gw_pts}pts" if _best_gw_label != "—" else "—"
+            _big_buy_name, _big_buy_cost = get_biggest_buy(selected_manager, data["selections"], players_df)
+            _big_buy_display = f"{_big_buy_name} — £{_big_buy_cost}" if _big_buy_name != "—" else "—"
+            _all_time_goals = get_total_goals(selected_manager, data["selections"], data["goals"])
+            f1, f2, f3, f4 = st.columns(4)
+            f1.metric("Most Selected Player", _loyal_label)
+            f2.metric("Biggest Scoring Gameweek", _best_gw_display)
+            f3.metric("Most Expensive Buy", _big_buy_display)
+            f4.metric("All-Time Goals", _all_time_goals)
 
             _best_name, _best_season, _best_pts = get_best_player_season(
                 selected_manager, data["selections"], data["goals"], players_df, seasons_df
             )
             _top_label = f"{_best_name} - {_best_pts}pts ({_best_season})" if _best_name != "—" else "—"
             _fav_club, _fav_count = get_favourite_club(selected_manager, data["selections"], players_df)
-            _fav_label = f"{_fav_club} ({_fav_count})" if _fav_club != "—" else "—"
+            _fav_label = f"{_fav_club} - {_fav_count} Players selected" if _fav_club != "—" else "—"
             bp1, bp2 = st.columns(2)
-            bp1.metric("Top All Time Player", _top_label)
-            bp2.metric("Favourite Club", _fav_label)
+            bp1.metric("Most Selected Club", _fav_label)
+            bp2.metric("Top Scoring Player", _top_label)
 
             # ── Year-by-year position table ───────────────────────────────
             pos_colours = {1: "#2563eb", 2: "#15803d", 3: "#86efac"}
@@ -815,6 +947,7 @@ with tab_managers:
             _top_per_season = get_top_player_per_season(
                 selected_manager, data["selections"], data["goals"], players_df, seasons_df
             )
+            _code_to_fpl = players_df.set_index("code")["_fpl_code"].to_dict()
             def _arrow(d: int, good_up: bool) -> str:
                 if d == 0:
                     return '<span style="color:#6b7280;font-size:0.8em"> —</span>'
@@ -832,7 +965,7 @@ with tab_managers:
                         f'<td style="padding:6px 14px;color:#6b7280">{r["Season"]}</td>'
                         f'<td style="padding:6px 14px;text-align:center;color:#6b7280">—</td>'
                         f'<td style="padding:6px 14px;text-align:right;color:#6b7280">—</td>'
-                        f'<td style="padding:6px 14px;color:#6b7280">—</td>'
+                        f'<td style="padding:6px 14px;text-align:right;color:#6b7280">—</td>'
                         f'<td style="padding:6px 14px;text-align:right;color:#6b7280">—</td>'
                         f'</tr>'
                     )
@@ -845,7 +978,21 @@ with tab_managers:
                 pos_style = f"color:{pc};font-weight:700;" if pc else "font-weight:500;"
                 prize_str = f"£{prize:.0f}" if prize else "—"
                 _tp = _top_per_season.get(r["Season"])
-                top_player_str = f"{_tp[0]} ({_tp[1]}pts)" if _tp and _tp[1] > 0 else "—"
+                if _tp and _tp[1] > 0:
+                    _tp_name, _tp_pts, _tp_code = _tp
+                    _tp_fpl = _code_to_fpl.get(_tp_code, "")
+                    if _tp_fpl:
+                        _tp_href = (
+                            f"?player={urllib.parse.quote(_tp_fpl)}"
+                            f"&mgr={urllib.parse.quote(selected_manager)}"
+                            f"&mgr_season={urllib.parse.quote(r['Season'])}"
+                            f"&table_season={urllib.parse.quote(season_id)}"
+                        )
+                        top_player_str = f'<a href="{_tp_href}" target="_self" style="color:#60a5fa;text-decoration:none">{_tp_name} ({_tp_pts}pts)</a>'
+                    else:
+                        top_player_str = f"{_tp_name} ({_tp_pts}pts)"
+                else:
+                    top_player_str = "—"
 
                 # Find the most recent older season they actually played for delta
                 prev_played = _hy_sorted[((_hy_sorted.index > _hy_i) & (_hy_sorted["played"] == True))]
@@ -861,7 +1008,7 @@ with tab_managers:
                     f'<td style="padding:6px 14px">{r["Season"]}</td>'
                     f'<td style="padding:6px 14px;text-align:center;{pos_style}">{_ordinal(pos)}{pos_delta}</td>'
                     f'<td style="padding:6px 14px;text-align:right">{pts}{pts_delta}</td>'
-                    f'<td style="padding:6px 14px;color:#9ca3af">{top_player_str}</td>'
+                    f'<td style="padding:6px 14px;text-align:right">{top_player_str}</td>'
                     f'<td style="padding:6px 14px;text-align:right">{prize_str}</td>'
                     f'</tr>'
                 )
@@ -875,7 +1022,7 @@ with tab_managers:
                 'table.hy tr:hover td{background:rgba(128,128,128,0.1)!important}'
                 '</style>'
                 '<table class="hy"><thead><tr>'
-                '<th>Season</th><th>Position</th><th>Points</th><th>Top Player</th><th>Prize</th>'
+                '<th>Season</th><th>Position</th><th>Points</th><th style="text-align:right">Top Player</th><th>Prize</th>'
                 f'</tr></thead><tbody>{"".join(hy_rows)}</tbody></table>'
             )
             st.markdown(hy_html, unsafe_allow_html=True)
@@ -883,13 +1030,12 @@ with tab_managers:
             import altair as alt
             st.markdown("**Position by season**")
             _pos_df = history_df[["Season", "Position"]].copy()
-            _n_managers = standings_df[standings_df["season_id"].isin(_pos_df["Season"])].groupby("season_id")["manager_name"].count().max() if not standings_df.empty else 16
             _pos_chart = (
                 alt.Chart(_pos_df)
                 .mark_line(point=True, color="#22c55e")
                 .encode(
                     x=alt.X("Season:O", axis=alt.Axis(labelAngle=0)),
-                    y=alt.Y("Position:Q", scale=alt.Scale(domain=[1, int(_n_managers or 16)], reverse=True), axis=alt.Axis(tickMinStep=1)),
+                    y=alt.Y("Position:Q", scale=alt.Scale(domain=[0, 20], reverse=True), axis=alt.Axis(tickMinStep=1)),
                 )
                 .properties(height=200)
             )

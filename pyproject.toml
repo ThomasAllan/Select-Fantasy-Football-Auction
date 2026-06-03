@@ -28,6 +28,7 @@ dashboard = [
     "altair>=5.0",
     "blinker>=1.8",
     "cachetools>=5.0",
+    "httptools>=0.7.1",
 ]
 dev = [
     "pytest>=8.2",
