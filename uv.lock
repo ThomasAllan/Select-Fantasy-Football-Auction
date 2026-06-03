@@ -1523,6 +1523,8 @@ dependencies = [
 [package.optional-dependencies]
 dashboard = [
     { name = "altair" },
+    { name = "blinker" },
+    { name = "cachetools" },
     { name = "streamlit" },
 ]
 dev = [
@@ -1536,6 +1538,8 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "altair", marker = "extra == 'dashboard'", specifier = ">=5.0" },
+    { name = "blinker", marker = "extra == 'dashboard'", specifier = ">=1.8" },
+    { name = "cachetools", marker = "extra == 'dashboard'", specifier = ">=5.0" },
     { name = "click", specifier = ">=8.1" },
     { name = "httpx", specifier = ">=0.27" },
     { name = "jinja2", specifier = ">=3.1" },
