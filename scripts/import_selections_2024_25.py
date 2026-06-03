@@ -25,7 +25,7 @@ SEASON_ID = "2024-25"
 MANAGER_SHEETS = [
     "Thomas Allan", "Rory Canham", "Andrea Chapman", "Steve Fidler",
     "Andy Fowkes", "Tom Fowkes", "Steve Gale", "Pam Hart", "Tim Hart",
-    "Mick Jones", "Ken Maggs", "Niall Mcloughlin", "Gary Speechley",
+    "Mick Jones", "Ken Maggs", "Niall McLoughlin", "Gary Speechley",
     "Jamie Wright", "Neil Wright",
 ]
 

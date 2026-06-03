@@ -1,6 +1,6 @@
 season_id,position,manager_name,total_points,prize
 2025-26,1,Thomas Allan,49.0,150.0
-2025-26,2,Kev Thulbourn,46.0,90.0
+2025-26,2,Kev Thulbourne,46.0,90.0
 2025-26,3,Gary Speechley,44.0,70.0
 2025-26,4,Tim Hart,40.0,40.0
 2025-26,5,Mick Jones,31.0,25.0
@@ -9,7 +9,7 @@ season_id,position,manager_name,total_points,prize
 2025-26,8,Andrea Chapman,20.0,
 2025-26,9,Ken Maggs,18.0,
 2025-26,10,Pam Hart,18.0,
-2025-26,11,Niall Mclouglin,17.0,
+2025-26,11,Niall McLoughlin,17.0,
 2025-26,12,Steve Fidler,16.0,
 2025-26,13,Jamie Wright,10.0,
 2025-26,14,Neil Wright,-6.0,
@@ -22,7 +22,7 @@ season_id,position,manager_name,total_points,prize
 2023-24,6,Tom Fowkes,23.0,
 2023-24,7,Steve Gale,19.0,
 2023-24,8,Steve Fidler,18.0,
-2023-24,9,Niall Mcloughlin,16.0,
+2023-24,9,Niall McLoughlin,16.0,
 2023-24,10,Jamie Wright,16.0,
 2023-24,11,Neil Wright,15.0,
 2023-24,12,Mick Jones,7.0,
@@ -41,7 +41,7 @@ season_id,position,manager_name,total_points,prize
 2024-25,9,Jamie Wright,18.0,
 2024-25,10,Steve Gale,17.0,
 2024-25,11,Rory Canham,10.0,
-2024-25,12,Niall Mcloughlin,6.0,
+2024-25,12,Niall McLoughlin,6.0,
 2024-25,13,Andrea Chapman,5.0,
 2024-25,14,Andy Fowkes,-6.0,
 2024-25,15,Neil Wright,-17.0,
@@ -106,3 +106,19 @@ season_id,position,manager_name,total_points,prize
 2019-20,14,Thomas Allan,0.0,
 2019-20,15,Wendy Thulbourne,-1.0,
 2019-20,16,Tim Hart,-13.0,
+2018-19,1,Thomas Allan,59,
+2018-19,2,Karl Allen,49,
+2018-19,3,Gary Evans,41,
+2018-19,4,Mick Jones,39,
+2018-19,5,Pam Hart,35,
+2018-19,6,Jamie Wright,33,
+2018-19,7,Neil Wright,28,
+2018-19,8,Gary Speechley,28,
+2018-19,9,Mark Forth,18,
+2018-19,10,Ken Maggs,15,
+2018-19,11,Wendy Thulbourne,8,
+2018-19,12,Steve Gale,4,
+2018-19,13,Kev Thulbourne,4,
+2018-19,14,Tom Fowkes,0,
+2018-19,15,Tim Hart,-1,
+2018-19,16,Andrea Chapman,-12,

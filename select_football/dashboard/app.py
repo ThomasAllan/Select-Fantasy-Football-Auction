@@ -200,26 +200,27 @@ def get_manager_history(standings_df: pd.DataFrame, prizes_df: pd.DataFrame, man
 
 
 @st.cache_data(ttl=300)
-def get_best_player_ever(
+def get_best_player_season(
     manager_name: str,
     selections_df: pd.DataFrame,
     goals_df: pd.DataFrame,
     players_df: pd.DataFrame,
     seasons_df: pd.DataFrame,
-) -> tuple[str, int]:
+) -> tuple[str, str, int]:
+    """Returns (player_name, season_id, pts) for the best single-season outfield player."""
     mgr_sels = selections_df[
         (selections_df["manager_name"] == manager_name) &
         (selections_df["position"].str.upper() != "GK")
     ]
     if mgr_sels.empty:
-        return ("—", 0)
+        return ("—", "", 0)
 
     player_names = players_df.set_index("code")["friendly_name"].to_dict()
     last_gw_map = {
         r["season_id"]: int(r["last_gw_synced"]) if str(r.get("last_gw_synced", "")) not in ("", "nan") else 38
         for _, r in seasons_df.iterrows()
     }
-    player_pts: dict[str, int] = {}
+    best: tuple[str, str, int] = ("—", "", 0)
 
     for _, s in mgr_sels.iterrows():
         code = s["player_code"]
@@ -243,13 +244,99 @@ def get_best_player_ever(
         ]
         total_goals = int(g_rows["goals_scored"].astype(int).sum()) if not g_rows.empty else 0
         pts = int(score_outfield_player(pos, total_goals))
-        player_pts[name] = player_pts.get(name, 0) + pts
+        if pts > best[2]:
+            best = (name, season_id, pts)
 
-    if not player_pts:
+    return best
+
+
+@st.cache_data(ttl=300)
+def get_favourite_club(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+) -> tuple[str, int]:
+    """Returns (club_name, count) for the club most selected from across all seasons."""
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty:
         return ("—", 0)
 
-    best_name = max(player_pts, key=player_pts.__getitem__)
-    return (best_name, player_pts[best_name])
+    code_to_team_id = players_df.set_index("code")["team_id"].to_dict()
+    team_name_lookup: dict[tuple, str] = {
+        (r["season"], str(r["element_id"])): r["friendly_name"]
+        for _, r in players_df[players_df["type"] == "team"].iterrows()
+    }
+
+    club_counts: dict[str, int] = {}
+    for _, s in mgr_sels.iterrows():
+        code = s["player_code"]
+        season_id = s["season_id"]
+        team_id = str(code_to_team_id.get(code, "") or "")
+        if not team_id:
+            continue
+        club = team_name_lookup.get((season_id, team_id), "")
+        if club:
+            club_counts[club] = club_counts.get(club, 0) + 1
+
+    if not club_counts:
+        return ("—", 0)
+    best = max(club_counts, key=club_counts.__getitem__)
+    return (best, club_counts[best])
+
+
+@st.cache_data(ttl=300)
+def get_top_player_per_season(
+    manager_name: str,
+    selections_df: pd.DataFrame,
+    goals_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+    seasons_df: pd.DataFrame,
+) -> dict[str, tuple[str, int]]:
+    """Returns {season_id: (player_name, pts)} for the top outfield player each season."""
+    mgr_sels = selections_df[
+        (selections_df["manager_name"] == manager_name) &
+        (selections_df["position"].str.upper() != "GK")
+    ]
+    if mgr_sels.empty:
+        return {}
+
+    player_names = players_df.set_index("code")["friendly_name"].to_dict()
+    last_gw_map = {
+        r["season_id"]: int(r["last_gw_synced"]) if str(r.get("last_gw_synced", "")) not in ("", "nan") else 38
+        for _, r in seasons_df.iterrows()
+    }
+    season_bests: dict[str, tuple[str, int]] = {}
+
+    for _, s in mgr_sels.iterrows():
+        code = s["player_code"]
+        pos = s["position"].upper()
+        season_id = s["season_id"]
+        gw_from = _int(s["gw_from"])
+        gw_to_raw = s.get("gw_to", "")
+        last_gw = last_gw_map.get(season_id, 38)
+        gw_to = last_gw if str(gw_to_raw) in ("", "nan") or pd.isna(gw_to_raw) else min(_int(gw_to_raw), last_gw)
+
+        name = player_names.get(code)
+        if not name:
+            parts = code.split("-player-")
+            name = parts[1] if len(parts) > 1 else code
+
+        g_rows = goals_df[
+            (goals_df["player_code"] == code) &
+            (goals_df["season_id"] == season_id) &
+            (goals_df["game_week"].astype(int) >= gw_from) &
+            (goals_df["game_week"].astype(int) <= gw_to)
+        ]
+        total_goals = int(g_rows["goals_scored"].astype(int).sum()) if not g_rows.empty else 0
+        pts = int(score_outfield_player(pos, total_goals))
+        cur = season_bests.get(season_id, ("—", 0))
+        if pts > cur[1]:
+            season_bests[season_id] = (name, pts)
+
+    return season_bests
 
 
 @st.cache_data(ttl=300)
@@ -672,8 +759,18 @@ with tab_managers:
             if not breakdown.empty:
                 gw_pts = breakdown.groupby("GW")["Pts"].sum().reset_index().sort_values("GW")
                 gw_pts["Total"] = gw_pts["Pts"].cumsum()
+                import altair as alt
                 st.markdown("**Cumulative points**")
-                st.line_chart(gw_pts.set_index("GW")[["Total"]])
+                _cum_chart = (
+                    alt.Chart(gw_pts)
+                    .mark_line(color="#22c55e")
+                    .encode(
+                        x=alt.X("GW:Q", axis=alt.Axis(tickMinStep=1)),
+                        y=alt.Y("Total:Q"),
+                    )
+                    .properties(height=200)
+                )
+                st.altair_chart(_cum_chart, use_container_width=True)
 
         # ── Season history ────────────────────────────────────────────────────
         history_df = get_manager_history(standings_df, prizes_df, selected_manager)
@@ -682,23 +779,28 @@ with tab_managers:
             st.subheader("Season History")
 
             h1, h2, h3, h4 = st.columns(4)
-            h1.metric("Seasons", len(history_df))
-            h2.metric("Best Finish", f"#{int(history_df['Position'].min())}")
-            h3.metric("Avg Position", f"{history_df['Position'].mean():.1f}")
-            h4.metric("Total Prizes", f"£{history_df['Prize'].sum():.0f}")
+            h1.metric("Seasons Managed", len(history_df))
+            h2.metric("Best Finish", _ordinal(int(history_df['Position'].min())))
+            h3.metric("Avg Position", _ordinal(round(history_df['Position'].mean())))
+            h4.metric("Total Winnings", f"£{history_df['Prize'].sum():.0f}")
 
-            _best_player, _best_pts = get_best_player_ever(
+            _best_name, _best_season, _best_pts = get_best_player_season(
                 selected_manager, data["selections"], data["goals"], players_df, seasons_df
             )
+            _top_label = f"{_best_name} - {_best_pts}pts ({_best_season})" if _best_name != "—" else "—"
+            _fav_club, _fav_count = get_favourite_club(selected_manager, data["selections"], players_df)
+            _fav_label = f"{_fav_club} ({_fav_count})" if _fav_club != "—" else "—"
             bp1, bp2 = st.columns(2)
-            bp1.metric("Best Player Ever", _best_player)
-            bp2.metric("Their Total Points", _best_pts)
+            bp1.metric("Top All Time Player", _top_label)
+            bp2.metric("Favourite Club", _fav_label)
 
             # ── Year-by-year position table ───────────────────────────────
             pos_colours = {1: "#2563eb", 2: "#15803d", 3: "#86efac"}
             # Fill in seasons the manager didn't participate in
-            all_szns = season_options  # already filtered by show_in_dashboard
             _participated = set(history_df["Season"].tolist())
+            _min_szn = min(_participated)
+            _max_szn = max(_participated)
+            all_szns = [s for s in season_options if _min_szn <= s <= _max_szn]
             _hy_full = []
             for szn in all_szns:
                 row = history_df[history_df["Season"] == szn]
@@ -710,6 +812,9 @@ with tab_managers:
                     _hy_full.append({"Season": szn, "Position": None, "Points": None,
                                      "Prize": None, "played": False})
             _hy_sorted = pd.DataFrame(_hy_full).reset_index(drop=True)
+            _top_per_season = get_top_player_per_season(
+                selected_manager, data["selections"], data["goals"], players_df, seasons_df
+            )
             def _arrow(d: int, good_up: bool) -> str:
                 if d == 0:
                     return '<span style="color:#6b7280;font-size:0.8em"> —</span>'
@@ -727,6 +832,7 @@ with tab_managers:
                         f'<td style="padding:6px 14px;color:#6b7280">{r["Season"]}</td>'
                         f'<td style="padding:6px 14px;text-align:center;color:#6b7280">—</td>'
                         f'<td style="padding:6px 14px;text-align:right;color:#6b7280">—</td>'
+                        f'<td style="padding:6px 14px;color:#6b7280">—</td>'
                         f'<td style="padding:6px 14px;text-align:right;color:#6b7280">—</td>'
                         f'</tr>'
                     )
@@ -738,6 +844,8 @@ with tab_managers:
                 pc = pos_colours.get(pos, "")
                 pos_style = f"color:{pc};font-weight:700;" if pc else "font-weight:500;"
                 prize_str = f"£{prize:.0f}" if prize else "—"
+                _tp = _top_per_season.get(r["Season"])
+                top_player_str = f"{_tp[0]} ({_tp[1]}pts)" if _tp and _tp[1] > 0 else "—"
 
                 # Find the most recent older season they actually played for delta
                 prev_played = _hy_sorted[((_hy_sorted.index > _hy_i) & (_hy_sorted["played"] == True))]
@@ -753,6 +861,7 @@ with tab_managers:
                     f'<td style="padding:6px 14px">{r["Season"]}</td>'
                     f'<td style="padding:6px 14px;text-align:center;{pos_style}">{_ordinal(pos)}{pos_delta}</td>'
                     f'<td style="padding:6px 14px;text-align:right">{pts}{pts_delta}</td>'
+                    f'<td style="padding:6px 14px;color:#9ca3af">{top_player_str}</td>'
                     f'<td style="padding:6px 14px;text-align:right">{prize_str}</td>'
                     f'</tr>'
                 )
@@ -766,13 +875,25 @@ with tab_managers:
                 'table.hy tr:hover td{background:rgba(128,128,128,0.1)!important}'
                 '</style>'
                 '<table class="hy"><thead><tr>'
-                '<th>Season</th><th>Position</th><th>Points</th><th>Prize</th>'
+                '<th>Season</th><th>Position</th><th>Points</th><th>Top Player</th><th>Prize</th>'
                 f'</tr></thead><tbody>{"".join(hy_rows)}</tbody></table>'
             )
             st.markdown(hy_html, unsafe_allow_html=True)
 
-            st.markdown("**Points by season**")
-            st.line_chart(history_df.set_index("Season")[["Points"]], color="#22c55e")
+            import altair as alt
+            st.markdown("**Position by season**")
+            _pos_df = history_df[["Season", "Position"]].copy()
+            _n_managers = standings_df[standings_df["season_id"].isin(_pos_df["Season"])].groupby("season_id")["manager_name"].count().max() if not standings_df.empty else 16
+            _pos_chart = (
+                alt.Chart(_pos_df)
+                .mark_line(point=True, color="#22c55e")
+                .encode(
+                    x=alt.X("Season:O", axis=alt.Axis(labelAngle=0)),
+                    y=alt.Y("Position:Q", scale=alt.Scale(domain=[1, int(_n_managers or 16)], reverse=True), axis=alt.Axis(tickMinStep=1)),
+                )
+                .properties(height=200)
+            )
+            st.altair_chart(_pos_chart, use_container_width=True)
 
 
 # ══ Tab 3: Players ══════════════════════════════════════════════════════════════
