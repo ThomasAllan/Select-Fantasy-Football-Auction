@@ -1788,7 +1788,7 @@ with tab_managers:
                 f1, f2, f3, f4 = st.columns(4)
                 f1.metric("Most Selected Player", _loyal_label)
                 f2.metric("Biggest Scoring Gameweek", _best_gw_display)
-                f3.metric("Money Bags", _big_buy_display)
+                f3.metric("Most Expensive Player", _big_buy_display)
                 f4.metric("All-Time Goals", _all_time_goals)
     
                 _best_name, _best_season, _best_pts = get_best_player_season(
