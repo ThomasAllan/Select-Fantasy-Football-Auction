@@ -88,6 +88,8 @@ def sync_outfield_goals(
     dry_run: bool = False,
 ) -> None:
     """Fetch per-GW goal stats for a single outfield player and upsert into goals.csv."""
+    if store.is_season_closed(season):
+        return
     history = client.get_element_history(element.id)
     if not history:
         return
@@ -120,6 +122,8 @@ def sync_team_goals_conceded(
     dry_run: bool = False,
 ) -> None:
     """Fetch goals conceded per GW for a GK team and upsert into goals.csv."""
+    if store.is_season_closed(season):
+        return
     fixtures = client.get_team_fixtures(team_id)
     rows = []
 
@@ -161,6 +165,8 @@ def sync_gk_player_goals(
     dry_run: bool = False,
 ) -> None:
     """Fetch goal stats for all GK players (for the +4 bonus) and upsert into goals.csv."""
+    if store.is_season_closed(season):
+        return
     for gk in gk_elements:
         history = client.get_element_history(gk.id)
         scored_gws = [h for h in history if h.goals_scored > 0]

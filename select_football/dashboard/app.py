@@ -1405,8 +1405,8 @@ seasons_df = data["seasons"]
 standings_df = data["standings"]
 prizes_df = data["prizes"]
 players_df = data["players"].copy()
-# Stable cross-season player identity: prefer fpl_permanent_code column (set by both
-# FPL sync and vaastav sync), fall back to parsing photo_url for any legacy rows.
+# Stable cross-season player identity: prefer fpl_permanent_code column,
+# fall back to parsing photo_url for legacy rows that predate FPL ID tracking.
 import re as _re_global
 _photo_re = _re_global.compile(r"/(\d+)\.png$")
 def _derive_fpl_code(row: "pd.Series") -> str:  # type: ignore[name-defined]
@@ -1763,7 +1763,7 @@ with tab_managers:
                         )
                         .properties(height=200)
                     )
-                    st.altair_chart(_cum_chart, use_container_width=True)
+                    st.altair_chart(_cum_chart, width='stretch')
     
             # ── Season history ────────────────────────────────────────────────────
             history_df = get_manager_history(standings_df, prizes_df, selected_manager)
@@ -1914,7 +1914,7 @@ with tab_managers:
                     )
                     .properties(height=200)
                 )
-                st.altair_chart(_pos_chart, use_container_width=True)
+                st.altair_chart(_pos_chart, width='stretch')
     
     
     # ══ Tab 3: Players ══════════════════════════════════════════════════════════════
@@ -1985,7 +1985,7 @@ with tab_players:
                 st.rerun()
         else:
             _pl_search = st.text_input(
-                "", placeholder="Search by name or team...",
+                "Search players", placeholder="Search by name or team...",
                 key=f"pl_search_{_pl_search_gen}", label_visibility="collapsed",
             )
             if _pl_search:
@@ -1996,7 +1996,7 @@ with tab_players:
                     st.rerun()
                 elif _pl_matches:
                     for _pm in _pl_matches:
-                        if st.button(_pm["label"], key=f"plr_{_pm['fpl_code']}", use_container_width=True):
+                        if st.button(_pm["label"], key=f"plr_{_pm['fpl_code']}", width='stretch'):
                             st.session_state["_pl_selected_fpl_code"] = _pm["fpl_code"]
                             st.session_state["_pl_search_gen"] = _pl_search_gen + 1
                             st.rerun()
@@ -2258,12 +2258,11 @@ with tab_players:
                         ]
                         if match.empty:
                             continue
-                        # Collect all codes for this player+season — vaastav uses historical IDs,
-                        # FPL history uses current IDs; join goals/selections across all of them.
+                        # Historical seasons may have multiple codes for the same player — join across all.
                         all_codes_h = match["code"].tolist()
                         prev_player = match.iloc[0]
                         prev_team = team_lookup.get((sid, str(prev_player.get("team_id", ""))), "—")
-                        # Pre-2023-24 vaastav data has placeholder names ("Team 1" etc.) — fall back to current season
+                        # Pre-2023-24 data may have placeholder team names — fall back to current season
                         if not prev_team or prev_team.startswith("Team ") or prev_team == "—":
                             prev_team = team_lookup.get((current_season_id_p, str(prev_player.get("team_id", ""))), prev_team)
                         # Historical alias rows have no team_id — extract team from the player code suffix
@@ -2453,7 +2452,7 @@ with tab_players:
                                     )
                                     .properties(height=200)
                                 )
-                                st.altair_chart(_chart, use_container_width=True)
+                                st.altair_chart(_chart, width='stretch')
 
 # ══ Tab 4: Trophy Cabinet ══════════════════════════════════════════════════════
 
@@ -2685,14 +2684,14 @@ with tab_stats:
         _p_name, _p_count = _prizes_list[0]
         _t1 += _tc_row("Most Prize Finishes", _bold(_p_name) + _sep() + _dim(f'{_p_count} prizes'))
     _t1 += _tc_row("Back-to-Back Champion", (
-        _bold(_rbb["manager"]) + _sep() + _dim(f'{_rbb["seasons"]} consecutive wins ({_rbb["from_season"]} – {_rbb["to_season"]})')
-    ) if _rbb else _dim("Unclaimed"))
+        _bold(_rbb["manager"]) + _sep() + _dim(f'won {_rbb["seasons"]} years in a row')
+    ) if _rbb else _dim("Unclaimed") + _sep() + _dim("won year on year"))
     _t1 += _tc_row("One-Hit Wonder", (
         _bold(_r11["manager"]) + _sep() + _dim(f'won in {_r11["season"]}')
     ) if _r11 else "—")
     _t1 += _tc_row("Worst to First", (
         _bold(_rph["manager"]) + _sep() + _dim(f'last place in {_rph["prev_season"]} — won the title in {_rph["season"]}')
-    ) if _rph else _dim("Unclaimed") + _sep() + _dim("Won after finishing last the season before"))
+    ) if _rph else _dim("Unclaimed") + _sep() + _dim("won after finishing last the season before"))
     _t1 += _tc_row("Biggest Winning Margin", (
         _bold(_rbm["manager"]) + _sep() + _dim(f'+{_rbm["margin"]}pts ahead of {_rbm["runner_up"]} in {_rbm["season"]}')
     ) if _rbm else "—")
@@ -2800,6 +2799,6 @@ with tab_stats:
     st.markdown(_table(_t2), unsafe_allow_html=True)
     st.markdown("#### 📊 Manager Records")
     st.markdown(_table(_t3), unsafe_allow_html=True)
-    st.markdown("#### ❤️ Loyalty & Character")
+    st.markdown("#### ❤️ Loyalty Records")
     st.markdown(_table(_t4), unsafe_allow_html=True)
 

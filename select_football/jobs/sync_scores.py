@@ -106,20 +106,22 @@ def main(dry_run: bool, force: bool) -> None:
     with FplClient(settings.fpl_base_url) as client:
         bootstrap = client.get_bootstrap()
 
-        if not force and is_gw_in_progress(bootstrap):
-            log.warning("sync_skipped", reason="gameweek_in_progress")
-            raise SystemExit(0)
-
-        if not is_season_in_progress(bootstrap):
-            log.warning("sync_skipped", reason="season_not_in_progress")
-            raise SystemExit(0)
-
-        # Sync player/team registry (includes status, news, news_date)
+        # Always sync players/teams — useful pre-season for auction preparation
         sync_players(bootstrap, season_id, store, dry_run=dry_run)
 
         # Split elements into GK players and outfield players
         gk_elements = [e for e in bootstrap.elements if e.element_type == 1]
         outfield_elements = [e for e in bootstrap.elements if e.element_type != 1]
+
+        # Skip goal sync if a gameweek is currently in progress (data incomplete)
+        if not force and is_gw_in_progress(bootstrap):
+            log.warning("goals_sync_skipped", reason="gameweek_in_progress")
+            raise SystemExit(0)
+
+        # Skip goal sync if no gameweek has finished yet (pre-season)
+        if not is_season_in_progress(bootstrap):
+            log.info("goals_sync_skipped", reason="no_gameweek_finished_yet")
+            raise SystemExit(0)
 
         # Sync outfield player goals
         for element in outfield_elements:

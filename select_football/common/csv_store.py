@@ -76,10 +76,6 @@ class CsvStore:
         """Return all player and team records from players.csv."""
         return self.read("players")
 
-    def read_player_links(self) -> pd.DataFrame:
-        """Return player_links.csv: maps season_code → fpl_permanent_code."""
-        return self.read("player_links")
-
     def is_season_closed(self, season_id: str) -> bool:
         """Return True if this season is marked closed=true in seasons.csv."""
         seasons = self.read("seasons")
@@ -91,17 +87,23 @@ class CsvStore:
         return str(row["closed"].iloc[0]).strip().lower() == "true"
 
     def current_season(self) -> str:
-        """Return the season_id whose date window contains today.
+        """Return the season_id for the active or next upcoming open season.
 
-        Reads seasons.csv and finds the row where start_date <= today <= end_date.
-        Raises RuntimeError if no matching season is found.
+        First looks for an open season whose date window contains today.
+        If none found (pre-season gap), returns the nearest upcoming open season
+        so that player data can be synced before the season officially starts.
+        Raises RuntimeError only if no open season exists at all.
         """
         df = self.read("seasons")
         if df.empty or "season_id" not in df.columns:
             raise RuntimeError("seasons.csv is empty or missing — cannot determine current season")
 
         today = date.today()
+        upcoming: list[tuple[date, str]] = []
+
         for _, row in df.iterrows():
+            if str(row.get("closed", "")).strip().lower() == "true":
+                continue
             try:
                 start = date.fromisoformat(str(row["start_date"]))
                 end = date.fromisoformat(str(row["end_date"]))
@@ -109,8 +111,14 @@ class CsvStore:
                 continue
             if start <= today <= end:
                 return str(row["season_id"])
+            if start > today:
+                upcoming.append((start, str(row["season_id"])))
+
+        if upcoming:
+            upcoming.sort()
+            return upcoming[0][1]
 
         raise RuntimeError(
-            f"No season in seasons.csv covers today ({today}). "
-            "Add a row to seasons.csv with the correct start_date and end_date."
+            f"No open season in seasons.csv covers or follows today ({today}). "
+            "Add a new season row to seasons.csv to enable syncing."
         )
