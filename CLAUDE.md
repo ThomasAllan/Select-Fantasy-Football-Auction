@@ -46,6 +46,7 @@ uv run pytest                   # run tests
 
 ## Data files (data/*.csv)
 All files use string dtypes throughout — pandas reads them as str. CsvStore.upsert() is idempotent.
+All persistent state lives here. Everything is tracked in git except `manager_emails.csv`, which is gitignored (contains PII, only needed locally by the send-report job).
 
 | File | Primary key | Notes |
 |---|---|---|
