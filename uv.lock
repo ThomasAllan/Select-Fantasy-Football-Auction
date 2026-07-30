@@ -1506,7 +1506,11 @@ name = "select-football"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
+    { name = "altair" },
+    { name = "blinker" },
+    { name = "cachetools" },
     { name = "click" },
+    { name = "httptools" },
     { name = "httpx" },
     { name = "jinja2" },
     { name = "openpyxl" },
@@ -1515,6 +1519,7 @@ dependencies = [
     { name = "pydantic-settings" },
     { name = "python-dotenv" },
     { name = "pyyaml" },
+    { name = "streamlit" },
     { name = "structlog" },
     { name = "tenacity" },
     { name = "tzdata" },
@@ -1522,13 +1527,6 @@ dependencies = [
 ]
 
 [package.optional-dependencies]
-dashboard = [
-    { name = "altair" },
-    { name = "blinker" },
-    { name = "cachetools" },
-    { name = "httptools" },
-    { name = "streamlit" },
-]
 dev = [
     { name = "mypy" },
     { name = "pandas-stubs" },
@@ -1539,11 +1537,11 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "altair", marker = "extra == 'dashboard'", specifier = ">=5.0" },
-    { name = "blinker", marker = "extra == 'dashboard'", specifier = ">=1.8" },
-    { name = "cachetools", marker = "extra == 'dashboard'", specifier = ">=5.0" },
+    { name = "altair", specifier = ">=5.0" },
+    { name = "blinker", specifier = ">=1.8" },
+    { name = "cachetools", specifier = ">=5.0" },
     { name = "click", specifier = ">=8.1" },
-    { name = "httptools", marker = "extra == 'dashboard'", specifier = ">=0.7.1" },
+    { name = "httptools", specifier = ">=0.7.1" },
     { name = "httpx", specifier = ">=0.27" },
     { name = "jinja2", specifier = ">=3.1" },
     { name = "mypy", marker = "extra == 'dev'", specifier = ">=1.10" },
@@ -1557,13 +1555,13 @@ requires-dist = [
     { name = "python-dotenv", specifier = ">=1.0" },
     { name = "pyyaml", specifier = ">=6.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.4" },
-    { name = "streamlit", marker = "extra == 'dashboard'", specifier = ">=1.35" },
+    { name = "streamlit", specifier = ">=1.35" },
     { name = "structlog", specifier = ">=24.1" },
     { name = "tenacity", specifier = ">=8.3" },
     { name = "tzdata", specifier = ">=2024.1" },
     { name = "xlrd", specifier = ">=2.0.2" },
 ]
-provides-extras = ["dashboard", "dev"]
+provides-extras = ["dev"]
 
 [[package]]
 name = "six"
