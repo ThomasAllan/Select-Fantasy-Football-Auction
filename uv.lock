@@ -1517,6 +1517,7 @@ dependencies = [
     { name = "pyyaml" },
     { name = "structlog" },
     { name = "tenacity" },
+    { name = "tzdata" },
     { name = "xlrd" },
 ]
 
@@ -1559,6 +1560,7 @@ requires-dist = [
     { name = "streamlit", marker = "extra == 'dashboard'", specifier = ">=1.35" },
     { name = "structlog", specifier = ">=24.1" },
     { name = "tenacity", specifier = ">=8.3" },
+    { name = "tzdata", specifier = ">=2024.1" },
     { name = "xlrd", specifier = ">=2.0.2" },
 ]
 provides-extras = ["dashboard", "dev"]

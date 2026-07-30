@@ -4,6 +4,8 @@ Usage:
     uv run sync-scores
     uv run sync-scores --dry-run
 """
+from datetime import datetime, timezone
+
 import pandas as pd
 import click
 
@@ -108,6 +110,13 @@ def main(dry_run: bool, force: bool) -> None:
 
         # Always sync players/teams — useful pre-season for auction preparation
         sync_players(bootstrap, season_id, store, dry_run=dry_run)
+
+        if not dry_run:
+            seasons_df = store.read("seasons")
+            seasons_df.loc[seasons_df["season_id"] == season_id, "last_synced_at"] = (
+                datetime.now(timezone.utc).isoformat()
+            )
+            store.write("seasons", seasons_df)
 
         # Split elements into GK players and outfield players
         gk_elements = [e for e in bootstrap.elements if e.element_type == 1]

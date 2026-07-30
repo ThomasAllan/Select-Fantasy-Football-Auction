@@ -2,6 +2,7 @@ import re as _re_aliases
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import httpx
 import pandas as pd
@@ -124,17 +125,24 @@ def load_data() -> dict:
     settings = get_settings()
     store = CsvStore(settings.data_dir)
     data_dir = Path(settings.data_dir)
-    goals_path = data_dir / "goals.csv"
-    last_updated = (
-        datetime.fromtimestamp(goals_path.stat().st_mtime).strftime("%d %b %Y, %H:%M")
-        if goals_path.exists()
-        else None
-    )
+    seasons_df = store.read("seasons")
+    current_season = store.current_season()
+    last_updated = None
+    if "last_synced_at" in seasons_df.columns:
+        last_synced_raw = seasons_df.loc[
+            seasons_df["season_id"] == current_season, "last_synced_at"
+        ]
+        if not last_synced_raw.empty and last_synced_raw.iloc[0]:
+            last_updated = (
+                datetime.fromisoformat(last_synced_raw.iloc[0])
+                .astimezone(ZoneInfo("Europe/London"))
+                .strftime("%d %b %Y, %H:%M %Z")
+            )
     players_raw = store.read_all_players()
     aliases = _load_player_aliases(data_dir)
     players_augmented = _augment_players_with_aliases(players_raw, aliases)
     return {
-        "seasons": store.read("seasons"),
+        "seasons": seasons_df,
         "selections": store.read("manager_selections"),
         "goals": store.read("goals"),
         "overrides": store.read("overrides"),

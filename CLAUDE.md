@@ -50,7 +50,7 @@ All persistent state lives here. Everything is tracked in git except `manager_em
 
 | File | Primary key | Notes |
 |---|---|---|
-| seasons.csv | season_id | season_id format: "2025-26". last_gw_synced set automatically by sync-scores. last_email_sent updated by send-report job. show_in_dashboard="false" hides a season from dashboard filter dropdowns (player history still shows all seasons). |
+| seasons.csv | season_id | season_id format: "2025-26". last_gw_synced set automatically by sync-scores. last_synced_at (UTC ISO timestamp) set by sync-scores on every real run, used by the dashboard's "Last updated" display. last_email_sent updated by send-report job. show_in_dashboard="false" hides a season from dashboard filter dropdowns (player history still shows all seasons). |
 | managers.csv | name | No ID column — manager name is the key everywhere. |
 | manager_selections.csv | player_code + season_id + manager_name + gw_from | gw_to blank = still active. GK rows: player_code = "{season}-team-{fpl_team_id}", position = "GK". No team column — team name is derived dynamically from players.csv for the dashboard. |
 | players.csv | code | code = "{season}-{type}-{element_id}". type = player or team. Synced from FPL bootstrap. Includes status/news/news_date columns (A/I/U/D/S). |
