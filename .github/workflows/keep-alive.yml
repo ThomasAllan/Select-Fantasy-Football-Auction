@@ -9,5 +9,17 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping app
-        run: curl -sSf https://select-fantasy-football-auction.streamlit.app/ -o /dev/null
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Visit app to keep it awake
+        run: python scripts/keep_app_awake.py
