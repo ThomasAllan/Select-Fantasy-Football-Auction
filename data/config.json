@@ -1,0 +1,125 @@
+{
+  "last_email_sent": "2026-08-27",
+  "email_standings_history": {
+    "2026-07": [
+      {
+        "position": 1,
+        "manager_name": "Kev Thulbourne"
+      },
+      {
+        "position": 2,
+        "manager_name": "Thomas Allan"
+      },
+      {
+        "position": 3,
+        "manager_name": "Rory Canham"
+      },
+      {
+        "position": 4,
+        "manager_name": "Gary Speechley"
+      },
+      {
+        "position": 5,
+        "manager_name": "Tim Hart"
+      },
+      {
+        "position": 6,
+        "manager_name": "Andrea Chapman"
+      },
+      {
+        "position": 7,
+        "manager_name": "Pam Hart"
+      },
+      {
+        "position": 8,
+        "manager_name": "Steve Fidler"
+      },
+      {
+        "position": 9,
+        "manager_name": "Mark Forth"
+      },
+      {
+        "position": 10,
+        "manager_name": "Mick Jones"
+      },
+      {
+        "position": 11,
+        "manager_name": "Jamie Wright"
+      },
+      {
+        "position": 12,
+        "manager_name": "Ken Maggs"
+      },
+      {
+        "position": 13,
+        "manager_name": "Steve Gale"
+      },
+      {
+        "position": 14,
+        "manager_name": "Neil Wright"
+      }
+    ],
+    "2026-08": [
+      {
+        "position": 1,
+        "manager_name": "Rory Canham"
+      },
+      {
+        "position": 2,
+        "manager_name": "Gary Speechley"
+      },
+      {
+        "position": 3,
+        "manager_name": "Andrea Chapman"
+      },
+      {
+        "position": 4,
+        "manager_name": "Pam Hart"
+      },
+      {
+        "position": 5,
+        "manager_name": "Kev Thulbourne"
+      },
+      {
+        "position": 6,
+        "manager_name": "Steve Fidler"
+      },
+      {
+        "position": 7,
+        "manager_name": "Mark Forth"
+      },
+      {
+        "position": 8,
+        "manager_name": "Tim Hart"
+      },
+      {
+        "position": 9,
+        "manager_name": "Jamie Wright"
+      },
+      {
+        "position": 10,
+        "manager_name": "Mick Jones"
+      },
+      {
+        "position": 11,
+        "manager_name": "Ken Maggs"
+      },
+      {
+        "position": 12,
+        "manager_name": "Neil Wright"
+      },
+      {
+        "position": 13,
+        "manager_name": "Steve Gale"
+      },
+      {
+        "position": 14,
+        "manager_name": "Niall McLoughlin"
+      },
+      {
+        "position": 15,
+        "manager_name": "Thomas Allan"
+      }
+    ]
+  }
+}
