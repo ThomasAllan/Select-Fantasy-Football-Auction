@@ -65,6 +65,7 @@ historic_selections/
 # Environment variables
 .env
 .env.*
+!.env.example
 
 # Streamlit cache
 .cache/

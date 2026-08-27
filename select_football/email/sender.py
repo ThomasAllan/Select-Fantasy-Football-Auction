@@ -17,7 +17,10 @@ def send_report(
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = settings.email_from
-    msg["To"] = ", ".join(recipients)
+    # Recipients go in the SMTP envelope only (see sendmail below), never in a
+    # header — managers must not see each other's addresses. The visible "To" is
+    # just the sender.
+    msg["To"] = settings.email_from
 
     msg.attach(MIMEText(html_body, "html"))
 

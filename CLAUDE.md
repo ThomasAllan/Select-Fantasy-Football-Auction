@@ -46,11 +46,13 @@ uv run pytest                   # run tests
 
 ## Data files (data/*.csv)
 All files use string dtypes throughout — pandas reads them as str. CsvStore.upsert() is idempotent.
-All persistent state lives here. Everything is tracked in git except `manager_emails.csv`, which is gitignored (contains PII, only needed locally by the send-report job).
+All persistent state lives here. Everything is tracked in git except `manager_emails.csv`, which is gitignored (contains PII). It is not kept locally either — the send-report GitHub Action writes it at runtime from the `MANAGER_EMAILS` secret.
+
+`data/config.json` (not a CSV, tracked) holds `last_email_sent` (ISO date) — written by send-report on a real send, committed back by the workflow.
 
 | File | Primary key | Notes |
 |---|---|---|
-| seasons.csv | season_id | season_id format: "2025-26". last_gw_synced set automatically by sync-scores. last_synced_at (UTC ISO timestamp) set by sync-scores on every real run, used by the dashboard's "Last updated" display. last_email_sent updated by send-report job. show_in_dashboard="false" hides a season from dashboard filter dropdowns (player history still shows all seasons). |
+| seasons.csv | season_id | season_id format: "2025-26". last_gw_synced set automatically by sync-scores. last_synced_at (UTC ISO timestamp) set by sync-scores on every real run, used by the dashboard's "Last updated" display. show_in_dashboard="false" hides a season from dashboard filter dropdowns (player history still shows all seasons). |
 | managers.csv | name | No ID column — manager name is the key everywhere. |
 | manager_selections.csv | player_code + season_id + manager_name + gw_from | gw_to blank = still active. GK rows: player_code = "{season}-team-{fpl_team_id}", position = "GK". No team column — team name is derived dynamically from players.csv for the dashboard. |
 | players.csv | code | code = "{season}-{type}-{element_id}". type = player or team. Synced from FPL bootstrap. Includes status/news/news_date columns (A/I/U/D/S). |
@@ -79,14 +81,33 @@ All persistent state lives here. Everything is tracked in git except `manager_em
 Pre-2023-24 historical data used player names instead of IDs: `2020-21-player-Harry Kane`
 
 ## Environment (.env)
+Copy `.env.example` → `.env` for local runs (gitignored). In CI these come from repo secrets.
 ```
 DATA_DIR=./data
 SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASSWORD / EMAIL_FROM
-SEND_TEST_ONLY=true/false
+SEND_TEST_ONLY=true/false        # local only — send just to TEST_EMAIL
 TEST_EMAIL=
 LOG_LEVEL=INFO
 FPL_BASE_URL=https://fantasy.premierleague.com/api
 ```
+
+## GitHub Actions
+| Workflow | Schedule | What it does |
+|---|---|---|
+| `.github/workflows/sync-scores.yml` | daily 06:00 UTC | `uv run sync-scores`, commits updated `data/*.csv` |
+| `.github/workflows/send-report.yml` | 07:00 UTC on the 1st–5th | `uv run send-report`, commits `data/config.json` marker |
+| `.github/workflows/keep-alive.yml` | every 8h | pings the Streamlit app so it doesn't sleep |
+
+**send-report** runs on the 1st–5th but self-limits to one email per month via the
+`last_email_sent` marker; the extra days cover a gameweek still being in progress on
+the 1st (it skips cleanly and retries the next day). It also skips if the active
+season has no standings yet. Manual runs: Actions → "Send monthly report" → Run
+workflow, `run_mode` = `send` / `force` (ignore the monthly guard) / `preview`
+(render to log, no email).
+
+Recipients live **only** in the `MANAGER_EMAILS` secret (CSV text, `name,email`
+header). Edit that secret to add/remove a manager. Required secrets: `MANAGER_EMAILS`,
+`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `EMAIL_FROM`.
 
 ## Historical data notes
 - Seasons 2018-19 through 2022-23 used name-based player codes

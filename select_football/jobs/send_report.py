@@ -134,6 +134,12 @@ def main(preview: bool, force: bool) -> None:
         prizes=prizes,
     )
 
+    # Never email a headers-only table (e.g. a season with no selections imported yet).
+    # --preview still renders so the layout can be inspected.
+    if not standings and not preview:
+        log.warning("send_skipped", reason="no_standings", season=season_id)
+        raise SystemExit(0)
+
     html = render_report(standings)
 
     if preview:

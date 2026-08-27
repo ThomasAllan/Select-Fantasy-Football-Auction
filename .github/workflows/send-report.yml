@@ -1,0 +1,60 @@
+name: Send monthly report
+
+on:
+  schedule:
+    - cron: "0 7 1-5 * *"     # ~7am UTC, 1st–5th of the month; self-limits to one send/month
+  workflow_dispatch:
+    inputs:
+      run_mode:
+        description: "send = normal (once-a-month guard) · force = send even if already sent · preview = render to log, no email"
+        type: choice
+        options: [send, force, preview]
+        default: send
+
+permissions:
+  contents: write            # commit the "already sent this month" marker
+
+jobs:
+  send-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Set up Python
+        run: uv python install 3.11
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Materialise recipient list from secret
+        run: printf '%s\n' "${MANAGER_EMAILS}" > data/manager_emails.csv
+        env:
+          MANAGER_EMAILS: ${{ secrets.MANAGER_EMAILS }}
+
+      - name: Send report
+        run: |
+          case "${{ github.event.inputs.run_mode || 'send' }}" in
+            preview) uv run send-report --preview ;;
+            force)   uv run send-report --force ;;
+            send)    uv run send-report ;;
+          esac
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+
+      - name: Persist "sent this month" marker
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/config.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Record monthly report sent"
+          git pull --rebase --autostash origin main
+          git push
