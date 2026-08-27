@@ -95,7 +95,7 @@ def _compute_best_gameweeks(store: CsvStore) -> pd.DataFrame:
 
 @click.command()
 @click.option("--dry-run", is_flag=True, help="Fetch from FPL but do not write to CSVs")
-@click.option("--force", is_flag=True, help="Skip gameweek-in-progress guard and sync anyway")
+@click.option("--force", is_flag=True, help="Sync even in pre-season, before any gameweek starts")
 def main(dry_run: bool, force: bool) -> None:
     settings = get_settings()
     configure_logging(settings.log_level)
@@ -122,14 +122,11 @@ def main(dry_run: bool, force: bool) -> None:
         gk_elements = [e for e in bootstrap.elements if e.element_type == 1]
         outfield_elements = [e for e in bootstrap.elements if e.element_type != 1]
 
-        # Skip goal sync if a gameweek is currently in progress (data incomplete)
-        if not force and is_gw_in_progress(bootstrap):
-            log.warning("goals_sync_skipped", reason="gameweek_in_progress")
-            raise SystemExit(0)
-
-        # Skip goal sync if no gameweek has finished yet (pre-season)
-        if not is_season_in_progress(bootstrap):
-            log.info("goals_sync_skipped", reason="no_gameweek_finished_yet")
+        # Sync scores continuously, including while a gameweek is in progress, so
+        # the live table reflects partial goals as they happen. Skip only in true
+        # pre-season, before any gameweek has started — there is nothing to sync yet.
+        if not force and not is_season_in_progress(bootstrap) and not is_gw_in_progress(bootstrap):
+            log.info("goals_sync_skipped", reason="no_gameweek_started_yet")
             raise SystemExit(0)
 
         # Sync outfield player goals

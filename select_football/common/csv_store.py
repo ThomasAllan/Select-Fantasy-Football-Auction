@@ -45,7 +45,13 @@ class CsvStore:
 
         This operation is idempotent: running it twice with the same data
         produces the same result.
+
+        An empty new_df is a no-op: there is nothing to merge, and it carries
+        no columns to validate key_cols against.
         """
+        if new_df.empty:
+            return
+
         existing = self.read(name)
 
         if existing.empty:

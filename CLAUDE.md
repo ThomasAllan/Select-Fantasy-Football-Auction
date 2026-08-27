@@ -65,8 +65,8 @@ All persistent state lives here. Everything is tracked in git except `manager_em
 - **GK (team slot)**: goals_conceded × (−1), plus if any GK player for that team scored: goals_scored × 4
 - **Override**: when an override row exists, override_points is used as the final GW score directly (no position multiplier applied)
 - **Active season**: determined from seasons.csv start_date/end_date — no CURRENT_SEASON env var needed
-- Sync job skips if GW in progress (FPL: is_current=True, finished=False, data_checked=False)
-- Send job skips if last_email_sent in seasons.csv is within the current calendar month
+- Sync job runs continuously, including while a GW is in progress, so the live table reflects partial goals; it skips only in true pre-season, before any GW has started (override with `--force`)
+- Send job skips if the monthly email already went out this calendar month, or if a GW is in progress (FPL: is_current=True, finished=False, data_checked=False)
 
 ## FPL API
 - Base URL: https://fantasy.premierleague.com/api (overridable via FPL_BASE_URL env)
