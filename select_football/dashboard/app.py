@@ -1,4 +1,5 @@
 import re as _re_aliases
+import unicodedata
 import urllib.parse
 from datetime import datetime
 from pathlib import Path
@@ -232,6 +233,20 @@ def _code_team_name(code: str, pos: str, team_id: str, team_names_map: dict, pla
 def _ordinal(n: int) -> str:
     suffix = {1: "st", 2: "nd", 3: "rd"}.get(n if n < 20 else n % 10, "th")
     return f"{n}{suffix}"
+
+
+# Letters that NFKD does not decompose to a plain ASCII base — mapped explicitly.
+_FOLD_MAP = str.maketrans({
+    "ø": "o", "Ø": "o", "æ": "ae", "Æ": "ae", "œ": "oe", "Œ": "oe",
+    "ß": "ss", "ð": "d", "Ð": "d", "þ": "th", "Þ": "th", "ħ": "h", "Ħ": "h",
+    "ł": "l", "Ł": "l", "đ": "d", "Đ": "d", "ı": "i", "İ": "i", "ŧ": "t", "Ŧ": "t",
+})
+
+
+def _fold(text: str) -> str:
+    """Lower-case and strip accents so 'odegaard' matches 'Ødegaard', 'munoz' → 'Muñoz'."""
+    decomposed = unicodedata.normalize("NFKD", text.translate(_FOLD_MAP))
+    return "".join(c for c in decomposed if not unicodedata.combining(c)).lower()
 
 
 
@@ -1967,7 +1982,10 @@ with tab_players:
             seen_fpl_codes.add(fpl_c)
             team = team_lookup.get((r["season"], str(r.get("team_id", ""))), "")
             label = f"{fname} - {team}" if team else fname
-            labelled.append({"label": label, "friendly_name": fname, "fpl_code": fpl_c, "team": team})
+            labelled.append({
+                "label": label, "friendly_name": fname, "fpl_code": fpl_c,
+                "team": team, "search": _fold(label),
+            })
         labelled.sort(key=lambda x: (x["team"], x["friendly_name"]))
 
         # Resolve ?player=<fpl_code> navigation from squad table links
@@ -1997,7 +2015,8 @@ with tab_players:
                 key=f"pl_search_{_pl_search_gen}", label_visibility="collapsed",
             )
             if _pl_search:
-                _pl_matches = [p for p in labelled if _pl_search.lower() in p["label"].lower()][:8]
+                _q = _fold(_pl_search)
+                _pl_matches = [p for p in labelled if _q in p["search"]][:8]
                 if len(_pl_matches) == 1:
                     st.session_state["_pl_selected_fpl_code"] = _pl_matches[0]["fpl_code"]
                     st.session_state["_pl_search_gen"] = _pl_search_gen + 1
