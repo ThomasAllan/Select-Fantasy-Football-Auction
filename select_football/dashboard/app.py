@@ -2358,6 +2358,15 @@ with tab_players:
                         st.divider()
                         st.markdown("**Season history**")
 
+                        # Delta arrows compare a season with the one before it. Suppress
+                        # them for a season that isn't closed yet — a part-played season
+                        # against a full one is a misleading comparison.
+                        if "closed" in seasons_df.columns:
+                            _is_closed_szn = seasons_df["closed"].str.strip().str.lower() == "true"
+                            _closed_seasons = set(seasons_df[_is_closed_szn]["season_id"])
+                        else:
+                            _closed_seasons = set(all_season_ids)
+
                         goals_vals = [r["Goals_raw"] for r in hist_rows]
                         pts_vals = []
                         for r in hist_rows:
@@ -2366,10 +2375,12 @@ with tab_players:
                             except (ValueError, TypeError):
                                 pts_vals.append(None)
 
-                        def _with_delta(val, vals: list, i: int) -> str:
+                        def _with_delta(val, vals: list, i: int, show_delta: bool = True) -> str:
                             cur = vals[i]
                             if cur is None:
                                 return str(val)
+                            if not show_delta:
+                                return str(cur)
                             nxt = vals[i + 1] if i + 1 < len(vals) else None
                             if nxt is None:
                                 return str(cur)
@@ -2383,11 +2394,12 @@ with tab_players:
 
                         display_rows = []
                         for i, row in enumerate(hist_rows):
+                            _show_delta = row["Season"] in _closed_seasons
                             goals_display = _with_delta(
                                 row["Goals_raw"] if row["Goals_raw"] is not None else "—",
-                                goals_vals, i,
+                                goals_vals, i, _show_delta,
                             ) if row["Goals_raw"] is not None else "—"
-                            pts_display = _with_delta(row["Points"], pts_vals, i)
+                            pts_display = _with_delta(row["Points"], pts_vals, i, _show_delta)
                             display_rows.append({
                                 "Season": row["Season"],
                                 "Badge": row["Badge"],
