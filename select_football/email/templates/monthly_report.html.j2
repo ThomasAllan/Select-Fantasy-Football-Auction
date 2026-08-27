@@ -2,57 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 14px;
-      color: #333;
-    }
-    table {
-      border-collapse: collapse;
-      min-width: 400px;
-    }
-    td, th {
-      border: 1px solid #dddddd;
-      text-align: center;
-      padding: 6px 20px;
-    }
-    th {
-      background-color: #dddddd;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    .footer {
-      margin-top: 12px;
-      font-size: 12px;
-      color: #888;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-  <p>Hi, please see the updated table below.</p>
-  <p>&nbsp;</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Position</th>
-        <th>Manager</th>
-        <th>Points</th>
-        <th>Prize</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for item in standings %}
-      <tr>
-        <td>{{ item.position }}</td>
-        <td>{{ item.manager_name }}</td>
-        <td>{{ item.total_points | int }}</td>
-        <td>{% if item.prize %}£{{ item.prize | int }}{% endif %}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
+<body style="margin:0;padding:0;background:#f3f4f6;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+         style="background:#f3f4f6;padding:24px 12px;">
+    <tr>
+      <td align="center">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0"
+               style="max-width:600px;width:100%;background:#ffffff;border:1px solid #e5e7eb;
+                      border-radius:8px;overflow:hidden;
+                      font-family:Arial,Helvetica,sans-serif;color:#1f2937;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:#1f6f43;padding:20px 28px;">
+              <div style="color:#ffffff;font-size:18px;font-weight:bold;letter-spacing:0.3px;">
+                Select Fantasy Football
+              </div>
+              <div style="color:#c7e6d3;font-size:13px;margin-top:3px;">
+                Monthly League Table{% if season_id %} &middot; {{ season_id }}{% endif %}
+              </div>
+            </td>
+          </tr>
+
+          {% if gameweek %}
+          <tr>
+            <td style="padding:16px 28px 0;color:#6b7280;font-size:13px;">
+              After Gameweek {{ gameweek }}
+            </td>
+          </tr>
+          {% endif %}
+
+          <!-- Table -->
+          <tr>
+            <td style="padding:12px 28px 8px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                     style="border-collapse:collapse;font-size:14px;">
+                <thead>
+                  <tr>
+                    <th align="left" style="padding:8px 6px;border-bottom:2px solid #1f6f43;
+                        font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;width:34px;">#</th>
+                    {% if movement is not none %}
+                    <th align="center" style="padding:8px 6px;border-bottom:2px solid #1f6f43;width:44px;">&nbsp;</th>
+                    {% endif %}
+                    <th align="left" style="padding:8px 6px;border-bottom:2px solid #1f6f43;
+                        font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;">Manager</th>
+                    <th align="right" style="padding:8px 6px;border-bottom:2px solid #1f6f43;
+                        font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;">Pts</th>
+                    <th align="right" style="padding:8px 6px;border-bottom:2px solid #1f6f43;
+                        font-size:11px;color:#6b7280;text-transform:uppercase;letter-spacing:0.5px;">Prize</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for item in standings %}
+                  {%- set accent = ['#d4af37', '#9ca3af', '#b06f3c'][loop.index0] if loop.index <= 3 else 'transparent' -%}
+                  {%- set bold = 'font-weight:bold;' if loop.index <= 3 else '' -%}
+                  <tr style="{% if loop.index == 1 %}background:#fcf9ef;{% endif %}">
+                    <td align="left" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;
+                        border-left:3px solid {{ accent }};{{ bold }}">{{ item.position }}</td>
+                    {% if movement is not none %}
+                    <td align="center" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;font-size:12px;">
+                      {%- set m = movement.get(item.manager_name) -%}
+                      {%- if m is none -%}
+                        <span style="color:#9ca3af;">new</span>
+                      {%- elif m > 0 -%}
+                        <span style="color:#16a34a;">&#9650;&nbsp;{{ m }}</span>
+                      {%- elif m < 0 -%}
+                        <span style="color:#dc2626;">&#9660;&nbsp;{{ -m }}</span>
+                      {%- else -%}
+                        <span style="color:#9ca3af;">&ndash;</span>
+                      {%- endif -%}
+                    </td>
+                    {% endif %}
+                    <td align="left" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;{{ bold }}">{{ item.manager_name }}</td>
+                    <td align="right" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;{{ bold }}">{{ item.total_points | int }}</td>
+                    <td align="right" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;
+                        color:#1f6f43;font-weight:bold;">{% if item.prize %}&pound;{{ item.prize | int }}{% endif %}</td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:16px 28px;background:#fafafa;border-top:1px solid #e5e7eb;
+                       color:#9ca3af;font-size:12px;">
+              Updated {{ timestamp }}
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
   </table>
-  <p class="footer">Data is correct as of {{ timestamp }}</p>
 </body>
 </html>

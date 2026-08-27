@@ -13,7 +13,7 @@ import click
 
 from select_football.common.csv_store import CsvStore
 from select_football.common.logging import configure_logging, get_logger
-from select_football.common.models import Prize
+from select_football.common.models import ManagerStanding, Prize
 from select_football.config import get_settings
 from select_football.core.standings import compute_standings
 from select_football.email.renderer import render_report
@@ -76,9 +76,43 @@ def _already_sent_this_month(store: CsvStore, season_id: str) -> bool:
         return False
 
 
-def _update_last_sent(store: CsvStore, season_id: str) -> None:
+def _current_month() -> str:
+    return date.today().strftime("%Y-%m")
+
+
+def _movement_baseline(config: dict) -> list[dict] | None:
+    """The most recent monthly snapshot from a month before this one, or None."""
+    history: dict = config.get("email_standings_history", {})
+    past = sorted(m for m in history if m < _current_month())
+    return history[past[-1]] if past else None
+
+
+def _compute_movement(
+    standings: list[ManagerStanding], previous: list[dict]
+) -> dict[str, int | None]:
+    """manager -> places gained since `previous` (+ve = up, None = not in it)."""
+    prev_pos = {row["manager_name"]: int(row["position"]) for row in previous}
+    return {
+        s.manager_name: (prev_pos[s.manager_name] - s.position)
+        if s.manager_name in prev_pos
+        else None
+        for s in standings
+    }
+
+
+def _record_send(store: CsvStore, standings: list[ManagerStanding]) -> None:
+    """Mark the email sent this month and snapshot the table for next month's movement."""
     config = _read_config(store)
     config["last_email_sent"] = date.today().isoformat()
+
+    history: dict = config.get("email_standings_history", {})
+    history[_current_month()] = [
+        {"position": s.position, "manager_name": s.manager_name} for s in standings
+    ]
+    for old in sorted(history)[:-3]:  # keep the 3 most recent months
+        del history[old]
+    config["email_standings_history"] = history
+
     _write_config(store, config)
 
 
@@ -140,7 +174,15 @@ def main(preview: bool, force: bool) -> None:
         log.warning("send_skipped", reason="no_standings", season=season_id)
         raise SystemExit(0)
 
-    html = render_report(standings)
+    baseline = _movement_baseline(_read_config(store))
+    movement = _compute_movement(standings, baseline) if baseline else None
+
+    html = render_report(
+        standings,
+        season_id=season_id,
+        gameweek=current_gw,
+        movement=movement,
+    )
 
     if preview:
         click.echo(html)
@@ -154,5 +196,5 @@ def main(preview: bool, force: bool) -> None:
     subject = f"Select Fantasy Football League Table {season_id}"
     send_report(html, recipients, subject, settings)
 
-    _update_last_sent(store, season_id)
+    _record_send(store, standings)
     log.info("send_report_complete", season=season_id, recipients=len(recipients))
