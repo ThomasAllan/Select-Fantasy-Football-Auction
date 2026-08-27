@@ -4,8 +4,10 @@ from select_football.email.renderer import render_report
 from select_football.jobs.send_report import _compute_movement, _movement_baseline
 
 
-def _standing(pos: int, name: str) -> ManagerStanding:
-    return ManagerStanding(position=pos, manager_name=name, total_points=float(20 - pos))
+def _standing(pos: int, name: str, prize: float | None = None) -> ManagerStanding:
+    return ManagerStanding(
+        position=pos, manager_name=name, total_points=float(20 - pos), prize=prize
+    )
 
 
 def test_compute_movement_up_down_same_and_new():
@@ -48,15 +50,35 @@ def test_movement_baseline_none_when_no_past_month(monkeypatch):
 def test_render_report_omits_movement_column_when_none():
     html = render_report([_standing(1, "Rory")], season_id="2026-27", gameweek=3)
     assert "After Gameweek 3" in html
-    assert "new" not in html and "&#9650;" not in html
+    assert "&#9650;" not in html and "&#9660;" not in html
 
 
 def test_render_report_shows_movement_markers():
     html = render_report(
-        [_standing(1, "Rory"), _standing(2, "Sam")],
+        [_standing(1, "Rory"), _standing(2, "Kev"), _standing(3, "Sam")],
         season_id="2026-27",
         gameweek=3,
-        movement={"Rory": 2, "Sam": None},
+        movement={"Rory": 2, "Kev": -1, "Sam": 0},
     )
-    assert "&#9650;" in html   # up arrow for Rory
-    assert "new" in html       # Sam has no prior snapshot
+    assert "&#9650;&nbsp;2" in html   # up two for Rory
+    assert "&#9660;&nbsp;1" in html   # down one for Kev
+    assert "&ndash;" in html          # no change for Sam
+
+
+def test_render_report_prize_positions_use_league_app_colours():
+    html = render_report(
+        [
+            _standing(1, "A", prize=150),
+            _standing(2, "B", prize=90),
+            _standing(3, "C", prize=70),
+            _standing(4, "D", prize=40),   # lower prize position -> amber, like the app
+            _standing(5, "E", prize=25),
+            _standing(6, "F"),             # no prize -> no accent
+        ],
+        season_id="2026-27",
+    )
+    assert "border-left:4px solid #2563eb" in html   # 1st
+    assert "border-left:4px solid #15803d" in html   # 2nd
+    assert "border-left:4px solid #86efac" in html   # 3rd
+    assert "border-left:4px solid #f59e0b" in html   # 4th / 5th
+    assert "border-left:4px solid transparent" in html   # 6th, no prize

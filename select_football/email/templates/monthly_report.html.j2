@@ -55,28 +55,26 @@
                   </tr>
                 </thead>
                 <tbody>
+                  {%- set pos_colours = {1: '#2563eb', 2: '#15803d', 3: '#86efac'} -%}
                   {% for item in standings %}
-                  {%- set accent = ['#d4af37', '#9ca3af', '#b06f3c'][loop.index0] if loop.index <= 3 else 'transparent' -%}
-                  {%- set bold = 'font-weight:bold;' if loop.index <= 3 else '' -%}
-                  <tr style="{% if loop.index == 1 %}background:#fcf9ef;{% endif %}">
+                  {%- set accent = pos_colours[item.position] if item.position in pos_colours else ('#f59e0b' if item.prize else 'transparent') -%}
+                  <tr style="{% if loop.index is odd %}background:#f7f7f7;{% endif %}">
                     <td align="left" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;
-                        border-left:3px solid {{ accent }};{{ bold }}">{{ item.position }}</td>
+                        border-left:4px solid {{ accent }};font-weight:600;">{{ item.position }}</td>
                     {% if movement is not none %}
                     <td align="center" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;font-size:12px;">
                       {%- set m = movement.get(item.manager_name) -%}
-                      {%- if m is none -%}
-                        <span style="color:#9ca3af;">new</span>
-                      {%- elif m > 0 -%}
+                      {%- if m and m > 0 -%}
                         <span style="color:#16a34a;">&#9650;&nbsp;{{ m }}</span>
-                      {%- elif m < 0 -%}
+                      {%- elif m and m < 0 -%}
                         <span style="color:#dc2626;">&#9660;&nbsp;{{ -m }}</span>
                       {%- else -%}
                         <span style="color:#9ca3af;">&ndash;</span>
                       {%- endif -%}
                     </td>
                     {% endif %}
-                    <td align="left" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;{{ bold }}">{{ item.manager_name }}</td>
-                    <td align="right" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;{{ bold }}">{{ item.total_points | int }}</td>
+                    <td align="left" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;">{{ item.manager_name }}</td>
+                    <td align="right" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;">{{ item.total_points | int }}</td>
                     <td align="right" style="padding:10px 6px;border-bottom:1px solid #f0f0f0;
                         color:#1f6f43;font-weight:bold;">{% if item.prize %}&pound;{{ item.prize | int }}{% endif %}</td>
                   </tr>
