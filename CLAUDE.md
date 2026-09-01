@@ -28,8 +28,12 @@ select_football_auction/
 │   │   └── send_report.py      CLI: uv run send-report [--preview] [--force]
 │   └── dashboard/app.py        Streamlit stub (future)
 ├── data/                       CSV files — gitignored, all persistent state lives here
+├── import/                     Drop a FOOTY20XX.xlsx here; import_season.py loads it, then deletes it
 ├── scripts/
-│   └── import_selections.py    One-off import from Google Sheets TSV export
+│   ├── import_season.py        Load manager selections from a FOOTY20XX.xlsx workbook
+│   ├── team_aliases.py         Team-name spellings → canonical FPL full_name (used by import_season)
+│   ├── manager_names.py        Sheet-name → canonical manager-name aliases
+│   └── keep_app_awake.py       Pings the Streamlit app (keep-alive workflow)
 └── tests/                      pytest unit tests
 ```
 
@@ -43,6 +47,37 @@ uv run send-report --preview    # render HTML to stdout, no email sent
 uv run send-report              # compute standings → email all managers
 uv run pytest                   # run tests
 ```
+
+## Importing a new season's selections
+1. `uv run sync-scores` — populates `players.csv` for the new season
+2. Drop the auction workbook (`FOOTY20XX.xlsx`) into `import/`
+3. `uv run python scripts/import_season.py --dry-run --auto` — preview
+4. Resolve anything still unmatched (see below), then run without `--dry-run`:
+   writes `data/manager_selections.csv` and deletes the workbook from `import/`
+
+**Squad shape** (which rows are DEF/MID/FWD) comes from `SEASON_SHAPES` in
+`scripts/import_season.py` — `2026-27` is `(3, 5, 2)`; add a tuple per season, or
+override once with `--shape 3-5-2`. It's printed at the top of every run.
+
+The import is **all-or-nothing**: if any player or GK team is unmatched it writes
+nothing, keeps the workbook, and exits non-zero (a `--dry-run` with unmatched
+rows too). It writes the unmatched rows to `import/fixes.csv` — blank
+`player_code` column plus a `suggestions` column; an existing file is never
+overwritten. `--auto` accepts confident single same-club name matches itself
+(printed for review). Fill in remaining codes and re-run with
+`--overrides import/fixes.csv --auto`, or add a bad club spelling to
+`scripts/team_aliases.py`.
+
+Before a real import it verifies and blocks on: a matched player whose **FPL club
+differs from column B** on the sheet (pin that `player_code` in the fixes CSV to
+accept it — an override match counts as "checked" and the mismatch becomes a
+note), a **duplicate pick** (one player/GK team in two squads), or a squad **over
+`--budget`** (default 100). A squad whose costs don't match the sheet's own total
+is a warning (`--strict` makes warnings block). `--dry-run` lists all of this and
+exits 0.
+Explicit path (`... import_season.py FOOTY2026.xlsx`) skips `import/` and never
+deletes. Only `import/README.md` is tracked in git; workbooks and `fixes.csv` are
+gitignored. See `import/README.md` and the header of `scripts/import_season.py`.
 
 ## Data files (data/*.csv)
 All files use string dtypes throughout — pandas reads them as str. CsvStore.upsert() is idempotent.

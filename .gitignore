@@ -50,6 +50,10 @@ scripts/*.tsv
 # Historic selection Excel files — source data, not committed
 historic_selections/
 
+# Season selection imports — workbooks + fix files are dropped in, then deleted; only the README is tracked
+import/*
+!import/README.md
+
 # Claude Code memory and session data
 .claude/
 
