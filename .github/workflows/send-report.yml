@@ -10,6 +10,10 @@ on:
         type: choice
         options: [send, force, preview]
         default: send
+      test_recipient:
+        description: "If set, send a one-off TEST email to just this address (guards off, not recorded). Overrides run_mode."
+        type: string
+        default: ""
 
 permissions:
   contents: write            # commit the "already sent this month" marker
@@ -29,19 +33,19 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Materialise recipient list from secret
-        run: printf '%s\n' "${MANAGER_EMAILS}" > data/manager_emails.csv
-        env:
-          MANAGER_EMAILS: ${{ secrets.MANAGER_EMAILS }}
-
       - name: Send report
         run: |
+          if [ -n "${{ github.event.inputs.test_recipient }}" ]; then
+            uv run send-report --to "${{ github.event.inputs.test_recipient }}"
+            exit $?
+          fi
           case "${{ github.event.inputs.run_mode || 'send' }}" in
             preview) uv run send-report --preview ;;
             force)   uv run send-report --force ;;
             send)    uv run send-report ;;
           esac
         env:
+          MANAGER_EMAILS: ${{ secrets.MANAGER_EMAILS }}
           SMTP_HOST: ${{ secrets.SMTP_HOST }}
           SMTP_PORT: ${{ secrets.SMTP_PORT }}
           SMTP_USER: ${{ secrets.SMTP_USER }}

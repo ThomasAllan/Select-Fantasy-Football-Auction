@@ -13,15 +13,19 @@ def send_report(
     recipients: list[str],
     subject: str,
     settings: Settings,
+    text_body: str | None = None,
 ) -> None:
     msg = MIMEMultipart("alternative")
     msg["Subject"] = subject
     msg["From"] = settings.email_from
-    # Recipients go in the SMTP envelope only (see sendmail below), never in a
-    # header — managers must not see each other's addresses. The visible "To" is
-    # just the sender.
-    msg["To"] = settings.email_from
+    # Everyone goes in a visible "To" — this is a friends' league and a shared
+    # thread is wanted. (Addresses are therefore visible to all recipients.)
+    msg["To"] = ", ".join(recipients)
 
+    # A text/plain part must come first; clients render the last part they
+    # understand. An HTML-only message is a common spam-filter trigger.
+    if text_body:
+        msg.attach(MIMEText(text_body, "plain"))
     msg.attach(MIMEText(html_body, "html"))
 
     log.info("sending_email", recipients=recipients, subject=subject)

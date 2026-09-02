@@ -191,3 +191,7 @@ def main(dry_run: bool, force: bool) -> None:
             log.info("best_gameweeks_precomputed", managers=len(best_gw_df))
 
     log.info("sync_scores_complete", season=season_id, dry_run=dry_run)
+
+
+if __name__ == "__main__":
+    main()

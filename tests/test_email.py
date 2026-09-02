@@ -1,7 +1,11 @@
 """Movement / snapshot logic for the monthly report email."""
 from select_football.common.models import ManagerStanding
 from select_football.email.renderer import render_report
-from select_football.jobs.send_report import _compute_movement, _movement_baseline
+from select_football.jobs.send_report import (
+    _compute_movement,
+    _movement_baseline,
+    _parse_manager_emails,
+)
 
 
 def _standing(pos: int, name: str, prize: float | None = None) -> ManagerStanding:
@@ -63,6 +67,32 @@ def test_render_report_shows_movement_markers():
     assert "&#9650;&nbsp;2" in html   # up two for Rory
     assert "&#9660;&nbsp;1" in html   # down one for Kev
     assert "&ndash;" in html          # no change for Sam
+
+
+def test_parse_manager_emails_from_name_email_csv():
+    raw = "name,email\nKev Thulbourne,kev@example.com\nRory Canham,rory@example.com\n"
+    assert _parse_manager_emails(raw) == ["kev@example.com", "rory@example.com"]
+
+
+def test_parse_manager_emails_from_plain_list():
+    assert _parse_manager_emails("a@x.com, b@y.com ; c@z.com") == [
+        "a@x.com",
+        "b@y.com",
+        "c@z.com",
+    ]
+
+
+def test_parse_manager_emails_newline_list_no_header():
+    raw = "thomas.allan@me.com\nthomas.allan@beko.com\n"
+    assert _parse_manager_emails(raw) == [
+        "thomas.allan@me.com",
+        "thomas.allan@beko.com",
+    ]
+
+
+def test_parse_manager_emails_empty():
+    assert _parse_manager_emails("") == []
+    assert _parse_manager_emails("name,email\n") == []
 
 
 def test_render_report_prize_positions_use_league_app_colours():

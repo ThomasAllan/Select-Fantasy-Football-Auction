@@ -41,9 +41,6 @@ build/
 dist/
 *.egg-info/
 
-# Manager emails — kept private, only needed for the local email-sending job
-data/manager_emails.csv
-
 # Raw selection TSV imports — already processed into CSVs
 scripts/*.tsv
 

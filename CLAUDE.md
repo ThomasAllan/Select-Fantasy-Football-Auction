@@ -44,6 +44,7 @@ uv sync --extra dev             # + dev tools (pytest, ruff, mypy)
 uv run sync-scores              # pull FPL data → update CSVs
 uv run sync-scores --dry-run    # fetch only, no writes
 uv run send-report --preview    # render HTML to stdout, no email sent
+uv run send-report --to me@x.com  # test send to just that address (guards off, not recorded)
 uv run send-report              # compute standings → email all managers
 uv run pytest                   # run tests
 ```
@@ -81,7 +82,7 @@ gitignored. See `import/README.md` and the header of `scripts/import_season.py`.
 
 ## Data files (data/*.csv)
 All files use string dtypes throughout — pandas reads them as str. CsvStore.upsert() is idempotent.
-All persistent state lives here. Everything is tracked in git except `manager_emails.csv`, which is gitignored (contains PII). It is not kept locally either — the send-report GitHub Action writes it at runtime from the `MANAGER_EMAILS` secret.
+All persistent state lives here and is tracked in git. Manager email addresses are **not** a data file — they live only in the `MANAGER_EMAILS` secret (env var locally) and are read straight from there by send-report.
 
 `data/config.json` (not a CSV, tracked) holds `last_email_sent` (ISO date) — written by send-report on a real send, committed back by the workflow.
 
@@ -120,6 +121,7 @@ Copy `.env.example` → `.env` for local runs (gitignored). In CI these come fro
 ```
 DATA_DIR=./data
 SMTP_HOST / SMTP_PORT / SMTP_USER / SMTP_PASSWORD / EMAIL_FROM
+MANAGER_EMAILS=                  # report recipients; "name,email" CSV text or a plain address list
 SEND_TEST_ONLY=true/false        # local only — send just to TEST_EMAIL
 TEST_EMAIL=
 LOG_LEVEL=INFO
@@ -138,11 +140,15 @@ FPL_BASE_URL=https://fantasy.premierleague.com/api
 the 1st (it skips cleanly and retries the next day). It also skips if the active
 season has no standings yet. Manual runs: Actions → "Send monthly report" → Run
 workflow, `run_mode` = `send` / `force` (ignore the monthly guard) / `preview`
-(render to log, no email).
+(render to log, no email). Set `test_recipient` to an address to send a one-off
+`[TEST]` copy to just that person — guards off, send not recorded, so the real
+monthly email still goes out later. It overrides `run_mode`.
 
-Recipients live **only** in the `MANAGER_EMAILS` secret (CSV text, `name,email`
-header). Edit that secret to add/remove a manager. Required secrets: `MANAGER_EMAILS`,
-`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `EMAIL_FROM`.
+Recipients live **only** in the `MANAGER_EMAILS` secret, read directly by
+send-report (no file is written). The value can be the `name,email` CSV text or a
+plain comma/semicolon/newline-separated list of addresses — any token without an
+`@` is ignored. Edit that secret to add/remove a manager. Required secrets:
+`MANAGER_EMAILS`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `EMAIL_FROM`.
 
 ## Historical data notes
 - Seasons 2018-19 through 2022-23 used name-based player codes

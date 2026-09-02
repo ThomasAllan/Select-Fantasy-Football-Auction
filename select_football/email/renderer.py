@@ -35,3 +35,31 @@ def render_report(
         gameweek=gameweek,
         movement=movement,
     )
+
+
+def render_report_text(
+    standings: list[ManagerStanding],
+    *,
+    season_id: str | None = None,
+    gameweek: int | None = None,
+) -> str:
+    """Plain-text version of the monthly table.
+
+    Sent as the text/plain alternative alongside the HTML — a message with only
+    an HTML part is a strong spam signal, and some clients junk it outright.
+    """
+    title = "Select Fantasy Football — Monthly League Table"
+    if season_id:
+        title += f" ({season_id})"
+    lines = [title]
+    if gameweek is not None:
+        lines.append(f"After Gameweek {gameweek}")
+    lines.append("")
+    for s in standings:
+        pts = f"{s.total_points:g}"
+        row = f"{s.position:>2}. {s.manager_name:<22} {pts:>5} pts"
+        if s.prize:
+            row += f"  (£{s.prize:g})"
+        lines.append(row)
+    lines.append("")
+    return "\n".join(lines)

@@ -4,8 +4,11 @@ Usage:
     uv run send-report
     uv run send-report --preview          # print HTML to stdout, do not send
     uv run send-report --force            # send even if already sent this month
+    uv run send-report --to me@example.com  # test send to just me; guards off,
+                                           # send is not recorded
 """
 import json
+import re
 from datetime import date
 from pathlib import Path
 
@@ -16,7 +19,7 @@ from select_football.common.logging import configure_logging, get_logger
 from select_football.common.models import ManagerStanding, Prize
 from select_football.config import get_settings
 from select_football.core.standings import compute_standings
-from select_football.email.renderer import render_report
+from select_football.email.renderer import render_report, render_report_text
 from select_football.email.sender import send_report
 from select_football.fpl.client import FplClient
 from select_football.fpl.sync import is_gw_in_progress
@@ -39,14 +42,22 @@ def _load_prizes(store: CsvStore, season_id: str) -> list[Prize]:
     ]
 
 
-def _get_recipients(store: CsvStore, season_id: str, settings) -> list[str]:
+def _parse_manager_emails(raw: str) -> list[str]:
+    """Pull addresses out of the MANAGER_EMAILS value.
+
+    Handles the "name,email" CSV text stored in the GitHub secret as well as a
+    bare list of addresses separated by commas, semicolons or newlines. Any
+    token without an "@" (the header, the name column) is ignored.
+    """
+    tokens = re.split(r"[,;\n\r]+", raw or "")
+    return [t.strip() for t in tokens if "@" in t]
+
+
+def _get_recipients(settings) -> list[str]:
     if settings.send_test_only:
         return [settings.test_email]
 
-    df = store.read("manager_emails")
-    if df.empty or "email" not in df.columns:
-        return []
-    return [e for e in df["email"].dropna().tolist() if e]
+    return _parse_manager_emails(settings.manager_emails)
 
 
 def _config_path(store: CsvStore) -> Path:
@@ -119,20 +130,36 @@ def _record_send(store: CsvStore, standings: list[ManagerStanding]) -> None:
 @click.command()
 @click.option("--preview", is_flag=True, help="Print rendered HTML to stdout instead of sending")
 @click.option("--force", is_flag=True, help="Send even if already sent this month")
-def main(preview: bool, force: bool) -> None:
+@click.option(
+    "--to",
+    "to_addrs",
+    multiple=True,
+    metavar="EMAIL",
+    help="Send only to these addresses (repeatable). A test send: skips the "
+    "monthly / gameweek guards and does NOT record the send, so the real "
+    "monthly email still goes out later.",
+)
+def main(preview: bool, force: bool, to_addrs: tuple[str, ...]) -> None:
     settings = get_settings()
     configure_logging(settings.log_level)
 
     store = CsvStore(settings.data_dir)
     season_id = store.current_season()
 
-    log.info("send_report_start", season=season_id, preview=preview, force=force)
+    is_test = bool(to_addrs)
+    log.info(
+        "send_report_start",
+        season=season_id,
+        preview=preview,
+        force=force,
+        test=is_test,
+    )
 
-    if not force and not preview and _already_sent_this_month(store, season_id):
+    if not force and not preview and not is_test and _already_sent_this_month(store, season_id):
         log.warning("send_skipped", reason="already_sent_this_month")
         raise SystemExit(0)
 
-    if not force and not preview:
+    if not force and not preview and not is_test:
         with FplClient(settings.fpl_base_url) as client:
             if is_gw_in_progress(client.get_bootstrap()):
                 log.warning("send_skipped", reason="gameweek_in_progress")
@@ -188,13 +215,25 @@ def main(preview: bool, force: bool) -> None:
         click.echo(html)
         return
 
-    recipients = _get_recipients(store, season_id, settings)
+    recipients = list(to_addrs) if is_test else _get_recipients(settings)
     if not recipients:
         log.error("no_recipients_found")
         raise SystemExit(1)
 
+    text = render_report_text(standings, season_id=season_id, gameweek=current_gw)
+
     subject = f"Select Fantasy Football League Table {season_id}"
-    send_report(html, recipients, subject, settings)
+    if is_test:
+        subject = f"[TEST] {subject}"
+    send_report(html, recipients, subject, settings, text_body=text)
+
+    if is_test:
+        log.info("send_report_test_complete", season=season_id, recipients=recipients)
+        return
 
     _record_send(store, standings)
     log.info("send_report_complete", season=season_id, recipients=len(recipients))
+
+
+if __name__ == "__main__":
+    main()
