@@ -2,7 +2,8 @@ name: Send monthly report
 
 on:
   schedule:
-    - cron: "0 7 1-5 * *"     # ~7am UTC, 1st–5th of the month; self-limits to one send/month
+    - cron: "0 7 * * *"      # ~7am UTC daily; sends once per new month on the first
+                             # day with no gameweek in progress, then no-ops (marker + GW guard)
   workflow_dispatch:
     inputs:
       run_mode:

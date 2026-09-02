@@ -132,13 +132,14 @@ FPL_BASE_URL=https://fantasy.premierleague.com/api
 | Workflow | Schedule | What it does |
 |---|---|---|
 | `.github/workflows/sync-scores.yml` | daily 06:00 UTC | `uv run sync-scores`, commits updated `data/*.csv` |
-| `.github/workflows/send-report.yml` | 07:00 UTC on the 1st–5th | `uv run send-report`, commits `data/config.json` marker |
+| `.github/workflows/send-report.yml` | daily 07:00 UTC | `uv run send-report`, commits `data/config.json` marker |
 | `.github/workflows/keep-alive.yml` | every 8h | pings the Streamlit app so it doesn't sleep |
 
-**send-report** runs on the 1st–5th but self-limits to one email per month via the
-`last_email_sent` marker; the extra days cover a gameweek still being in progress on
-the 1st (it skips cleanly and retries the next day). It also skips if the active
-season has no standings yet. Manual runs: Actions → "Send monthly report" → Run
+**send-report** runs daily but sends at most once per calendar month: it no-ops
+unless the `last_email_sent` marker is from a previous month, no gameweek is in
+progress, and the active season has standings. In practice the email goes out on
+the first settled (no gameweek live) day of each new month; every other day is a
+clean no-op. Manual runs: Actions → "Send monthly report" → Run
 workflow, `run_mode` = `send` / `force` (ignore the monthly guard) / `preview`
 (render to log, no email). Set `test_recipient` to an address to send a one-off
 `[TEST]` copy to just that person — guards off, send not recorded, so the real
