@@ -3170,7 +3170,7 @@ player_code,season_id,manager_name,position,cost,gw_from,gw_to
 2026-27-player-264,2026-27,Andrea Chapman,MID,1,1,38
 2026-27-player-439,2026-27,Andrea Chapman,FWD,15,1,38
 2026-27-player-55,2026-27,Andrea Chapman,FWD,13,1,1
-2026-27-player-166,2026-27,Andrea Chapman,FWD,13,2,38
+2026-27-player-166,2026-27,Andrea Chapman,FWD,0,2,38
 2026-27-team-5,2026-27,Steve Fidler,GK,21,1,38
 2026-27-player-469,2026-27,Steve Fidler,DEF,10,1,38
 2026-27-player-254,2026-27,Steve Fidler,DEF,5,1,38
@@ -3299,7 +3299,7 @@ player_code,season_id,manager_name,position,cost,gw_from,gw_to
 2026-27-player-399,2026-27,Jamie Wright,MID,15,1,38
 2026-27-player-453,2026-27,Jamie Wright,MID,19,1,38
 2026-27-player-373,2026-27,Jamie Wright,MID,1,1,1
-2026-27-player-627,2026-27,Jamie Wright,MID,1,2,38
+2026-27-player-627,2026-27,Jamie Wright,MID,0,2,38
 2026-27-player-157,2026-27,Jamie Wright,MID,4,1,38
 2026-27-player-53,2026-27,Jamie Wright,MID,1,1,38
 2026-27-player-347,2026-27,Jamie Wright,FWD,1,1,38
