@@ -3225,7 +3225,7 @@ player_code,season_id,manager_name,position,cost,gw_from,gw_to
 2026-27-player-16,2026-27,Mick Jones,MID,2,1,38
 2026-27-player-45,2026-27,Mick Jones,MID,1,1,38
 2026-27-player-380,2026-27,Mick Jones,FWD,6,1,38
-2026-27-player-248,2026-27,Mick Jones,FWD,1,1,38
+2026-27-player-248,2026-27,Mick Jones,FWD,1,1,2
 2026-27-team-4,2026-27,Sam Kennedy,GK,16,1,38
 2026-27-player-535,2026-27,Sam Kennedy,DEF,1,1,38
 2026-27-player-392,2026-27,Sam Kennedy,DEF,1,1,38
@@ -3315,3 +3315,4 @@ player_code,season_id,manager_name,position,cost,gw_from,gw_to
 2026-27-player-454,2026-27,Neil Wright,MID,2,1,38
 2026-27-player-167,2026-27,Neil Wright,FWD,1,1,38
 2026-27-player-526,2026-27,Neil Wright,FWD,1,1,38
+2026-27-player-249,2026-27,Mick Jones,FWD,1,3,38
