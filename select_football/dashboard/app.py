@@ -1582,7 +1582,9 @@ with tab_managers:
                         _pts_to_pos.setdefault(_p, []).append(int(sr["position"]))
                     _tied_positions = _pts_to_pos.get(pts, [pos])
                     _total_prize = sum(_prize_map.get(p, 0.0) for p in _tied_positions)
-                    prize = (_total_prize / len(_tied_positions)) if _total_prize else None
+                    # Not confirmed until the season closes, however good the position looks.
+                    _szn_closed = str(current_season_row.get("closed", "")).strip().lower() == "true"
+                    prize = (_total_prize / len(_tied_positions)) if _total_prize and _szn_closed else None
                     _is_shared = prize is not None and len(_tied_positions) > 1
                     current_standing = {"pos": pos, "pts": pts, "prize": prize, "shared": _is_shared}
     
@@ -1793,12 +1795,24 @@ with tab_managers:
             if not history_df.empty:
                 st.divider()
                 st.subheader("Season History")
-    
+
+                # A season still in progress hasn't produced a confirmed finish or
+                # prize yet, so it's excluded from "Best Finish" / "Prize Finishes".
+                if "closed" in seasons_df.columns:
+                    _is_closed_szn = seasons_df["closed"].str.strip().str.lower() == "true"
+                    _closed_seasons = set(seasons_df[_is_closed_szn]["season_id"])
+                else:
+                    _closed_seasons = set(history_df["Season"].tolist())
+                _closed_history_df = history_df[history_df["Season"].isin(_closed_seasons)]
+
                 h1, h2, h3, h4 = st.columns(4)
                 h1.metric("Seasons Managed", len(history_df))
-                h2.metric("Best Finish", _ordinal(int(history_df['Position'].min())))
+                h2.metric(
+                    "Best Finish",
+                    _ordinal(int(_closed_history_df['Position'].min())) if not _closed_history_df.empty else "—",
+                )
                 h3.metric("Avg Finish", _ordinal(round(history_df['Position'].mean())))
-                _prize_finishes = int((history_df['Prize'] > 0).sum())
+                _prize_finishes = int((_closed_history_df['Prize'] > 0).sum())
                 h4.metric("Prize Finishes", str(_prize_finishes) if _prize_finishes else "—")
     
                 _loyal_name, _loyal_seasons = get_most_loyal_player(selected_manager, data["selections"], players_df)
@@ -1874,7 +1888,8 @@ with tab_managers:
                     prize = r["Prize"]
                     pc = pos_colours.get(pos, "")
                     pos_style = f"color:{pc};font-weight:700;" if pc else "font-weight:500;"
-                    prize_str = f"£{prize:.0f}" if prize else "—"
+                    # Not confirmed until the season closes, however good the position looks.
+                    prize_str = f"£{prize:.0f}" if prize and r["Season"] in _closed_seasons else "—"
                     _tp = _top_per_season.get(r["Season"])
                     if _tp and _tp[1] > 0:
                         _tp_name, _tp_pts, _tp_code = _tp
