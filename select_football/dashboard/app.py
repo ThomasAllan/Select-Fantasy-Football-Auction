@@ -642,20 +642,21 @@ def compute_stats_corner(
     }
     MULT = {"DEF": 3, "MID": 2, "FWD": 1}
 
-    # Result/prize trophies (standings, goals, gameweek scores) only count once a
-    # season is closed and confirmed. Buying trophies (cost, ownership, club
-    # loyalty) use `selections_df`/`outfield` directly below, which stay
-    # unfiltered since a squad pick is final the moment it's made.
+    # Season-outcome trophies (final standings position, prize, full-season points
+    # totals) only count once a season is closed and confirmed - the placement or
+    # total isn't real until the season is done. Per-gameweek trophies (a single
+    # GW score, cumulative goals/clean sheets so far) stay unfiltered: a gameweek
+    # that's already been played is a real, final result the moment it's synced,
+    # whether or not the rest of its season has finished - goals_df/overrides_df/
+    # best_gameweeks_df only ever contain rows for GWs that actually happened.
+    # Buying trophies (cost, ownership, club loyalty) use `selections_df`/
+    # `outfield` directly below, unfiltered, since a squad pick is final at
+    # auction time regardless of season status.
     closed_season_ids = (
         set(seasons_df[seasons_df["closed"].astype(str).str.strip().str.lower() == "true"]["season_id"])
         if "closed" in seasons_df.columns else set(seasons_df["season_id"])
     )
     standings_df = standings_df[standings_df["season_id"].isin(closed_season_ids)].copy() if not standings_df.empty else standings_df
-    goals_df = goals_df[goals_df["season_id"].isin(closed_season_ids)].copy() if not goals_df.empty else goals_df
-    overrides_df = overrides_df[overrides_df["season_id"].isin(closed_season_ids)].copy() if not overrides_df.empty else overrides_df
-    if not best_gameweeks_df.empty and "label" in best_gameweeks_df.columns:
-        _bgw_season = best_gameweeks_df["label"].str.extract(r"(\d{4}-\d{2})$")[0]
-        best_gameweeks_df = best_gameweeks_df[_bgw_season.isin(closed_season_ids)].copy()
 
     def _pkey(code: str) -> str:
         fpl = code_to_fpl.get(code, "") or ""
@@ -712,11 +713,11 @@ def compute_stats_corner(
 
     most_expensive = _rec(agg.nlargest(1, "cost_n").iloc[0]) if not agg.empty else None
 
-    # From here on `agg` is result-based (points scored), so drop rows from a
-    # season that isn't closed yet - `most_expensive` above is a buying trophy
-    # and stays based on every squad ever assembled.
+    # From here on `agg` drives season-total trophies (a player's full-season
+    # points), so drop rows from a season that isn't closed yet - `most_expensive`
+    # above is a buying trophy and stays based on every squad ever assembled.
+    # `merged_goals` (per-GW rows) stays unfiltered - see the note above.
     agg = agg[agg["season_id"].isin(closed_season_ids)].copy() if not agg.empty else agg
-    merged_goals = merged_goals[merged_goals["season_id"].isin(closed_season_ids)].copy() if not merged_goals.empty else merged_goals
 
     most_pts = _rec(agg.nlargest(1, "pts").iloc[0]) if not agg.empty else None
 
@@ -1228,7 +1229,10 @@ def compute_stats_corner(
         _mgr_gw = _mgr_gw.merge(_szn_lgw[["season_id", "last_gw"]], on="season_id", how="left")
         _mgr_gw["last_gw"] = _mgr_gw["last_gw"].fillna(38).astype(int)
 
-        _first10 = _mgr_gw[_mgr_gw["game_week"] <= 10]
+        # Only count a season once its first 10 GWs have actually been played -
+        # otherwise an open season with, say, 3 GWs so far would compare its
+        # partial total against other seasons' full 10-GW hauls.
+        _first10 = _mgr_gw[(_mgr_gw["game_week"] <= 10) & (_mgr_gw["last_gw"] >= 10)]
         _f10_avg = _first10.groupby(["manager_name", "season_id"])["pts"].sum().groupby("manager_name").mean()
         if not _f10_avg.empty:
             _fs_name = str(_f10_avg.idxmax())
@@ -1237,14 +1241,11 @@ def compute_stats_corner(
 
 
     # ── Golden Glove all-time (goals + overrides combined) ───────────────────
+    # A missing goals.csv row means "clean sheet" - safe for an open season too,
+    # since gw_to_n below is capped at last_gw_synced, so this never reaches a
+    # gameweek that hasn't actually been played yet.
     clean_sheet_king: dict | None = None
-    # Restricted to closed seasons: a missing goals.csv row means "clean sheet",
-    # and an open season has no rows yet for GWs still to come, which would
-    # otherwise look like a clean sheet.
-    gk_sels = selections_df[
-        (selections_df["position"].str.upper() == "GK") &
-        selections_df["season_id"].isin(closed_season_ids)
-    ].copy()
+    gk_sels = selections_df[selections_df["position"].str.upper() == "GK"].copy()
     if not gk_sels.empty:
         gk_sels["gw_from_n"] = gk_sels["gw_from"].apply(_int)
         gk_sels["gw_to_n"] = gk_sels.apply(_resolve_gw_to, axis=1)
