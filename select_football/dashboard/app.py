@@ -1811,7 +1811,10 @@ with tab_managers:
                     "Best Finish",
                     _ordinal(int(_closed_history_df['Position'].min())) if not _closed_history_df.empty else "—",
                 )
-                h3.metric("Avg Finish", _ordinal(round(history_df['Position'].mean())))
+                h3.metric(
+                    "Avg Finish",
+                    _ordinal(round(_closed_history_df['Position'].mean())) if not _closed_history_df.empty else "—",
+                )
                 _prize_finishes = int((_closed_history_df['Prize'] > 0).sum())
                 h4.metric("Prize Finishes", str(_prize_finishes) if _prize_finishes else "—")
     
