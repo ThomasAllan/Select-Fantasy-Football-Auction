@@ -642,6 +642,21 @@ def compute_stats_corner(
     }
     MULT = {"DEF": 3, "MID": 2, "FWD": 1}
 
+    # Result/prize trophies (standings, goals, gameweek scores) only count once a
+    # season is closed and confirmed. Buying trophies (cost, ownership, club
+    # loyalty) use `selections_df`/`outfield` directly below, which stay
+    # unfiltered since a squad pick is final the moment it's made.
+    closed_season_ids = (
+        set(seasons_df[seasons_df["closed"].astype(str).str.strip().str.lower() == "true"]["season_id"])
+        if "closed" in seasons_df.columns else set(seasons_df["season_id"])
+    )
+    standings_df = standings_df[standings_df["season_id"].isin(closed_season_ids)].copy() if not standings_df.empty else standings_df
+    goals_df = goals_df[goals_df["season_id"].isin(closed_season_ids)].copy() if not goals_df.empty else goals_df
+    overrides_df = overrides_df[overrides_df["season_id"].isin(closed_season_ids)].copy() if not overrides_df.empty else overrides_df
+    if not best_gameweeks_df.empty and "label" in best_gameweeks_df.columns:
+        _bgw_season = best_gameweeks_df["label"].str.extract(r"(\d{4}-\d{2})$")[0]
+        best_gameweeks_df = best_gameweeks_df[_bgw_season.isin(closed_season_ids)].copy()
+
     def _pkey(code: str) -> str:
         fpl = code_to_fpl.get(code, "") or ""
         return fpl if fpl else code
@@ -695,8 +710,15 @@ def compute_stats_corner(
             "manager": row["manager_name"],
         }
 
-    most_pts = _rec(agg.nlargest(1, "pts").iloc[0]) if not agg.empty else None
     most_expensive = _rec(agg.nlargest(1, "cost_n").iloc[0]) if not agg.empty else None
+
+    # From here on `agg` is result-based (points scored), so drop rows from a
+    # season that isn't closed yet - `most_expensive` above is a buying trophy
+    # and stays based on every squad ever assembled.
+    agg = agg[agg["season_id"].isin(closed_season_ids)].copy() if not agg.empty else agg
+    merged_goals = merged_goals[merged_goals["season_id"].isin(closed_season_ids)].copy() if not merged_goals.empty else merged_goals
+
+    most_pts = _rec(agg.nlargest(1, "pts").iloc[0]) if not agg.empty else None
 
     costly = agg[agg["cost_n"] >= 5]
     biggest_flop = _rec(
@@ -1216,7 +1238,13 @@ def compute_stats_corner(
 
     # ── Golden Glove all-time (goals + overrides combined) ───────────────────
     clean_sheet_king: dict | None = None
-    gk_sels = selections_df[selections_df["position"].str.upper() == "GK"].copy()
+    # Restricted to closed seasons: a missing goals.csv row means "clean sheet",
+    # and an open season has no rows yet for GWs still to come, which would
+    # otherwise look like a clean sheet.
+    gk_sels = selections_df[
+        (selections_df["position"].str.upper() == "GK") &
+        selections_df["season_id"].isin(closed_season_ids)
+    ].copy()
     if not gk_sels.empty:
         gk_sels["gw_from_n"] = gk_sels["gw_from"].apply(_int)
         gk_sels["gw_to_n"] = gk_sels.apply(_resolve_gw_to, axis=1)
@@ -2816,7 +2844,7 @@ with tab_stats:
     ) if _rjump else "—")
     _t3 += _tc_row("The Rocket", (
         _bold(_rrocket["manager"]) + _sep() + _dim(f'smashed personal best by +{_rrocket["improvement"]}pts in {_rrocket["season"]} ({_rrocket["prev_best"]} → {_rrocket["pts"]}pts)')
-    ) if _rrocket else "—")
+    ) if _rrocket else _dim("Unclaimed") + _sep() + _dim("beat your own personal-best season score"))
     _t3 += _tc_row("Fastest Starter", (
         _bold(_rfs["manager"]) + _sep() + _dim(f'avg {_rfs["avg"]}pts in GWs 1–10')
     ) if _rfs else "—")
