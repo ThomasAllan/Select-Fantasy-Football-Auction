@@ -1,5 +1,5 @@
 {
-  "last_email_sent": "2026-09-02",
+  "last_email_sent": "2026-10-01",
   "email_standings_history": {
     "2026-09": [
       {
@@ -65,6 +65,72 @@
       {
         "position": 16,
         "manager_name": "Rory Canham"
+      }
+    ],
+    "2026-10": [
+      {
+        "position": 1,
+        "manager_name": "Jamie Wright"
+      },
+      {
+        "position": 2,
+        "manager_name": "Steve Fidler"
+      },
+      {
+        "position": 3,
+        "manager_name": "Sam Kennedy"
+      },
+      {
+        "position": 4,
+        "manager_name": "Neil Wright"
+      },
+      {
+        "position": 5,
+        "manager_name": "Mick Jones"
+      },
+      {
+        "position": 6,
+        "manager_name": "Tim Hart"
+      },
+      {
+        "position": 7,
+        "manager_name": "Pam Hart"
+      },
+      {
+        "position": 8,
+        "manager_name": "Gary Speechley"
+      },
+      {
+        "position": 9,
+        "manager_name": "Kev Thulbourne"
+      },
+      {
+        "position": 10,
+        "manager_name": "Niall McLoughlin"
+      },
+      {
+        "position": 11,
+        "manager_name": "Rory Canham"
+      },
+      {
+        "position": 12,
+        "manager_name": "Andrea Chapman"
+      },
+      {
+        "position": 13,
+        "manager_name": "Thomas Allan"
+      },
+      {
+        "position": 14,
+        "manager_name": "Robbie Lock"
+      },
+      {
+        "position": 15,
+        "manager_name": "Steve Gale"
+      },
+      {
+        "position": 16,
+        "manager_name": "Ken Maggs"
       }
     ]
   }
