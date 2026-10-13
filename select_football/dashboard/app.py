@@ -11,7 +11,7 @@ import streamlit as st
 
 from select_football.common.csv_store import CsvStore
 from select_football.config import get_settings
-from select_football.core.scoring import score_gk_team, score_outfield_player
+from select_football.core.scoring import POSITION_MODIFIERS, score_gk_team, score_outfield_player
 from select_football.core.standings import (
     _goals_for,
     _gk_player_codes_for_team,
@@ -121,6 +121,51 @@ def _augment_players_with_aliases(
 
 # ── Data loading ───────────────────────────────────────────────────────────────
 
+def _apply_outfield_overrides(
+    goals_df: pd.DataFrame,
+    overrides_df: pd.DataFrame,
+    selections_df: pd.DataFrame,
+    players_df: pd.DataFrame,
+) -> pd.DataFrame:
+    """Rewrite goals_scored for outfield GWs that have an override.
+
+    An override sets a GW's points, but goal counts are read from goals.csv
+    everywhere on the dashboard. Back out the goals (points / position
+    multiplier) so goal tallies match the points. If the points don't divide
+    evenly (e.g. a manual bonus), the synced goal count is left alone.
+    """
+    if goals_df.empty or overrides_df.empty:
+        return goals_df
+    ov = overrides_df[overrides_df["player_code"].str.contains("-player-", na=False)]
+    if ov.empty:
+        return goals_df
+
+    sel_pos = {
+        (r["player_code"], r["season_id"]): str(r["position"]).upper()
+        for _, r in selections_df.iterrows()
+    } if not selections_df.empty else {}
+    fpl_pos = players_df.set_index("code")["fpl_position"].to_dict() if not players_df.empty else {}
+
+    goals_df = goals_df.copy()
+    for _, o in ov.iterrows():
+        code, sid, gw = o["player_code"], o["season_id"], str(o["game_week"])
+        pos = sel_pos.get((code, sid)) or str(fpl_pos.get(code, "")).upper()
+        mult = int(POSITION_MODIFIERS.get(pos, 0))
+        pts = _int(o["override_points"], -1)
+        if not mult or pts < 0 or pts % mult:
+            continue
+        goals = str(pts // mult)
+        mask = (goals_df["player_code"] == code) & (goals_df["season_id"] == sid) & (goals_df["game_week"] == gw)
+        if mask.any():
+            goals_df.loc[mask, "goals_scored"] = goals
+        else:
+            goals_df = pd.concat([goals_df, pd.DataFrame([{
+                "player_code": code, "season_id": sid, "game_week": gw,
+                "goals_scored": goals, "goals_conceded": "0",
+            }])], ignore_index=True)
+    return goals_df
+
+
 @st.cache_data(ttl=300)
 def load_data() -> dict:
     settings = get_settings()
@@ -142,11 +187,13 @@ def load_data() -> dict:
     players_raw = store.read_all_players()
     aliases = _load_player_aliases(data_dir)
     players_augmented = _augment_players_with_aliases(players_raw, aliases)
+    selections_df = store.read("manager_selections")
+    overrides_df = store.read("overrides")
     return {
         "seasons": seasons_df,
-        "selections": store.read("manager_selections"),
-        "goals": store.read("goals"),
-        "overrides": store.read("overrides"),
+        "selections": selections_df,
+        "goals": _apply_outfield_overrides(store.read("goals"), overrides_df, selections_df, players_raw),
+        "overrides": overrides_df,
         "players": players_augmented,
         "prizes": store.read("prizes"),
         "standings": store.read("standings"),
@@ -1364,9 +1411,12 @@ def player_gw_points(
             if not ov.empty:
                 pts = int(ov.iloc[0]["override_points"])
                 if pos == "GK":
-                    rows.append({"GW": gw, "Goals Conceded": 0, "Pts": pts})
+                    conceded = _goals_for(goals_df, player_code, season_id, gw, "goals_conceded")
+                    rows.append({"GW": gw, "Goals Conceded": conceded, "Pts": pts})
                 else:
-                    rows.append({"GW": gw, "Goals": 0, "Pts": pts})
+                    # goals_df already has override-adjusted goals (see _apply_outfield_overrides)
+                    goals = _goals_for(goals_df, player_code, season_id, gw, "goals_scored")
+                    rows.append({"GW": gw, "Goals": goals, "Pts": pts})
                 continue
 
         if pos == "GK":
@@ -1430,9 +1480,11 @@ def manager_squad_points(
                 if not ov.empty:
                     pts = int(ov.iloc[0]["override_points"])
                     if pos == "GK":
-                        rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals Conceded": 0, "Pts": pts})
+                        conceded = _goals_for(goals_df, code, season_id, gw, "goals_conceded")
+                        rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals Conceded": conceded, "Pts": pts})
                     else:
-                        rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals": 0, "Pts": pts})
+                        goals = _goals_for(goals_df, code, season_id, gw, "goals_scored")
+                        rows.append({"Player": name, "Pos": pos, "GW": gw, "Goals": goals, "Pts": pts})
                     continue
 
             if pos == "GK":
